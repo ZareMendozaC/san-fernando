@@ -10,5 +10,5 @@
 <body class="bg-amber-300">
 
   <header class="bg-green-300 text-white font-bold">
-    cabecera
+    <h2>Cotiza y compra <p>tus vales</p></h2>
   </header>
