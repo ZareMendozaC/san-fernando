@@ -1,0 +1,101 @@
+:root {
+    --width_base: 1920;
+    --color-blue: #004C97;
+    --color-gris: #2D2A26;
+    --color-red-btn: #E1251B;
+    --color-white: #FFFFFF;
+    --color-beige: #F8F6ED;
+    --color-skyblue: #DFF4F9;
+    --color-grisblue: #E5EDF5;
+    --color-disabled: #E5EDF5;
+}
+*{
+    outline: 1px solid palegreen;
+}
+.color-blue{
+    color: var(--color-blue)
+}
+.color-gris{
+    color: var(--color-gris);
+}
+.color-white{
+    color: var(--color-white);
+}
+.color-disabled{
+    color: var(--color-disabled);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+a,
+a:hover {
+    text-decoration: none !important;
+}
+h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(100vw*(92/var(--width_base)));
+    line-height: calc(100vw*(92/var(--width_base)));
+    font-family: 'FuturaStd';
+}
+h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(100vw*(72/var(--width_base)));
+    line-height: calc(100vw*(72/var(--width_base)));
+    font-family: 'FuturaStd';
+}
+h2 p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(100vw*(168/var(--width_base)));
+    line-height: calc(100vw*(60/var(--width_base)));
+    font-family: 'Portuguesa';
+    margin-bottom: 0px;
+}
+.text-center{
+    text-align: center;
+}
+.p-subtitle{
+    margin-bottom: 0px !important;
+    font-family: 'FuturaStd';
+    font-style: normal;
+    font-weight: 400;
+    font-size:  calc(100vw*(22/var(--width_base)));
+    line-height:  calc(100vw*(33/var(--width_base)));
+    text-align: center;
+}
+.btn-ver-productos{
+    width: calc(100vw*(328/var(--width_base)));
+    height: calc(100vw*(58/var(--width_base)));
+    background: var(--color-red-btn);
+    border-radius: calc(100vw*(515/var(--width_base)));
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'FuturaStd';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(100vw*(22/var(--width_base)));
+    line-height: calc(100vw*(33/var(--width_base)));
+}
+.btn-c{
+    width:  calc(100vw*(126/var(--width_base)));
+    height:  calc(100vw*(58/var(--width_base)));
+    background: #DF0002;
+    border-radius:  calc(100vw*(515/var(--width_base)));
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'FuturaStd';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(100vw*(22/var(--width_base)));
+    line-height: calc(100vw*(33/var(--width_base)));
+}
