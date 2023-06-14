@@ -20,7 +20,9 @@
   },
   "dependencies": {
     "dotenv": "^16.0.3",
-    "sass": "^1.57.1"
+    "jquery": "^3.7.0",
+    "sass": "^1.57.1",
+    "slick-carousel": "^1.8.1"
   },
   "files": [
     "core/**/*",

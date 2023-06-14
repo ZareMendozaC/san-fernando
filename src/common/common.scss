@@ -10,7 +10,7 @@
     --color-disabled: #E5EDF5;
 }
 *{
-    outline: 1px solid palegreen;
+    outline: 1px solid purple;
 }
 .color-blue{
     color: var(--color-blue)
@@ -87,7 +87,7 @@ h2 p{
 .btn-c{
     width:  calc(100vw*(126/var(--width_base)));
     height:  calc(100vw*(58/var(--width_base)));
-    background: #DF0002;
+    background: var(--color-red-btn);
     border-radius:  calc(100vw*(515/var(--width_base)));
     color: var(--color-white);
     display: flex;
@@ -98,4 +98,56 @@ h2 p{
     font-weight: 600;
     font-size: calc(100vw*(22/var(--width_base)));
     line-height: calc(100vw*(33/var(--width_base)));
+}
+.btn-ver-articulos{
+    width:  calc(100vw*(279/var(--width_base)));
+    height:  calc(100vw*(58/var(--width_base)));
+    background: var(--color-red-btn);
+    border-radius:  calc(100vw*(515/var(--width_base)));
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'FuturaStd';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(100vw*(22/var(--width_base)));
+    line-height: calc(100vw*(33/var(--width_base)));
+}
+.btn-ver-mas{
+    width:  calc(100vw*(239/var(--width_base)));
+    height:  calc(100vw*(58/var(--width_base)));
+    background: var(--color-red-btn);
+    border-radius:  calc(100vw*(515/var(--width_base)));
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'FuturaStd';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(100vw*(22/var(--width_base)));
+    line-height: calc(100vw*(33/var(--width_base)));
+}
+.container {
+    width: calc(100vw*(1556/var(--width_base)));
+    margin: auto;
+}
+.container-main {
+    width: 100%;
+}
+.mrg-t_18{
+    margin-top: calc(100vw*(38/var(--width_base)));
+}
+.img-sub{
+    position: absolute;
+    right: 0;
+    bottom: calc(100vw*(-70/var(--width_base)));
+    width: calc(100vw*(310/var(--width_base)));
+    height: auto;
+}
+.content-h2{
+    width: max-content;
+    margin: auto;
+    position: relative;
 }
