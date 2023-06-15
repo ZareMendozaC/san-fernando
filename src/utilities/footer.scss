@@ -10,6 +10,7 @@ ul{
     flex-wrap: wrap;
     color: var(--color-white);
     background-color: var(--color-blue);
+    font-family: 'FuturaStd';
 
     .footer-content-1{
         display: flex;
@@ -33,17 +34,19 @@ ul{
                 list-style: none;
                 display: flex;
                 flex-direction: column;
-    
                 gap: 20px;
     
-                li{
-                    display: flex;
-                    gap: 20px;
-                    align-items: center;
-                    p{
-                        margin: 0;
-                        font-weight: 400;
-                        font-size: calc(100vw*(16/var(--width_base)));
+                .info-text{
+                    a{
+                        display: flex;
+                        gap: 20px;
+                        align-items: center;
+                        color: var(--color-white);
+                        p{
+                            
+                            margin: 0;
+                            font-size: calc(100vw*(16/var(--width_base)));
+                        }
                     }
                 }
             }
