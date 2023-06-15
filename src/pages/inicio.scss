@@ -1,9 +1,9 @@
 .bg-main-banner{
     width: 100%;
-    height: calc(100vw*(850/var(--width_base)));
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: calc(100vw*(850/var(--width_base))) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
 }
 .bg-productos{
     width: 100%;
