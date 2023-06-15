@@ -1,0 +1,26 @@
+.bg-main-banner{
+    width: 100%;
+    height: calc(100vw*(850/var(--width_base)));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-productos{
+    width: 100%;
+    height:  calc(100vw*(1170/var(--width_base)));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: calc(100vw*(77/var(--width_base)));
+}
+.lista-productos{
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: calc(100vw*(320/var(--width_base)));
+}
+.center-btn{
+    display: flex;
+    justify-content: center;
+}
