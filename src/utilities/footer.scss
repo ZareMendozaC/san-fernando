@@ -22,7 +22,18 @@ ul{
             display: flex;
             flex-direction: column;
             width: calc(100vw*(500 /var(--width_base)));
-            gap: 40px;
+            gap: 36px;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                .logo-footer{
+                    width: calc(100vw*(120 /var(--width_base)));
+                    height: auto;
+                }
+            }
             .contact-redes{
                 list-style: none;
                 display: flex;
@@ -186,6 +197,12 @@ ul{
                 display: flex;
                 align-items: center;
                 gap: 10px;
+
+                    .logo-footer{
+                        width: calc(100vw*(550 /var(--width_base)))!important;
+                        height: auto;
+
+                }
             }
 
             .contact-info{
