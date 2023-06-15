@@ -1,0 +1,34 @@
+.navbar{
+    padding-left: calculate(182);
+    padding-right: calculate(182);
+    padding-top: calculate(20);
+    padding-bottom: calculate(20);
+    background-color: var(--color-blue);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    // gap: calculate(92);
+
+    .menu-item {
+      height: 100%;
+      width: calculate(112);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'FuturaStd';
+    font-style: normal;
+    font-weight: 600;
+    font-size:  calculste(22);
+    // line-height: calc(100vw*(72/var(--width_base)));
+   
+
+      a{
+         color:var(--color-white)
+      }
+    }
+  }
