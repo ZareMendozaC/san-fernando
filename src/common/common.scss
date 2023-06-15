@@ -12,7 +12,7 @@
 }
 
 *{
-    outline: 1px solid purple;
+  //  outline: 1px solid purple;
 }
 .color-blue{
     color: var(--color-blue)
@@ -159,4 +159,11 @@ h2 p{
     bottom: calc(100vw*(-62/var(--width_base)));
     width: calc(100vw*(237/var(--width_base)));
     height: auto;
+}
+.pdg-t-70{
+    padding-top: calc(100vw*(70/var(--width_base)));
+}
+.wp-658{
+    width: calc(100vw*(658/var(--width_base)));
+    margin: auto;
 }
