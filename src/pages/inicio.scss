@@ -24,3 +24,45 @@
     display: flex;
     justify-content: center;
 }
+.bg-beige{
+    background-color: var(--color-beige);
+}
+.pdg-t-184{
+    padding-top: calc(100vw*(184/var(--width_base)));
+}
+.card-cotiza{
+    background: var(--color-white);
+    width: calc(100vw*(503/var(--width_base)));
+    height: calc(100vw*(220/var(--width_base)));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: calc(100vw*(66/var(--width_base)));
+    padding-right: calc(100vw*(66/var(--width_base)));
+    border-radius: calc(100vw*(16/var(--width_base)));
+    img{
+        width: calc(100vw*(108/var(--width_base)));
+        height: calc(100vw*(107/var(--width_base)));
+    }
+}
+.card-cotiza-text{
+    width: calc(100vw*(224/var(--width_base)));
+    height: auto;
+    p{
+        font-family: 'FuturaStd';
+        font-style: normal;
+        font-weight: 600;
+        font-size: calc(100vw*(30/var(--width_base)));
+        line-height: calc(100vw*(38/var(--width_base)));
+        color: var(--color-blue);
+        margin-bottom: calc(100vw*(18/var(--width_base))) !important;
+    }
+}
+.list-cotiza{
+    padding-top: calc(100vw*(82/var(--width_base)));
+    display: flex;
+    justify-content: space-between;
+}
+.list-cotiza{
+    padding-bottom: calc(100vw*(174/var(--width_base)));
+}

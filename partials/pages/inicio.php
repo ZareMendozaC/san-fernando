@@ -29,7 +29,18 @@ $lista_productos = get_field('listado_de_productos');
         <?php if ($titulo) : ?>
             <div class="content-h2">
                 <h2 class="text-center color-blue"><?= $titulo; ?></h2>
-                <img class="img-sub" src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Frame-16.png" alt="">
+                <svg class="img-sub" width="288" height="36" viewBox="0 0 288 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1179_8114)">
+                        <path d="M287.019 3.65718C287.019 3.65718 55.3468 -7.10545 3.18945 29.7358" stroke="#004A98" stroke-width="7" stroke-miterlimit="10" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1179_8114">
+                            <rect width="286.313" height="35.0475" fill="white" transform="translate(0.84375)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+
             </div>
         <?php endif; ?>
         <div class="lista-productos">
@@ -58,13 +69,37 @@ $titulo_cotiza = get_field('titulo_cotiza');
 $descripcion_cotiza = get_field('descripcion_cotiza');
 $opciones_cotiza_y_compra = get_field('opciones_cotiza_y_compra');
 ?>
-<section>
+<section class="bg-beige pdg-t-184">
     <div class="container">
         <?php if ($titulo_cotiza) : ?>
             <div class="content-h2">
                 <h2 class="text-center color-blue"><?= $titulo_cotiza; ?></h2>
-                <img class="img-sub-2" src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Frame-16.png" alt="">
+                <svg class="img-sub-2" width="240" height="30" viewBox="0 0 240 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M239.801 5.19509C239.801 5.19509 45.9454 -3.81073 2.30176 27.0169" stroke="#004A98" stroke-width="7" stroke-miterlimit="10" />
+                </svg>
             </div>
+            <p class="p-subtitle color-gris pdg-t-70 wp-658"><?= $descripcion_cotiza; ?></p>
         <?php endif; ?>
+        <div class="list-cotiza">
+            <?php if( have_rows('opciones_cotiza_y_compra') ): ?>
+                <?php while( have_rows('opciones_cotiza_y_compra') ): the_row(); 
+                    $titulo_quiero = get_sub_field('titulo_quiero');
+                    $icono = get_sub_field('icono');
+                    $texto_boton_quiero = get_sub_field('texto_boton_quiero');
+                    $link_boton_quiero = get_sub_field('link_boton_quiero');
+                    ?>
+                    <div class="card-cotiza">
+                        <img src="<?= $icono['url'];?>" alt="">
+                        <div class="card-cotiza-text">
+                            <p><?= $titulo_quiero;?></p>
+                            <a class="btn-c" href="<?= $link_boton_quiero;?>"><?= $texto_boton_quiero; ?></a>
+                        </div>
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+
+
+
+        </div>
     </div>
 </section>
