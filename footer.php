@@ -33,7 +33,6 @@ wp_footer();
 
 				<?php
 				$url_facebook = get_field("facebook", 17);
-				print_r($url_facebook);
 				?>
 				<?php if ($url_facebook) : ?>
 					<ul class="contact-redes">
