@@ -71,7 +71,19 @@
     }
   }
 
-  .btn-vales{
+  // .btn-vales{
+    
+  //   border-radius: 50px;
+  //   margin-top: calculate(20);
+  //   font-style: normal;
+  //   font-weight: 600;
+  //   font-size:  calculste(22);
+  //   color:var(--color-white);
+  // }
+
+  .btn-nav{
+    display: flex;
+    align-items: center;
     background: transparent;
     border-radius: 50px;
     margin-top: calculate(20);
@@ -81,12 +93,6 @@
     color:var(--color-white);
   }
 
-  .btn-comprar{
+  .bg-red{
     background: var(--color-red-btn);
-    border-radius: 50px;
-    margin-top: calculate(20);
-    font-style: normal;
-    font-weight: 600;
-    font-size:  calculste(22);
-    color:var(--color-white);
   }
