@@ -9,6 +9,7 @@
     --color-grisblue: #E5EDF5;
     --color-disabled: #E5EDF5;
 }
+
 *{
     outline: 1px solid purple;
 }
@@ -150,4 +151,11 @@ h2 p{
     width: max-content;
     margin: auto;
     position: relative;
+}
+.img-sub-2{
+    position: absolute;
+    right: calc(100vw*(62/var(--width_base)));
+    bottom: calc(100vw*(-62/var(--width_base)));
+    width: calc(100vw*(237/var(--width_base)));
+    height: auto;
 }
