@@ -29,9 +29,8 @@
         <?php if ($titulo) : ?>
             <div class="content-h2">
                 <h2 class="text-center color-blue"><?= $titulo; ?></h2>
-                <img class="img-sub" src="https://apros-qa.net.pe/sanfer/wp-content/uploads/2023/06/Frame-14.png" alt="">
+                <img class="img-sub" src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Frame-16.png" alt="">
             </div>
-           
         <?php endif; ?>
         <div class="lista-productos">
             <?php foreach ($lista_productos as $item) : ?>
@@ -52,5 +51,20 @@
         <div class="center-btn">
             <a class="btn-ver-productos mrg-t_18" href="">Ver todos los productos</a>
         </div>
+    </div>
+</section>
+<?php
+    $titulo_cotiza = get_field('titulo_cotiza');
+    $descripcion_cotiza = get_field('descripcion_cotiza');
+    $opciones_cotiza_y_compra = get_field('opciones_cotiza_y_compra');
+?>
+<section>
+    <div class="container">
+    <?php if ($titulo_cotiza) : ?>
+            <div class="content-h2">
+                <h2 class="text-center color-blue"><?= $titulo_cotiza; ?></h2>
+                <img class="img-sub-2" src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Frame-16.png" alt="">
+            </div>
+        <?php endif; ?>
     </div>
 </section>
