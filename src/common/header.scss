@@ -1,7 +1,7 @@
 .navbar{
     padding-left: calculate(182);
     padding-right: calculate(182);
-    padding-bottom: calculate(20);
+    // padding-bottom: calculate(20);
     background-color: var(--color-blue);
     width: 100%;
     display: flex;
@@ -9,12 +9,18 @@
 }
 
 .logo_sf{
-  padding-top: calculate(20);
+  margin-top: calculate(20);
+  margin-bottom: calculate(20);
+  width: calculate(200);
+}
+
+.div_menu1{    
+   margin-top: calculate(10);
 }
 .menu {
     height: 100%;
     display: flex;
-    gap: calculate(25);
+    gap: calculate(46);
 
     .menu-item {
       height: 100%;
@@ -44,7 +50,7 @@
   .menu2 {
     height: 100%;
     display: flex;
-    gap: calculate(20);
+    gap: calculate(52);
     background: var(--color-white);
     padding: calculate(12) calculate(64);
     border-bottom-right-radius: 1em ;
@@ -71,8 +77,16 @@
     }
   }
 
-  // .btn-vales{
-    
+  .btn-nav{
+    margin-top: 20px;
+    height: 45px;
+    width: auto;
+  }
+
+  // .btn-nav{
+  //   display: flex;
+  //   align-items: center;
+  //   background: transparent;
   //   border-radius: 50px;
   //   margin-top: calculate(20);
   //   font-style: normal;
@@ -81,18 +95,8 @@
   //   color:var(--color-white);
   // }
 
-  .btn-nav{
-    display: flex;
-    align-items: center;
-    background: transparent;
-    border-radius: 50px;
-    margin-top: calculate(20);
-    font-style: normal;
-    font-weight: 600;
-    font-size:  calculste(22);
-    color:var(--color-white);
-  }
-
   .bg-red{
     background: var(--color-red-btn);
   }
+
+  
