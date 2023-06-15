@@ -19,6 +19,7 @@
     "vite": "^4.0.0"
   },
   "dependencies": {
+    "@flaticon/flaticon-uicons": "^2.2.0",
     "dotenv": "^16.0.3",
     "jquery": "^3.7.0",
     "sass": "^1.57.1",
