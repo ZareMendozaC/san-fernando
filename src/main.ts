@@ -24,13 +24,13 @@ $(".main-banner").slick({
 
 
 $(".btn-blog").click(function() {
-  $(".menu_blog").slideToggle(500);
+  $(".menu_blog").slideToggle();
 });
 
 $(".btn-vales").click(function() {
-  $(".menu_vales").slideToggle(500);
+  $(".menu_vales").slideToggle();
 });
 
 $(".btn-comprar").click(function() {
-  $(".menu_compras").slideToggle(500);
+  $(".menu_compras").slideToggle();
 });
