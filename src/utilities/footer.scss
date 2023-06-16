@@ -50,7 +50,7 @@ ul{
                 .info-text{
                     a{
                         display: flex;
-                        gap: 20px;
+                        gap: calculate(20);
                         align-items: center;
                         color: var(--color-white);
                         p{
