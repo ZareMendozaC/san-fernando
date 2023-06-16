@@ -115,8 +115,31 @@ $opciones_cotiza_y_compra = get_field('opciones_cotiza_y_compra');
         <div class="col-blog-2">
             <div class="slider-blog">
                 <div class="card-blog">
-                    <div class="img-blog">
-
+                    <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668.png)">
+                    </div>
+                    <div class="btn-cat">Nutrición</div>
+                    <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
+                    <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
+                    <a href="">Leer más</a>
+                </div>
+                <div class="card-blog">
+                    <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668-1.png">
+                    </div>
+                    <div class="btn-cat">Nutrición</div>
+                    <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
+                    <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
+                    <a href="">Leer más</a>
+                </div>
+                <div class="card-blog">
+                    <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Mask-group-35.png)">
+                    </div>
+                    <div class="btn-cat">Nutrición</div>
+                    <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
+                    <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
+                    <a href="">Leer más</a>
+                </div>
+                <div class="card-blog">
+                    <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668-1.png">
                     </div>
                     <div class="btn-cat">Nutrición</div>
                     <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>

@@ -78,7 +78,74 @@
         line-height: calculate(168);
         margin-left: calculate(-20)
     }
+    .slick-slide{
+        width: calculate(371) !important;
+        height: calculate(516) !important;
+        margin-right: calculate(17);
+        margin-left: calculate(17);
+    }
 }
+
 .card-blog{
-    
+    width: calculate(371) !important;
+    height: calculate(516) !important;
+    background: var(--color-white);
+    border-radius: calculate(14);
+    padding-top: calculate(21);
+    padding-left: calculate(23);
+    padding-right: calculate(23);
+    font-family: 'FuturaStd';
+    font-style: normal;
+    .img-blog{
+        width: calculate(325);
+        height: calculate(234);
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
+        margin: auto;
+        margin-bottom: calculate(24);
+    }
+    .title-blog{
+        font-weight: 600;
+        font-size: calculate(20);
+        line-height: calculate(27);
+        color: var(--color-blue);
+        margin-bottom: calculate(18) !important;
+    }
+    .text-blog{
+        font-weight: 400;
+        font-size: calculate(16);
+        line-height: calculate(24);
+        color: var(--color-gris);
+        margin-bottom: calculate(13) !important;
+    }
+    a{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: calculate(24);
+        color: var(--color-blue);
+    }
+    .btn-cat{
+        height: calculate(30);
+        width: fit-content;
+        padding-left: calculate(19);
+        padding-right: calculate(19);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #B0924D;
+        border-radius: calculate(30);
+        color: #B0924D;
+        font-style: normal;
+        font-weight: 400;
+        font-size: calculate(12);
+        margin-bottom: calculate(18);
+    }
+}
+.container-left{
+    display: flex;
+    justify-content: space-between;
+}
+.col-blog-2,.slider-blog{
+    width: calculate(1080) !important;
 }
