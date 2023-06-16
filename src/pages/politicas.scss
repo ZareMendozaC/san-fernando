@@ -1,0 +1,84 @@
+.politicas-head{
+    font-family: 'FuturaStd';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 calc(100vw*(300/var(--width_base)));
+      h1{
+        margin: 0;
+        text-align: center;
+        font-size: calc(100vw*(92/var(--width_base)));
+
+      }
+
+
+}
+
+    
+.zigzag {
+    background-color: var(--dark-blue);
+    position: relative;
+    margin: 0;
+    height: 300px;
+}
+
+
+.zigzag:before, .zigzag:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(
+        45deg,
+        transparent 33.333%,
+        var(--dark-blue) 33.333%,
+        var(--dark-blue) 66.667%,
+        transparent 66.667%
+    ),
+    linear-gradient(
+        -45deg,
+        transparent 33.333%,
+        var(--dark-blue)33.333%,
+        var(--dark-blue) 66.667%,
+        transparent 66.667%
+    );
+    background-size: 15px 40px;
+}
+
+.zigzag:before {
+    top: -10px;
+}
+
+.zigzag:after {
+    bottom: -10px;
+    transform: rotate(180deg);
+}
+
+.text-politicas{
+    padding-top: calc(100vw*(73/var(--width_base)));
+    padding-bottom: calc(100vw*(163/var(--width_base)));
+    font-family: 'FuturaStd';
+    font-weight: 400;
+
+  }
+
+  @media only screen and (max-width: 768px) {
+    .politicas-head{
+        font-family: 'FuturaStd';
+        h1{
+            text-align: center;
+            font-size: calc(100vw*(200/var(--width_base)));
+            line-height: calc(100vw*(250/var(--width_base)));
+        }
+    
+    }
+    
+    
+    .text-politicas{
+        padding-top: calc(100vw*(400/var(--width_base)));
+        padding-bottom: calc(100vw*(163/var(--width_base)));
+        font-family: 'FuturaStd';
+        font-weight: 400;
+    
+      }
+  }

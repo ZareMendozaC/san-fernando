@@ -1,6 +1,6 @@
 <section>
-    <div class="politicas-head">
-        <h1 class="color-white zig-zag">Políticas de privacidad</h1>
+    <div class="politicas-head zigzag">
+        <h1 class="color-white">Políticas de privacidad</h1>
     </div>
 
     <div class="text-politicas container">

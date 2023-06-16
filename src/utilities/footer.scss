@@ -16,18 +16,18 @@ ul{
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 36px;
+        gap: calc(100vw*(36/var(--width_base)));
         padding: calc(100vw*(94 /var(--width_base))) 0;
         .footer-first-line{
             display: flex;
             flex-direction: column;
             width: calc(100vw*(500 /var(--width_base)));
-            gap: 36px;
+            gap: calc(100vw*(36/var(--width_base)));
 
             div{
                 display: flex;
                 flex-direction: column;
-                gap: 40px;
+                gap: calc(100vw*(40/var(--width_base)));
 
                 .logo-footer{
                     width: calc(100vw*(120 /var(--width_base)));
@@ -38,14 +38,14 @@ ul{
                 list-style: none;
                 display: flex;
                 margin: 0;
-                gap: 10px;
+                gap: calc(100vw*(10/var(--width_base)));
             }
 
             .contact-info{
                 list-style: none;
                 display: flex;
                 flex-direction: column;
-                gap: 20px;
+                gap: calc(100vw*(20/var(--width_base)));
     
                 .info-text{
                     a{
@@ -65,15 +65,17 @@ ul{
 
         .footer-content-2{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             flex-wrap: wrap;
             width: 100%;
     
     
             .footer-menu{
+
                 .footer-menu--option1{
                     p{
                         display: none;
+                        font-size: calc(100vw*(18/var(--width_base)));
                     }
                     svg{
                         display: none;
@@ -84,7 +86,7 @@ ul{
                     display: flex;
                     flex-direction: column;
                     margin: 0;
-                    gap: 17px;
+                    gap: calc(100vw*(20/var(--width_base)));
                     li{
                         font-weight: 600;
                         font-size: calc(100vw*(18/var(--width_base)));
@@ -97,6 +99,8 @@ ul{
                 .footer-menu--option2{
                     p{
                         display: flex;
+                        font-size: calc(100vw*(18/var(--width_base)));
+                        margin-bottom: 10px;
     
                     }
                     svg{
@@ -108,7 +112,7 @@ ul{
                     display: flex;
                     flex-direction: column;
                     margin: 0;
-                    gap: 17px;
+                    gap: calc(100vw*(20/var(--width_base)));
                     li{
                         font-weight: 400;
                         font-size: calc(100vw*(18/var(--width_base)));
@@ -121,6 +125,8 @@ ul{
                 .footer-menu--option3{
                     p{
                         display: flex;
+                        font-size: calc(100vw*(18/var(--width_base)));
+                        margin-bottom: 10px;
                     }
                     svg{
                         display: none;
@@ -131,7 +137,7 @@ ul{
                     display: flex;
                     flex-direction: column;
                     margin: 0;
-                    gap: 17px;
+                    gap: calc(100vw*(20/var(--width_base)));
                     li{
                         font-weight: 400;
                         font-size: calc(100vw*(18/var(--width_base)));
@@ -146,7 +152,7 @@ ul{
                     display: flex;
                     flex-direction: column;
                     margin: 0;
-                    gap: 17px;
+                    gap: calc(100vw*(20/var(--width_base)));
                     li{
                         font-weight: 600;
                         font-size: calc(100vw*(18/var(--width_base)));
@@ -189,29 +195,36 @@ ul{
     .footer-content-1{
         display: flex;
         flex-wrap: wrap;
+        gap: calc(100vw*(32 /var(--width_base)))!important;
 
         .footer-first-line{
             width: 100vw!important;
 
             div{
                 display: flex;
+                flex-direction: row!important;
                 align-items: center;
-                gap: 10px;
+                justify-content: space-between;
+                gap: calc(100vw*(30 /var(--width_base)))!important;
+                
 
                     .logo-footer{
-                        width: calc(100vw*(550 /var(--width_base)))!important;
+                        width: calc(100vw*(520 /var(--width_base)))!important;
                         height: auto;
 
                 }
             }
 
             .contact-info{
+                
     
                 li{
-                    p{
-                        margin: 0;
-                        font-weight: 400;
-                        font-size: calc(100vw*(70/var(--width_base)))!important;
+                    a{
+                        p{
+                            margin: 0;
+                            font-weight: 400;
+                            font-size: calc(100vw*(40/var(--width_base)))!important;
+                        }
                     }
                 }
             }
@@ -227,10 +240,12 @@ ul{
                 .footer-menu--option1{
                     display: flex;
                     align-items: center;
+                    justify-content: space-between;
                     
                     p{
                         display: flex !important;
                         margin: 0;
+                        font-size: calc(100vw*(58/var(--width_base)))!important;
                     }
                     svg{
                         display: flex !important;
@@ -254,10 +269,13 @@ ul{
                 .footer-menu--option2{
                     display: flex;
                     align-items: center;
+                    justify-content: space-between;
 
                     p{
                         display: flex !important;
+                        
                         margin: 0;
+                        font-size: calc(100vw*(58/var(--width_base)))!important;
                     }
                     svg{
                         display: flex !important;
@@ -281,9 +299,11 @@ ul{
                 .footer-menu--option3{
                     display: flex;
                     align-items: center;
+                    justify-content: space-between;
                     p{
                         display: flex !important;
                         margin: 0;
+                        font-size: calc(100vw*(58/var(--width_base)))!important;
                     }
                     svg{
                         display: flex !important;
@@ -312,7 +332,7 @@ ul{
                     gap: 17px;
                     li{
                         font-weight: 600;
-                        font-size: calc(100vw*(90/var(--width_base)))!important;
+                        font-size: calc(100vw*(58/var(--width_base)))!important;
     
                     }
                 }
