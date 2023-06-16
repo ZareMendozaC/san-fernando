@@ -1,6 +1,7 @@
 <section>
-    <div class="politicas-head">
-        <h1 class="color-white zig-zag">Políticas de privacidad</h1>
+    <div class="politicas-head zigzag">
+        <?php $titulo_politicas = get_field("titulo_principal"); ?>
+        <h1 class="color-white"><?php echo $titulo_politicas; ?></h1>
     </div>
 
     <div class="text-politicas container">
