@@ -37,12 +37,18 @@
 
 
     <?php
-    $fondo_trabaja = get_field("imagen_de_fondo");
+    $fondo_trabaja = get_field("imagen_de_fondo_lista");
+
+    foreach ($fondo_trabaja as $item) {
+        $desktop_image = $item["imagen_desktop"];
+        $mobile_image = $item["imagen_mobile"];
+        $person_mobile_image = $item["imagen_mobile_persona"];
+    };
+
     ?>
 
-    <div class="section-2">
+    <div class="section-2" style="background-image: url(<?= $desktop_image["url"] ?>);">
 
-        <img src="<?= $fondo_trabaja["url"] ?>" alt="">
 
         <div>
             <?php
@@ -60,6 +66,10 @@
 
 
     </div>
+
+
+
+
 
 
 </section>
