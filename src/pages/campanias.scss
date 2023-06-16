@@ -1,0 +1,14 @@
+.banner_campanias{
+    width: 100%;
+    height:  calculate(550);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: calculate(150);
+}
+
+.container{
+    width: calculate(var(--width_base));
+    padding-left: calculate(182);
+    padding-right: calculate(182);
+}
