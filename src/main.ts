@@ -20,17 +20,22 @@ $(".main-banner").slick({
   fade: false,
   cssEase: "linear",
 });
-
-
-
-$(".btn-blog").click(function() {
-  $(".menu_blog").slideToggle();
+//@ts-ignore
+$(".btn-blog").click(function () {
+  $(".menu_blog").slideToggle(500);
 });
-
-$(".btn-vales").click(function() {
-  $(".menu_vales").slideToggle();
+//@ts-ignore
+$(".btn-vales").click(function () {
+  $(".menu_vales").slideToggle(500);
 });
-
-$(".btn-comprar").click(function() {
-  $(".menu_compras").slideToggle();
+//@ts-ignore
+$(".btn-comprar").click(function () {
+  $(".menu_compras").slideToggle(500);
 });
+//@ts-ignore
+var mediaqueryList = window.matchMedia("(max-width: 768px)");
+// mediaqueryList.addListener(function (EventoMediaQueryList) {
+//   $(".section-2").css("display", "none");
+// });
+
+
