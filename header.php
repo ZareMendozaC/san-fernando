@@ -10,6 +10,7 @@
 <body>
   <header class="navbar">
     <div class="div_logo">
+      <!-- <a href="<?php echo home_url(); ?>"> -->
       <svg width="187" height="124" viewBox="0 0 187 124" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo_sf">
         <g clip-path="url(#clip0_1161_7511)">
           <path d="M177.719 88.7383H9.93994V89.4948H177.719V88.7383Z" fill="white" />
@@ -52,7 +53,7 @@
           </clipPath>
         </defs>
       </svg>
-
+      <!-- </a> -->
     </div>
     <div>
       <div class="div_menu2">
