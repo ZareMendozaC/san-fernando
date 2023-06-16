@@ -160,10 +160,24 @@ h2 p{
     width: calc(100vw*(237/var(--width_base)));
     height: auto;
 }
+.img-sub-3{
+    position: absolute;
+    right: calc(100vw*(20/var(--width_base)));
+    bottom: calc(100vw*(-47/var(--width_base)));
+    width: calc(100vw*(248/var(--width_base)));
+    height: auto;
+}
 .pdg-t-70{
     padding-top: calc(100vw*(70/var(--width_base)));
 }
 .wp-658{
     width: calc(100vw*(658/var(--width_base)));
     margin: auto;
+}
+.container-left{
+    width: 100%;
+    padding-left: calc(100vw*(182/var(--width_base)));
+}
+.col-blog-1{
+    width: calculate(550);
 }

@@ -66,3 +66,19 @@
 .list-cotiza{
     padding-bottom: calc(100vw*(174/var(--width_base)));
 }
+.section-blog{
+    background-color: var(--color-beige);
+    padding-bottom: calculate(148);
+    .p-subtitle{
+        text-align: left;
+        margin-top: calculate(70);
+        margin-bottom: calculate(30) !important;
+    }
+    h2 p{
+        line-height: calculate(168);
+        margin-left: calculate(-20)
+    }
+}
+.card-blog{
+    
+}
