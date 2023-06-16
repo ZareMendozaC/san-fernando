@@ -100,10 +100,10 @@
   </header>
 
   <div class="menu_vales">
-    <ul class="list-group2">
-      <li class="list-group-item2">Cotiza tu vale</li>
-      <li class="list-group-item2">Compra tu vale</li>
-      <li class="list-group-item2">Canjea tu vale</li>
+    <ul class="list-group alter">
+      <li class="list-group-item">Cotiza tu vale</li>
+      <li class="list-group-item">Compra tu vale</li>
+      <li class="list-group-item">Canjea tu vale</li>
     </ul>
   </div>
 
