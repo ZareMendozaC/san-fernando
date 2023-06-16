@@ -67,7 +67,7 @@
         <ul class="menu">
           <li class="menu-item"><a href="#">Campañas</a></li>
           <li class="menu-item"><a href="#">Productos</a></li>
-          <li class="menu-item"><a href="#">Blog Bien Servido <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
+          <li class="menu-item"><a href="#" class="btn-blog">Blog Bien Servido <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
                 <path d="M0.986328 1.93591L9.0002 9.94979L17.0141 1.93591L15.1285 0.0502939L9.00021 6.17855L2.87195 0.050293L0.986328 1.93591Z" fill="#96DAEA" />
               </svg></a></li>
           <li class="menu-item"><a href="#">Contacto</a></li>
@@ -101,25 +101,25 @@
 
   <div class="menu_vales">
     <ul class="list-group alter">
-      <li class="list-group-item">Cotiza tu vale</li>
-      <li class="list-group-item">Compra tu vale</li>
-      <li class="list-group-item">Canjea tu vale</li>
+      <li class="list-group-item"><a href="#">Cotiza tu vale</a></li>
+      <li class="list-group-item"><a href="#">Compra tu vale</a></li>
+      <li class="list-group-item"><a href="#">Canjea tu vale</a></li>
     </ul>
   </div>
 
   <div class="menu_compras">
     <ul class="list-group">
-      <li class="list-group-item">Ecommerce solo Lima</li>
-      <li class="list-group-item">Tiendas afiliadas</li>
+      <li class="list-group-item"><a href="#">Ecommerce solo Lima</a></li>
+      <li class="list-group-item"><a href="#">Tiendas afiliadas</a></li>
     </ul>
   </div>
 
   <div class="menu_blog">
     <ul class="list-group">
-      <li class="list-group-item">Recetas</li>
-      <li class="list-group-item">Nutrición</li>
-      <li class="list-group-item">Soluciones</li>
-      <li class="list-group-item">Calculadora de proteina</li>
-      <li class="list-group-item">Crea tu menú</li>
+      <li class="list-group-item"><a href="#">Recetas</a></li>
+      <li class="list-group-item"><a href="#">Nutrición</a></li>
+      <li class="list-group-item"><a href="#">Soluciones</a></li>
+      <li class="list-group-item"><a href="#">Calculadora de proteina</a></li>
+      <li class="list-group-item"><a href="#">Crea tu menú</a></li>
     </ul>
   </div>

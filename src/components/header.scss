@@ -50,6 +50,9 @@
     a {
       color: var(--color-white);
     }
+    a:hover {
+      color: var(--color-red-btn);
+    }
   }
 }
 
@@ -81,6 +84,9 @@
 
     a {
       color: var(--color-blue);
+    }
+    a:hover {
+      color: var(--color-gris);
     }
   }
 }
@@ -115,7 +121,7 @@
 }
 
 .menu_vales {
-  background: blue;
+  display: none;
   position: fixed;
   z-index: 910;
   top: calculate(151);
@@ -123,7 +129,7 @@
 }
 
 .menu_compras {
-  background: red;
+  display: none;
   position: fixed;
   z-index: 910;
   top: calculate(151);
@@ -131,7 +137,7 @@
 }
 
 .menu_blog {
-  background: green;
+  display: none;
   position: fixed;
   z-index: 910;
   top: calculate(151);
@@ -166,12 +172,7 @@
   border-bottom: none;
 }
 
-.list-group-item2:last-child {
-  border-bottom: none;
-}
-
 .list-group-item,
-.list-group-item2,
 .p-list {
   font-style: normal;
   font-weight: 600;
