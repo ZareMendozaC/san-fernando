@@ -51,7 +51,7 @@
       color: var(--color-white);
     }
     a:hover {
-      color: var(--color-red-btn);
+      color: var(--color-white);
     }
   }
 }
@@ -71,8 +71,6 @@
 
   .menu2-item {
     height: 100%;
-    // color:var(--color-white);
-    // width: calculate(112);
     display: inline-flex;
     align-items: flex-end;
     justify-content: center;
@@ -124,7 +122,7 @@
   display: none;
   position: fixed;
   z-index: 910;
-  top: calculate(151);
+  top: calculate(135);
   left: calculate(1250);
 }
 
@@ -132,7 +130,7 @@
   display: none;
   position: fixed;
   z-index: 910;
-  top: calculate(151);
+  top: calculate(135);
   left: calculate(1550);
 }
 
@@ -140,7 +138,7 @@
   display: none;
   position: fixed;
   z-index: 910;
-  top: calculate(151);
+  top: calculate(135);
   left: calculate(900);
 }
 
@@ -152,6 +150,14 @@
   }
   li:nth-child(odd) {
     background: var(--color-white);
+  }
+  li:first-child{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  li:last-child{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
   }
   &.alter {
     li {
@@ -165,19 +171,21 @@
 
 .list-group-item {
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  border: 0px;
 }
 
 .list-group-item:last-child {
   border-bottom: none;
 }
 
-.list-group-item,
-.p-list {
+.list-group-item {
   font-style: normal;
   font-weight: 600;
   font-size: calc(100vw * (20 / var(--width_base)));
   line-height: calc(100vw * (20 / var(--width_base)));
   font-family: "FuturaStd";
   color: var(--color-blue);
+  a:hover{
+    color:var(--color-blue)
+  }
 }
