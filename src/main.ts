@@ -39,13 +39,13 @@ $(".slider-blog").slick({
 });
 //@ts-ignore
 $(".btn-blog").click(function() {
-  $(".menu_blog").slideToggle(500);
+  $(".menu_blog").slideToggle();
 });
 //@ts-ignore
 $(".btn-vales").click(function() {
-  $(".menu_vales").slideToggle(500);
+  $(".menu_vales").slideToggle();
 });
 //@ts-ignore
 $(".btn-comprar").click(function() {
-  $(".menu_compras").slideToggle(500);
+  $(".menu_compras").slideToggle();
 });
