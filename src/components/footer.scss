@@ -16,7 +16,7 @@ ul{
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: calc(100vw*(36/var(--width_base)));
+        gap: calculate(36);
         padding: calc(100vw*(94 /var(--width_base))) 0;
         .footer-first-line{
             display: flex;
@@ -50,7 +50,7 @@ ul{
                 .info-text{
                     a{
                         display: flex;
-                        gap: calculate(20);
+                        gap: calculate(50);
                         align-items: center;
                         color: var(--color-white);
                         p{
@@ -88,7 +88,7 @@ ul{
                     margin: 0;
                     gap: calc(100vw*(20/var(--width_base)));
                     li{
-                        font-weight: 600;
+                        font-weight: 700;
                         font-size: calc(100vw*(18/var(--width_base)));
     
                     }
@@ -100,7 +100,6 @@ ul{
                     p{
                         display: flex;
                         font-size: calc(100vw*(18/var(--width_base)));
-                        margin-bottom: 10px;
     
                     }
                     svg{
@@ -126,7 +125,7 @@ ul{
                     p{
                         display: flex;
                         font-size: calc(100vw*(18/var(--width_base)));
-                        margin-bottom: 10px;
+                        
                     }
                     svg{
                         display: none;
@@ -152,7 +151,7 @@ ul{
                     display: flex;
                     flex-direction: column;
                     margin: 0;
-                    gap: calc(100vw*(20/var(--width_base)));
+                    gap: calculate(20);
                     li{
                         font-weight: 600;
                         font-size: calc(100vw*(18/var(--width_base)));
@@ -173,12 +172,12 @@ ul{
         align-items: center;
         font-size: calc(100vw*(16 /var(--width_base)));
         padding: calc(100vw*(61 /var(--width_base))) calc(100vw*(182 /var(--width_base)));
-       font-weight: 600;
+        font-weight: 600;
         .terminos-footer{
    
            ul{
                display: flex;
-               gap: 59px;
+               gap: calculate(59);
            }
    
         }
@@ -195,10 +194,11 @@ ul{
     .footer-content-1{
         display: flex;
         flex-wrap: wrap;
-        gap: calc(100vw*(32 /var(--width_base)))!important;
+        gap: calc(100vw*(36 /var(--width_base)))!important;
 
         .footer-first-line{
             width: 100vw!important;
+            gap: calculate(100)!important;
 
             div{
                 display: flex;
@@ -207,23 +207,27 @@ ul{
                 justify-content: space-between;
                 gap: calc(100vw*(30 /var(--width_base)))!important;
                 
-
                     .logo-footer{
                         width: calc(100vw*(520 /var(--width_base)))!important;
                         height: auto;
+
+                        .contact-redes{
+                            gap: calculate(8);
+ 
+                        }
 
                 }
             }
 
             .contact-info{
-                
-    
+                gap: calculate(50)!important;
                 li{
                     a{
+                        
                         p{
                             margin: 0;
                             font-weight: 400;
-                            font-size: calc(100vw*(40/var(--width_base)))!important;
+                            font-size: calc(100vw*(70/var(--width_base)))!important;
                         }
                     }
                 }
@@ -234,7 +238,7 @@ ul{
         .footer-content-2{
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: calculate(16);
 
             .footer-menu{
                 .footer-menu--option1{
@@ -245,7 +249,7 @@ ul{
                     p{
                         display: flex !important;
                         margin: 0;
-                        font-size: calc(100vw*(58/var(--width_base)))!important;
+                        font-size: calc(100vw*(68/var(--width_base)))!important;
                     }
                     svg{
                         display: flex !important;
@@ -256,10 +260,10 @@ ul{
                     display: none !important;
                     flex-direction: column;
                     margin: 0;
-                    gap: 17px;
+                    gap: calculate(17)
                     li{
                         font-weight: 600;
-                        font-size: calc(100vw*(18/var(--width_base)));
+                        font-size: calc(100vw*(68/var(--width_base)))!important;
     
                     }
                 }
@@ -275,7 +279,7 @@ ul{
                         display: flex !important;
                         
                         margin: 0;
-                        font-size: calc(100vw*(58/var(--width_base)))!important;
+                        font-size: calc(100vw*(68/var(--width_base)))!important;
                     }
                     svg{
                         display: flex !important;
@@ -286,7 +290,7 @@ ul{
                     display: none!important;
                     flex-direction: column;
                     margin: 0;
-                    gap: 17px;
+                    gap: calcualte(17);
                     li{
                         font-weight: 600;
                         font-size: calc(100vw*(18/var(--width_base)));
@@ -303,7 +307,7 @@ ul{
                     p{
                         display: flex !important;
                         margin: 0;
-                        font-size: calc(100vw*(58/var(--width_base)))!important;
+                        font-size: calc(100vw*(68/var(--width_base)))!important;
                     }
                     svg{
                         display: flex !important;
@@ -314,7 +318,7 @@ ul{
                     display: none!important;
                     flex-direction: column;
                     margin: 0;
-                    gap: 17px;
+                    gap: calcualte(17);
                     li{
                         font-weight: 600;
                         font-size: calc(100vw*(18/var(--width_base)));
@@ -324,15 +328,17 @@ ul{
             }
 
             .products-buy{
-
+                padding-top: calculate(46);
                 ul{
                     display: flex;
+                    justify-content: none !important;
+                    gap: calculate(20)!important;
                     flex-direction: column;
                     margin: 0;
-                    gap: 17px;
+                    
                     li{
                         font-weight: 600;
-                        font-size: calc(100vw*(58/var(--width_base)))!important;
+                        font-size: calc(100vw*(68/var(--width_base)))!important;
     
                     }
                 }
@@ -343,30 +349,23 @@ ul{
     }
 
     .bottom-footer{
-        background-color: var(--bottom-footer);
-        color: var(--white-color);
-        width: 100vw;
-        display: flex;
-        justify-content: space-evenly!important;
         flex-wrap: wrap-reverse;
-        align-items: center;
         font-size: calc(100vw*(65 /var(--width_base))) !important;
         padding: calc(100vw*(61 /var(--width_base))) calc(100vw*(182 /var(--width_base)));
-        gap: 20px;
         div{
-            
+            padding-top: calculate(50);
             justify-content: center!important;
             width: 100%;
-            font-size: calc(100vw*(40/var(--width_base)))!important;
+            font-size: calc(100vw*(50/var(--width_base)))!important;
         }
         .terminos-footer{
    
            ul{
                display: flex;
                flex-direction: column;
-               gap: 20px !important;
+               gap: calcualte(20);
                font-weight: 650;
-               font-size: calc(100vw*(40/var(--width_base)))!important;
+               font-size: calc(100vw*(50/var(--width_base)))!important;
            }
    
         }
