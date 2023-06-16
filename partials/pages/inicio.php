@@ -97,9 +97,33 @@ $opciones_cotiza_y_compra = get_field('opciones_cotiza_y_compra');
                     </div>
                 <?php endwhile; ?>
             <?php endif; ?>
+        </div>
+    </div>
+</section>
+<section class="section-blog">
+    <div class="container-left">
+        <div class="col-blog-1">
+            <div class="content-h2">
+                <h2 class="color-blue">Blog <p>Bien servido</p></h2>
+                <svg class="img-sub-3" width="254" height="77" viewBox="0 0 254 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.368 11.7697C228.645 21.0004 164.399 18.6004 87.2298 5.86197C-26.7702 -12.9688 -24.6471 120.231 99.6914 55.2466" stroke="#004C97" stroke-width="7.38462" stroke-miterlimit="10"/>
+                </svg>
+            </div>
+            <p class="p-subtitle">Un espacio creado para ti, donde podrás encontrar consejos nutricionales y simpáticas ideas simples para aplicar en casa.</p>
+            <a class="btn-ver-articulos" href="">Ver todos los artículos</a>
+        </div>
+        <div class="col-blog-2">
+            <div class="slider-blog">
+                <div class="card-blog">
+                    <div class="img-blog">
 
-
-
+                    </div>
+                    <div class="btn-cat">Nutrición</div>
+                    <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
+                    <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
+                    <a href="">Leer más</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
