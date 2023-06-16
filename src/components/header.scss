@@ -1,20 +1,33 @@
 .navbar{
+  position: fixed;
+  top: 0;
+  height: calculate(151);
+  width: calculate(var(--width_base));
     padding-left: calculate(182);
     padding-right: calculate(182);
-    background-color: var(--color-blue);
-    width: 100%;
+    background-color: var(--color-blue);    
     display: flex;
     justify-content: space-between;
+    z-index: 999;
+}
+
+.div_logo{
+  height: 100%;
+  width: calculate(185);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo_sf{
-  margin-top: calculate(20);
-  margin-bottom: calculate(20);
-  width: calculate(200);
+  // margin-top: calculate(20);
+  // margin-bottom: calculate(20);
+  height: auto;
+  width: calculate(185);
 }
 
 .div_menu1{    
-   margin-top: calculate(10);
+  //  margin-top: calculate(10);
 }
 .menu {
     height: 100%;
@@ -26,12 +39,12 @@
       color:var(--color-white);
       // width: calculate(112);
       display: inline-flex;
-      align-items: end;
+      align-items: flex-end;
       justify-content: center;
       font-family: 'FuturaStd';
     font-style: normal;
     font-weight: 600;
-    font-size:  calculste(22);
+    font-size:  calculate(22);
     line-height: calculate(100);
    
 
@@ -66,7 +79,7 @@
       font-family: 'FuturaStd';
     font-style: normal;
     font-weight: 600;
-    font-size:  calculste(16);
+    font-size:  calculate(16);
     line-height: calculate(24);
    
 
@@ -76,10 +89,16 @@
     }
   }
 
-  .btn-nav{
-    margin-top: 20px;
-    height: 45px;
-    width: auto;
+  .btn-vales{
+    margin-top: calculate(20);
+    height:calculate(59);
+    width: calculate(150);
+  }
+
+  .btn-comprar{
+    margin-top: calculate(20);
+    height:calculate(59);
+    width: calculate(251);
   }
 
   // .btn-nav{
@@ -96,6 +115,14 @@
 
   .bg-red{
     background: var(--color-red-btn);
+  }
+
+  .menu-item a{
+    display: inline;
+  }
+
+  .arrow{
+    width: calculate(18);
   }
 
   
