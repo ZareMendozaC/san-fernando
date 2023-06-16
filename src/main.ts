@@ -20,3 +20,17 @@ $(".main-banner").slick({
   fade: false,
   cssEase: "linear",
 });
+
+
+
+$(".btn-blog").click(function() {
+  $(".menu_blog").slideToggle(500);
+});
+
+$(".btn-vales").click(function() {
+  $(".menu_vales").slideToggle(500);
+});
+
+$(".btn-comprar").click(function() {
+  $(".menu_compras").slideToggle(500);
+});
