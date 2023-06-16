@@ -67,17 +67,17 @@
         <ul class="menu">
           <li class="menu-item"><a href="#">Campañas</a></li>
           <li class="menu-item"><a href="#">Productos</a></li>
-          <li class="menu-item"><a href="#" class="btn-blog">Blog Bien Servido <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
+          <li class="menu-item"><a href="#" class="btn-blog" onclick="return false;">Blog Bien Servido <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
                 <path d="M0.986328 1.93591L9.0002 9.94979L17.0141 1.93591L15.1285 0.0502939L9.00021 6.17855L2.87195 0.050293L0.986328 1.93591Z" fill="#96DAEA" />
               </svg></a></li>
           <li class="menu-item"><a href="#">Contacto</a></li>
-          <li class="menu-item"><a href="#"><svg width="150" height="59" viewBox="0 0 150 59" fill="none" xmlns="http://www.w3.org/2000/svg" class="btn-vales">
+          <li class="menu-item"><a href="#" onclick="return false;"><svg width="150" height="59" viewBox="0 0 150 59" fill="none" xmlns="http://www.w3.org/2000/svg" class="btn-vales">
                 <path d="M35.9273 21.428L39.2033 29.672L42.4973 21.428H46.3313L40.5353 35H37.7993L32.0933 21.428H35.9273ZM50.6247 28.304C49.2927 28.304 48.5187 29.258 48.5187 30.392C48.5187 31.562 49.2927 32.462 50.6247 32.462C51.9567 32.462 52.7307 31.562 52.7307 30.392C52.7307 29.258 51.9567 28.304 50.6247 28.304ZM55.8987 25.766V35H52.6227V33.974H52.5867C52.0107 34.892 50.8767 35.306 49.7967 35.306C47.0607 35.306 45.1347 33.02 45.1347 30.374C45.1347 27.728 47.0247 25.46 49.7607 25.46C50.8227 25.46 51.9387 25.856 52.6227 26.666V25.766H55.8987ZM61.3462 20.06V35H58.0702V20.06H61.3462ZM66.1479 29.042H69.9459C69.7839 28.16 68.9739 27.584 68.0919 27.584C67.1379 27.584 66.3459 28.088 66.1479 29.042ZM72.9879 30.59V30.932H66.0939C66.0939 32.264 66.7959 32.984 68.1459 32.984C68.8479 32.984 69.3519 32.75 69.7119 32.138H72.8619C72.6099 33.218 71.9619 34.01 71.1159 34.532C70.2699 35.054 69.2259 35.306 68.1639 35.306C65.1039 35.306 62.8179 33.578 62.8179 30.392C62.8179 27.314 64.9239 25.46 67.9299 25.46C71.1339 25.46 72.9879 27.44 72.9879 30.59ZM81.6882 26.054L80.5902 28.142C80.0862 27.872 79.3842 27.692 78.8262 27.692C78.4482 27.692 77.8002 27.854 77.8002 28.322C77.8002 28.952 78.8262 29.042 79.2762 29.132C80.8062 29.438 81.9582 30.158 81.9582 31.868C81.9582 34.298 79.7442 35.306 77.6022 35.306C76.2882 35.306 74.9922 34.928 73.8762 34.244L75.0642 31.958C75.7302 32.426 76.8462 32.894 77.6562 32.894C78.0702 32.894 78.6822 32.696 78.6822 32.192C78.6822 31.472 77.6562 31.436 76.6302 31.166C75.6042 30.896 74.5782 30.392 74.5782 28.736C74.5782 26.468 76.6302 25.46 78.6462 25.46C79.6902 25.46 80.7342 25.622 81.6882 26.054Z" fill="white" />
                 <path d="M100.986 26.4359L109 34.4498L117.014 26.4359L115.128 24.5503L109 30.6786L102.872 24.5503L100.986 26.4359Z" fill="#96DAEA" />
                 <rect x="0.5" y="0.5" width="149" height="58" rx="29" stroke="white" />
               </svg>
             </a></li>
-          <li class="menu-item"><a href="#"><svg width="253" height="60" viewBox="0 0 253 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="btn-comprar">
+          <li class="menu-item"><a href="#" onclick="return false;"><svg width="253" height="60" viewBox="0 0 253 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="btn-comprar">
                 <rect x="0.734375" y="0.5" width="251.644" height="59" rx="29.5" fill="#DF0002" />
                 <mask id="mask0_1224_7253" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="8" y="8" width="45" height="44">
                   <path d="M52.3955 8.06982H8.36133V51.9302H52.3955V8.06982Z" fill="white" />
