@@ -29,6 +29,7 @@
     "dist/**/*",
     "partials/**/*",
     "templates/**/*",
+    "page-templates/**/*",
     "footer.php",
     "functions.php",
     "header.php",

@@ -1,27 +1,27 @@
 section{
     font-family: 'FuturaStd';
     .trabaja-head{
+        font-family: 'FuturaStd';
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0 calc(100vw*(300/var(--width_base)));
+        padding: calculate(100) calc(100vw*(300/var(--width_base)));
+        margin-top: calculate(70);
           h1{
             margin: 0;
             text-align: center;
-            font-size: calculate(92);
-    
+            font-size: calc(100vw*(92/var(--width_base)));
           }
     }
         
     .zigzag {
         background-color: var(--dark-blue);
         position: relative;
-        margin: 0;
-        height: 300px;
+        height: calculate(300);
     }
     
     
-    .zigzag:before, .zigzag:after {
+    .zigzag:after {
         content: "";
         position: absolute;
         width: 100%;
@@ -40,12 +40,9 @@ section{
             var(--dark-blue) 66.667%,
             transparent 66.667%
         );
-        background-size: 15px 40px;
+        background-size: 14px 39px;
     }
     
-    .zigzag:before {
-        top: -10px;
-    }
     
     .zigzag:after {
         bottom: -10px;
@@ -55,24 +52,24 @@ section{
     
     .section-1{
         display: flex;
-        padding-top: calc(100vw*(108/var(--width_base)));
+        padding-top: calculate(220);
         gap: calc(100vw*(123/var(--width_base)));
         padding-bottom: calculate(50);
         .section-text{
             display: flex;
             flex-direction: column;
             width: calculate(689);
-            gap: calculate(34);
+            gap: calculate(54);
     
             h2{
                 color: var(--color-blue);
                 margin: 0;
                 width: calculate(450);
+                font-size: calculate(72);
             }
             .description-trabajo{
                 margin: 0;
                 font-size: calculate(18);
-    
             }
 
             .button-oferta{
@@ -108,26 +105,25 @@ section{
     }
 
     .section-2{
-        position: relative;
-        width: 100%;
-        height: calculate(730);
+       
+        height: calculate(630);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        
         z-index: -1;
 
-        img{
-            position: absolute;
-        }
+        // img{
+        //     position: absolute;
+        // }
 
         div{
-            position: absolute;
             display: flex;
             flex-direction: column;
             gap: calculate(22);
             width: calculate(720);
             height: auto;
-            padding-top: calculate(250);
+            padding-top: calculate(200);
             padding-left: calculate(231);
             h2{
                 color: var(--color-blue);
@@ -158,13 +154,118 @@ section{
 
 
 @media only screen and (max-width: 768px) {
-    .trabaja-head{
-        font-family: 'FuturaStd';
-        h1{
-            text-align: center;
-            font-size: calc(100vw*(200/var(--width_base)));
-            line-height: calc(100vw*(250/var(--width_base)));
+
+
+    section{
+        .trabaja-head{
+            font-family: 'FuturaStd';
+            margin-top: calculate(0)!important;
+            h1{
+                text-align: center;
+                font-size: calc(100vw*(130/var(--width_base)))!important;
+                line-height: calc(100vw*(250/var(--width_base)));
+            }
         }
     
+        .zigzag {
+            height: calculate(900)!important;
+        }
+
+        .section-1{
+            display: flex;
+            flex-wrap: wrap;
+
+            .section-text{
+                width: 100%;
+                h2{
+                    width: calculate(1100);
+                    line-height: calculate(180);
+                    font-size: calculate(172);
+                }
+
+                .description-trabajo{
+                    margin: 0;
+                    font-size: calculate(68);
+                }
+    
+                .button-oferta{
+                    text-align: center;
+                    background-color: var(--color-red-btn);
+                    color: var(--color-white);
+                    padding: calculate(43);
+                    border-radius: calculate(515);
+                    width: calculate(618);
+                    font-weight: 600;
+                    font-size: calculate(48);
+                }
+    
+                span{
+                    font-size: calculate(88);
+                    a{
+                        color: var(--color-blue);
+                        font-weight: 600;
+                        font-size: calcualte(48)!important;
+                        text-decoration: underline !important;
+                    }
+    
+                }
+        
+            }
+
+            figure{
+                width: 100%;
+                height: auto;
+                img{
+                    width: 100%;
+                    height: auto;
+                   }
+            }
+
+        }
+
+        .section-2{
+            height: calculate(630);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 69%;
+            z-index: -1;
+            
+            // img{
+            //     position: absolute;
+            // }
+    
+            div{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: calculate(22);
+                width: calculate(720);
+                height: auto;
+                padding-top: calculate(200);
+                padding-left: calculate(231);
+                h2{
+                    color: var(--color-blue);
+                    font-size: calculate(72);
+                    margin: 0;
+                }
+        
+                p{
+                    margin: 0;
+                    font-size: calculate(18);
+                    
+                }
+    
+                a{
+                    background-color: var(--color-red-btn);
+                    color: var(--color-white);
+                    font-size: calculate(18);
+                    width: calculate(218);
+                    text-align: center;
+                    border-radius: calculate(515);
+                    padding: calculate(12);
+                    
+                }
+            }
+        }
     }
 }
