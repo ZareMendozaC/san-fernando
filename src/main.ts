@@ -4,6 +4,7 @@ import "slick-carousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./style.scss";
+// import Masonry from "masonry-layout/dist/masonry";
 //@ts-ignore
 
 $(".main-banner").slick({
