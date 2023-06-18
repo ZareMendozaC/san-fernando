@@ -21,26 +21,50 @@ $galeria = get_field("galeria");
         <?php endif; ?>
     <?php endforeach; ?>
 </section>
-<section class="container2 div-part-text">
+<section class="container div-part-text">
 
-        <div style="width:50%; display:flex; flex-direction:column;">
-            <h2>Titulo</h2>
-            <h2>
-                <p>Campañas</p>
-            </h2>
-        </div>
-        <div style="width:50%; display:flex; align-items:center;">
-            <p class="p-subtitle">Sabemos que valoras lo bueno y sobre todo, las mejores oportunidades ¡aquí puedes verlas todas!</p>
-        </div>
+    <div class="w-50 flex-colu">
+        <h2><?= $titulo; ?></h2>
+        <h2>
+            <p>Campañas</p>
+        </h2>
+    </div>
+    <div class="w-50 justificar">
+        <p class="p-subtitle"><?= $describcion; ?></p>
+    </div>
 
 
 </section>
 
-<section class="container2 space_grid">
-    <div class="campania1" style="background-image: url(<?= $item_image_url; ?>"></div>
-    <div class="campania2"></div>
-    <div class="campania3"></div>
-    <div class="campania4"></div>
-    <div class="campania5"></div>
+<section class="container mb-279">
 
+    <div class="grid">
+
+        <?php foreach ($galeria as $item) : ?>
+            <?php
+            $item_image = $item["imagen"];
+            $item_video = $item["video"];
+            $item_link = $item["link"];
+            ?>
+            <?php if ($item_image) : ?>
+
+                <a href="<?= $item_link; ?>" target="_blank" class="grid-item">
+
+                    <img src="<?= $item_link; ?>" alt="">
+
+                </a>
+
+            <?php endif; ?>
+            <?php if ($item_video) : ?>
+
+                <a href="<?= $item_link; ?>" target="_blank" class="grid-item">
+
+                    <video src="<?= $item_link; ?>" poster="<?= $item_video; ?>" preload="metadata" controls></video>
+
+                </a>
+
+            <?php endif; ?>
+        <?php endforeach; ?>
+
+    </div>
 </section>
