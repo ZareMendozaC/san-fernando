@@ -1,0 +1,56 @@
+.banner_campanias {
+  width: 100%;
+  height: calculate(550);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: calculate(150);
+}
+
+.div-part-text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: calculate(185);
+  margin-bottom: calculate(95);
+}
+
+.justificar {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.flex-colu {
+  display: flex;
+  flex-direction: column;
+}
+
+.w-50 {
+  width: calculate(778)
+}
+.mb-279{
+    margin-bottom:calculate(279);
+}
+
+.grid {
+  line-height: 0;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+}
+
+.grid .grid-item {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    margin-bottom: 10px;
+}
+
+.grid .grid-item img,video{
+    width: 100% !important;
+    height: 100% !important;
+}
+
