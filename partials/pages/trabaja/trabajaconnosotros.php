@@ -3,6 +3,12 @@
 $main_title_trabaja = get_field("titulo_principal");
 $subtitulo_trabaja = get_field("subtitulo");
 
+$descripcion_trabaja = get_field("descripcion");
+
+$button_texto = get_field("textos_boton");
+$url_boton_trabaja = get_field("url_boton");
+$url_politicas_trabaja = get_field("link_politicas_de_privacidad");
+
 
 ?>
 
@@ -17,19 +23,12 @@ $subtitulo_trabaja = get_field("subtitulo");
         <article class="section-text">
             <h2><?php echo $subtitulo_trabaja ?></h2>
 
-            <?php $descripcion_trabaja = get_field("descripcion"); ?>
             <p class="description-trabajo">
                 <?php echo $descripcion_trabaja ?>
             </p>
 
-            <?php
-            $descripcion_trabaja = get_field("textos_boton");
-            $url_boton_trabaja = get_field("url_boton");
-            $url_politicas_trabaja = get_field("link_politicas_de_privacidad");
-
-            ?>
             <a class="button-oferta" href="<?= $url_boton_trabaja ?>">
-                <?php echo $descripcion_trabaja ?>
+                <?php echo $button_texto ?>
             </a>
 
             <div>Al hacer click declara haber leído la

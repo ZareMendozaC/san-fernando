@@ -70,19 +70,31 @@ section{
                 font-size: calculate(72);
             }
             .description-trabajo{
+                width: calculate(618);
                 margin: 0;
                 font-size: calculate(18);
             }
 
             .button-oferta{
+                text-align: center;
                 background-color: var(--color-red-btn);
                 color: var(--color-white);
-                padding: calculate(23);
+                padding: calculate(15);
                 border-radius: calculate(515);
                 width: calculate(218);
+                height: calculate(58);
                 font-weight: 600;
                 font-size: calculate(18);
+                font-style: normal;
+                transition: all .3s ease-in-out;
+
+                &:hover{
+                    background-color: #C90002;
+                    transition: all .3s ease-in-out;
+                }
+
             }
+
 
             div{
                 font-size: calculate(18);
@@ -142,12 +154,19 @@ section{
             a{
                 background-color: var(--color-red-btn);
                 color: var(--color-white);
+                font-weight: 600;
+                font-style: normal;
                 font-size: calculate(18);
+                height: calculate(58);
                 width: calculate(218);
                 text-align: center;
                 border-radius: calculate(515);
-                padding: calculate(12);
-                
+                padding: calculate(15);
+                transition: all .3s ease-in-out;
+                &:hover{
+                    background-color: #C90002;
+                    transition: all .3s ease-in-out;
+                }
             }
         }
     }
@@ -158,159 +177,3 @@ section{
 }
 
 
-
-@media only screen and (max-width: 768px) {
-
-
-    section{
-        .trabaja-head{
-            font-family: 'FuturaStd';
-            
-            h1{
-                text-align: center;
-                font-size: calc(100vw*(45/var(--width_base)))!important;
-                line-height: calc(100vw*(200/var(--width_base)));
-            }
-        }
-    
-        .zigzag {
-            height: calculate(200)!important;
-        }
-
-        .section-1{
-            display: flex;
-            flex-wrap: wrap;
-
-            .section-text{
-                width: 100%;
-                h2{
-                    width: calculate(230);
-                    line-height: calculate(60);
-                    font-size: calculate(38);
-                }
-
-                .description-trabajo{
-                    margin: 0;
-                    font-size: calculate(18);
-                }
-    
-                .button-oferta{
-                    text-align: center;
-                    background-color: var(--color-red-btn);
-                    color: var(--color-white);
-                    padding: calculate(12);
-                    border-radius: calculate(515);
-                    width: calculate(218);
-                    font-weight: 600;
-                    font-size: calculate(18);
-                }
-    
-                div{
-                    font-size: calculate(18);
-                    a{
-                        color: var(--color-blue);
-                        font-weight: 600;
-                        font-size: calcualte(18)!important;
-                        text-decoration: underline !important;
-                    }
-    
-                }
-        
-            }
-
-            figure{
-                width: 100%;
-                height: auto;
-                img{
-                    width: 100%;
-                    height: auto;
-                   }
-            }
-
-        }
-
-        .section-2{
-            display: none;
-            height: calculate(630);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: 69%;
-            z-index: -1;
-            
-            // img{
-            //     position: absolute;
-            // }
-    
-            div{
-                display: none;
-                flex-direction: column;
-                flex-wrap: wrap;
-                gap: calculate(22);
-                width: calculate(720);
-                height: auto;
-                padding-top: calculate(200);
-                padding-left: calculate(231);
-                h2{
-                    color: var(--color-blue);
-                    font-size: calculate(72);
-                    margin: 0;
-                }
-        
-                p{
-                    margin: 0;
-                    font-size: calculate(18);
-                    
-                }
-    
-                a{
-                    background-color: var(--color-red-btn);
-                    color: var(--color-white);
-                    font-size: calculate(18);
-                    width: calculate(218);
-                    text-align: center;
-                    border-radius: calculate(515);
-                    padding: calculate(12);
-                    
-                }
-            }
-        }
-
-        .section-2-mobile{
-            display: block;
-
-            div{
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                gap: calculate(22);
-                width: calculate(720);
-                height: auto;
-                padding-top: calculate(200);
-                padding-left: calculate(231);
-                h2{
-                    color: var(--color-blue);
-                    font-size: calculate(72);
-                    margin: 0;
-                }
-        
-                p{
-                    margin: 0;
-                    font-size: calculate(18);
-                    
-                }
-    
-                a{
-                    background-color: var(--color-red-btn);
-                    color: var(--color-white);
-                    font-size: calculate(18);
-                    width: calculate(218);
-                    text-align: center;
-                    border-radius: calculate(515);
-                    padding: calculate(12);
-                    
-                }
-            }
-
-        }
-    }
-}
