@@ -1,12 +1,20 @@
+<?php
+
+$main_title_trabaja = get_field("titulo_principal");
+$subtitulo_trabaja = get_field("subtitulo");
+
+
+?>
+
+
+
 <section>
     <div class="trabaja-head zigzag">
-        <?php $main_title_trabaja = get_field("titulo_principal"); ?>
         <h1 class="color-white"><?php echo $main_title_trabaja ?></h1>
     </div>
 
     <div class="section-1 container">
         <article class="section-text">
-            <?php $subtitulo_trabaja = get_field("subtitulo"); ?>
             <h2><?php echo $subtitulo_trabaja ?></h2>
 
             <?php $descripcion_trabaja = get_field("descripcion"); ?>
@@ -24,9 +32,9 @@
                 <?php echo $descripcion_trabaja ?>
             </a>
 
-            <span>Al hacer click declara haber leído la
+            <div>Al hacer click declara haber leído la
                 <a href="<?= $url_politicas_trabaja ?>" target="_blank">Política de Privacidad.</a>
-            </span>
+            </div>
 
         </article>
 

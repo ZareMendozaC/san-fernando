@@ -105,6 +105,7 @@
             padding-top: calc(100vw * 16 / var(--width_base));
             padding-left: calc(100vw * 14 / var(--width_base));
             padding-right: calc(100vw * 14 / var(--width_base));
+            margin-right: calculate(16) !important;
         }
         .img-blog {
             width: calc(100vw * 255 / var(--width_base));
@@ -139,6 +140,13 @@
         }
         .slider-blog {
             width: calculate(344) !important;
+        }
+        .splide__arrow--prev {
+            left: 35%;
+        }
+        .splide__arrow--next {
+            right: auto;
+            left: 50%;
         }
     }
     .section-nuestrafamilia{

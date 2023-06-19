@@ -5,11 +5,13 @@ section{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: calculate(100) calc(100vw*(300/var(--width_base)));
-        margin-top: calculate(70);
+        padding: calculate(30) calc(100vw*(30/var(--width_base)));
+        margin-top: calculate(80);
           h1{
             margin: 0;
             text-align: center;
+            line-height: calculate(80)!important;
+            font-weight: 700;
             font-size: calc(100vw*(92/var(--width_base)));
           }
     }
@@ -17,7 +19,7 @@ section{
     .zigzag {
         background-color: var(--dark-blue);
         position: relative;
-        height: calculate(300);
+        height: calculate(300)!important;
     }
     
     
@@ -52,14 +54,14 @@ section{
     
     .section-1{
         display: flex;
-        padding-top: calculate(220);
-        gap: calc(100vw*(123/var(--width_base)));
+        padding-top: calculate(70);
+        gap: calc(100vw*(41/var(--width_base)));
         padding-bottom: calculate(50);
         .section-text{
             display: flex;
             flex-direction: column;
             width: calculate(689);
-            gap: calculate(54);
+            gap: calculate(41);
     
             h2{
                 color: var(--color-blue);
@@ -82,7 +84,7 @@ section{
                 font-size: calculate(18);
             }
 
-            span{
+            div{
                 font-size: calculate(18);
                 a{
                     color: var(--color-blue);
@@ -149,6 +151,10 @@ section{
             }
         }
     }
+
+    .section-2-mobile{
+        display: none;
+    }
 }
 
 
@@ -159,16 +165,16 @@ section{
     section{
         .trabaja-head{
             font-family: 'FuturaStd';
-            margin-top: calculate(0)!important;
+            
             h1{
                 text-align: center;
-                font-size: calc(100vw*(130/var(--width_base)))!important;
-                line-height: calc(100vw*(250/var(--width_base)));
+                font-size: calc(100vw*(45/var(--width_base)))!important;
+                line-height: calc(100vw*(200/var(--width_base)));
             }
         }
     
         .zigzag {
-            height: calculate(900)!important;
+            height: calculate(200)!important;
         }
 
         .section-1{
@@ -178,33 +184,33 @@ section{
             .section-text{
                 width: 100%;
                 h2{
-                    width: calculate(1100);
-                    line-height: calculate(180);
-                    font-size: calculate(172);
+                    width: calculate(230);
+                    line-height: calculate(60);
+                    font-size: calculate(38);
                 }
 
                 .description-trabajo{
                     margin: 0;
-                    font-size: calculate(68);
+                    font-size: calculate(18);
                 }
     
                 .button-oferta{
                     text-align: center;
                     background-color: var(--color-red-btn);
                     color: var(--color-white);
-                    padding: calculate(43);
+                    padding: calculate(12);
                     border-radius: calculate(515);
-                    width: calculate(618);
+                    width: calculate(218);
                     font-weight: 600;
-                    font-size: calculate(48);
+                    font-size: calculate(18);
                 }
     
-                span{
-                    font-size: calculate(88);
+                div{
+                    font-size: calculate(18);
                     a{
                         color: var(--color-blue);
                         font-weight: 600;
-                        font-size: calcualte(48)!important;
+                        font-size: calcualte(18)!important;
                         text-decoration: underline !important;
                     }
     
@@ -224,6 +230,7 @@ section{
         }
 
         .section-2{
+            display: none;
             height: calculate(630);
             background-size: cover;
             background-repeat: no-repeat;
@@ -234,6 +241,43 @@ section{
             //     position: absolute;
             // }
     
+            div{
+                display: none;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: calculate(22);
+                width: calculate(720);
+                height: auto;
+                padding-top: calculate(200);
+                padding-left: calculate(231);
+                h2{
+                    color: var(--color-blue);
+                    font-size: calculate(72);
+                    margin: 0;
+                }
+        
+                p{
+                    margin: 0;
+                    font-size: calculate(18);
+                    
+                }
+    
+                a{
+                    background-color: var(--color-red-btn);
+                    color: var(--color-white);
+                    font-size: calculate(18);
+                    width: calculate(218);
+                    text-align: center;
+                    border-radius: calculate(515);
+                    padding: calculate(12);
+                    
+                }
+            }
+        }
+
+        .section-2-mobile{
+            display: block;
+
             div{
                 display: flex;
                 flex-direction: column;
@@ -266,6 +310,7 @@ section{
                     
                 }
             }
+
         }
     }
 }

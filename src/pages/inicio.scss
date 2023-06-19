@@ -88,6 +88,28 @@
         width: calculate(371) !important;
         height: calculate(516) !important;
     }
+    .splide__arrow{
+        bottom: calculate(-80);
+        top: auto;
+    }
+    .splide__arrow--prev {
+        left: 0;
+    }
+    .splide__arrow--next {
+        right: auto;
+        left: calculate(50);
+    }
+    .splide__arrow{
+        background: var(--color-red-btn);
+        opacity: 1;
+        height: calculate(44);
+        width: calculate(44);
+    }
+    .splide__arrow svg {
+        fill: white;
+        height: calculate(18);
+        width: calculate(18);
+    }
 }
 
 .card-blog{
@@ -98,6 +120,7 @@
     padding-top: calculate(21);
     padding-left: calculate(23);
     padding-right: calculate(23);
+    margin-right: calculate(34) !important;
     font-family: 'FuturaStd';
     font-style: normal;
     .img-blog{
@@ -125,7 +148,7 @@
     }
     a{
         font-weight: 600;
-        font-size: 16px;
+        font-size: calculate(16);
         line-height: calculate(24);
         color: var(--color-blue);
     }
