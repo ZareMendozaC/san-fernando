@@ -1,7 +1,4 @@
 @media (max-width: 768px) {
-    .lista-productos{
-         display: none !important;
-     }
     .bg-main-banner{
         width: 100%;
         height: calculate(438) !important;
@@ -19,7 +16,7 @@
         bottom: calc(2000vw / var(--width_base));
     }
     .bg-productos {
-        height: calc(100vw * 741 / var(--width_base));
+        height: calc(100vw * 657 / var(--width_base));
         padding-top: calc(100vw * 31 / var(--width_base));
         .btn-ver-productos{
             display: none;
@@ -262,5 +259,19 @@
         height: calc(100vw * 52 / var(--width_base));
         font-size: calc(100vw * 20 / var(--width_base));
         line-height: calc(100vw * 33 / var(--width_base));
+    }
+    .lista-productos{
+        padding-top: calculate(30);
+        .slick-track{
+            display: flex;
+            align-items: flex-end;
+        }
+        .slick-slide{
+            margin-right: calculate(10);
+            margin-left: calculate(10);
+        }
+        .img-product{
+            width: calculate(268) !important;
+        }
     }
 }

@@ -43,22 +43,29 @@ $lista_productos = get_field('listado_de_productos');
 
             </div>
         <?php endif; ?>
-        <div class="lista-productos">
-            <?php foreach ($lista_productos as $item) : ?>
-                <?php
-                $item_image = $item["imagen_producto"];
-                $item_image_url = $item_image ? $item_image["url"] : null;
-                $item_link = $item["url_landing"];
-                ?>
-                <?php if ($item_link) : ?>
-                    <a href="<?= $item_url; ?>" target="_blank">
-                    <?php endif; ?>
-                    <img style="width: calc(100vw*(230/var(--width_base)));" src="<?= $item_image_url; ?>" alt="">
-                    <?php if ($item_link) : ?>
-                    </a>
-                <?php endif; ?>
-            <?php endforeach; ?>
-        </div>
+        
+                <div class="lista-productos">
+                    <?php foreach ($lista_productos as $item) : ?>
+                        <?php
+                        $item_image = $item["imagen_producto"];
+                        $item_image_url = $item_image ? $item_image["url"] : null;
+                        $item_link = $item["url_landing"];
+                        $nombre = $item["nombre"];
+                        ?>
+                    
+                        <div class="img-product">
+                            <img class="img-product" src="<?= $item_image_url; ?>" alt="">
+                            <a class="link-product" href="<?= $item_url; ?>"><?= $nombre; ?>
+                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2.21289" y="2.25977" width="33.3863" height="33.3863" rx="16.6931" fill="#DF0002"/>
+                                <path d="M20.4269 17.4322V9.82959H17.3858V17.4322H9.7832V20.4733H17.3858V28.0759H20.4269V20.4733H28.0295V17.4322H20.4269Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                    <?php endforeach; ?>
+                </div>
+       
         <div class="center-btn">
             <a class="btn-ver-productos mrg-t_18" href="">Ver todos los productos</a>
         </div>
@@ -113,7 +120,7 @@ $opciones_cotiza_y_compra = get_field('opciones_cotiza_y_compra');
             <p class="p-subtitle">Un espacio creado para ti, donde podrás encontrar consejos nutricionales y simpáticas ideas simples para aplicar en casa.</p>
             <a class="btn-ver-articulos" href="">Ver todos los artículos</a>
         </div>
-        <div class="splide">
+        <div class="splide splide1">
             <div class="col-blog-2 splide__track">
                 <div class="slider-blog splide__list">
                     <div class="card-blog splide__slide">
