@@ -4,7 +4,7 @@ $titulo = get_field("titulo");
 $describcion = get_field("descripcion");
 $galeria = get_field("galeria");
 ?>
-<section class="main-banner">
+<section class="main-banner div-ban-campanias">
     <?php foreach ($slider_banner as $item) : ?>
         <?php
         $item_image = $item["banner"];
