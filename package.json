@@ -19,6 +19,7 @@
     "vite": "^4.0.0"
   },
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
     "dotenv": "^16.0.3",
     "jquery": "^3.7.0",
     "sass": "^1.57.1",
