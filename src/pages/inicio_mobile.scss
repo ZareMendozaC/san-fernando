@@ -1,10 +1,11 @@
 @media (max-width: 768px) {
-    :root {
-      --width_base: 375;
-    }
-    header, .lista-productos{
-        display: none !important;
-    }
+    // :root {
+    //   --width_base: 375;
+    // }
+    .site-footer,
+    .lista-productos{
+         display: none !important;
+     }
     .bg-main-banner{
         width: 100%;
         height: calculate(438) !important;

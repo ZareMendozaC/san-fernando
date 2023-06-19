@@ -62,6 +62,22 @@ $(".btn-comprar").click(function() {
   $(".menu_compras").slideToggle();
 });
 //@ts-ignore
+$(".toggle-menu").click(function() {
+  $(".menu_mobile").slideToggle();
+});
+//@ts-ignore
+$(".btn-blog-mov").click(function() {
+  $(".blog_mov").slideToggle();
+});
+//@ts-ignore
+$(".btn-vales-mov").click(function() {
+  $(".vales_mov").slideToggle();
+});
+//@ts-ignore
+$(".btn-comprar-mov").click(function() {
+  $(".compras_mov").slideToggle();
+});
+//@ts-ignore
 var mediaqueryList = window.matchMedia("(max-width: 768px)");
 // mediaqueryList.addListener(function (EventoMediaQueryList) {
 //   $(".section-2").css("display", "none");
