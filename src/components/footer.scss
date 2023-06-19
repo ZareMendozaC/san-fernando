@@ -67,6 +67,11 @@ ul{
                             font-weight: 400;
                             font-size: calc(100vw*(16/var(--width_base)))!important;
                         }
+
+                        svg{
+                            width: calcualte(16);
+                            height: auto;
+                        }
                     }
                 }
             }
@@ -166,7 +171,7 @@ ul{
                         font-size: calc(100vw*(18/var(--width_base)));
 
                         svg{
-                            width: 120;
+                            width: calculate(220);
                             height: auto;
                         }
     
@@ -358,6 +363,7 @@ ul{
                     li{
                         font-weight: 600;
                         font-size: calc(100vw*(18/var(--width_base)))!important;
+
     
                     }
                 }
