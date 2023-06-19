@@ -18,7 +18,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding-top: calc(100vw*(320/var(--width_base)));
+    padding-top: calc(100vw*(400/var(--width_base)));
 }
 .center-btn{
     display: flex;
@@ -464,3 +464,97 @@
     }
 }
 
+.img-product{
+    width: calculate(222) !important;
+    position: relative;
+    display: flex !important;
+    justify-content: center;
+}
+.lista-productos{
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+        color: #DF0002;
+        background: #DF0002;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+        width: calculate(16);
+        height: calculate(16);
+    }
+    .slick-dots li button:before{
+        opacity: 0.5;
+        color: #B2B3BD;
+        background: #B2B3BD;
+        border-radius: 50%;
+        width: calculate(16);
+        height: calculate(16);
+        top: calculate(2);
+        left: calculate(2);
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: calc(100vw * -50 / var(--width_base));
+        display: block;
+        width: auto;
+        padding-left: calc(100vw * 16 / var(--width_base)) !important;
+        padding-right: calc(100vw * 16 / var(--width_base)) !important;
+        list-style: none;
+        text-align: center;
+        background: white;
+        margin: auto;
+        height: calc(100vw * 32 / var(--width_base));
+        right: calc( calc(100vw/2) - calculate(112) );
+        display: flex;
+        border-radius: 500px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .slick-dots li button {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .slick-dots li{
+        margin: 0px;
+        width: calculate(20);
+        height: calculate(20);
+        margin-right: calculate(3);
+        margin-left: calculate(3);
+    }
+}
+.link-product{
+    transition: all ease-in 0.1s;
+    visibility: hidden;
+    position: absolute;
+    width: auto;
+    padding-left: calculate(10);
+    padding-right: calculate(10);
+    height: calculate(46);
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calculate(25);
+    line-height: calculate(33);
+    font-weight: 600;
+    font-family: 'FuturaStd';
+    color: var(--color-blue);
+    top: calculate(-50);
+    svg{
+        margin-left: calculate(10);
+        width: calculate(33);
+        height: calculate(33);
+    }
+}
+.link-product:hover{
+    color: var(--color-blue);
+}
+.img-product:hover{
+    visibility: visible;
+    cursor: pointer;
+}
+.img-product:hover a{
+    visibility: visible;
+    cursor: pointer;
+}
