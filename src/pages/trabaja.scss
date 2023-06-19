@@ -149,6 +149,10 @@ section{
             }
         }
     }
+
+    .section-2-mobile{
+        display: none;
+    }
 }
 
 
@@ -266,6 +270,44 @@ section{
                     
                 }
             }
+        }
+
+        .section-2-mobile{
+            display: block;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: calculate(22);
+                width: calculate(720);
+                height: auto;
+                padding-top: calculate(200);
+                padding-left: calculate(231);
+                h2{
+                    color: var(--color-blue);
+                    font-size: calculate(72);
+                    margin: 0;
+                }
+        
+                p{
+                    margin: 0;
+                    font-size: calculate(18);
+                    
+                }
+    
+                a{
+                    background-color: var(--color-red-btn);
+                    color: var(--color-white);
+                    font-size: calculate(18);
+                    width: calculate(218);
+                    text-align: center;
+                    border-radius: calculate(515);
+                    padding: calculate(12);
+                    
+                }
+            }
+
         }
     }
 }

@@ -37,8 +37,8 @@ $(".btn-comprar").click(function () {
 
 var mediaqueryList = window.matchMedia("(max-width: 768px)");
 
-// mediaqueryList.addListener(function (EventoMediaQueryList) {
-//   $(".section-2").css("display", "none");
-// });
+mediaqueryList.addListener(function (EventoMediaQueryList) {
+  $(".section-2").css("display", "none");
+});
 
 
