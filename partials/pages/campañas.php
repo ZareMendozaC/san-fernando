@@ -43,14 +43,16 @@ $galeria = get_field("galeria");
         <?php foreach ($galeria as $item) : ?>
             <?php
             $item_image = $item["imagen"];
+            $item_image_url = $item_image ? $item_image["url"] : null;
             $item_video = $item["video"];
+            $item_video_url = $item_video ? $item_video["1"] : null;
             $item_link = $item["link"];
             ?>
             <?php if ($item_image) : ?>
 
                 <a href="<?= $item_link; ?>" target="_blank" class="grid-item">
 
-                    <img src="<?= $item_link; ?>" alt="">
+                    <img src="<?= $item_image_url; ?>" alt="">
 
                 </a>
 
@@ -59,10 +61,10 @@ $galeria = get_field("galeria");
 
                 <a href="<?= $item_link; ?>" target="_blank" class="grid-item">
 
-                    <video src="<?= $item_link; ?>" poster="<?= $item_video; ?>" preload="metadata" controls></video>
-
+                    <!-- <video src="<?= $item_video; ?>" poster="<?= $item_video; ?>" preload="metadata" controls></video> -->
+                    <?= $item_video; ?>
                 </a>
-
+                
             <?php endif; ?>
         <?php endforeach; ?>
 
