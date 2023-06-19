@@ -62,7 +62,10 @@ $(".btn-comprar").click(function () {
   $(".menu_compras").slideToggle();
 });
 
-
+$(".footer-menu").click(function () {
+  $("#list-menu").style("display", "flex");
+  console.log("hola");
+})
 
 
 //@ts-ignore

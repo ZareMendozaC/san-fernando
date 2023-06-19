@@ -20,14 +20,13 @@
             $url_politicas_trabaja = get_field("link_politicas_de_privacidad");
 
             ?>
-            <a class="button-oferta" href="<?= $url_
-            boton_trabaja ?>">
+            <a class="button-oferta" href="<?= $url_boton_trabaja ?>">
                 <?php echo $descripcion_trabaja ?>
             </a>
 
-            <span>Al hacer click declara haber leído la
+            <div>Al hacer click declara haber leído la
                 <a href="<?= $url_politicas_trabaja ?>" target="_blank">Política de Privacidad.</a>
-            </span>
+            </div>
 
         </article>
 
@@ -68,29 +67,7 @@
 
     </div>
 
-    <div class="section-2-mobile" style="background-image: url(<?= $mobile_image["url"] ?>);">
 
-
-        <div>
-            <?php
-            $titulo_trabaja = get_field("titulo");
-            $descripcion2_trabaja = get_field("descripcion_2");
-            $text_boton_trabaja = get_field("texto_boton");
-
-            ?>
-            <h2><?php echo $titulo_trabaja ?></h2>
-
-            <p><?php echo $descripcion2_trabaja ?></p>
-
-            <a href=""><?php echo $text_boton_trabaja ?></a>
-        </div>
-
-        <div style="background-image: url(<?= $person_mobile_image["url"] ?>);">
-
-        </div>
-
-
-    </div>
 
 
 

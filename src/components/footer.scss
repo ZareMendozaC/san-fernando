@@ -197,6 +197,12 @@ ul{
            ul{
                display: flex;
                gap: calculate(59);
+               li{
+                a{
+                    color: var(--color-white);
+
+                }
+               }
            }
    
         }

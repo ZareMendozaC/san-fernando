@@ -149,7 +149,7 @@ wp_footer();
 					</svg>
 				</div>
 
-				<ul>
+				<ul id="list-menu">
 					<li>
 						Nosotros
 					</li>
@@ -264,10 +264,18 @@ wp_footer();
 	<div class="bottom-footer">
 		<div>San Fernando - Todos los derechos reservados 2023</div>
 
+		<?php
+		$politicas_privacidad = get_field("politicas_de_privacidad", 17);
+		?>
+
 		<div class="terminos-footer">
 			<ul>
 				<li class="terminos-condiciones">Términos y condiciones de campañas</li>
-				<li>Políticas de privacidad</li>
+				<li>
+					<a href="<?php echo $politicas_privacidad ?>">
+						Políticas de privacidad
+					</a>
+				</li>
 				<li>Políticas de inocuidad</li>
 			</ul>
 		</div>
