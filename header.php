@@ -10,6 +10,7 @@
 <body>
   <header class="navbar">
     <div class="div_logo">
+      <a href="<?php echo home_url(); ?>" style="margin-top:10px">
       <svg width="187" height="124" viewBox="0 0 187 124" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo_sf">
         <g clip-path="url(#clip0_1161_7511)">
           <path d="M177.719 88.7383H9.93994V89.4948H177.719V88.7383Z" fill="white" />
@@ -52,7 +53,7 @@
           </clipPath>
         </defs>
       </svg>
-
+      </a>
     </div>
     <div>
       <div class="div_menu2">
@@ -60,12 +61,12 @@
           <li class="menu2-item"><a href="#">Nosotros</a></li>
           <li class="menu2-item"><a href="#">Prensa</a></li>
           <li class="menu2-item"><a href="#">Sostenibilidad</a></li>
-          <li class="menu2-item"><a href="#">Trabaja con nosotros</a></li>
+          <li class="menu2-item"><a href="<?php echo home_url(); ?>/trabaja-con-nosotros">Trabaja con nosotros</a></li>
         </ul>
       </div>
       <div class="div_menu1">
         <ul class="menu">
-          <li class="menu-item"><a href="#">Campañas</a></li>
+          <li class="menu-item"><a href="<?php echo home_url(); ?>/campanias">Campañas</a></li>
           <li class="menu-item"><a href="#">Productos</a></li>
           <li class="menu-item"><a href="#" class="btn-blog" onclick="return false;">Blog Bien Servido <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
                 <path d="M0.986328 1.93591L9.0002 9.94979L17.0141 1.93591L15.1285 0.0502939L9.00021 6.17855L2.87195 0.050293L0.986328 1.93591Z" fill="#96DAEA" />
