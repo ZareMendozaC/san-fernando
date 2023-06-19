@@ -24,13 +24,13 @@ $galeria = get_field("galeria");
 <section class="container div-part-text">
 
     <div class="w-50 flex-colu">
-        <h2><?= $titulo; ?></h2>
+        <h2 class="color-blue"><?= $titulo; ?></h2>
         <h2>
-            <p>Campañas</p>
+            <p class="color-blue">Campañas</p>
         </h2>
     </div>
-    <div class="w-50 justificar">
-        <p class="p-subtitle"><?= $describcion; ?></p>
+    <div class="w-50 div-text">
+        <p class="p-subtitle justificar"><?= $describcion; ?></p>
     </div>
 
 
