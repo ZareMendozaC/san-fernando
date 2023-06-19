@@ -61,6 +61,10 @@ $(".btn-vales").click(function () {
 $(".btn-comprar").click(function () {
   $(".menu_compras").slideToggle();
 });
+
+
+
+
 //@ts-ignore
 var mediaqueryList = window.matchMedia("(max-width: 768px)");
 
