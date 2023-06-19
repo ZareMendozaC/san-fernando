@@ -84,6 +84,10 @@
         margin-right: calculate(17);
         margin-left: calculate(17);
     }
+    .slick-slide > div{
+        width: calculate(371) !important;
+        height: calculate(516) !important;
+    }
 }
 
 .card-blog{
@@ -146,8 +150,11 @@
     display: flex;
     justify-content: space-between;
 }
-.col-blog-2,.slider-blog{
+.col-blog-2{
     width: calculate(1080) !important;
+}
+.slider-blog{
+    width: 100% !important;
 }
 .col-blog-1{
     width: calculate(550);
@@ -282,3 +289,155 @@
 .mrg-t-23{
     margin-top: calculate(23);
 }
+.section-certificaciones{
+    padding-top: calculate(90);
+    padding-bottom: calculate(90);
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .part-1-cer{
+        width: calculate(527);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        h2,p{
+            text-align: left;
+        }
+        h2{
+            margin-bottom: calculate(34);
+        }
+    }
+    .part-2-cer{
+        width: calculate(769);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+.card-certificacion{
+    position: relative;
+    width: calculate(371);
+    height: calculate(248);
+    background: #daf2f8;
+    border-radius: calculate(16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .img-logo{
+        margin-bottom: calculate(18);
+    }
+    p{
+        font-family: 'FuturaStd';
+        font-style: normal;
+        font-weight: 600;
+        font-size: calculate(18);
+        line-height: calculate(25);
+        margin-bottom: 0px;
+    }
+    svg{
+        position: absolute;
+        top: calculate(-4);
+        width: calculate(158);
+        height: calculate(8);
+    }
+}
+.card-certificacion:nth-child(2)  .img-logo{
+    width: calculate(128);
+    height: auto;
+}
+.card-certificacion:nth-child(2){
+    margin-bottom: calculate(39);
+}
+.card-certificacion:nth-child(1)  .img-logo{
+    width: calculate(71);
+    height: auto;
+}
+.card-certificacion:nth-child(1){
+    margin-bottom: calculate(39);
+}
+.card-certificacion:nth-child(3) .img-logo{
+    width: calculate(128);
+    height: auto;
+}
+.card-certificacion:nth-child(4) .img-logo{
+    width: calculate(71);
+    height: auto;
+}
+.slider-arrows{
+    margin-top: calculate(46);
+    svg{
+        width: calculate(44);
+        height: calculate(44);
+    }
+}
+.main-banner{
+    margin-top: calculate(140);
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+        color: #DF0002;
+        background: #DF0002;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+        width: calculate(16);
+        height: calculate(16);
+    }
+    .slick-dots li button:before{
+        opacity: 0.5;
+        color: #B2B3BD;
+        background: #B2B3BD;
+        border-radius: 50%;
+        width: calculate(16);
+        height: calculate(16);
+        top: calculate(2);
+        left: calculate(2);
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: calc(100vw * 54 / var(--width_base));
+        display: block;
+        width: auto;
+        padding-left: calc(100vw * 16 / var(--width_base)) !important;
+        padding-right: calc(100vw * 16 / var(--width_base)) !important;
+        list-style: none;
+        text-align: center;
+        background: white;
+        margin: auto;
+        height: calc(100vw * 32 / var(--width_base));
+        right: calc( calc(100vw/2) - calculate(66) );
+        display: flex;
+        border-radius: 500px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .slick-dots li button {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .slick-dots li{
+        margin: 0px;
+        width: calculate(20);
+        height: calculate(20);
+    }
+    .slick-next {
+        right: 45%;
+        top: 88%;
+    }
+    .slick-next svg{
+        width: calculate(44);
+        height: calculate(44);
+    }
+    .slick-prev {
+        left: 44%;
+        top: 88%;
+        z-index: 1;
+    }
+    .slick-prev svg{
+        width: calculate(44);
+        height: calculate(44);
+    }
+}
+

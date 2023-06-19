@@ -1,0 +1,40 @@
+
+@media (max-width: 768px) {
+    :root {
+      --width_base: 375;
+    }
+    h1{
+        font-size: calc(100vw*(92/var(--width_base)));
+        line-height: calc(100vw*(92/var(--width_base)));
+    }
+    h2 {
+        font-size: calc(100vw*(31/var(--width_base)));
+        line-height: calc(100vw*(31/var(--width_base)));
+    }
+    h2 p{
+        font-size: calc(100vw*(65/var(--width_base)));
+        line-height: calc(100vw*(30/var(--width_base)));
+    }
+    .p-subtitle{
+        font-size:  calc(100vw*(18/var(--width_base)));
+        line-height:  calc(100vw*(27/var(--width_base)));
+    }
+    .container{
+        width: calc(100% - calculate(30));
+    }
+    .wp-658{
+        width: 100%;
+    }
+    .img-sub-2 {
+        right: calc(100vw * 34 / var(--width_base));
+        bottom: calc(100vw * -29 / var(--width_base));
+        width: calc(100vw * 124 / var(--width_base));
+        height: auto;
+    }
+    .show-desktop{
+        display: none;
+    }
+    .show-mobile{
+        display: block;
+    }
+}

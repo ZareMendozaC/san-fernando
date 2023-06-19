@@ -12,7 +12,7 @@
 }
 
 *{
-    //outline: 1px solid purple;
+   //outline: 1px solid purple;
 }
 .color-blue{
     color: var(--color-blue)
@@ -85,6 +85,7 @@ h2 p{
     font-weight: 600;
     font-size: calc(100vw*(22/var(--width_base)));
     line-height: calc(100vw*(33/var(--width_base)));
+    transition: all 0.3s ease;
 }
 .btn-c{
     width:  calc(100vw*(126/var(--width_base)));
@@ -100,6 +101,7 @@ h2 p{
     font-weight: 600;
     font-size: calc(100vw*(22/var(--width_base)));
     line-height: calc(100vw*(33/var(--width_base)));
+    transition: all 0.3s ease;
 }
 .btn-ver-articulos{
     width:  calc(100vw*(279/var(--width_base)));
@@ -115,6 +117,7 @@ h2 p{
     font-weight: 600;
     font-size: calc(100vw*(22/var(--width_base)));
     line-height: calc(100vw*(33/var(--width_base)));
+    transition: all 0.3s ease;
 }
 .btn-ver-mas{
     width:  calc(100vw*(239/var(--width_base)));
@@ -130,6 +133,11 @@ h2 p{
     font-weight: 600;
     font-size: calc(100vw*(22/var(--width_base)));
     line-height: calc(100vw*(33/var(--width_base)));
+    transition: all 0.3s ease;
+}
+.btn-ver-articulos:hover, .btn-ver-mas:hover, .btn-ver-productos:hover, .btn-c:hover{
+    color: var(--color-white) !important;
+    background-color: #C90002;
 }
 .container {
     width: calc(100vw*(1556/var(--width_base)));
