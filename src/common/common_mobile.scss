@@ -31,10 +31,12 @@
         width: calc(100vw * 124 / var(--width_base));
         height: auto;
     }
-    .show-desktop{
-        display: none;
-    }
+
     .show-mobile{
         display: block;
+    }
+
+    .hidden-mobile{
+        display: none;
     }
 }
