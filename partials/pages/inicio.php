@@ -205,7 +205,7 @@ $opciones_cotiza_y_compra = get_field('opciones_cotiza_y_compra');
                     </div>
                 </div>
             </div>
-            <div class="box-image" style="background: url(http://localhost:10053/wp-content/uploads/2023/06/Rectangle-840.png);">
+            <div class="box-image" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Rectangle-840.png);">
                 <div class="box-i-textos">
                     <p class="color-white">Sostenibilidad</p>
                     <a href="">Ver más <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -217,7 +217,7 @@ $opciones_cotiza_y_compra = get_field('opciones_cotiza_y_compra');
             </div>
             </div>
             <div class="col-nuestra-22 mrg-t-23">
-            <div class="box-image-1" style="background: url(http://localhost:10053/wp-content/uploads/2023/06/Rectangle-842.png);">
+            <div class="box-image-1" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Rectangle-842.png);">
             <div class="box-i-textos">
                     <p class="color-white">Prensa</p>
                     <a href="">Ver más <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -227,7 +227,7 @@ $opciones_cotiza_y_compra = get_field('opciones_cotiza_y_compra');
                     </a>
                 </div>
             </div>
-            <div class="box-image-2" style="background: url(http://localhost:10053/wp-content/uploads/2023/06/Rectangle-843.png);">
+            <div class="box-image-2" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Rectangle-843.png);">
             <div class="box-i-textos">
                     <p class="color-white">Trabaja con nosotros</p>
                     <a href="">Ver más <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
