@@ -4,6 +4,9 @@ import "slick-carousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./style.scss";
+import '@splidejs/splide/css';
+import "./scripts/pages/inicio.js"
+
 // import Masonry from "masonry-layout/dist/masonry";
 //@ts-ignore
 $(".main-banner").slick({
@@ -21,6 +24,7 @@ $(".main-banner").slick({
   cssEase: "linear",
 });
 //@ts-ignore
+/*
 $(".slider-blog").slick({
   slidesToShow: 2,
   slidesToScroll: 1,
@@ -49,6 +53,7 @@ $(".slider-blog").slick({
     },
   ]
 });
+*/
 //@ts-ignore
 $(".btn-blog").click(function() {
   $(".menu_blog").slideToggle();
