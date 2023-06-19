@@ -6,12 +6,13 @@ section{
         justify-content: center;
         align-items: center;
         padding: calculate(30) calc(100vw*(30/var(--width_base)));
-        margin-top: calculate(70);
+        margin-top: calculate(80);
           h1{
             margin: 0;
             text-align: center;
             line-height: calculate(80)!important;
-            font-size: calc(100vw*(45/var(--width_base)));
+            font-weight: 700;
+            font-size: calc(100vw*(92/var(--width_base)));
           }
     }
         

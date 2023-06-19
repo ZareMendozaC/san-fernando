@@ -4,13 +4,13 @@
     justify-content: center;
     align-items: center;
     padding: calculate(100) calc(100vw*(300/var(--width_base)));
-    margin-top: calculate(70)!important;
+    margin-top: calculate(80)!important;
 
       h1{
         margin: 0;
         text-align: center;
         font-weight: 700;
-        font-size: calc(100vw*(72/var(--width_base)));
+        font-size: calc(100vw*(92/var(--width_base)));
       }
 }
 
@@ -51,7 +51,7 @@
 
 .text-politicas{
     padding-top: calc(100vw*(150/var(--width_base)))!important;
-    padding-bottom: calc(100vw*(163/var(--width_base)));
+    padding-bottom: calc(100vw*(153/var(--width_base)));
     font-family: 'FuturaStd';
     font-weight: 400;
 

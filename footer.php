@@ -1,7 +1,27 @@
 <?php
 wp_footer();
 
+//url redes sociales
+$url_facebook = get_field("facebook", 17);
+$url_youtube = get_field("youtube", 17);
+$url_linkedin = get_field("linkedin", 17);
 
+//url contactos
+$telefono = get_field("telefono", 17);
+$email = get_field("email", 17);
+$direccion = get_field("direccion", 17);
+
+//url paginas
+$nosotros = get_field("nosotros", 17);
+$prensa = get_field("prensa", 17);
+$sostenibilidad = get_field("sostenibilidad", 17);
+$trabaja_nosotros = get_field("trabaja_con_nosotros", 17);
+$preguntas_frecuentes = get_field("preguntas_frecuentes", 17);
+
+//url terminos y condiciones
+$terminos_condiciones = get_field("terminos_y_condiciones_de_campana", 17);
+$politicas_privacidad = get_field("politicas_de_privacidad", 17);
+$politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 ?>
 <div class="site-footer">
 
@@ -31,11 +51,6 @@ wp_footer();
 					</defs>
 				</svg>
 
-				<?php
-				$url_facebook = get_field("facebook", 17);
-				$url_youtube = get_field("youtube", 17);
-				$url_linkedin = get_field("linkedin", 17);
-				?>
 				<ul class="contact-redes">
 					<li>
 						<a href="<?= $url_facebook ?>" target="_blank">
@@ -68,13 +83,6 @@ wp_footer();
 					</li>
 				</ul>
 			</div>
-
-
-			<?php
-			$telefono = get_field("telefono", 17);
-			$email = get_field("email", 17);
-			$direccion = get_field("direccion", 17);
-			?>
 
 			<ul class="contact-info">
 				<li class="info-text">
@@ -149,21 +157,31 @@ wp_footer();
 					</svg>
 				</div>
 
-				<ul id="list-menu">
+				<ul id="list-opcion1" class="list-menu">
 					<li>
-						Nosotros
+						<a href="<?= $nosotros ?>">
+							Nosotros
+						</a>
 					</li>
 					<li>
-						Prensa
+						<a href="<?= $prensa ?>">
+							Prensa
+						</a>
 					</li>
 					<li>
-						Sostenibilidad
+						<a href="<?= $sostenibilidad ?>">
+							Sostenibilidad
+						</a>
 					</li>
 					<li>
-						Trabaja con Nosotros
+						<a href="<?= $trabaja_nosotros ?>">
+							Trabaja con Nosotros
+						</a>
 					</li>
 					<li>
-						Preguntas Frecuentes
+						<a href="<?= $preguntas_frecuentes ?>">
+							Preguntas Frecuentes
+						</a>
 					</li>
 					<li></li>
 				</ul>
@@ -179,7 +197,7 @@ wp_footer();
 						<path d="M14.4084 22.458L7.7146 15.7642C7.44298 15.491 7.29053 15.1214 7.29053 14.7361C7.29053 14.3508 7.44298 13.9812 7.7146 13.708C7.85017 13.5713 8.01146 13.4628 8.18918 13.3888C8.36689 13.3147 8.5575 13.2766 8.75002 13.2766C8.94253 13.2766 9.13315 13.3147 9.31086 13.3888C9.48857 13.4628 9.64986 13.5713 9.78543 13.708L16.4646 20.4163C16.6002 20.553 16.7615 20.6615 16.9392 20.7355C17.1169 20.8096 17.3075 20.8477 17.5 20.8477C17.6925 20.8477 17.8831 20.8096 18.0609 20.7355C18.2386 20.6615 18.3999 20.553 18.5354 20.4163L25.2146 13.708C25.4873 13.4334 25.8579 13.2783 26.2449 13.277C26.6319 13.2756 27.0035 13.428 27.2781 13.7007C27.5528 13.9734 27.7078 14.344 27.7092 14.731C27.7105 15.1179 27.5581 15.4896 27.2854 15.7642L20.5917 22.458C19.7714 23.2773 18.6594 23.7375 17.5 23.7375C16.3406 23.7375 15.2287 23.2773 14.4084 22.458Z" fill="white" />
 					</svg>
 				</div>
-				<ul>
+				<ul id="list-opcion2" class="list-menu-2">
 					<li>
 						Pollo
 					</li>
@@ -205,15 +223,13 @@ wp_footer();
 			</div>
 
 			<div class="products-vale">
-
-
 				<div class="footer-menu--option3">
 					<p> <strong>Vales</strong> </p>
 					<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M14.4084 22.458L7.7146 15.7642C7.44298 15.491 7.29053 15.1214 7.29053 14.7361C7.29053 14.3508 7.44298 13.9812 7.7146 13.708C7.85017 13.5713 8.01146 13.4628 8.18918 13.3888C8.36689 13.3147 8.5575 13.2766 8.75002 13.2766C8.94253 13.2766 9.13315 13.3147 9.31086 13.3888C9.48857 13.4628 9.64986 13.5713 9.78543 13.708L16.4646 20.4163C16.6002 20.553 16.7615 20.6615 16.9392 20.7355C17.1169 20.8096 17.3075 20.8477 17.5 20.8477C17.6925 20.8477 17.8831 20.8096 18.0609 20.7355C18.2386 20.6615 18.3999 20.553 18.5354 20.4163L25.2146 13.708C25.4873 13.4334 25.8579 13.2783 26.2449 13.277C26.6319 13.2756 27.0035 13.428 27.2781 13.7007C27.5528 13.9734 27.7078 14.344 27.7092 14.731C27.7105 15.1179 27.5581 15.4896 27.2854 15.7642L20.5917 22.458C19.7714 23.2773 18.6594 23.7375 17.5 23.7375C16.3406 23.7375 15.2287 23.2773 14.4084 22.458Z" fill="white" />
 					</svg>
 				</div>
-				<ul>
+				<ul id="list-opcion3" class="list-menu-3">
 					<li>
 						Cotiza tu vale
 					</li>
@@ -264,19 +280,18 @@ wp_footer();
 	<div class="bottom-footer">
 		<div>San Fernando - Todos los derechos reservados 2023</div>
 
-		<?php
-		$politicas_privacidad = get_field("politicas_de_privacidad", 17);
-		?>
-
 		<div class="terminos-footer">
 			<ul>
-				<li class="terminos-condiciones">Términos y condiciones de campañas</li>
+				<li>
+					<a href="<?php echo $terminos_condiciones ?>">
+						Términos y condiciones de campañas
+					</a>
+				</li>
 				<li>
 					<a href="<?php echo $politicas_privacidad ?>">
 						Políticas de privacidad
 					</a>
 				</li>
-				<li>Políticas de inocuidad</li>
 			</ul>
 		</div>
 

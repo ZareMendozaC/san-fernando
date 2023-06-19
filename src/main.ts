@@ -62,9 +62,20 @@ $(".btn-comprar").click(function () {
   $(".menu_compras").slideToggle();
 });
 
+//@ts-ignore
 $(".footer-menu").click(function () {
-  $("#list-menu").style("display", "flex");
-  console.log("hola");
+  $("#list-opcion1").toggleClass("list-menu");
+  $("#list-opcion1").toggleClass("list-menu-on");
+})
+//@ts-ignore
+$(".products-footer").click(function () {
+  $("#list-opcion2").toggleClass("list-menu-2");
+  $("#list-opcion2").toggleClass("list-menu-2_on");
+})
+//@ts-ignore
+$(".products-vale").click(function () {
+  $("#list-opcion3").toggleClass("list-menu-3");
+  $("#list-opcion3").toggleClass("list-menu-3_on");
 })
 
 
