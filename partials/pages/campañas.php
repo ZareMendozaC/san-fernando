@@ -24,13 +24,13 @@ $galeria = get_field("galeria");
 <section class="container div-part-text">
 
     <div class="w-50 flex-colu">
-        <h2><?= $titulo; ?></h2>
+        <h2 class="color-blue"><?= $titulo; ?></h2>
         <h2>
-            <p>Campañas</p>
+            <p class="color-blue">Campañas</p>
         </h2>
     </div>
-    <div class="w-50 justificar">
-        <p class="p-subtitle"><?= $describcion; ?></p>
+    <div class="w-50 div-text">
+        <p class="p-subtitle justificar"><?= $describcion; ?></p>
     </div>
 
 
@@ -43,14 +43,16 @@ $galeria = get_field("galeria");
         <?php foreach ($galeria as $item) : ?>
             <?php
             $item_image = $item["imagen"];
+            $item_image_url = $item_image ? $item_image["url"] : null;
             $item_video = $item["video"];
+            $item_video_url = $item_video ? $item_video["1"] : null;
             $item_link = $item["link"];
             ?>
             <?php if ($item_image) : ?>
 
                 <a href="<?= $item_link; ?>" target="_blank" class="grid-item">
 
-                    <img src="<?= $item_link; ?>" alt="">
+                    <img src="<?= $item_image_url; ?>" alt="">
 
                 </a>
 
@@ -59,10 +61,10 @@ $galeria = get_field("galeria");
 
                 <a href="<?= $item_link; ?>" target="_blank" class="grid-item">
 
-                    <video src="<?= $item_link; ?>" poster="<?= $item_video; ?>" preload="metadata" controls></video>
-
+                    <!-- <video src="<?= $item_video; ?>" poster="<?= $item_video; ?>" preload="metadata" controls></video> -->
+                    <?= $item_video; ?>
                 </a>
-
+                
             <?php endif; ?>
         <?php endforeach; ?>
 
