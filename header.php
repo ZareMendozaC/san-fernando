@@ -69,7 +69,7 @@
           <li class="menu-item"><a href="<?php echo home_url(); ?>/campanias">Campañas</a></li>
           <li class="menu-item"><a href="#">Productos</a></li>
           <li class="menu-item"><a href="#" class="btn-blog" onclick="return false;">Blog Bien Servido <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
-                <path d="M0.986328 1.93591L9.0002 9.94979L17.0141 1.93591L15.1285 0.0502939L9.00021 6.17855L2.87195 0.050293L0.986328 1.93591Z" fill="#96DAEA" />
+                <path d="M0.986328 1.93591L9.0002 9.94979L17.0141 1.93591L15.1285 0.0502939L9.00021 6.17855L2.87195 0.050293L0.986328 1.93591Z" fill="#ffffff" />
               </svg></a></li>
           <li class="menu-item"><a href="<?php echo home_url(); ?>/contacto">Contacto</a></li>
           <li class="menu-item"><a href="#" onclick="return false;"><svg width="150" height="59" viewBox="0 0 150 59" fill="none" xmlns="http://www.w3.org/2000/svg" class="btn-vales">
