@@ -33,17 +33,17 @@
   gap: calculate(26);
 
   .menu-item {
-    height: 100%;
+    // height: 100%;
     color: var(--color-white);
     // width: calculate(112);
     display: inline-flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     font-family: "FuturaStd";
     font-style: normal;
     font-weight: 600;
     font-size: calculate(22);
-    line-height: calculate(100);
+    line-height: calculate(60);
 
     a {
       color: var(--color-white);
@@ -121,7 +121,7 @@
   position: fixed;
   z-index: 910;
   top: calculate(135);
-  left: calculate(1250);
+  left: calculate(1230);
 }
 
 .menu_compras {
@@ -137,7 +137,7 @@
   position: fixed;
   z-index: 910;
   top: calculate(135);
-  left: calculate(900);
+  left: calculate(910);
 }
 
 .menu_blog,
