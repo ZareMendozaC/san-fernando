@@ -67,6 +67,7 @@ h2 p{
     line-height: calc(100vw*(60/var(--width_base)));
     font-family: 'Portuguesa';
     margin-bottom: 0px;
+    margin-top: calc(100vw*(20/var(--width_base)));
 }
 .text-center{
     text-align: center;
