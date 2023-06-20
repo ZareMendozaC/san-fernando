@@ -8,32 +8,46 @@
         <p class="p-subtitle-2 color-gris">Conoce todos nuestros productos de gran sabor</p>
     </div>
     <div class="row-icon-productos">
-        <div class="card-icon">
-            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4798.png" alt="">
+        <div class="card-icon active">
+            <div class="circle-icon bg-skyblue">
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4796.png" alt="">
+            </div>
             <p>Pollo</p>
         </div>
         <div class="card-icon">
-            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4800.png" alt="">
+            <div class="circle-icon bg-skyblue">
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4795.png" alt="">
+            </div>
             <p>Pavo</p>
         </div>
         <div class="card-icon">
-            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4799.png" alt="">
+            <div class="circle-icon bg-skyblue">
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4797.png" alt="">
+            </div>
             <p>Embutidos</p>
         </div>
         <div class="card-icon">
-            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4799.png" alt="">
+            <div class="circle-icon bg-skyblue">
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4797.png" alt="">
+            </div>
             <p>Congelados</p>
         </div>
         <div class="card-icon">
-            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4803.png" alt="">
+            <div class="circle-icon bg-skyblue">   
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4792.png" alt="">
+            </div>
             <p>Cerdos</p>
         </div>
         <div class="card-icon">
-            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4801.png" alt="">
+            <div class="circle-icon bg-skyblue">
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4866.png" alt="">
+            </div>
             <p>Celebraciones</p>
         </div>
         <div class="card-icon">
-            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4804.png" alt="">
+            <div class="circle-icon bg-skyblue">
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4793.png" alt="">
+            </div>
             <p>Huevos</p>
         </div>
     </div>

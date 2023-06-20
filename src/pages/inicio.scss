@@ -20,7 +20,7 @@
     margin: auto;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: space-between;
     padding-top: calc(100vw*(400/var(--width_base)));
 }
 .center-btn{
@@ -498,10 +498,15 @@
 }
 
 .img-product{
-    width: calculate(222) !important;
+    width: calculate(210) !important;
     position: relative;
     display: flex !important;
     justify-content: center;
+    transition: all ease-in 0.3s;
+
+}
+.img-product:hover img{
+    transform: scale(1.10);
 }
 .lista-productos{
     .slick-dots li.slick-active button:before {
@@ -590,4 +595,9 @@
 .img-product:hover a{
     visibility: visible;
     cursor: pointer;
+}
+.container-149{
+    margin-left: calculate(150) !important;
+    margin-right: calculate(150) !important;
+    margin: auto;
 }
