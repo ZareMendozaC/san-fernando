@@ -83,8 +83,21 @@ $(".btn-vales-mov").click(function () {
 $(".btn-comprar-mov").click(function () {
   $(".compras_mov").slideToggle();
 });
-
-
+//@ts-ignore
+$(".btn-blog-mov").click(function() {
+  $(".li-blog_mov").slideToggle();
+  $(".btn-blog-mov .arrow").toggleClass("arrow-btn-active")
+});
+//@ts-ignore
+$(".btn-vales-mov").click(function() {
+  $(".li-vales_mov").slideToggle();
+  $(".btn-vales-mov .arrow").toggleClass("arrow-btn-active")
+});
+//@ts-ignore
+$(".btn-comprar-mov").click(function() {
+  $(".li-compras_mov").slideToggle();
+  $(".btn-comprar-mov .arrow").toggleClass("arrow-btn-active")
+});
 //@ts-ignore
 $(".footer-menu").click(function () {
   $("#list-opcion1").toggleClass("list-menu");
