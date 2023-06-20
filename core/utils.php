@@ -29,10 +29,24 @@ function render_image(int $id, array $attr = [])
  * get image by ID
  * Require AFC plugin
  */
-function get_image_url(int $id, string $default = ''): string
+function get_image_url($id, string $default = ''): string
 {
-  return ($id) ? wp_get_attachment_image_url($id, "full", false) : $default;
+  if (is_array($id)) {
+    if (array_key_exists('ID', $id)) {
+      return wp_get_attachment_image_url($id['ID'], "full", false);
+    }
+    return null;
+  }
+
+  return wp_get_attachment_image_url($id, "full", false);
 }
+
+
+function get_thumbnail_url($id, string $size = 'post-thumbnail'): string
+{
+  return get_the_post_thumbnail_url($id, $size);
+}
+
 
 
 
