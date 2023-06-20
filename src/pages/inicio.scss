@@ -5,6 +5,9 @@
     background-size: cover !important;
     background-position: center !important;
 }
+.main-banner.slick-dotted.slick-slider{
+    margin-bottom: 0px !important;
+}
 .bg-productos{
     width: 100%;
     height:  calc(100vw*(1170/var(--width_base)));
