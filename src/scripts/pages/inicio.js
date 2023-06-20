@@ -4,22 +4,7 @@ new Splide( '.splide.splide1' , {
     type: 'loop',
     pagination: false,
 }).mount();
-/*
-new Splide( '.splide.splide2' , {
-    pagination: false,
-    arrows: false,
-    perPage: 7,
-    type: 'loop',
-    breakpoints: {
-        768: {
-          perPage: 1,
-          arrows: true,
-          pagination: true,
-          perMove: 1,
-        },
-      },
-}).mount();
-*/
+
 mobileOnlySlider(".lista-productos", true, false, 767);
 
 function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
@@ -49,3 +34,13 @@ function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
     }
   });
 } // Mobile Only Slider
+
+$(".card-certificacion").click(function(){
+    let data= $(this).find('.data-certificacion').html();
+    $('#dCertificacion').html(data);
+    $('.modal-certificacion').fadeIn();
+});
+$(".close-certificacion").click(function(){
+    $('#dCertificacion').html('');
+    $('.modal-certificacion').fadeOut();
+});

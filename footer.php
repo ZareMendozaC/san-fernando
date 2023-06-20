@@ -1,6 +1,5 @@
 <?php
 wp_footer();
-
 //url redes sociales
 $url_facebook = get_field("facebook", 17);
 $url_youtube = get_field("youtube", 17);
