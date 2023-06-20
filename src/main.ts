@@ -76,11 +76,11 @@ $(".btn-blog-mov").click(function() {
 });
 //@ts-ignore
 $(".btn-vales-mov").click(function() {
-  $(".vales_mov").slideToggle();
+  $(".li-vales_mov").slideToggle();
 });
 //@ts-ignore
 $(".btn-comprar-mov").click(function() {
-  $(".compras_mov").slideToggle();
+  $(".li-compras_mov").slideToggle();
 });
 //@ts-ignore
 $(".footer-menu").click(function () {
