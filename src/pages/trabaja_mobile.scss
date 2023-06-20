@@ -3,19 +3,7 @@
 
 
     section{
-        .trabaja-head{
-            font-family: 'FuturaStd';
-            margin-top: calculate(30);
-            h1{
-                text-align: center;
-                font-size: calc(100vw*(45/var(--width_base)))!important;
-                line-height: calc(100vw*(50/var(--width_base)))!important;
-            }
-        }
     
-        .zigzag {
-            height: calculate(230)!important;
-        }
 
         .section-1{
             display: flex;
