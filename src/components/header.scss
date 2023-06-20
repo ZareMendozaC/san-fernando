@@ -48,6 +48,9 @@
     a {
       color: var(--color-white);
     }
+    a .arrow path {
+      fill: var(--color-white);
+    }
     a:hover {
       color: var(--color-celeste-light);
     }
