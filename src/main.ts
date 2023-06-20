@@ -72,16 +72,21 @@ $(".toggle-menu").click(function() {
 });
 //@ts-ignore
 $(".btn-blog-mov").click(function() {
-  $(".blog_mov").slideToggle();
+  $(".li-blog_mov").slideToggle();
+  $(".btn-blog-mov .arrow").toggleClass("arrow-btn-active")
 });
 //@ts-ignore
 $(".btn-vales-mov").click(function() {
-  $(".vales_mov").slideToggle();
+  $(".li-vales_mov").slideToggle();
+  $(".btn-vales-mov .arrow").toggleClass("arrow-btn-active")
 });
 //@ts-ignore
 $(".btn-comprar-mov").click(function() {
-  $(".compras_mov").slideToggle();
+  $(".li-compras_mov").slideToggle();
+  $(".btn-comprar-mov .arrow").toggleClass("arrow-btn-active")
 });
+
+
 //@ts-ignore
 $(".footer-menu").click(function () {
   $("#list-opcion1").toggleClass("list-menu");
