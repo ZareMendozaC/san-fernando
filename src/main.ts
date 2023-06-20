@@ -58,6 +58,7 @@ $(".slider-blog").slick({
 //@ts-ignore
 $(".btn-blog").click(function () {
   $(".menu_blog").slideToggle();
+  $(".btn-blog .arrow").toggleClass("arrow-btn-active")
 });
 //@ts-ignore
 $(".btn-vales").click(function () {
