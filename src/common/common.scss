@@ -252,14 +252,16 @@ h2 p{
     margin-top: calculate(90);
     height: calculate(290);
     padding-top: calculate(50);
-        h1{
+      h1{
         margin: 0;
         text-align: center;
         line-height: calculate(80);
         font-weight: 700;
         font-size: calc(100vw*(72/var(--width_base)));
-        }
+      }
 }
+
+
 
 @media only screen and (max-width: 768px) {
 
@@ -269,6 +271,7 @@ h2 p{
             padding-top: calculate(45);
             height: calculate(188);
             h1{
+                color: var(--color-white);
                 text-align: center;
                 font-size: calc(100vw*(35/var(--width_base)))!important;
                 line-height: calc(100vw*(50/var(--width_base)))!important;
