@@ -1,0 +1,79 @@
+.section-productos{
+    .general-banner-img{
+        width: 100%;
+        height: calc(100vw*(550/var(--width_base))) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+    .container-full{
+        margin-top: calculate(145);
+    }
+    .pdt-productos{
+        padding-top: calculate(70);
+        padding-bottom: calculate(70);
+    }
+    .row-icon-productos{
+        width: calculate(1256);
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .card-icon{
+        img{
+            width: calculate(123);
+            height: auto;
+            margin: auto;
+            cursor: pointer;
+        }
+        p{
+            color: var(--color-blue);
+            font-family: 'FuturaStd';
+            font-style: normal;
+            font-weight: 600;
+            font-size: calculate(22);
+            line-height: calculate(33);
+            text-align: center;
+            margin-bottom: 0px !important;
+            margin-top: calculate(18);
+        }
+        width: calculate(133);
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .line-pick{
+        width: 100%;
+        margin: auto;
+        padding-top: calculate(68);
+        padding-bottom: calculate(68);
+    }
+    .bg-llena-tu-refri{
+        height: calc(100vw*(301/var(--width_base))) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+    .bg-llena-tu-refri{
+        font-family: 'FuturaStd';
+        padding-top: calculate(39);
+        padding-left: calculate(120);
+        .title{
+            font-style: normal;
+            font-weight: 600;
+            font-size: calculate(62);
+            line-height: calculate(53);
+            margin-bottom: calculate(12.5) !important;
+        }
+        .p-subtitle{
+            font-style: normal;
+            font-weight: 400;
+            font-size: calculate(22);
+            line-height: calculate(33);
+            margin-bottom: calculate(18) !important;
+        }
+    }
+    padding-bottom: calculate(124);
+}
