@@ -1,24 +1,9 @@
 
 @media only screen and (max-width: 768px) {
-    .politicas-head{
-        font-family: 'FuturaStd';
-        padding: calculate(100) calculate(50);
-        margin-top: calculate(30)!important;
-        h1{
-            text-align: center;
-            font-size: calc(100vw*(45/var(--width_base)));
-            line-height: calc(100vw*(70/var(--width_base)));
-        }
-    
-    }
 
-    .zigzag {
-        height: calculate(300)!important;
-    }
-    
     
     .text-politicas{
-        padding-top: calc(100vw*(100/var(--width_base)))!important;
+        
         padding-bottom: calc(100vw*(163/var(--width_base)));
         font-family: 'FuturaStd';
         font-weight: 400;

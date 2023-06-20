@@ -7,6 +7,7 @@ import "./style.scss";
 import '@splidejs/splide/css';
 import "./scripts/pages/inicio.js"
 
+
 // import Masonry from "masonry-layout/dist/masonry";
 //@ts-ignore
 $(".main-banner").slick({
@@ -67,8 +68,20 @@ $(".btn-comprar").click(function () {
   $(".menu_compras").slideToggle();
 });
 //@ts-ignore
-$(".toggle-menu").click(function() {
+$(".toggle-menu").click(function () {
   $(".menu_mobile").slideToggle();
+});
+//@ts-ignore
+$(".btn-blog-mov").click(function () {
+  $(".blog_mov").slideToggle();
+});
+//@ts-ignore
+$(".btn-vales-mov").click(function () {
+  $(".vales_mov").slideToggle();
+});
+//@ts-ignore
+$(".btn-comprar-mov").click(function () {
+  $(".compras_mov").slideToggle();
 });
 //@ts-ignore
 $(".btn-blog-mov").click(function() {
@@ -85,8 +98,6 @@ $(".btn-comprar-mov").click(function() {
   $(".li-compras_mov").slideToggle();
   $(".btn-comprar-mov .arrow").toggleClass("arrow-btn-active")
 });
-
-
 //@ts-ignore
 $(".footer-menu").click(function () {
   $("#list-opcion1").toggleClass("list-menu");
