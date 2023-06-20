@@ -136,9 +136,9 @@
 
   <div class="menu_mobile">
     <ul class="list-group">
-      <li class="list-group-item"><a href="<?php echo home_url(); ?>/campanias">Campañas</a></li>
-      <li class="list-group-item"><a href="#">Productos</a></li>
-      <li class="list-group-item"><a href="#" class="btn-blog-mov" onclick="return false;">Blog Bien Servido <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
+      <li class="list-group-item li-mov-menu"><a href="<?php echo home_url(); ?>/campanias">Campañas</a></li>
+      <li class="list-group-item li-mov-menu"><a href="#">Productos</a></li>
+      <li class="list-group-item li-mov-menu"><a href="#" class="btn-blog-mov" onclick="return false;">Blog Bien Servido <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
             <path d="M0.986328 1.93591L9.0002 9.94979L17.0141 1.93591L15.1285 0.0502939L9.00021 6.17855L2.87195 0.050293L0.986328 1.93591Z" fill="#004C97" />
           </svg></a></li>
       <li class="list-group-item li-blog_mov"><a href="#">Recetas</a></li>
@@ -146,7 +146,7 @@
       <li class="list-group-item li-blog_mov"><a href="#">Soluciones</a></li>
       <li class="list-group-item li-blog_mov"><a href="#">Calculadora de proteina</a></li>
       <li class="list-group-item li-blog_mov"><a href="#">Crea tu menú</a></li>
-      <li class="list-group-item"><a href="#">Contacto</a></li>
+      <li class="list-group-item li-mov-menu"><a href="#">Contacto</a></li>
       <li class="menu-item">
         <div class="div-btn-vales"><a href="#" onclick="return false;">
             <button class="btn-vales-mov">Vales <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
@@ -162,7 +162,8 @@
       </li>
 
       <li class="menu-item">
-        <div class="div-btn-comprar"><a href="#" onclick="return false;">
+        <div class="div-btn-comprar">
+          <a href="#" onclick="return false;">
             <button class="btn-comprar-mov">
               <div class="ico-text-btn-buy">
                 <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -186,11 +187,14 @@
           </ul>
         </div>
       </li>
+      <li class="menu-item">
+        <div class="submenu_mobile">
+          <div class="div-one"><a href="">Nosotros</a></div>
+          <div class="div-two"><a href="">Prensa</a></div>
+          <div class="div-three"><a href="">Sostenibilidad</a></div>
+          <div class="div-four"><a href="<?php echo home_url(); ?>/trabaja-con-nosotros">Trabaja con nosotros</a></div>
+        </div>
+      </li>
     </ul>
-    <div class="submenu_mobile">
-      <div class="div-one"><a href="">Nosotros</a></div>
-      <div class="div-two"><a href="">Prensa</a></div>
-      <div class="div-three"><a href="">Sostenibilidad</a></div>
-      <div class="div-four"><a href="<?php echo home_url(); ?>/trabaja-con-nosotros">Trabaja con nosotros</a></div>
-    </div>
+
   </div>
