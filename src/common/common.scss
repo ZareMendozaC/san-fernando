@@ -234,3 +234,38 @@ h2 p{
 .h1-marker{
     display: none;
 }
+
+
+.trabaja-head{
+    font-family: 'FuturaStd';
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 calc(100vw*(30/var(--width_base)));
+    margin-top: calculate(90);
+    height: calculate(290);
+    padding-top: calculate(50);
+      h1{
+        margin: 0;
+        text-align: center;
+        line-height: calculate(80);
+        font-weight: 700;
+        font-size: calc(100vw*(72/var(--width_base)));
+      }
+}
+
+@media only screen and (max-width: 768px) {
+
+        .trabaja-head{
+            font-family: 'FuturaStd';
+            margin-top: calculate(35);
+            padding-top: calculate(45);
+            height: calculate(188);
+            h1{
+                text-align: center;
+                font-size: calc(100vw*(35/var(--width_base)))!important;
+                line-height: calc(100vw*(50/var(--width_base)))!important;
+            }
+        }
+}
