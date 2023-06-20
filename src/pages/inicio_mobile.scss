@@ -253,6 +253,23 @@
             width: calc(100vw * 54 / var(--width_base));
             height: auto;
         }
+        .part-2-cer #dCertificacion {
+            font-size: calc(100vw * 12 / var(--width_base));
+            line-height: calc(100vw * 14 / var(--width_base));
+        }
+        .part-2-cer .modal-certificacion {
+            width: 100%;
+            background: #daf2f8;
+            padding: calc(100vw * 30 / var(--width_base)) calc(100vw * 15 / var(--width_base));
+        }
+        .part-2-cer .close-certificacion {
+            position: absolute;
+            right: calc(100vw * 5 / var(--width_base));
+            top: calc(100vw * 5 / var(--width_base));
+            cursor: pointer;
+            width: calculate(30);
+            height: calculate(30);
+        }
     }
     .btn-ver-mas {
         width: calc(100vw * 239 / var(--width_base));
