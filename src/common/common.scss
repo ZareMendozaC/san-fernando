@@ -9,12 +9,13 @@
     --color-grisblue: #E5EDF5;
     --color-disabled: #E5EDF5;
     --dark-blue: #024384;
+    --bg-product: #a6c0db;
     --color-celeste:#96DAEA;
     --color-celeste-light:#DAF2F8;
 }
 
 *{
-   outline: 1px solid purple;
+   //outline: 1px solid purple;
 }
 .color-blue{
     color: var(--color-blue)
@@ -27,6 +28,12 @@
 }
 .color-disabled{
     color: var(--color-disabled);
+}
+.bg-skyblue{
+    background-color: var(--bg-product);
+}
+.bg-blue{
+    background-color: var(--color-blue);
 }
 html {
     scroll-behavior: smooth;
@@ -43,7 +50,7 @@ h1{
     font-style: normal;
     font-weight: 700;
     font-size: calc(100vw*(92/var(--width_base)));
-    line-height: calc(100vw*(92/var(--width_base)));
+    line-height: calc(100vw*(95/var(--width_base)));
     font-family: 'FuturaStd';
 }
 h2 {
@@ -235,7 +242,6 @@ h2 p{
     display: none;
 }
 
-
 .trabaja-head{
     font-family: 'FuturaStd';
     background-color: var(--dark-blue);
@@ -246,13 +252,13 @@ h2 p{
     margin-top: calculate(90);
     height: calculate(290);
     padding-top: calculate(50);
-      h1{
+        h1{
         margin: 0;
         text-align: center;
         line-height: calculate(80);
         font-weight: 700;
         font-size: calc(100vw*(72/var(--width_base)));
-      }
+        }
 }
 
 @media only screen and (max-width: 768px) {

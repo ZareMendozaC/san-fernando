@@ -44,7 +44,7 @@ $lista_productos = get_field('listado_de_productos');
             </div>
         <?php endif; ?>
 
-        <div class="lista-productos">
+        <div class="lista-productos container-149">
             <?php foreach ($lista_productos as $item) : ?>
                 <?php
                 $item_image = $item["imagen_producto"];
