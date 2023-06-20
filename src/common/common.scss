@@ -252,19 +252,15 @@ h2 p{
     margin-top: calculate(90);
     height: calculate(290);
     padding-top: calculate(50);
-      h1{
+    h1{
         margin: 0;
         text-align: center;
         line-height: calculate(80);
         font-weight: 700;
         font-size: calc(100vw*(72/var(--width_base)));
-      }
+    }
 }
-
-
-
 @media only screen and (max-width: 768px) {
-
         .trabaja-head{
             font-family: 'FuturaStd';
             margin-top: calculate(35);
