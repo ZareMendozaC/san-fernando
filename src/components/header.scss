@@ -49,7 +49,10 @@
       color: var(--color-white);
     }
     a:hover {
-      color: var(--color-white);
+      color: var(--color-celeste-light);
+    }
+    a .arrow path:hover {
+      fill: var(--color-celeste-light);
     }
   }
 }
