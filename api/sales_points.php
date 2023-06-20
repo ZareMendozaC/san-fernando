@@ -13,6 +13,7 @@ function sales_points_handler()
     ]);
 
     $sales_points = array_map(function ($sales_point) {
+      $tipo = get_field('categoria', $sales_point->ID);
       $products = get_field('producto', $sales_point->ID);
       $tipo_de_vale = get_field('tipo_de_vale', $sales_point->ID);
       $ubicacion = get_field('ubicacion', $sales_point->ID);
@@ -29,6 +30,7 @@ function sales_points_handler()
 
       return [
         'id' => $sales_point->ID,
+        "tipo" => $tipo,
         'producto' => implode(',', $products),
         "producto_pavo" => $products[0],
         "producto_cerdo" => $products[1],
