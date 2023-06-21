@@ -41,7 +41,7 @@ $archivos = get_field("archivos");
 
 </section>
 <section class="section_time_line container">
-    <h1>LINEA DE TIEMPO</h1>
+<!-- TIME LINE -->
 </section>
 <section class="section_MV_valores container">
 
