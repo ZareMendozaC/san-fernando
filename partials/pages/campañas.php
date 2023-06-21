@@ -25,9 +25,6 @@ $galeria = get_field("galeria");
 
     <div class="w-50 flex-colu">
         <h2 class="color-blue"><?= $titulo; ?></h2>
-        <h2>
-            <p class="color-blue">Campañas</p>
-        </h2>
     </div>
     <div class="w-50 div-text">
         <p class="p-subtitle justificar"><?= $describcion; ?></p>
