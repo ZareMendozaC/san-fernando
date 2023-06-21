@@ -39,4 +39,18 @@
     .hidden-mobile{
         display: none !important;
     }
+
+    .trabaja-head{
+        font-family: 'FuturaStd';
+        margin-top: calculate(35);
+        padding-top: calculate(45);
+        height: calculate(188);
+        h1{
+            color: var(--color-white);
+            text-align: center;
+            font-size: calc(100vw*(35/var(--width_base)))!important;
+            line-height: calc(100vw*(50/var(--width_base)))!important;
+        }
+    }
+
 }
