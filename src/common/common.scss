@@ -25,7 +25,7 @@
     color: var(--color-gris);
 }
 .color-white{
-    color: var(--color-white);
+    color: var(--color-white) !important;
 }
 .color-disabled{
     color: var(--color-disabled);
@@ -108,6 +108,7 @@ h2 p{
     line-height: calc(100vw*(33/var(--width_base)));
     transition: all 0.3s ease;
 }
+.btn-rojo,
 .btn-menu{
     width: calc(100vw*(256/var(--width_base)));
     height: calc(100vw*(58/var(--width_base)));
@@ -156,6 +157,7 @@ h2 p{
     line-height: calc(100vw*(33/var(--width_base)));
     transition: all 0.3s ease;
 }
+
 .btn-ver-mas{
     width:  calc(100vw*(239/var(--width_base)));
     height:  calc(100vw*(58/var(--width_base)));
@@ -172,7 +174,7 @@ h2 p{
     line-height: calc(100vw*(33/var(--width_base)));
     transition: all 0.3s ease;
 }
-.btn-ver-articulos:hover, .btn-ver-mas:hover, .btn-ver-productos:hover, .btn-c:hover, .btn-menu:hover{
+.btn-rojo:hover, .btn-ver-articulos:hover, .btn-ver-mas:hover, .btn-ver-productos:hover, .btn-c:hover, .btn-menu:hover{
     color: var(--color-white) !important;
     background-color: #C90002;
 }
@@ -235,11 +237,11 @@ h2 p{
 }
 
 .show-desktop{
-    display: block;
+    display: block !important;
 }
 
 .hidden-desktop{
-    display: none;
+    display: none !important;
 }
 .h1-marker{
     display: none;

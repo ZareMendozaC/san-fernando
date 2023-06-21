@@ -129,5 +129,67 @@
             }
         }
     }
+
+    .titulo_card{
+        margin-bottom: 0px !important;
+        font-family: 'FuturaStd';
+        font-style: normal;
+        font-weight: 600;
+        font-size:  calc(100vw*(25/var(--width_base)));
+        line-height:  calc(100vw*(37/var(--width_base)));
+    }
+    .texto_card{
+        margin-bottom: 0px !important;
+        font-family: 'FuturaStd';
+        font-style: normal;
+        font-weight: 400;
+        font-size:  calc(100vw*(16/var(--width_base)));
+        line-height:  calc(100vw*(24/var(--width_base)));
+    }
+    
+
+    .section_conoce{
+        background-color:var(--color-blue);
+        padding:calculate(60) calculate(20);
+        margin-bottom: calculate(30);
+        .div_conoce{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom:calculate(86); 
+            .p_divConoce{      
+                margin-top:calculate(20);           
+                width:calculate(358) !important;
+            }
+        }
+        .div_conoce_list{
+            display: flex;
+            flex-wrap: wrap;
+    //   grid-template-columns: 1fr 1fr 1fr;
+    //   grid-template-rows: auto;
+            .card_conoce_mov{
+                width:calculate(358);
+                height: auto;
+                border-radius: calculate(16);
+                background-color: var(--color-white);
+                padding: calculate(28) calculate(19);
+                display: inline-grid;
+                gap:calculate(0);
+                margin-bottom: calculate(30);
+                .ico_card{
+                    width:calculate(58);
+                    height: auto;
+                }
+
+                .div_link_card{
+                    display: flex;
+                    align-items: center;
+                    gap: calculate(20);
+                    a svg{
+                        margin-top: calculate(10);
+                    }
+                }
+            }
+        }
+    }
     
 }

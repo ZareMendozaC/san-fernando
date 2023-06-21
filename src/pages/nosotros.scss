@@ -50,7 +50,6 @@
     font-weight: 600;
     font-size:  calc(100vw*(48/var(--width_base)));
     line-height:  calc(100vw*(57/var(--width_base)));
-
 }
 
 .titulo_box2{
@@ -75,6 +74,7 @@
 
 .section_MV_valores{
     display:flex;
+    margin-bottom: calculate(30);
     .container_misionvision,
     .container_valores{
         padding:calculate(30);
@@ -126,6 +126,56 @@
     }
 }
 
+.titulo_card{
+    margin-bottom: 0px !important;
+    font-family: 'FuturaStd';
+    font-style: normal;
+    font-weight: 600;
+    font-size:  calc(100vw*(25/var(--width_base)));
+    line-height:  calc(100vw*(42/var(--width_base)));
+}
+.texto_card{
+    margin-bottom: 0px !important;
+    font-family: 'FuturaStd';
+    font-style: normal;
+    font-weight: 400;
+    font-size:  calc(100vw*(16/var(--width_base)));
+    line-height:  calc(100vw*(27/var(--width_base)));
+}
+
+.section_conoce{
+    background-color:var(--color-blue);
+    padding:calculate(186) calculate(182);
+    margin-bottom: calculate(30);
+    .div_conoce{
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+        margin-bottom:calculate(86); ;
+        .p_divConoce{
+            width:calculate(685);
+        }
+    }
+    .div_conoce_list{
+        display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+        .card_conoce{
+            width:calculate(503);
+            height: auto;
+            border-radius: calculate(16);
+            background-color: var(--color-white);
+            padding: calculate(33) calculate(36);
+            display: inline-grid;
+            gap:calculate(10);
+            margin-bottom: calculate(30);
+            .ico_card{
+                width:calculate(58);
+                height: auto;
+            }
+        }
+    }
+}
 
 
 

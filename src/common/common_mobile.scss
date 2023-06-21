@@ -33,10 +33,10 @@
     }
 
     .show-mobile{
-        display: block;
+        display: block !important;
     }
 
     .hidden-mobile{
-        display: none;
+        display: none !important;
     }
 }
