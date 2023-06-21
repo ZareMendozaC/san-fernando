@@ -99,7 +99,7 @@
         </ul>
       </div>
     </div>
-    <div class="mobile-navs hidden-desktop show-mobile">
+    <div class="hidden-desktop mobile-navs ">
       <div class="toggle-menu">
         <svg width="29" height="21" viewBox="0 0 29 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path class="top" d="M26.7588 8.75H2.25879C1.2923 8.75 0.508789 9.53351 0.508789 10.5C0.508789 11.4665 1.2923 12.25 2.25879 12.25H26.7588C27.7253 12.25 28.5088 11.4665 28.5088 10.5C28.5088 9.53351 27.7253 8.75 26.7588 8.75Z" fill="white" />
