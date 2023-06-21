@@ -53,6 +53,16 @@
 
 }
 
+.titulo_box2{
+    margin-bottom: 0px !important;
+    font-family: 'FuturaStd';
+    font-style: normal;
+    font-weight: 700;
+    font-size:  calc(100vw*(18/var(--width_base)));
+    line-height:  calc(100vw*(27/var(--width_base)));
+
+}
+
 .texto_box{
     margin-bottom: 0px !important;
     font-family: 'FuturaStd';
@@ -102,6 +112,14 @@
                 // margin-bottom: calculate(10);
                 svg{
                     width:calculate(52);
+                }
+            }
+            ul{
+                margin-top: calculate(37);
+                li{
+                    display:flex; gap: calculate(19);
+                    margin-bottom: calculate(30);
+
                 }
             }
         }
