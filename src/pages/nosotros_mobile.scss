@@ -164,8 +164,6 @@
         .div_conoce_list{
             display: flex;
             flex-wrap: wrap;
-    //   grid-template-columns: 1fr 1fr 1fr;
-    //   grid-template-rows: auto;
             .card_conoce_mov{
                 width:calculate(358);
                 height: auto;
@@ -188,6 +186,25 @@
                         margin-top: calculate(10);
                     }
                 }
+            }
+        }
+    }
+
+    .section_politicas{
+        text-align: center;
+        padding-top:calculate(60);
+        
+        .div_btn_politicas{
+            margin-top: calculate(15)!important;
+            display: grid;
+            justify-content: center;
+            width: calculate(358);
+            height: auto;
+            margin: auto;
+            gap: calculate(20);
+
+            .btn-azul{
+                width: calculate(279)
             }
         }
     }

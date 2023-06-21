@@ -146,7 +146,7 @@
 .section_conoce{
     background-color:var(--color-blue);
     padding:calculate(186) calculate(182);
-    margin-bottom: calculate(30);
+    // margin-bottom: calculate(30);
     .div_conoce{
         display:flex;
         align-items: center;
@@ -173,6 +173,22 @@
                 width:calculate(58);
                 height: auto;
             }
+        }
+    }
+}
+.section_politicas{
+    text-align: center;
+    padding-top:calculate(120);
+    margin-bottom: calculate(30);
+    .div_btn_politicas{
+        margin-top: calculate(40)!important;
+        display: flex;
+        width: calculate(844);
+        height: auto;
+        margin: auto;
+        gap: calculate(20);
+        .btn-azul{
+            gap: calculate(10);
         }
     }
 }

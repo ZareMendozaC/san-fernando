@@ -23,6 +23,10 @@ $lista_conoce = get_field("lista_conoce");
 $titulo_politicas = get_field("titulo_politicas");
 $descripcion_politicas = get_field("descripcion_politicas");
 $archivos = get_field("archivos");
+// CERTIFICACIONES
+// $titulo_certificaciones = get_field('titulo_certificaciones');
+// $descripcion_certificaciones = get_field('descripcion_certificaciones');
+// $listado_de_certificaciones = get_field('listado_de_certificaciones');
 ?>
 
 <section class="section_info_nosotros ">
@@ -125,10 +129,66 @@ $archivos = get_field("archivos");
                             <path d="M17.5287 11.9694L12.9387 7.37942C12.7513 7.19316 12.4979 7.08862 12.2337 7.08862C11.9695 7.08862 11.7161 7.19316 11.5287 7.37942C11.435 7.47238 11.3606 7.58298 11.3098 7.70484C11.259 7.8267 11.2329 7.9574 11.2329 8.08942C11.2329 8.22143 11.259 8.35213 11.3098 8.47399C11.3606 8.59585 11.435 8.70645 11.5287 8.79942L16.1287 13.3794C16.2224 13.4724 16.2968 13.583 16.3476 13.7048C16.3984 13.8267 16.4245 13.9574 16.4245 14.0894C16.4245 14.2214 16.3984 14.3521 16.3476 14.474C16.2968 14.5959 16.2224 14.7065 16.1287 14.7994L11.5287 19.3794C11.3404 19.5664 11.2341 19.8205 11.2332 20.0859C11.2322 20.3512 11.3367 20.6061 11.5237 20.7944C11.7107 20.9827 11.9648 21.089 12.2302 21.09C12.4955 21.0909 12.7504 20.9864 12.9387 20.7994L17.5287 16.2094C18.0905 15.6469 18.4061 14.8844 18.4061 14.0894C18.4061 13.2944 18.0905 12.5319 17.5287 11.9694Z" fill="white" />
                         </svg></a>
                 </div>
-
-                <!-- <a class="btn-rojo" href="<?= $link_conoce; ?>" target="_blank"><?= $btn_conoce; ?></a> -->
-
             </div>
         <?php endforeach; ?>
+    </div>
+</section>
+<section class="section_politicas container">
+    <h2><?= $titulo_politicas; ?></h2>
+    <p class="p-subtitle color-gris"><?= $descripcion_politicas; ?></p>
+
+    <div class="div_btn_politicas">
+        <?php foreach ($archivos as $archivo) : ?>
+            <?php
+            $texto_boton_politicas = $archivo["texto_boton_politicas"];
+            $url_boton_politicas = $archivo["url_boton_politicas"];
+            ?>
+            <a class="btn-azul" href="<?= $url_boton_politicas; ?>"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.5 11.0449L12.5 14.0449L22.5 4.04492" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M21.5 12.0449V19.0449C21.5 19.5754 21.2893 20.0841 20.9142 20.4591C20.5391 20.8342 20.0304 21.0449 19.5 21.0449H5.5C4.96957 21.0449 4.46086 20.8342 4.08579 20.4591C3.71071 20.0841 3.5 19.5754 3.5 19.0449V5.04492C3.5 4.51449 3.71071 4.00578 4.08579 3.63071C4.46086 3.25564 4.96957 3.04492 5.5 3.04492H16.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><?= $texto_boton_politicas; ?>
+            </a>
+        <?php endforeach; ?>
+    </div>
+</section>
+<?php
+$titulo_certificaciones = get_field('titulo_certificaciones', 17);
+$descripcion_certificaciones = get_field('descripcion_certificaciones', 17);
+$listado_de_certificaciones = get_field('listado_de_certificaciones', 17);
+?>
+<section class="section-certificaciones">
+    <div class="container">
+        <div class="part-1-cer">
+            <h2 class="color-blue"><?= $titulo_certificaciones; ?></h2>
+            <p class="p-subtitle color-gris"><?= $descripcion_certificaciones; ?></p>
+        </div>
+        <div class="part-2-cer">
+            <?php if (have_rows('listado_de_certificaciones', 17)) : ?>
+                <?php while (have_rows('listado_de_certificaciones', 17)) : the_row();
+                    $image = get_sub_field('logo_certificacion');
+                    $nombre_certificacion = get_sub_field('nombre_certificacion');
+                    $detalle = get_sub_field('detalle');
+                ?>
+                    <div class="card-certificacion">
+                        <div class="data-certificacion"><?= $detalle; ?></div>
+                        <svg class="show-desktop" width="162" height="9" viewBox="0 0 162 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4.28711H158" stroke="#96DAEA" stroke-width="8" stroke-linecap="round" />
+                        </svg>
+                        <svg class="show-mobile" width="79" height="9" viewBox="0 0 79 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.85059 4.09668H74.1494" stroke="#96DAEA" stroke-width="8" stroke-linecap="round" />
+                        </svg>
+                        <img class="img-logo" src="<?= $image['url'] ?>" alt="">
+                        <p class="color-blue"><?= $nombre_certificacion; ?></p>
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <div class="modal-certificacion">
+                <svg class="close-certificacion" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.6504 7.34999C22.8004 1.49999 13.2004 1.49999 7.35039 7.34999C1.50039 13.2 1.50039 22.8 7.35039 28.65C13.2004 34.5 22.6504 34.5 28.5004 28.65C34.3504 22.8 34.5004 13.2 28.6504 7.34999ZM22.2004 24.3L18.0004 20.1L13.8004 24.3L11.7004 22.2L15.9004 18L11.7004 13.8L13.8004 11.7L18.0004 15.9L22.2004 11.7L24.3004 13.8L20.1004 18L24.3004 22.2L22.2004 24.3Z" fill="#004A96" />
+                </svg>
+                <div id="dCertificacion"></div>
+
+            </div>
+        </div>
     </div>
 </section>
