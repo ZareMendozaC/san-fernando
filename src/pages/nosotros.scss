@@ -31,9 +31,16 @@
       height: calculate(359);
       bottom: calculate(0);
     }
-    .img_people_nos {
+    .semi-circulo-ban-nos2 {
       position: absolute;
       z-index: 2;
+      width: calculate(522);
+      height: calculate(239);
+      bottom: calculate(0);
+    }
+    .img_people_nos {
+      position: absolute;
+      z-index: 3;
       width: calculate(528);
       height: auto;
 
