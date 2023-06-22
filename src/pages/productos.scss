@@ -402,3 +402,16 @@
         margin-right: calculate(22);
     }
 }
+.center-vertical div{
+    position: relative;
+    svg{
+        position: absolute;
+        width: calculate(284);
+        height: auto;
+        top: calculate(116);
+        left: calculate(-18);
+    }
+}
+.section-blog.bg-skyblue-1{
+    padding-top: calculate(111);
+}
