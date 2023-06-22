@@ -15,6 +15,11 @@
         position: absolute;
         bottom: calc(2000vw / var(--width_base));
     }
+    .main-banner{  
+        .slick-track{
+            height: calc(100vw * 438 / var(--width_base))!important;
+        }
+    }
     .bg-productos {
         height: calc(100vw * 657 / var(--width_base));
         padding-top: calc(100vw * 31 / var(--width_base));

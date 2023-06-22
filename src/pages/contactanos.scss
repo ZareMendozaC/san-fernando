@@ -3,46 +3,109 @@ section{
     font-family: 'FuturaStd';
     .content-1{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         gap: calculate(30);
 
-        .card-text{
-            margin-top: calculate(94);
-            display: flex;
-            flex-direction: column;
-            gap: calculate(8);
-            border: solid 1px #A3DEED;
-            border-radius: calculate(16);
-            padding: calculate(33) 0;
-            padding-left: calculate(49);
-            padding-right: calculate(155);
-
-
-            h3{
-                font-weight: 700;
-                color: var(--color-blue);
-                font-size: calculate(25);
-                margin: 0;
-            }
-
-            p{
-                font-size: calculate(16);
-                margin: 0;
-            }
-
-            .btn-action{
-                margin-top: calculate(6);
-                text-align: center;
-                width: calculate(165);
-                padding: calculate(8) calculate(49);
-                font-size: calculate(16);
-                border-radius: calculate(515);
-                border: solid 1px #004A96;
-                
-            }
-
-
+        h2{
+            text-align: center;
+            color: var(--color-blue);
+            font-size: calculate(72);
+            font-weight: 700;
         }
+
+        p{
+            text-align: center;
+            font-size: calculate(18);
+        }
+
+        .wpcf7 {
+            form{
+                display: grid;
+                justify-items: center;
+                gap: calculate(10);
+                margin: auto;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(7, 1fr);
+                width: calculate(908);
+    
+              div{
+                  margin: 0;
+                  width: calculate(445);
+                  height: calculate(82);
+                  p{
+                    margin: 0;
+                  }
+                  
+              }
+              
+              .name{
+                grid-column-start: 1;
+                grid-column-end: 2;
+              }
+              .distrito{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                width: calculate(908);
+                input{
+                    width: calculate(908);
+                }
+              }
+              .comentarios{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 4;
+                grid-row-end: 6;
+                width: 100%;
+                height: calculate(121);
+                textarea{
+                    height: calculate(121);
+                }
+              }
+              .politicas{
+                display: flex;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                width: 100%;
+                font-size: calculate(18);
+                a{
+                    text-decoration: underline;
+                    font-weight: 600;
+                }
+              }
+              .btn-enviar{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                width: 100%;
+                input{
+                    width: calculate(175);
+                    height: calculate(62);
+                    background-color: var(--color-red-btn);
+                    border-radius: calculate(515);
+                    font-size: calculate(18);
+                    font-weight: 700;
+                    text-align: center;
+                    padding: 0 calculate(29);
+                    padding-top: calculate(5);
+                    padding-bottom: calculate(7);
+                    transition: all .3s ease-in-out;
+                    &:hover{
+                        transition: all .3s ease-in-out;
+                        background-color: var(--color-red-btn-hover);
+                    }
+                }
+                span{
+                    display: none;
+                }
+                
+              }
+
+
+            }
+               
+             
+        }
+
     }
 
     .line-separate{
@@ -60,6 +123,35 @@ section{
         display: flex;
         flex-direction: column;
         margin-bottom: calculate(380);
+
+        #accordion{
+            display: flex;
+            flex-direction: column;
+            gap: calculate(24);
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                span{
+                    display: none;
+                }
+
+                h3{
+                    font-size: calculate(25);
+                        font-weight: 700;
+                        margin: 0;
+                        color: var(--color-gris);
+                }
+            }
+
+        }
+
+        
+
+
+
+
         h2{
             text-align: center;
             color: var(--color-blue);
