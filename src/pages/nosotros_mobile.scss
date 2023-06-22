@@ -293,7 +293,7 @@
   }
 
   .head_nosotros_mov:after {
-    bottom: 352px;
+    bottom: calculate(499);
     transform: rotate(180deg);
     margin-left: calculate(-1);
   }
