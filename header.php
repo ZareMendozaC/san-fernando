@@ -58,8 +58,8 @@
       <div class="div_menu2">
         <ul class="menu2">
           <li class="menu2-item"><a href="<?php echo home_url(); ?>/nosotros">Nosotros</a></li>
-          <li class="menu2-item"><a href="#">Prensa</a></li>
-          <li class="menu2-item"><a href="#">Sostenibilidad</a></li>
+          <li class="menu2-item"><a href="<?php echo home_url(); ?>/prensa">Prensa</a></li>
+          <li class="menu2-item"><a href="<?php echo home_url(); ?>/sistenibilidad">Sostenibilidad</a></li>
           <li class="menu2-item"><a href="<?php echo home_url(); ?>/trabaja-con-nosotros">Trabaja con nosotros</a></li>
         </ul>
       </div>
@@ -146,7 +146,7 @@
       <li class="list-group-item li-blog_mov"><a href="#">Soluciones</a></li>
       <li class="list-group-item li-blog_mov"><a href="#">Calculadora de proteina</a></li>
       <li class="list-group-item li-blog_mov"><a href="#">Crea tu menú</a></li>
-      <li class="list-group-item li-mov-menu"><a href="#">Contacto</a></li>
+      <li class="list-group-item li-mov-menu"><a href="<?php echo home_url(); ?>/contacto">Contacto</a></li>
       <li class="menu-item">
         <div class="div-btn-vales"><a href="#" onclick="return false;">
             <button class="btn-vales-mov">Vales <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
@@ -189,9 +189,9 @@
       </li>
       <li class="menu-item">
         <div class="submenu_mobile">
-          <div class="div-one"><a href="">Nosotros</a></div>
-          <div class="div-two"><a href="">Prensa</a></div>
-          <div class="div-three"><a href="">Sostenibilidad</a></div>
+          <div class="div-one"><a href="<?php echo home_url(); ?>/nosotros">Nosotros</a></div>
+          <div class="div-two"><a href="<?php echo home_url(); ?>/prensa">Prensa</a></div>
+          <div class="div-three"><a href="<?php echo home_url(); ?>/sostenibilidad">Sostenibilidad</a></div>
           <div class="div-four"><a href="<?php echo home_url(); ?>/trabaja-con-nosotros">Trabaja con nosotros</a></div>
         </div>
       </li>
