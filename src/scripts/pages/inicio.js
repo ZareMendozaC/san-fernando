@@ -1,9 +1,12 @@
 import $ from "jquery";
 import Splide from "@splidejs/splide";
-new Splide( '.splide.splide1' , {
+if($('.splide.splide1').length>0){
+  new Splide( '.splide.splide1' , {
     type: 'loop',
     pagination: false,
 }).mount();
+
+}
 
 mobileOnlySlider(".lista-productos", true, false, 767);
 
@@ -43,4 +46,8 @@ $(".card-certificacion").click(function(){
 $(".close-certificacion").click(function(){
     $('#dCertificacion').html('');
     $('.modal-certificacion').fadeOut();
+});
+$( document ).ready(function() {
+  console.log('avance');
+    //$( "#tabs" ).tabs();
 });

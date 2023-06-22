@@ -71,13 +71,13 @@
         </div>
     </div> 
     <div class="container lista-prod">
-        <a href="">
+        <a href="<?php echo home_url(); ?>/detalle-producto">
             <div class="card-p">
                 <div class="border-card" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Rectangle-897-1.png)"></div>
                 <p class="color-blue">Filete de pechuga de pollo</p>
             </div>
         </a>
-        <a href="">
+        <a href="<?php echo home_url(); ?>/detalle-producto">
         <div class="card-p">
             <div class="border-card" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Rectangle-897-1.png)"></div>
             <p class="color-blue">Muslo de pollo</p>
