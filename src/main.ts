@@ -5,7 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./style.scss";
 import '@splidejs/splide/css';
-import "./scripts/pages/inicio.js"
+import "./scripts/pages/inicio.js";
+import "./scripts/pages/sostenibilidad.js";
 
 
 // import Masonry from "masonry-layout/dist/masonry";
@@ -85,17 +86,17 @@ $(".btn-comprar-mov").click(function () {
   $(".compras_mov").slideToggle();
 });
 //@ts-ignore
-$(".btn-blog-mov").click(function() {
+$(".btn-blog-mov").click(function () {
   $(".li-blog_mov").slideToggle();
   $(".btn-blog-mov .arrow").toggleClass("arrow-btn-active")
 });
 //@ts-ignore
-$(".btn-vales-mov").click(function() {
+$(".btn-vales-mov").click(function () {
   $(".li-vales_mov").slideToggle();
   $(".btn-vales-mov .arrow").toggleClass("arrow-btn-active")
 });
 //@ts-ignore
-$(".btn-comprar-mov").click(function() {
+$(".btn-comprar-mov").click(function () {
   $(".li-compras_mov").slideToggle();
   $(".btn-comprar-mov .arrow").toggleClass("arrow-btn-active")
 });
@@ -120,3 +121,8 @@ var mediaqueryList = window.matchMedia("(max-width: 768px)");
 // mediaqueryList.addListener(function (EventoMediaQueryList) {
 //   $(".section-2").css("display", "none");
 // });
+
+
+$("contain-1").click(function () {
+  console.log("hola")
+})
