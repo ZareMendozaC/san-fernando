@@ -11,6 +11,8 @@
   z-index: 900;
 }
 
+
+
 .div_logo {
   height: 100%;
   width: calculate(185);
@@ -100,9 +102,22 @@
 }
 
 .btn-comprar {
-  margin-top: calculate(20);
-  height: calculate(58);
-  width: calculate(251);
+  display: flex !important;
+  justify-content: space-evenly;
+  gap:calculate(10);
+  padding: 0 4px;
+  .ico-text-btn-buy-dsk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    .ico-btn-buy{
+      width:30px
+    }
+  }
+  .arrow{
+    width:12px
+  }
 }
 .bg-red {
   background: var(--color-red-btn);

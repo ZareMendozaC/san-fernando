@@ -132,6 +132,23 @@ h2 p{
     transition: all 0.3s ease;
 }
 
+.btn-comprar{
+    width: calc(100vw*(256/var(--width_base)));
+    height: calc(100vw*(58/var(--width_base)));
+    background: var(--color-red-btn);
+    border-radius: calc(100vw*(515/var(--width_base)));
+    color: var(--color-white);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-family: 'FuturaStd';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(100vw*(18/var(--width_base)));
+    line-height: calc(100vw*(33/var(--width_base)));
+    transition: all 0.3s ease;
+}
+
 .btn-azul{
     width: calc(100vw*(245/var(--width_base)));
     height: calc(100vw*(59/var(--width_base)));
