@@ -1,0 +1,104 @@
+
+section{
+    font-family: 'FuturaStd';
+    .content-1{
+        display: flex;
+        justify-content: center;
+        gap: calculate(30);
+
+        .card-text{
+            margin-top: calculate(94);
+            display: flex;
+            flex-direction: column;
+            gap: calculate(8);
+            border: solid 1px #A3DEED;
+            border-radius: calculate(16);
+            padding: calculate(33) 0;
+            padding-left: calculate(49);
+            padding-right: calculate(155);
+
+
+            h3{
+                font-weight: 700;
+                color: var(--color-blue);
+                font-size: calculate(25);
+                margin: 0;
+            }
+
+            p{
+                font-size: calculate(16);
+                margin: 0;
+            }
+
+            .btn-action{
+                margin-top: calculate(6);
+                text-align: center;
+                width: calculate(165);
+                padding: calculate(8) calculate(49);
+                font-size: calculate(16);
+                border-radius: calculate(515);
+                border: solid 1px #004A96;
+                
+            }
+
+
+        }
+    }
+
+    .line-separate{
+        display: flex;
+        justify-content: center;
+        margin-top: calculate(125); 
+        margin-bottom: calculate(102);
+        svg{
+            width: calculate(1700);
+            height: calcualte(4);
+        }
+    }
+
+    .content-2{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: calculate(380);
+        h2{
+            text-align: center;
+            color: var(--color-blue);
+            font-size: calculate(72);
+            font-weight: 700;
+            margin: 0;
+            margin-bottom: calculate(77);
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: calculate(24);
+            li{
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border: solid 1px #BFD1E4;
+                border-radius: calculate(8);
+                padding: calculate(16) calculate(24);
+                height: calculate(80);
+
+                .text-preguntas{
+
+                    h5{
+                        font-size: calculate(25);
+                        font-weight: 700;
+                        margin: 0;
+                    }
+
+                    p{
+                        display: none;
+                    }
+
+                }
+                
+
+            }
+        }
+    }
+}

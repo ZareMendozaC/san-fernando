@@ -4,8 +4,8 @@
       --width_base: 375;
     }
     h1{
-        font-size: calc(100vw*(92/var(--width_base)));
-        line-height: calc(100vw*(92/var(--width_base)));
+        font-size: calc(100vw*(45/var(--width_base)))!important;
+        line-height: calc(100vw*(45/var(--width_base)))!important;
     }
     h2 {
         font-size: calc(100vw*(31/var(--width_base)));
@@ -33,10 +33,24 @@
     }
 
     .show-mobile{
-        display: block;
+        display: block ;
     }
 
-    .hidden-mobile{
-        display: none;
+    .show-desktop{
+        display: none ;
     }
+
+    .trabaja-head{
+        font-family: 'FuturaStd';
+        margin-top: calculate(35);
+        padding-top: calculate(45);
+        height: calculate(188);
+        h1{
+            color: var(--color-white);
+            text-align: center;
+            font-size: calc(100vw*(35/var(--width_base)))!important;
+            line-height: calc(100vw*(50/var(--width_base)))!important;
+        }
+    }
+
 }
