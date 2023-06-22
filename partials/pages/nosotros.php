@@ -111,14 +111,14 @@ $archivos = get_field("archivos");
             $btn_conoce = $conoce["texto_boton"];
             $link_conoce = $conoce["link_boton"];
             ?>
-            <div class="card_conoce hidden-mobile">
+            <div class="card_conoce show-desktop">
                 <img src="<?= $ico_conoce['url']; ?>" alt="<?= $nombre_conoce; ?>" class="ico_card">
                 <p class="titulo_card color-blue"><?= $nombre_conoce; ?></p>
                 <p class="texto_card color-gris"><?= $texto_conoce; ?></p>
                 <a class="btn-rojo" href="<?= $link_conoce; ?>" target="_blank"><?= $btn_conoce; ?></a>
 
             </div>
-            <div class="card_conoce_mov hidden-desktop show-mobile" style="background-image: url('<?= $img_conoce['url']; ?>')">
+            <div class="card_conoce_mov show-mobile" style="background-image: url('<?= $img_conoce['url']; ?>')">
 
                 <p class="titulo_card color-white"><?= $nombre_conoce; ?></p>
                 <div class="div_link_card">
