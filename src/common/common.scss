@@ -12,6 +12,7 @@
     --bg-product: #a6c0db;
     --color-celeste:#96DAEA;
     --color-celeste-light:#DAF2F8;
+    --color-plomo: #58596C;
 }
 
 *{
@@ -24,7 +25,7 @@
     color: var(--color-gris);
 }
 .color-white{
-    color: var(--color-white);
+    color: var(--color-white) !important;
 }
 .color-disabled{
     color: var(--color-disabled);
@@ -68,6 +69,7 @@ h2 p{
     line-height: calc(100vw*(60/var(--width_base)));
     font-family: 'Portuguesa';
     margin-bottom: 0px;
+    margin-top: calc(100vw*(20/var(--width_base)));
 }
 .text-center{
     text-align: center;
@@ -106,6 +108,7 @@ h2 p{
     line-height: calc(100vw*(33/var(--width_base)));
     transition: all 0.3s ease;
 }
+.btn-rojo,
 .btn-menu{
     width: calc(100vw*(256/var(--width_base)));
     height: calc(100vw*(58/var(--width_base)));
@@ -122,6 +125,24 @@ h2 p{
     line-height: calc(100vw*(33/var(--width_base)));
     transition: all 0.3s ease;
 }
+
+.btn-azul{
+    width: calc(100vw*(245/var(--width_base)));
+    height: calc(100vw*(59/var(--width_base)));
+    background: var(--color-blue);
+    border-radius: calc(100vw*(515/var(--width_base)));
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'FuturaStd';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(100vw*(18/var(--width_base)));
+    line-height: calc(100vw*(30/var(--width_base)));
+    transition: all 0.3s ease;
+}
+
 .btn-c{
     width:  calc(100vw*(126/var(--width_base)));
     height:  calc(100vw*(58/var(--width_base)));
@@ -154,6 +175,7 @@ h2 p{
     line-height: calc(100vw*(33/var(--width_base)));
     transition: all 0.3s ease;
 }
+
 .btn-ver-mas{
     width:  calc(100vw*(239/var(--width_base)));
     height:  calc(100vw*(58/var(--width_base)));
@@ -170,7 +192,7 @@ h2 p{
     line-height: calc(100vw*(33/var(--width_base)));
     transition: all 0.3s ease;
 }
-.btn-ver-articulos:hover, .btn-ver-mas:hover, .btn-ver-productos:hover, .btn-c:hover, .btn-menu:hover{
+.btn-rojo:hover, .btn-ver-articulos:hover, .btn-ver-mas:hover, .btn-ver-productos:hover, .btn-c:hover, .btn-menu:hover{
     color: var(--color-white) !important;
     background-color: #C90002;
 }
@@ -232,12 +254,11 @@ h2 p{
     display: flex;
 }
 
-.show-desktop{
-    display: block;
+.show-mobile{
+    display: none ;
 }
-
-.hidden-desktop{
-    display: none;
+.show-desktop{
+    display: block ;
 }
 .h1-marker{
     display: none;

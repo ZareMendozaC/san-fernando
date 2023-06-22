@@ -3,6 +3,6 @@
 
 get_header();
 
-get_template_part("partials/pages/productos");
+get_template_part("partials/pages/producto/productos");
 
 get_footer();
