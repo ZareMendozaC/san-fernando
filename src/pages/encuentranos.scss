@@ -1,0 +1,9 @@
+.section-encuentranos{
+    .trabaja-head{
+        flex-direction: column;
+        display: flex;
+        h1{
+            margin-bottom: calculate(25) !important;
+        }
+    }
+}

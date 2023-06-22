@@ -107,7 +107,7 @@ $opciones_cotiza_y_compra = get_field('opciones_cotiza_y_compra');
         </div>
     </div>
 </section>
-<section class="section-blog">
+<section class="section-blog bg-beige">
     <div class="container-left">
         <div class="col-blog-1">
             <div class="content-h2">
