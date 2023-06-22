@@ -133,7 +133,7 @@ h2 p{
 }
 
 .btn-comprar{
-    width: calc(100vw*(256/var(--width_base)));
+    width: calc(100vw*(251/var(--width_base)));
     height: calc(100vw*(58/var(--width_base)));
     background: var(--color-red-btn);
     border-radius: calc(100vw*(515/var(--width_base)));
@@ -147,6 +147,28 @@ h2 p{
     font-size: calc(100vw*(18/var(--width_base)));
     line-height: calc(100vw*(33/var(--width_base)));
     transition: all 0.3s ease;
+}
+
+.btn-vales{
+    width: calc(100vw*(150/var(--width_base)));
+    height: calc(100vw*(58/var(--width_base)));
+    background: transparent;
+    border:1px solid #fff;
+    border-radius: calc(100vw*(515/var(--width_base)));
+    color: var(--color-white);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-family: 'FuturaStd';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(100vw*(22/var(--width_base)));
+    line-height: calc(100vw*(33/var(--width_base)));
+    transition: all 0.3s ease;
+}
+.btn-vales:hover{
+    color: var(--color-white) !important;
+    background-color: transparent
 }
 
 .btn-azul{

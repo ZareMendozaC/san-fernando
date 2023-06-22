@@ -57,17 +57,19 @@ $(".slider-blog").slick({
 });
 */
 //@ts-ignore
-$(".btn-blog").click(function () {
+$(".btn-blog").hover(function () {
   $(".menu_blog").slideToggle();
   $(".btn-blog .arrow").toggleClass("arrow-btn-active")
 });
 //@ts-ignore
-$(".btn-vales").click(function () {
+$(".btn-vales").hover(function () {
   $(".menu_vales").slideToggle();
+  $(".btn-vales .arrow").toggleClass("arrow-btn-active")
 });
 //@ts-ignore
-$(".btn-comprar").click(function () {
+$(".btn-comprar").hover(function () {
   $(".menu_compras").slideToggle();
+  $(".btn-comprar .arrow").toggleClass("arrow-btn-active")
 });
 //@ts-ignore
 $(".toggle-menu").click(function () {

@@ -33,6 +33,7 @@
   height: 100%;
   display: flex;
   gap: calculate(26);
+  margin-top: calculate(20);
 
   .menu-item {
     // height: 100%;
@@ -95,18 +96,37 @@
   }
 }
 
-.btn-vales {
-  margin-top: calculate(20);
-  height: calculate(58);
-  width: calculate(150);
-}
 
 .btn-comprar {
   display: flex !important;
   justify-content: space-evenly;
   gap:calculate(10);
-  padding: 0 4px;
+  // padding: 0 4px;
   .ico-text-btn-buy-dsk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    .ico-btn-buy{
+      width:30px
+    }
+  }
+  .arrow{
+    width:12px
+  }
+}
+.btn-blog{
+  .arrow{
+    width: 12px;
+  }
+}
+
+.btn-vales{
+  display: flex !important;
+  justify-content: space-evenly;
+  gap:calculate(5);
+  padding: 0 10px;
+  .ico-text-btn-vale-dsk{
     display: flex;
     justify-content: center;
     align-items: center;
