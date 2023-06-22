@@ -115,7 +115,7 @@
                 </svg>
                 Rango de 0.9 a 1.3 kg.
             </div>
-            <div class="div-img" style="background: url('http://localhost:10053/wp-content/uploads/2023/06/272-1.png');">
+            <div class="div-img" style="background: url('<?php echo home_url(); ?>/wp-content/uploads/2023/06/272-1.png');">
             </div>
         </div>
         <div class="col-detail-prod">

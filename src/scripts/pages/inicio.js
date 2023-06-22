@@ -47,7 +47,3 @@ $(".close-certificacion").click(function(){
     $('#dCertificacion').html('');
     $('.modal-certificacion').fadeOut();
 });
-$( document ).ready(function() {
-  console.log('avance');
-    //$( "#tabs" ).tabs();
-});
