@@ -280,6 +280,7 @@
         }
     }
     .select-options{
+        display: none;
         padding-left: calculate(10);
         border-left: 1px solid rgba(0, 74, 150, 0.25);
         p{
@@ -353,7 +354,7 @@
         color: var(--color-blue);
         line-height: calculate(38);
     }
-    .text{
+    .text,#tabs-2, #tabs-2 p{
         font-size: calculate(16);
         font-weight: 400;
         margin-bottom: calculate(54) !important;
@@ -414,4 +415,73 @@
 }
 .section-blog.bg-skyblue-1{
     padding-top: calculate(111);
+}
+.ui-widget.ui-widget-content {
+    border: 0px solid #c5c5c5 !important;
+}
+.ui-tabs .ui-tabs-nav {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.ui-widget-header {
+    border: 0px solid #dddddd !important; 
+    background: none !important; 
+    color: #333333; 
+    font-weight: bold; 
+}
+.ui-tabs .ui-tabs-panel {
+    display: block;
+    border-width: 0;
+    padding: 0px !important;
+    background: none;
+}
+.valor-diario{
+    color: var(--color-blue) !important;
+    font-size: calculate(18);
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    float: left;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'FuturaStd';
+    font-size: calculate(16);
+    font-weight: 600;
+    color: #a6a6b0;
+    svg{
+        width: calculate(25);
+        height: calculate(25);
+        margin-right: calculate(12);
+        path{
+            fill: #a6a6b0;
+        }
+    }
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border-bottom: 2px solid #004A96 !important;
+    background: #E5EDF5 !important;
+    font-weight: normal !important;
+    color: #004A96 !important;
+    border-top: 0px !important;
+    border-right: 0px !important;
+    border-left: 0px !important;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited{
+    color: #004A96 !important;
+}
+.ui-state-active a svg path, .ui-state-active a:link svg path, .ui-state-active a:visited svg path{
+    fill: #004A96 !important;
+}
+.ui-tabs .ui-tabs-nav li{
+border: 0px;
+background-color: transparent;
+}
+#tabs-2{
+    font-family: 'FuturaStd';
+    margin-top: calculate(40);
+}
+.close-des{
+    transform: rotate(180deg);
 }
