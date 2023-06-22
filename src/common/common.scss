@@ -121,7 +121,7 @@ h2 p{
     background: var(--color-red-btn);
     border-radius: calc(100vw*(515/var(--width_base)));
     color: var(--color-white);
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     font-family: 'FuturaStd';
@@ -261,10 +261,10 @@ h2 p{
 }
 
 .show-mobile{
-    display: none ;
+    display: none;
 }
 .show-desktop{
-    display: block ;
+    display: block;
 }
 .h1-marker{
     display: none;

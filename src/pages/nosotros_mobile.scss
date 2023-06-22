@@ -1,217 +1,300 @@
 @media only screen and (max-width: 768px) {
-    .section_info_nosotros{
-        font-family: 'FuturaStd';
+  .section_info_nosotros {
+    font-family: "FuturaStd";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: calculate(150);
+
+    .head_nosotros_mov {
+      background-color: var(--dark-blue);
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      color: var(--color-white);
+      height: calculate(290);
+      margin-top: calculate(-100);
+      margin-bottom: calculate(53);
+      width: 100%;
+      h1 {
+        margin-bottom: calculate(35);
+      }
+    }
+
+    .img_nosotros {
+      display: block;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+      width: calculate(358);
+      height: calculate(189);
+      margin-bottom: calculate(100);
+      // background-size: cover;
+    }
+
+    .img_nosotros:hover {
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+
+    .div_h2_nos {
+      position: relative;
+    }
+    h2 {
+      margin-bottom: calculate(100);
+    }
+
+    .img_sub_nos {
+      position: absolute;
+      right: calculate(70);
+      bottom: calculate(80);
+      width: calculate(100);
+      height: auto;
+    }
+
+    .p_dsc {
+      width: calculate(358);
+      text-align: justify;
+    }
+  }
+
+  .titulo_box {
+    margin-bottom: 0px !important;
+    font-family: "FuturaStd";
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(100vw * (28 / var(--width_base)));
+    line-height: calc(100vw * (33 / var(--width_base)));
+  }
+
+  .titulo_box2 {
+    margin-bottom: 0px !important;
+    font-family: "FuturaStd";
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(100vw * (16 / var(--width_base)));
+    line-height: calc(100vw * (24 / var(--width_base)));
+  }
+
+  .texto_box {
+    margin-bottom: 0px !important;
+    font-family: "FuturaStd";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(100vw * (16 / var(--width_base)));
+    line-height: calc(100vw * (24 / var(--width_base)));
+  }
+
+  .section_MV_valores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    .container_misionvision,
+    .container_valores {
+      padding: calculate(0);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .div_misionvision {
+        background-color: var(--color-celeste-light);
+        height: calculate(220);
+        width: calculate(358);
+        padding: calculate(40);
+        border-left: 6px solid #96daea !important;
+        .texto_box {
+          color: var(--color-plomo);
+        }
+        .div_inside {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          // margin-bottom: calculate(10);
+          svg {
+            width: calculate(37);
+          }
+        }
+      }
+      .div_valores {
+        background-color: var(--color-celeste-light);
+        height: calculate(475);
+        width: calculate(358);
+        padding: calculate(40);
+        border-left: 6px solid #96daea !important;
+        .texto_box {
+          color: var(--color-plomo);
+        }
+        .div_inside {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          // margin-bottom: calculate(10);
+          svg {
+            width: calculate(37);
+          }
+        }
+        ul {
+          margin-top: calculate(37);
+          li {
+            display: flex;
+            gap: calculate(9);
+            margin-bottom: calculate(30);
+          }
+        }
+      }
+    }
+  }
+
+  .titulo_card {
+    margin-bottom: 0px !important;
+    font-family: "FuturaStd";
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(100vw * (25 / var(--width_base)));
+    line-height: calc(100vw * (37 / var(--width_base)));
+  }
+  .texto_card {
+    margin-bottom: 0px !important;
+    font-family: "FuturaStd";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(100vw * (16 / var(--width_base)));
+    line-height: calc(100vw * (24 / var(--width_base)));
+  }
+
+  .section_conoce {
+    background-color: var(--color-blue);
+    padding: calculate(60) calculate(16);
+    margin-bottom: calculate(30);
+    flex-direction: column;
+    .div_conoce {
+      width: calculate(358);
+      align-items: center;
+      margin-top: 10%;
+      margin-bottom: calculate(60);
+      .p_divConoce {
+        width: calculate(345);
+      }
+      .div_h2_img_conoce {
+        position: relative;
+        margin-bottom: calculate(60);
+        .img_sub_h2_conoce {
+          position: absolute;
+          left: calculate(40);
+          top: calculate(90);
+          width: calculate(90);
+          height: auto;
+        }
+      }
+    }
+    .div_conoce_list {
+      width: calculate(358);
+      // display: flex;
+      // flex-wrap: wrap;
+      // align-items: center;
+      .subdiv_conoce_list {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
-        text-align: center;
-        margin-bottom: calculate(150);
-    
-        .head_nosotros{
-            background-color:var(--dark-blue) ;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: var(--color-white);
-            height:calculate(296);
-            margin-top: calculate(100);
-            margin-bottom: calculate(53);
-            width: 100%;
+        gap: calculate(10);
+        .card_conoce_square1 {
+          background-size: cover !important;
+          width: calculate(345);
+          height: calculate(255);
+          border-radius: calculate(16);
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding: calculate(16);
+          gap: calculate(10);
         }
-    
-        .img_nosotros {
-            border: 1px solid #ddd; 
-            border-radius: 4px;  
-            padding: 5px;
-            width: calculate(358);
-            height: calculate(189);
-            margin-bottom: calculate(167);
-            // background-size: cover;
-          }
-          
-          .img_nosotros:hover {
-            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-          }
-    
-          h2{
-            margin-bottom: calculate(100);
-          }
-    
-          .p_dsc{
-            width: calculate(358);
-            text-align:justify;
-          }
-    }
-    
-    .titulo_box{
-        margin-bottom: 0px !important;
-        font-family: 'FuturaStd';
-        font-style: normal;
-        font-weight: 600;
-        font-size:  calc(100vw*(28/var(--width_base)));
-        line-height:  calc(100vw*(33/var(--width_base)));
-    
-    }
 
-    .titulo_box2{
-        margin-bottom: 0px !important;
-        font-family: 'FuturaStd';
-        font-style: normal;
-        font-weight: 700;
-        font-size:  calc(100vw*(16/var(--width_base)));
-        line-height:  calc(100vw*(24/var(--width_base)));
-    
-    }
-    
-    
-    .texto_box{
-        margin-bottom: 0px !important;
-        font-family: 'FuturaStd';
-        font-style: normal;
-        font-weight: 400;
-        font-size:  calc(100vw*(16/var(--width_base)));
-        line-height:  calc(100vw*(24/var(--width_base)));
-    
-    }
-    
-    .section_MV_valores{
-        display:flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-        .container_misionvision,
-        .container_valores{
-            padding:calculate(0);
-            display: flex;
-            flex-direction: column; 
-            gap: 15px;
-            .div_misionvision{
-                background-color:var(--color-celeste-light);
-                height: calculate(220);
-                width: calculate(358);
-                padding: calculate(40);
-                border-left: 6px solid #96DAEA!important;
-                .texto_box{
-                    color:var(--color-plomo);
-                }
-                .div_inside{
-                    display: flex; justify-content: space-between; align-items:center;
-                    // margin-bottom: calculate(10);
-                    svg{
-                        width:calculate(37);
-                    }
-                }
-            }
-            .div_valores{
-                background-color:var(--color-celeste-light);
-                height: calculate(475);
-                width: calculate(358);
-                padding: calculate(40);
-                border-left: 6px solid #96DAEA!important;
-                .texto_box{
-                    color:var(--color-plomo);
-                }
-                .div_inside{
-                    display: flex; justify-content: space-between; align-items:center;
-                    // margin-bottom: calculate(10);
-                    svg{
-                        width:calculate(37);
-                    }
-                }
-                ul{
-                    margin-top: calculate(37);
-                    li{
-                        display:flex; gap: calculate(9);
-                        margin-bottom: calculate(30);
-                    }
-                }
-            }
+        .card_conoce_square2 {
+          background-size: cover !important;
+          width: calculate(345);
+          height: calculate(169);
+          border-radius: calculate(16);
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding: calculate(16);
+          gap: calculate(10);
         }
+      }
+      .card_conoce_rectangle {
+        background-size: cover !important;
+        width: calculate(345);
+        height: calculate(169);
+        border-radius: calculate(16);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: calculate(16);
+        gap: calculate(10);
+      }
     }
-
-    .titulo_card{
-        margin-bottom: 0px !important;
-        font-family: 'FuturaStd';
-        font-style: normal;
-        font-weight: 600;
-        font-size:  calc(100vw*(25/var(--width_base)));
-        line-height:  calc(100vw*(37/var(--width_base)));
+  }
+  .div_link_card {
+    display: flex;
+    align-items: center;
+    gap: calculate(10);
+    a svg {
+      margin-top: calculate(10);
     }
-    .texto_card{
-        margin-bottom: 0px !important;
-        font-family: 'FuturaStd';
-        font-style: normal;
-        font-weight: 400;
-        font-size:  calc(100vw*(16/var(--width_base)));
-        line-height:  calc(100vw*(24/var(--width_base)));
+  }
+  .section_politicas {
+    text-align: center;
+    padding-top: calculate(60);
+
+    .div_btn_politicas {
+      margin-top: calculate(15) !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: calculate(358);
+      height: auto;
+      margin: auto;
+      gap: calculate(20);
+
+      .btn-azul {
+        width: calculate(279);
+      }
     }
-    
+  }
 
-    .section_conoce{
-        background-color:var(--color-blue);
-        padding:calculate(60) calculate(20);
-        margin-bottom: calculate(30);
-        .div_conoce{
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom:calculate(86); 
-            .p_divConoce{      
-                margin-top:calculate(20);           
-                width:calculate(358) !important;
-            }
-        }
-        .div_conoce_list{
-            display: flex;
-            flex-wrap: wrap;
-            .card_conoce_mov{
-                background-size: cover;
-                width:calculate(358);
-                min-height: calculate(169);
-                max-height: calculate(358);
-                border-radius: calculate(16);
-                padding: calculate(10) calculate(19);
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                gap:calculate(0);
-                margin-bottom: calculate(30);
-                // .ico_card{
-                //     width:calculate(58);
-                //     height: auto;
-                // }
+  .head_nosotros_mov:before,
+  .head_nosotros_mov:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(
+        45deg,
+        transparent 33.333%,
+        var(--dark-blue) 33.333%,
+        var(--dark-blue) 66.667%,
+        transparent 66.667%
+      ),
+      linear-gradient(
+        -45deg,
+        transparent 33.333%,
+        var(--dark-blue) 33.333%,
+        var(--dark-blue) 66.667%,
+        transparent 66.667%
+      );
+    background-size: 15px 40px;
+  }
 
-                .div_link_card{
-                    display: flex;
-                    align-items: center;
-                    gap: calculate(20);
-                    a svg{
-                        margin-top: calculate(10);
-                    }
-                }
-            }
-        }
-    }
+  .head_nosotros_mov:before {
+    top: -10;
+  }
 
-    .section_politicas{
-        text-align: center;
-        padding-top:calculate(60);
-        
-        .div_btn_politicas{
-            margin-top: calculate(15)!important;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: calculate(358);
-            height: auto;
-            margin: auto;
-            gap: calculate(20);
-
-            .btn-azul{
-                width: calculate(279)
-            }
-        }
-    }
-    
+  .head_nosotros_mov:after {
+    bottom: 352px;
+    transform: rotate(180deg);
+    margin-left: calculate(-1);
+  }
 }
