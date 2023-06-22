@@ -36,6 +36,12 @@
 .bg-blue{
     background-color: var(--color-blue);
 }
+.bg-beige{
+    background-color: var(--color-beige);
+}
+.bg-skyblue-1{
+    background-color: var(--color-celeste);
+}
 html {
     scroll-behavior: smooth;
 }
@@ -192,7 +198,7 @@ h2 p{
     line-height: calc(100vw*(33/var(--width_base)));
     transition: all 0.3s ease;
 }
-.btn-rojo:hover, .btn-ver-articulos:hover, .btn-ver-mas:hover, .btn-ver-productos:hover, .btn-c:hover, .btn-menu:hover{
+.btn-rojo:hover, .btn-ver-articulos:hover, .btn-ver-mas:hover, .btn-ver-productos:hover, .btn-c:hover, .btn-menu:hover, .btn-search:hover{
     color: var(--color-white) !important;
     background-color: #C90002;
 }
