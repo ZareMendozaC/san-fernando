@@ -7,34 +7,48 @@
   text-align: center;
   margin-bottom: calculate(150);
 
+  .head_nosotros_mov {
+    display: none;
+  }
+.img_nosotros{
+  display: none
+}
   .head_nosotros {
+    position: relative;
     background-color: var(--dark-blue);
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--color-white);
     height: calculate(296);
-    margin-top: calculate(100);
+    margin-top: calculate(140);
     margin-bottom: calculate(53);
     width: 100%;
-  }
+    .semi-circulo-ban-nos {
+      width: calculate(742);
+      height: calculate(359);
+    }
+    .img_people_nos {
+      position: absolute;
+      width: calculate(528);
+      height: auto;
 
-  .img_nosotros {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: calculate(865);
-    height: calculate(458);
-    margin-bottom: calculate(167);
-    // background-size: cover;
+      bottom: calculate(4);
+    }
   }
-
-  .img_nosotros:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  .div_h2_nos {
+    position: relative;
   }
-
   h2 {
     margin-bottom: calculate(100);
+  }
+
+  .img_sub_nos {
+    position: absolute;
+    right: calculate(170);
+    bottom: calculate(44);
+    width: calculate(240);
+    height: auto;
   }
 
   .p_dsc {
@@ -148,33 +162,61 @@
 .section_conoce {
   background-color: var(--color-blue);
   padding: calculate(186) calculate(182);
-  // margin-bottom: calculate(30);
+  display: flex;
   .div_conoce {
-    display: flex;
+    width: calculate(778);
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: calculate(86);
+    margin-top: 10%;
     .p_divConoce {
       width: calculate(685);
     }
-  }
-  .div_conoce_list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    .card_conoce {
-      width: calculate(503);
-      height: auto;
-      border-radius: calculate(16);
-      background-color: var(--color-white);
-      padding: calculate(33) calculate(36);
-      display: inline-grid;
-      gap: calculate(10);
-      margin-bottom: calculate(30);
-      .ico_card {
-        width: calculate(58);
+    .div_h2_img_conoce {
+      position: relative;
+      margin-bottom: calculate(120);
+      .img_sub_h2_conoce {
+        position: absolute;
+        right: calculate(450);
+        bottom: calculate(-100);
+        width: calculate(229);
         height: auto;
       }
+    }
+  }
+  .div_conoce_list {
+    width: calculate(778);
+    display: flex;
+    flex-wrap: wrap;
+    gap: calculate(10);
+    // grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-rows: auto;
+    .subdiv_conoce_list {
+      display:flex;
+      gap:calculate(10);
+      .card_conoce_square1,
+      .card_conoce_square2 {
+        background-size: cover;
+        width: calculate(384);
+        height: calculate(344);
+        border-radius: calculate(16);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: calculate(16);
+        gap: calculate(10);
+      }
+    }    
+    .card_conoce_rectangle {
+      background-size: cover;
+      width: calculate(778);
+      height: calculate(344);
+      border-radius: calculate(16);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: calculate(16);
+      gap: calculate(10);
     }
   }
 }
@@ -194,6 +236,3 @@
     }
   }
 }
-
-
-

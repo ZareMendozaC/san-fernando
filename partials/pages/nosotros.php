@@ -30,18 +30,28 @@ $archivos = get_field("archivos");
 ?>
 
 <section class="section_info_nosotros ">
-    <div class="head_nosotros">
+    <div class="head_nosotros show-desktop" style="background-image:url('http://localhost/WORDPRESS/sanfer/wp-content/uploads/2023/06/image-11-1.png')">
+        <svg class="semi-circulo-ban-nos" width="742" height="322" viewBox="0 0 742 322" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.75" d="M0 359C0 160.73 160.73 0 359 0H383C581.27 0 742 160.73 742 359H0Z" fill="white" />
+        </svg>
+        <img src="http://localhost/WORDPRESS/sanfer/wp-content/uploads/2023/06/Group-4961.png" alt="" class="img_people_nos">
+    </div>
+    <div class="head_nosotros_mov show-mobile">
         <h1><?= $nombre_nosotros; ?></h1>
     </div>
 
-    <!-- <div class="img_nosotros" style="background-image: url(<?= $img_nosotros['url'] ?>);"></div> -->
     <img src="<?= $img_nosotros['url'] ?>" alt="" class="img_nosotros">
-    <h2 class="color-blue"><?= $titulo_nosotros; ?></h2>
+    <div class="div_h2_nos">
+        <h2 class="color-blue"><?= $titulo_nosotros; ?></h2>
+        <svg class="img_sub_nos" width="241" height="30" viewBox="0 0 241 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M240 5.17312C240 5.17312 46.1436 -3.83271 2.5 26.9949" stroke="#004A98" stroke-width="7" stroke-miterlimit="10" />
+        </svg>
+    </div>
     <p class="p-subtitle p_dsc"><?= $descripcion_nosotros; ?></p>
 
 </section>
 <section class="section_time_line container">
-<!-- TIME LINE -->
+    <!-- TIME LINE -->
 </section>
 <section class="section_MV_valores container">
 
@@ -98,26 +108,66 @@ $archivos = get_field("archivos");
 </section>
 <section class="section_conoce">
     <div class="div_conoce">
-        <h2 class="color-white"><?= $titulo_conoce; ?></h2>
+        <div class="div_h2_img_conoce">
+            <h2 class="color-white"><?= $titulo_conoce; ?></h2>
+            <svg class="img_sub_h2_conoce" width="231" height="70" viewBox="0 0 231 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M226.058 7.15177C222.885 8.5692 218.768 9.58165 213.841 10.2566C200.476 12.0115 186.37 12.484 171.925 11.674C157.481 10.7291 139.054 8.90668 116.578 6.40931L110.436 5.59935C92.8193 3.50696 79.185 2.08953 69.398 1.41456C59.611 0.739595 51.3089 0.807092 44.1543 1.75204C10.6759 6.20682 -1.13596 25.0384 1.09143 41.9125C2.23887 50.4171 7.84109 58.1792 16.4132 63.2414C25.7277 68.3712 36.9321 70.0586 49.824 68.3712C55.8987 67.5612 63.0533 65.5363 71.6929 62.499C80.2649 59.2591 87.0146 55.5468 92.0093 51.497L88.702 44.2074C84.3822 47.7847 78.1725 51.4295 69.938 54.8044C61.7034 58.1792 54.5487 60.2041 48.8115 60.9466C25.5252 63.9839 10.2035 53.4544 8.51605 40.9676C7.5711 34.0154 9.86598 26.9958 14.9957 21.9335C21.5429 15.2514 31.5999 11.0666 45.1667 9.31166C51.9164 8.43421 59.881 8.43421 69.3305 9.10917C78.78 9.78414 92.2118 11.0666 109.626 13.024C133.52 15.9263 153.769 17.8162 169.968 18.8962C186.37 19.9086 201.894 19.5036 216.608 17.5462C221.4 16.9388 225.923 15.8588 230.04 14.1714L226.058 7.15177Z" fill="#96DAEA" />
+            </svg>
+        </div>
         <p class="p-subtitle justificar color-white p_divConoce"><?= $descripcion_conoce; ?></p>
     </div>
     <div class="div_conoce_list">
-        <?php foreach ($lista_conoce as $conoce) : ?>
-            <?php
-            $img_conoce = $conoce["imagen_de_fondo"];
-            $ico_conoce = $conoce["icono"];
-            $nombre_conoce = $conoce["titulo"];
-            $texto_conoce = $conoce["texto"];
-            $btn_conoce = $conoce["texto_boton"];
-            $link_conoce = $conoce["link_boton"];
-            ?>
-            <div class="card_conoce show-desktop">
-                <img src="<?= $ico_conoce['url']; ?>" alt="<?= $nombre_conoce; ?>" class="ico_card">
-                <p class="titulo_card color-blue"><?= $nombre_conoce; ?></p>
-                <p class="texto_card color-gris"><?= $texto_conoce; ?></p>
-                <a class="btn-rojo" href="<?= $link_conoce; ?>" target="_blank"><?= $btn_conoce; ?></a>
-
+        <div class="subdiv_conoce_list">
+            <div class="card_conoce_square1 " style="background-image: url('<?= $lista_conoce['0']["imagen_de_fondo"]['url']; ?>')">
+                <p class="titulo_card color-white"><?= $lista_conoce['0']["titulo"]; ?></p>
+                <p class="texto_card color-white show-desktop"><?= $lista_conoce['0']["texto"]; ?></p>
+                <a class="btn-rojo show-desktop" href="<?= $lista_conoce['0']["link_boton"]; ?>" target="_blank"><?= $lista_conoce['0']["texto_boton"]; ?></a>
+                <div class="div_link_card show-mobile">
+                    <p class="texto_card color-white"><?= $lista_conoce['0']["texto_boton"]; ?></p>
+                    <a href="<?= $lista_conoce['0']["link_boton"]; ?>">
+                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.128906" y="0.0893555" width="28" height="28" rx="14" fill="#DF0002" />
+                            <path d="M17.5287 11.9694L12.9387 7.37942C12.7513 7.19316 12.4979 7.08862 12.2337 7.08862C11.9695 7.08862 11.7161 7.19316 11.5287 7.37942C11.435 7.47238 11.3606 7.58298 11.3098 7.70484C11.259 7.8267 11.2329 7.9574 11.2329 8.08942C11.2329 8.22143 11.259 8.35213 11.3098 8.47399C11.3606 8.59585 11.435 8.70645 11.5287 8.79942L16.1287 13.3794C16.2224 13.4724 16.2968 13.583 16.3476 13.7048C16.3984 13.8267 16.4245 13.9574 16.4245 14.0894C16.4245 14.2214 16.3984 14.3521 16.3476 14.474C16.2968 14.5959 16.2224 14.7065 16.1287 14.7994L11.5287 19.3794C11.3404 19.5664 11.2341 19.8205 11.2332 20.0859C11.2322 20.3512 11.3367 20.6061 11.5237 20.7944C11.7107 20.9827 11.9648 21.089 12.2302 21.09C12.4955 21.0909 12.7504 20.9864 12.9387 20.7994L17.5287 16.2094C18.0905 15.6469 18.4061 14.8844 18.4061 14.0894C18.4061 13.2944 18.0905 12.5319 17.5287 11.9694Z" fill="white" />
+                        </svg></a>
+                </div>
             </div>
+            <div class="card_conoce_square2" style="background: url('<?= $lista_conoce['1']["imagen_de_fondo"]['url']; ?>');">
+                <p class="titulo_card color-white"><?= $lista_conoce['1']["titulo"]; ?></p>
+                <p class="texto_card color-white show-desktop"><?= $lista_conoce['1']["texto"]; ?></p>
+                <a class="btn-rojo show-desktop" href="<?= $lista_conoce['1']["link_boton"]; ?>" target="_blank"><?= $lista_conoce['1']["texto_boton"]; ?></a>
+                <div class="div_link_card show-mobile">
+                    <p class="texto_card color-white"><?= $lista_conoce['0']["texto_boton"]; ?></p>
+                    <a href="<?= $lista_conoce['0']["link_boton"]; ?>">
+                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.128906" y="0.0893555" width="28" height="28" rx="14" fill="#DF0002" />
+                            <path d="M17.5287 11.9694L12.9387 7.37942C12.7513 7.19316 12.4979 7.08862 12.2337 7.08862C11.9695 7.08862 11.7161 7.19316 11.5287 7.37942C11.435 7.47238 11.3606 7.58298 11.3098 7.70484C11.259 7.8267 11.2329 7.9574 11.2329 8.08942C11.2329 8.22143 11.259 8.35213 11.3098 8.47399C11.3606 8.59585 11.435 8.70645 11.5287 8.79942L16.1287 13.3794C16.2224 13.4724 16.2968 13.583 16.3476 13.7048C16.3984 13.8267 16.4245 13.9574 16.4245 14.0894C16.4245 14.2214 16.3984 14.3521 16.3476 14.474C16.2968 14.5959 16.2224 14.7065 16.1287 14.7994L11.5287 19.3794C11.3404 19.5664 11.2341 19.8205 11.2332 20.0859C11.2322 20.3512 11.3367 20.6061 11.5237 20.7944C11.7107 20.9827 11.9648 21.089 12.2302 21.09C12.4955 21.0909 12.7504 20.9864 12.9387 20.7994L17.5287 16.2094C18.0905 15.6469 18.4061 14.8844 18.4061 14.0894C18.4061 13.2944 18.0905 12.5319 17.5287 11.9694Z" fill="white" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="card_conoce_rectangle" style="background: url('<?= $lista_conoce['2']["imagen_de_fondo"]['url']; ?>');">
+            <p class="titulo_card color-white "><?= $lista_conoce['2']["titulo"]; ?></p>
+            <p class="texto_card color-white show-desktop"><?= $lista_conoce['2']["texto"]; ?></p>
+            <a class="btn-rojo show-desktop" href="<?= $lista_conoce['2']["link_boton"]; ?>" target="_blank"><?= $lista_conoce['2']["texto_boton"]; ?></a>
+            <div class="div_link_card show-mobile">
+                    <p class="texto_card color-white"><?= $lista_conoce['0']["texto_boton"]; ?></p>
+                    <a href="<?= $lista_conoce['0']["link_boton"]; ?>">
+                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.128906" y="0.0893555" width="28" height="28" rx="14" fill="#DF0002" />
+                            <path d="M17.5287 11.9694L12.9387 7.37942C12.7513 7.19316 12.4979 7.08862 12.2337 7.08862C11.9695 7.08862 11.7161 7.19316 11.5287 7.37942C11.435 7.47238 11.3606 7.58298 11.3098 7.70484C11.259 7.8267 11.2329 7.9574 11.2329 8.08942C11.2329 8.22143 11.259 8.35213 11.3098 8.47399C11.3606 8.59585 11.435 8.70645 11.5287 8.79942L16.1287 13.3794C16.2224 13.4724 16.2968 13.583 16.3476 13.7048C16.3984 13.8267 16.4245 13.9574 16.4245 14.0894C16.4245 14.2214 16.3984 14.3521 16.3476 14.474C16.2968 14.5959 16.2224 14.7065 16.1287 14.7994L11.5287 19.3794C11.3404 19.5664 11.2341 19.8205 11.2332 20.0859C11.2322 20.3512 11.3367 20.6061 11.5237 20.7944C11.7107 20.9827 11.9648 21.089 12.2302 21.09C12.4955 21.0909 12.7504 20.9864 12.9387 20.7994L17.5287 16.2094C18.0905 15.6469 18.4061 14.8844 18.4061 14.0894C18.4061 13.2944 18.0905 12.5319 17.5287 11.9694Z" fill="white" />
+                        </svg></a>
+                </div>
+        </div>
+
+        <!-- <?php foreach ($lista_conoce as $conoce) : ?>
+            <?php
+                    $img_conoce = $conoce["imagen_de_fondo"];
+                    $ico_conoce = $conoce["icono"];
+                    $nombre_conoce = $conoce["titulo"];
+                    $texto_conoce = $conoce["texto"];
+                    $btn_conoce = $conoce["texto_boton"];
+                    $link_conoce = $conoce["link_boton"];
+            ?>
             <div class="card_conoce_mov show-mobile" style="background-image: url('<?= $img_conoce['url']; ?>')">
 
                 <p class="titulo_card color-white"><?= $nombre_conoce; ?></p>
@@ -130,7 +180,7 @@ $archivos = get_field("archivos");
                         </svg></a>
                 </div>
             </div>
-        <?php endforeach; ?>
+            <?php endforeach; ?> -->
     </div>
 </section>
 <section class="section_politicas container">
