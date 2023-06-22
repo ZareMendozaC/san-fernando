@@ -254,12 +254,11 @@ h2 p{
     display: flex;
 }
 
+.show-mobile{
+    display: none !important;
+}
 .show-desktop{
     display: block !important;
-}
-
-.hidden-desktop{
-    display: none !important;
 }
 .h1-marker{
     display: none;
