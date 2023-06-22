@@ -11,8 +11,6 @@
   z-index: 900;
 }
 
-
-
 .div_logo {
   height: 100%;
   width: calculate(185);
@@ -96,49 +94,57 @@
   }
 }
 
-
 .btn-comprar {
   display: flex !important;
   justify-content: space-evenly;
-  gap:calculate(10);
+  gap: calculate(10);
   // padding: 0 4px;
-  .ico-text-btn-buy-dsk{
+  .ico-text-btn-buy-dsk {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    .ico-btn-buy{
-      width:30px
+    .ico-btn-buy {
+      width: 30px;
     }
   }
-  .arrow{
-    width:12px
+  .arrow {
+    width: 12px;
   }
 }
-.btn-blog{
-  .arrow{
+.btn-blog {
+  .arrow {
     width: 12px;
   }
 }
 
-.btn-vales{
+.btn-vales {
   display: flex !important;
   justify-content: space-evenly;
-  gap:calculate(5);
+  gap: calculate(5);
   padding: 0 10px;
-  .ico-text-btn-vale-dsk{
+  .ico-text-btn-vale-dsk {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    .ico-btn-buy{
-      width:30px
+    .ico-btn-buy {
+      width: 30px;
     }
   }
-  .arrow{
-    width:12px
+  .arrow {
+    width: 12px;
   }
 }
+.btn-vales {
+  .arrow path:hover {
+    fill: var(--color-celeste-light);
+  }
+  .ico-text-btn-vale-dsk:hover {
+    color: var(--color-celeste-light);
+  }
+}
+
 .bg-red {
   background: var(--color-red-btn);
 }
@@ -265,6 +271,6 @@
   display: none;
 }
 
-.arrow-btn-active{
-  transform:rotate(180deg);
+.arrow-btn-active {
+  transform: rotate(180deg);
 }
