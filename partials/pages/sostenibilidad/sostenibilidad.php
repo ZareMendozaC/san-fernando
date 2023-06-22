@@ -23,6 +23,10 @@ $img_gestion = get_field("imagen_gestion");
 $texto_gestion = get_field("texto_gestion");
 $lista_gestion = get_field("lista_gestion");
 
+$titulo_seguridad = get_field("titulo_seguridad");
+$description_seguridad = get_field("descripcion_seguridad");
+$imagen_seguridad = get_field("imagen_seguridad");
+
 ?>
 
 <section>
@@ -100,7 +104,7 @@ $lista_gestion = get_field("lista_gestion");
 
         </article>
 
-        <article class="contain-3 container">
+        <article class="contain-3">
 
             <h2>Responsabilidad Social</h2>
 
@@ -187,6 +191,20 @@ $lista_gestion = get_field("lista_gestion");
                 </ul>
             </section>
 
+
+        </article>
+
+        <article class="contain-6 container">
+
+            <div>
+                <h2><?= $titulo_seguridad ?></h2>
+
+                <p><?= $description_seguridad ?></p>
+            </div>
+
+            <figure>
+                <img src="<?= $imagen_seguridad["url"] ?>" alt="imagen personas">
+            </figure>
 
         </article>
 
