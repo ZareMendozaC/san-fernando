@@ -1,8 +1,8 @@
 import $ from "jquery";
 import Splide from "@splidejs/splide";
 
-if ($('.lista').length > 0) {
-  new Splide('.lista', {
+if ($('.lista-logros').length > 0) {
+  new Splide('.lista-logros', {
     pagination: false,
     perPage: 3.5,
     arrows: false,
@@ -23,9 +23,9 @@ if ($('.social').length > 0) {
     perPage: 3.5,
     arrows: false,
     breakpoints: {
-      768: {
+      767: {
         type: 'loop',
-        perPage: 1.5,
+        perPage: 1,
         perMove: 1.5,
       }
     }

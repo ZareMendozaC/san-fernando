@@ -129,9 +129,9 @@ $imagen_seguridad = get_field("imagen_seguridad");
             <h2>Logros</h2>
             <p class="description-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 
-            <div class="splide lista">
+            <div class="splide lista-logros">
                 <div class="splide__track">
-                    <ul class="splide__list">
+                    <ul class="splide__list list-logros-1">
                         <?php foreach ($slider_logros as $item) : ?>
 
                             <?php
@@ -140,7 +140,6 @@ $imagen_seguridad = get_field("imagen_seguridad");
                             $item_text = $item["texto"];
                             ?>
                             <?php if ($item) : ?>
-                                <!-- <div class="line-before"></div> -->
                                 <li class="splide__slide">
                                     <img src="<?= $item_image_url ?>" alt="iconos">
                                     <p><?= $item_text ?></p>
@@ -183,7 +182,7 @@ $imagen_seguridad = get_field("imagen_seguridad");
                             <?php if ($list_res) : ?>
                                 <li>
                                     <figure>
-                                        <img src="<?= $item_responsabilidad_image_url ?>" alt="">
+                                        <img src="<?= $item_responsabilidad_image_url ?>" alt="icono">
                                     </figure>
 
                                     <h5><?= $res_titulo ?></h5>
