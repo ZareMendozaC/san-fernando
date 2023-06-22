@@ -8,6 +8,12 @@ section{
             .text-contain{
                 display: flex;
                 flex-direction: column;
+
+                svg{
+                    width: calculate(603);
+                    height: calculate(20);
+                }
+
                 h2{
                     margin: 0;
                     color: var(--color-blue);
@@ -79,6 +85,7 @@ section{
             h2{
                 margin: 0;
                 text-align: center;
+                font-size: calculate(78);
                 color: var(--color-blue);
             }
 
@@ -90,48 +97,56 @@ section{
                 font-size: calculate(18);
             }
 
-            ul{
-                display: flex;
-                justify-content: center;
-                gap: calculate(26);
+            .splide{
+                .splide__track{
+                    .splide__list{
+                        display: flex;
+                        gap: calculate(26);
+                        padding-top: calculate(50);
+                        height: calculate(230);
+                        justify-content: center;
+                        
 
-                
-                li{
-                    &::before{
-                        content: '';
-                        color: var(--color-blue);
-                        background-color: var(--color-celeste);
-                        top: -13%;
-                        position: relative;
-                        z-index: 1000;
-                        width: calculate(154);
-                        height: calculate(8);
-                        border-radius: calculate(50);
-    
-                    }
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    gap: calculate(20);
-                    padding: calculate(20) calculate(73);
-                    background-color: var(--color-blue);
-                    border-radius: calculate(16);
-                    width: calculate(412);
-                    height: calculate(220);
+                        li{
 
-                    img{
-                        width: calculate(46);
-                        height: calculate(46);
-                    }
-                    p{
-                        margin: 0;
-                        text-align: center;
-                        width: calculate(325);
-                        color: var(--color-white);
-                        font-size: calculate(22);
-                        font-weight: 700;
+                            &::before{
+                                content: '';
+                                color: var(--color-blue);
+                                background-color: var(--color-celeste);
+                                top: -13%;
+                                position: relative;
+                                z-index: 1000;
+                                width: calculate(114);
+                                height: calculate(8);
+                                border-radius: calculate(50);
+            
+                            }
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: calculate(20);
+                            padding: calculate(20) calculate(73);
+                            background-color: var(--color-blue);
+                            border-radius: calculate(16);
+                            width: calculate(412);
+                            height: calculate(220);
+        
+                            img{
+                                width: calculate(46);
+                                height: calculate(46);
+                            }
+                            p{
+                                margin: 0;
+                                text-align: center;
+                                width: calculate(325);
+                                color: var(--color-white);
+                                font-size: calculate(22);
+                                font-weight: 700;
+                            }
+                        }
                     }
                 }
+
             }
 
             a{
@@ -148,7 +163,75 @@ section{
             }
         }
 
-        .containt-3{
+        .contain-3{
+
+            display: flex;
+            flex-direction: column;
+            background-color: var(--color-blue);
+            margin-bottom: calculate(145);
+            padding-top: calculate(186);
+            padding-bottom: calculate(230);
+
+            .text-social{
+                display: flex;
+                gap: calculate(332);
+                // align-items: end;
+                margin-bottom: calculate(115);
+
+                h2{
+                    width: calculate(538);
+                    color: var(--color-white);
+                    font-size: calculate(62);
+                    font-weight: 700;
+                    height: auto;
+                }
+                p{
+                    width: calculate(685);
+                    color: var(--color-white);
+                    font-size: calculate(22);
+                    font-weight: 400;
+                    height: auto;
+                }
+            }
+
+            .list-social{
+                display: flex;
+                justify-content: center;
+                gap: calculate(24);
+
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    gap: calculate(8);
+                    background-color: var(--color-white);
+                    border-radius: calculate(16);
+                    padding: 0 calculate(36);
+                    padding-top: calculate(33);
+                    padding-bottom: calculate(43);
+                    width: calculate(503);
+                    height: calculate(302);
+
+                    figure{
+                        width: calculate(58);
+                        height: calculate(58);
+                        img{
+                            width: calculate(58);
+                            height: calculate(58);
+                        }
+                    }
+
+                    h5{
+                        margin: 0;
+                        color: var(--color-blue);
+                        font-size: calculate(25);
+                        font-weight: 700;
+                    }
+                    p{
+                        margin: 0;
+                        font-size: calculate(16);
+                    }
+                }
+            }
 
         }
 
@@ -252,8 +335,9 @@ section{
 
             .inner-section-2{
                 padding-bottom: calculate(151);
-                ul{
+                .list-ambiental{
                     display: flex;
+                    justify-content: center;
                     gap: calculate(21);
                     li{
                         display: flex;
