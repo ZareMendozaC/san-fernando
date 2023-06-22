@@ -6,7 +6,6 @@
   wp_head();
   ?>
 </head>
-
 <body>
   <header class="navbar">
     <div class="div_logo">
