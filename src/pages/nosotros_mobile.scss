@@ -165,18 +165,22 @@
             display: flex;
             flex-wrap: wrap;
             .card_conoce_mov{
+                background-size: cover;
                 width:calculate(358);
-                height: auto;
+                min-height: calculate(169);
+                max-height: calculate(358);
                 border-radius: calculate(16);
-                background-color: var(--color-white);
-                padding: calculate(28) calculate(19);
-                display: inline-grid;
+                padding: calculate(10) calculate(19);
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
                 gap:calculate(0);
                 margin-bottom: calculate(30);
-                .ico_card{
-                    width:calculate(58);
-                    height: auto;
-                }
+                // .ico_card{
+                //     width:calculate(58);
+                //     height: auto;
+                // }
 
                 .div_link_card{
                     display: flex;
