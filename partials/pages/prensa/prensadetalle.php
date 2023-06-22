@@ -5,7 +5,7 @@
     <div class="container d-flex content-prensa">
         <div class="prensa-1">
             <h2 class="color-blue">Nace Hy-Line Perú: alianza estratégica en beneficio de productores de huevo en Perú </h2>
-            <div class="img-destacada" style="background: url(http://localhost:10053/wp-content/uploads/2023/06/image-131.png);"></div>
+            <div class="img-destacada" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/image-131.png);"></div>
             <div class="texto-prensa">
             Se fortalece oferta de pollitas para productores de huevos en Perú
             <br>

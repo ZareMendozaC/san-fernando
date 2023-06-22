@@ -494,6 +494,9 @@
         width: calculate(44);
         height: calculate(44);
     }
+    .slick-track{
+        height: calc(100vw * 850 / var(--width_base))!important;
+    }
 }
 
 .img-product{

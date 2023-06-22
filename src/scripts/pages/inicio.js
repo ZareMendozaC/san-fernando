@@ -47,3 +47,16 @@ $(".close-certificacion").click(function(){
     $('#dCertificacion').html('');
     $('.modal-certificacion').fadeOut();
 });
+$( document ).ready(function() {
+    $( ".close-des" ).on( "click", function() {
+      if($(this).hasClass('open-des')){
+        $(this).parent().parent().find('.select-options').slideUp();
+        $(this).css('transform','rotate(180deg)')
+        $(this).removeClass('open-des');
+      }else{
+        $(this).parent().parent().find('.select-options').slideDown();
+        $(this).css('transform','rotate(0deg)')
+        $(this).addClass('open-des');
+      }
+    } );
+});
