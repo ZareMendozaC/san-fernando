@@ -321,6 +321,14 @@ h2 p{
     margin-top: calculate(90);
     height: calculate(290);
     padding-top: calculate(50);
+    width: 100%;
+    --mask:
+    radial-gradient(7.62px at 50% calc(100% - 10.75px),#000 99%,#0000 101%) calc(50% - 10px) 0/20px 100%,
+    radial-gradient(7.62px at 50% calc(100% + 5.75px),#0000 99%,#000 101%) 50% calc(100% - 5px)/20px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+
+
     h1{
         color: var(--color-white);
         margin: 0;
@@ -330,3 +338,16 @@ h2 p{
         font-size: calc(100vw*(72/var(--width_base)));
     }
 }
+
+// .box {
+//     display: inline-block;
+//     width: 200px;
+//     aspect-ratio: 1;
+//     background: linear-gradient(135deg,#1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+//     transition: .35s;
+//   -webkit-mask: var(--mask);
+//           mask: var(--mask);
+//   }
+//   .one {
+//     --mask: radial-gradient(30px at 50% 30px,#0000 97%,#000) 50% -30px/ 55.50px 100%;
+//   }
