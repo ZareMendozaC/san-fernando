@@ -8,7 +8,7 @@ let target2 = document.querySelectorAll(".timeline .ul-time .li-time");
 const timeline_events = document.querySelectorAll(".ul-time .li-time");
 
 function showTime(e) {
-  e.setAttribute("done", "true");
+  //e.setAttribute("done", "true");
   e.querySelector(".timeline-point").style.background = "blue";
   e.querySelector(".date").style.opacity = "100%";
   e.querySelector("p").style.opacity = "100%";
@@ -65,7 +65,7 @@ let observer = new IntersectionObserver(
 );
 
 if (window.matchMedia("(min-width: 728px)").matches) {
-  observer.observe(target1);
+  //observer.observe(target1);
 } else {
   target2.forEach((t) => {
     observer.observe(t);

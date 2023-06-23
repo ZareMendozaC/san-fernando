@@ -111,7 +111,7 @@
     }
     
     p,span:not(.select2-selection__placeholder):not(.select2-dropdown):not(.select2-results):not(.select2-container):not(.select2-container--default):not(.select2-container--open):not(.select2-selection__placeholder):not(.select2-selection__rendered) {
-        font-size: calc(100vw * (calc(12 / var(--width_base))))
+     //   font-size: calc(100vw * (calc(12 / var(--width_base))))
     }
     
     .no-pdt {
@@ -131,7 +131,7 @@
     }
     
     .select2-container--default .select2-selection--single .select2-selection__rendered {
-        line-height: 40px!important;
+        line-height: calculate(40) !important;
     }
     .select2-results__option--selectable {
         font-family: 'FuturaStd' !important;
@@ -256,13 +256,15 @@
     .title-card {
         font-style: normal;
         font-weight: 700;
-        font-size: calc(100vw * (calc(15 / var(--width_base))));
+        font-size: calc(100vw * (calc(20/ var(--width_base)))) !important;
         line-height: calc(100vw * (calc(17 / var(--width_base))));
         margin-bottom: calc(100vw * (calc(10 / var(--width_base))))!important;
         color: #012e88;
         text-transform: capitalize
     }
-    
+    .data-layer p{
+        font-size: calculate(14);
+    }
     .title-card-2 {
         font-size: calc(100vw * (calc(20 / var(--width_base))));
         font-style: normal;
