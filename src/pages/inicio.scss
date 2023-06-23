@@ -1,6 +1,6 @@
 .bg-main-banner{
     width: 100%;
-    height: calc(100vw*(850/var(--width_base))) !important;
+    height: calc( 100vh - calculate(120)) !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
@@ -495,8 +495,11 @@
         height: calculate(44);
     }
     .slick-track{
-        height: calc(100vw * 850 / var(--width_base))!important;
+        height: calc( 100vh - calculate(120)) !important;
     }
+}
+.div-ban-campanias .slick-track {
+    height: calculate(550) !important;
 }
 
 .img-product{
