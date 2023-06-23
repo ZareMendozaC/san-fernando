@@ -16,12 +16,12 @@
   .head_nosotros {
     position: relative;
     background-color: var(--dark-blue);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--color-white);
-    height: calculate(396);
-    margin-top: calculate(140);
+    height: calculate(500);
     margin-bottom: calculate(53);
     width: 100%;
     .semi-circulo-ban-nos {
@@ -34,14 +34,14 @@
     .semi-circulo-ban-nos2 {
       position: absolute;
       z-index: 2;
-      width: calculate(522);
-      height: calculate(239);
+      width: calculate(548);
+      height: calculate(265);
       bottom: calculate(0);
     }
     .img_people_nos {
       position: absolute;
       z-index: 3;
-      width: calculate(528);
+      width: calculate(529);
       height: auto;
 
       bottom: calculate(0);
