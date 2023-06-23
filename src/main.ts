@@ -7,6 +7,7 @@ import "./style.scss";
 import '@splidejs/splide/css';
 import "./scripts/pages/inicio.js";
 import "./scripts/pages/sostenibilidad.js";
+import "./scripts/puntos/puntos-de-canje.js"
 
 
 // import Masonry from "masonry-layout/dist/masonry";
