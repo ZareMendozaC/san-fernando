@@ -1,14 +1,14 @@
 //@ts-nocheck
-import $ from "jquery";
-import "slick-carousel";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "./style.scss";
-import '@splidejs/splide/css';
-import "./scripts/pages/inicio.js";
-import "./scripts/pages/sostenibilidad.js";
+import $ from "jquery"
+import "slick-carousel"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import "./style.scss"
+import '@splidejs/splide/css'
+import "./scripts/pages/inicio.js"
+import "./scripts/pages/sostenibilidad.js"
 import "./scripts/puntos/puntos-de-canje.js"
-import "./scripts/pages/time-line.js";
+//import "./scripts/pages/time-line.js"
 
 // import Masonry from "masonry-layout/dist/masonry";
 //@ts-ignore
@@ -25,7 +25,7 @@ $(".main-banner").slick({
   dots: true,
   fade: false,
   cssEase: "linear",
-});
+})
 //@ts-ignore
 /*
 $(".slider-blog").slick({
@@ -60,62 +60,76 @@ $(".slider-blog").slick({
 
 //@ts-ignore
 $(".btn-blog").hover(function () {
-  $(".menu_blog").slideToggle();
+  $(".menu_blog").slideToggle()
   $(".btn-blog .arrow").toggleClass("arrow-btn-active")
 }, function () {
-  $(".menu_blog").slideToggle(1500);
+  $(".menu_blog").slideToggle(1500)
   $(".btn-blog .arrow").toggleClass("arrow-btn-active")
-});
+})
 //@ts-ignore
 $(".btn-vales").hover(function () {
-  $(".menu_vales").slideToggle();
+  $(".menu_vales").slideToggle()
   $(".btn-vales .arrow").toggleClass("arrow-btn-active")
 }, function () {
-  $(".menu_vales").slideToggle(1500);
+  $(".menu_vales").slideToggle(1500)
   $(".btn-vales .arrow").toggleClass("arrow-btn-active")
-});
+})
 //@ts-ignore
 $(".btn-comprar").hover(function () {
   $(".menu_compras").slideToggle();
   $(".btn-comprar .arrow").toggleClass("arrow-btn-active");
 }, function () {
-  $(".menu_compras").slideToggle(1500);
-  $(".btn-comprar .arrow").toggleClass("arrow-btn-active");
-});
+  $(".menu_compras").slideToggle(1500)
+  $(".btn-comprar .arrow").toggleClass("arrow-btn-active")
+})
 //@ts-ignore
 $(".toggle-menu").click(function () {
-  $(".menu_mobile").slideToggle();
-});
+  $(".menu_mobile").slideToggle()
+})
 //@ts-ignore
 $(".btn-blog-mov").click(function () {
-  $(".blog_mov").slideToggle();
-});
+  $(".blog_mov").slideToggle()
+})
 //@ts-ignore
 $(".btn-vales-mov").click(function () {
-  $(".vales_mov").slideToggle();
-});
+  $(".vales_mov").slideToggle()
+})
 //@ts-ignore
 $(".btn-comprar-mov").click(function () {
-  $(".compras_mov").slideToggle();
-});
+  $(".compras_mov").slideToggle()
+})
 //@ts-ignore
 $(".btn-blog-mov").click(function () {
-  $(".li-blog_mov").slideToggle();
+  $(".li-blog_mov").slideToggle()
   $(".btn-blog-mov .arrow").toggleClass("arrow-btn-active")
-});
+})
 //@ts-ignore
 $(".btn-vales-mov").click(function () {
-  $(".li-vales_mov").slideToggle();
+  $(".li-vales_mov").slideToggle()
   $(".btn-vales-mov .arrow").toggleClass("arrow-btn-active")
-});
+})
 //@ts-ignore
 $(".btn-comprar-mov").click(function () {
-  $(".li-compras_mov").slideToggle();
+  $(".li-compras_mov").slideToggle()
   $(".btn-comprar-mov .arrow").toggleClass("arrow-btn-active")
 });
-
 //@ts-ignore
-var mediaqueryList = window.matchMedia("(max-width: 768px)");
+$(".footer-menu").click(function () {
+  $("#list-opcion1").toggleClass("list-menu");
+  $("#list-opcion1").toggleClass("list-menu-on");
+})
+//@ts-ignore
+$(".products-footer").click(function () {
+  $("#list-opcion2").toggleClass("list-menu-2");
+  $("#list-opcion2").toggleClass("list-menu-2_on");
+})
+//@ts-ignore
+$(".products-vale").click(function () {
+  $("#list-opcion3").toggleClass("list-menu-3");
+  $("#list-opcion3").toggleClass("list-menu-3_on");
+})
+//@ts-ignore
+var mediaqueryList = window.matchMedia("(max-width: 768px)")
 
 // mediaqueryList.addListener(function (EventoMediaQueryList) {
 //   $(".section-2").css("display", "none");

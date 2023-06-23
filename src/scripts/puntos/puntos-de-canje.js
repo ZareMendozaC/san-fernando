@@ -105,6 +105,7 @@
                     let info = lista.filter(obj => {
                         return obj.id === parseInt(indice);
                     });
+                    console.log(info);
                 $('.img-banner').hide();
                 $('.content-info-card').css('display','block');
                 $('.content-info-card').addClass('animate__animated animate__fadeIn');
@@ -126,11 +127,11 @@
                 $('.chng_names').html('<strong>'+info[0].nombre+'</strong>');
                 if(info[0].url_tienda_jpg || info[0].url_tienda_webp){
                         if(detectBrowser()=='Safari'){
-                            $('.chng_fototienda').attr('src',origin+'/'+info[0].url_tienda_jpg);
+                            $('.chng_fototienda').attr('src',info[0].url_tienda_jpg);
                             $('.chng_fototienda').css('display','block');
                         }
                         else{
-                            $('.chng_fototienda').attr('src',origin+'/'+info[0].url_tienda_webp);
+                            $('.chng_fototienda').attr('src',info[0].url_tienda_webp);
                             $('.chng_fototienda').css('display','block');
                         }
                 }
@@ -160,12 +161,20 @@
         
         let id= getUrlParameter('id');
         let url = origin+"/js/puntos_canje.js";
-        fetch("../wp-content/themes/theme-sanfernando/src/scripts/puntos/puntos_canje.js", {mode: 'no-cors'})
+
+        const formdata = new FormData()
+        formdata.append("nonce", wpCredentials.security)
+        formdata.append("action", "sales_points")
+
+        fetch(wpCredentials.url, {
+            method: 'POST',
+            body: formdata,
+        })
             .then(d => d.json())
             .then(d => {
-                lista = d;
-                resultado = d;
-            
+                lista = d.data;
+                resultado = d.data;
+            console.log(d.data);
                 if(id){
                         resultado = lista.filter(objeto => objeto.id_seguimiento === id);
                         paint_lista(resultado);
