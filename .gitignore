@@ -26,6 +26,7 @@ dist-ssr
 #files
 .env
 pnpm-lock.yaml
+generatepress_child.zip
 
 #folders
 wp_data

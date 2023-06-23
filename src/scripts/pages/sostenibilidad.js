@@ -1,40 +1,8 @@
 import $ from "jquery";
 import Splide from "@splidejs/splide";
 
-if ($('.lista').length > 0) {
-  new Splide('.lista', {
-    pagination: false,
-    perPage: 3.5,
-    arrows: false,
-    breakpoints: {
-      768: {
-        type: 'loop',
-        perPage: 1.5,
-        perMove: 1.5,
-      }
-    }
-  }).mount();
-
-}
-
-if ($('.social').length > 0) {
-  new Splide('.social', {
-    pagination: false,
-    perPage: 3.5,
-    arrows: false,
-    breakpoints: {
-      768: {
-        type: 'loop',
-        perPage: 1.5,
-        perMove: 1.5,
-      }
-    }
-  }).mount();
-
-}
-
-if ($('.ambiental').length > 0) {
-  new Splide('.ambiental', {
+if ($('.lista-logros').length > 0) {
+  new Splide('.lista-logros', {
     pagination: false,
     perPage: 3.5,
     arrows: false,
@@ -49,15 +17,44 @@ if ($('.ambiental').length > 0) {
 
 }
 
-// mobileOnlySlider(".splide", true, false, 768);
+$('#social-carousel').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: false,
+  variableWidth: true,
+  centerMode: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings:
+      {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    }
+  ]
+})
 
-// function mobileOnlySlider($slidername, $breakpoint) {
+
+
+
+// mobileOnlySlider2("#social-carousel", false, true, 768);
+
+
+
+// function mobileOnlySlider2($slidername, $dots, $arrows, $breakpoint) {
 //   var slider = $($slidername);
 //   var settings = {
 //     mobileFirst: true,
-//     perPage: 1.5,
+//     dots: $dots,
+//     arrows: $arrows,
 //     variableWidth: true,
-//     centerMode: true,
+//     centerMode: false,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     infinite: true,
 //     responsive: [
 //       {
 //         breakpoint: $breakpoint,
@@ -77,3 +74,41 @@ if ($('.ambiental').length > 0) {
 //     }
 //   });
 // } // Mobile Only Slider
+
+
+
+mobileOnlySlider3(".list-ambiental-1", false, false, 768);
+
+function mobileOnlySlider3($slidername, $dots, $arrows, $breakpoint) {
+  var slider = $($slidername);
+  var settings = {
+    mobileFirst: true,
+    dots: $dots,
+    arrows: $arrows,
+    variableWidth: true,
+    centerMode: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: $breakpoint,
+        settings: "unslick"
+      }
+    ]
+  };
+
+  slider.slick(settings);
+
+  $(window).on("resize", function () {
+    if ($(window).width() > $breakpoint) {
+      return;
+    }
+    if (!slider.hasClass("slick-initialized")) {
+      return slider.slick(settings);
+    }
+  });
+} // Mobile Only Slider
+
+
+

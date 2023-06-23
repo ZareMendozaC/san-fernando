@@ -8,7 +8,7 @@ let target2 = document.querySelectorAll(".timeline .ul-time .li-time");
 const timeline_events = document.querySelectorAll(".ul-time .li-time");
 
 function showTime(e) {
-  e.setAttribute("done", "true");
+  //e.setAttribute("done", "true");
   e.querySelector(".timeline-point").style.background = "blue";
   e.querySelector(".date").style.opacity = "100%";
   e.querySelector(".legend").style.opacity = "100%";
@@ -78,8 +78,6 @@ if (window.matchMedia("(min-width: 728px)").matches) {
     observer.observe(t);
   });
 }
-
-
 timeline_events.forEach((li, index) => {
   li.addEventListener("click", () => {
     if (li.getAttribute("done")) {

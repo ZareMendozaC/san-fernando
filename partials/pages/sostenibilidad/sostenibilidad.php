@@ -76,7 +76,6 @@ $imagen_seguridad = get_field("imagen_seguridad");
                     </g>
                 </svg>
 
-
                 <div class="icon-section">
                     <img class="icono-group" src="<?= $icono["url"] ?>" alt="icono">
 
@@ -129,9 +128,9 @@ $imagen_seguridad = get_field("imagen_seguridad");
             <h2>Logros</h2>
             <p class="description-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 
-            <div class="splide lista">
+            <div class="splide lista-logros">
                 <div class="splide__track">
-                    <ul class="splide__list">
+                    <ul class="splide__list list-logros-1">
                         <?php foreach ($slider_logros as $item) : ?>
 
                             <?php
@@ -140,7 +139,6 @@ $imagen_seguridad = get_field("imagen_seguridad");
                             $item_text = $item["texto"];
                             ?>
                             <?php if ($item) : ?>
-                                <!-- <div class="line-before"></div> -->
                                 <li class="splide__slide">
                                     <img src="<?= $item_image_url ?>" alt="iconos">
                                     <p><?= $item_text ?></p>
@@ -168,34 +166,33 @@ $imagen_seguridad = get_field("imagen_seguridad");
             </div>
 
 
-            <div class="splide social">
-                <div class="splide__track">
-                    <ul class="splide__list list-social">
-                        <?php foreach ($lista_responsabilidad as $list_res) : ?>
+            <div class="lista-social container">
+                <ul id="social-carousel" class="list-social-1">
+                    <?php foreach ($lista_responsabilidad as $list_res) : ?>
 
-                            <?php
-                            $item_responsabilidad_img = $list_res["icono_social"];
-                            $item_responsabilidad_image_url = $item_responsabilidad_img ? $item_responsabilidad_img["url"] : null;
-                            $res_titulo = $list_res["titulo_social"];
-                            $res_text = $list_res["descripcion_social"];
-                            ?>
+                        <?php
+                        $item_responsabilidad_img = $list_res["icono_social"];
+                        $item_responsabilidad_image_url = $item_responsabilidad_img ? $item_responsabilidad_img["url"] : null;
+                        $res_titulo = $list_res["titulo_social"];
+                        $res_text = $list_res["descripcion_social"];
+                        ?>
 
-                            <?php if ($list_res) : ?>
-                                <li>
-                                    <figure>
-                                        <img src="<?= $item_responsabilidad_image_url ?>" alt="">
-                                    </figure>
+                        <?php if ($list_res) : ?>
+                            <li>
+                                <figure>
+                                    <img src="<?= $item_responsabilidad_image_url ?>" alt="icono">
+                                </figure>
 
-                                    <h5><?= $res_titulo ?></h5>
+                                <h5><?= $res_titulo ?></h5>
 
-                                    <p><?= $res_text ?></p>
+                                <p><?= $res_text ?></p>
 
-                                </li>
-                            <?php endif; ?>
+                            </li>
+                        <?php endif; ?>
 
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
+                    <?php endforeach; ?>
+                </ul>
+
             </div>
 
 
@@ -255,32 +252,30 @@ $imagen_seguridad = get_field("imagen_seguridad");
 
             <section class="inner-section-2">
 
-                <div class="splide ambiental">
-                    <div class="splide__track">
-                        <ul class="splide__list list-ambiental">
-                            <?php foreach ($lista_gestion as $list_ges) : ?>
+                <div class="lista-ambiental">
+                    <ul class="list-ambiental-1">
+                        <?php foreach ($lista_gestion as $list_ges) : ?>
 
-                                <?php
-                                $item_gestion_img = $list_ges["icono"];
-                                $item_gestion_image_url = $item_gestion_img ? $item_gestion_img["url"] : null;
-                                $list_text = $list_ges["descripcion"];
-                                ?>
+                            <?php
+                            $item_gestion_img = $list_ges["icono"];
+                            $item_gestion_image_url = $item_gestion_img ? $item_gestion_img["url"] : null;
+                            $list_text = $list_ges["descripcion"];
+                            ?>
 
-                                <?php if ($list_ges) : ?>
-                                    <li>
-                                        <figure>
-                                            <img src="<?= $item_gestion_image_url ?>" alt="">
-                                        </figure>
+                            <?php if ($list_ges) : ?>
+                                <li>
+                                    <figure>
+                                        <img src="<?= $item_gestion_image_url ?>" alt="">
+                                    </figure>
 
-                                        <p><?= $list_text ?></p>
+                                    <p><?= $list_text ?></p>
 
-                                    </li>
-                                <?php endif; ?>
+                                </li>
+                            <?php endif; ?>
 
-                            <?php endforeach; ?>
-                        </ul>
+                        <?php endforeach; ?>
+                    </ul>
 
-                    </div>
                 </div>
             </section>
 
