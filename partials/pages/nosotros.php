@@ -52,41 +52,26 @@ $archivos = get_field("archivos");
 
 </section>
 <section class="section_time_line container">
+
 <section class="timeline">
       <div class="timeline-line">
         <span class="timeline-innerline"></span>
       </div>
       <ul class="ul-time">
+      <?php foreach ($listado_timeline as $time) : ?>
+        <?php
+$foto = $time['foto'];
+$anio = $time['anio'];
+$leyenda = $time['leyenda'];
+        ?>
         <li class="li-time">
           <span class="timeline-point"></span>
-          <span class="date">1948</span>
-          <p>Lorem, ipsum dolor sit amet</p>
+          <span class="date"><?= $anio; ?></span>
+          <img src="<?= $foto['url']; ?>" alt="">
+          <p><?= $leyenda; ?></p>
         </li>
-        <li class="li-time">
-          <span class="timeline-point"></span>
-          <span class="date">1963</span>
-          <p>Lorem, ipsum dolor sit amet</p>
-        </li>
-        <li class="li-time">
-          <span class="timeline-point"></span>
-          <span class="date">1972</span>
-          <p>Lorem, ipsum dolor sit amet</p>
-        </li>
-        <li class="li-time">
-          <span class="timeline-point"></span>
-          <span class="date">1974</span>
-          <p>Lorem, ipsum dolor sit amet</p>
-        </li>
-        <li class="li-time">
-          <span class="timeline-point"></span>
-          <span class="date">1977</span>
-          <p>Lorem, ipsum dolor sit amet</p>
-        </li>
-        <li class="li-time">
-          <span class="timeline-point"></span>
-          <span class="date">1978</span>
-          <p>Lorem, ipsum dolor sit amet</p>
-        </li>
+        <?php endforeach; ?>
+
         
       </ul>
     </section>
@@ -197,29 +182,6 @@ $archivos = get_field("archivos");
                         </svg></a>
                 </div>
         </div>
-
-        <!-- <?php foreach ($lista_conoce as $conoce) : ?>
-            <?php
-                    $img_conoce = $conoce["imagen_de_fondo"];
-                    $ico_conoce = $conoce["icono"];
-                    $nombre_conoce = $conoce["titulo"];
-                    $texto_conoce = $conoce["texto"];
-                    $btn_conoce = $conoce["texto_boton"];
-                    $link_conoce = $conoce["link_boton"];
-            ?>
-            <div class="card_conoce_mov show-mobile" style="background-image: url('<?= $img_conoce['url']; ?>')">
-
-                <p class="titulo_card color-white"><?= $nombre_conoce; ?></p>
-                <div class="div_link_card">
-                    <p class="texto_card color-white"><?= $btn_conoce; ?></p>
-                    <a href="<?= $link_conoce; ?>">
-                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.128906" y="0.0893555" width="28" height="28" rx="14" fill="#DF0002" />
-                            <path d="M17.5287 11.9694L12.9387 7.37942C12.7513 7.19316 12.4979 7.08862 12.2337 7.08862C11.9695 7.08862 11.7161 7.19316 11.5287 7.37942C11.435 7.47238 11.3606 7.58298 11.3098 7.70484C11.259 7.8267 11.2329 7.9574 11.2329 8.08942C11.2329 8.22143 11.259 8.35213 11.3098 8.47399C11.3606 8.59585 11.435 8.70645 11.5287 8.79942L16.1287 13.3794C16.2224 13.4724 16.2968 13.583 16.3476 13.7048C16.3984 13.8267 16.4245 13.9574 16.4245 14.0894C16.4245 14.2214 16.3984 14.3521 16.3476 14.474C16.2968 14.5959 16.2224 14.7065 16.1287 14.7994L11.5287 19.3794C11.3404 19.5664 11.2341 19.8205 11.2332 20.0859C11.2322 20.3512 11.3367 20.6061 11.5237 20.7944C11.7107 20.9827 11.9648 21.089 12.2302 21.09C12.4955 21.0909 12.7504 20.9864 12.9387 20.7994L17.5287 16.2094C18.0905 15.6469 18.4061 14.8844 18.4061 14.0894C18.4061 13.2944 18.0905 12.5319 17.5287 11.9694Z" fill="white" />
-                        </svg></a>
-                </div>
-            </div>
-            <?php endforeach; ?> -->
     </div>
 </section>
 <section class="section_politicas container">
