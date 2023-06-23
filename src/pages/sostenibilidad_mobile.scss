@@ -100,10 +100,10 @@
               font-size: calculate(18);
           }
 
-          .lista{
-            margin-left: calculate(15);
+          .lista-logros{
+            margin-left: calculate(25);
               .splide__track{
-                  .splide__list{
+                  .list-logros-1{
                       display: flex;
                       align-items: center;
                       justify-content: flex-start;
@@ -202,13 +202,12 @@
             }
         }
 
-        .social{
+        .lista-social{
             margin-left: calculate(15);
-            .splide__track{
-                .list-social{
-                    display: flex;
-                    justify-content: flex-start;
-                    gap: calculate(24);
+            .list-social-1{
+              display: flex;
+              justify-content: flex-start;
+              gap: calculate(24);           
                     li{
                         display: flex;
                         flex-direction: column;
@@ -219,8 +218,7 @@
                         padding-top: calculate(33);
                         padding-bottom: calculate(33);
                         width: calculate(264);
-                        height: calculate(370);
-        
+                        height: calculate(370);  
                         figure{
                             width: calculate(58);
                             height: calculate(58);
@@ -228,23 +226,25 @@
                                 width: calculate(58);
                                 height: calculate(58);
                             }
-                        }
-        
+                        }  
                         h5{
                             margin: 0;
                             color: var(--color-blue);
                             font-size: calculate(20);
                             font-weight: 700;
+                            margin: calculate(8) 0;
                         }
                         p{
                             width: calculate(193);
                             margin: 0;
                             font-size: calculate(16);
                         }
-                    }
-                }
+                 
+              }
+              
             }
         }
+        ///
         
     }
 
@@ -353,49 +353,61 @@
 
         .inner-section-2{
             padding-bottom: calculate(151);
-
-            .ambiental{
+            .lista-ambiental{
                 margin-left: calculate(15);
-                .splide__track{
-                    .list-ambiental{
+                    .list-ambiental-1{
                       display: flex;
                       justify-content: flex-start;
                       gap: calculate(24);
                       width: 100%;
-                      li{
+                     .slick-list{
+
+                       .slick-track{
+                          
                           display: flex;
-                          flex-direction: column;
-                          width: calculate(264);
-                          height: calculate(438);
-                          background-color: var(--color-white);
-                          border-radius: calculate(16);
-                          padding: calculate(22) calculate(32);
-                          gap: calculate(22);
-      
-                          figure{
-                              background-color: var(--color-celeste);
-                              width: calculate(65);
-                              height: calculate(65);
-                              border-radius: calculate(515);
-                              padding: calculate(16) calculate(22);
-                              img{
-      
-                                  width: calculate(65);
-                                  height: auto;
-      
-                              }
-                          }
-      
-                          p{
-                              margin: 0;
-                              width: calculate(212);
-                              height: auto;
-                              font-size: calculate(14);
-                          }
-      
-                      }
+                          justify-content: flex-start;
+                          gap: calculate(24);
+                          
+                         .slick-slide{
+                            div{
+                                li{
+                                  display: flex;
+                                  flex-direction: column;
+                                  width: calculate(264);
+                                  height: calculate(438);
+                                  background-color: var(--color-white);
+                                  border-radius: calculate(16);
+                                  padding: calculate(22) calculate(32);
+                                  gap: calculate(22);
+              
+                                  figure{
+                                      background-color: var(--color-celeste);
+                                      width: calculate(65);
+                                      height: calculate(65);
+                                      border-radius: calculate(515);
+                                      padding: calculate(16) calculate(22);
+                                      img{
+              
+                                          width: calculate(65);
+                                          height: auto;
+              
+                                      }
+                                  }
+              
+                                  p{
+                                      margin: 0;
+                                      width: calculate(212);
+                                      height: auto;
+                                      font-size: calculate(14);
+                                      margin-top: calculate(22);
+                                  }
+        
+                                }  
+                            }
+                         }
+                       }
+                     }
                     }
-                }
             }
 
         }
@@ -439,6 +451,20 @@
             }
         }
     }
+
+    }
+  }
+  .slick-list{
+    height: calculate(550)!important;
+    .slick-track{
+        display: flex;
+        
+        gap: calculate(14);
+        div{
+            width: calculate(313)!important;
+            height: calculate(390);
+        }
+        
 
     }
   }
