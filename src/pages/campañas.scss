@@ -34,6 +34,7 @@
 }
 .mb-279{
     margin-bottom:calculate(279);
+    margin-top:calculate(200);
 }
 
 .grid {
@@ -58,3 +59,12 @@
     height: 100% !important;
 }
 
+.subdiv_part_text{
+  position: relative;
+  .img_part_text{
+    position: absolute;
+    width: calculate(200);
+    height: auto;
+    left: calculate(280);
+  }
+}
