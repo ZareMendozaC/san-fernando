@@ -1,11 +1,12 @@
 
-section{
+.contactanos-contain{
     font-family: 'FuturaStd';
     .content-1{
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: calculate(30);
+        margin-top: calculate(70);
 
         h2{
             text-align: center;

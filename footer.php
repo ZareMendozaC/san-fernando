@@ -7,6 +7,8 @@ $url_youtube = get_field("youtube", 17);
 $url_linkedin = get_field("linkedin", 17);
 
 //url contactos
+
+$lista_contacto = get_field("lista_contacto", 17);
 $telefono = get_field("telefono", 17);
 $email = get_field("email", 17);
 $direccion = get_field("direccion", 17);
@@ -298,7 +300,15 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 		</div>
 	</div>
 
+	<div class="button-up">
+		<svg viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M24.0676 9.50639C24.2953 9.74214 24.4213 10.0579 24.4185 10.3856C24.4156 10.7134 24.2841 11.0269 24.0524 11.2587C23.8206 11.4904 23.5071 11.6219 23.1794 11.6247C22.8516 11.6276 22.5359 11.5016 22.3001 11.2739L16.9339 5.90764L16.9339 27.8901C16.9339 28.2217 16.8022 28.5396 16.5677 28.774C16.3333 29.0084 16.0154 29.1401 15.6839 29.1401C15.3523 29.1401 15.0344 29.0084 14.8 28.774C14.5656 28.5396 14.4339 28.2217 14.4339 27.8901L14.4339 5.90764L9.06761 11.2739C8.83186 11.5016 8.5161 11.6276 8.18836 11.6247C7.86061 11.6219 7.5471 11.4904 7.31534 11.2587C7.08358 11.0269 6.95211 10.7134 6.94927 10.3856C6.94642 10.0579 7.07241 9.74214 7.30011 9.50639L14.8001 2.00639C15.0345 1.77205 15.3524 1.64041 15.6839 1.64041C16.0153 1.64041 16.3332 1.77205 16.5676 2.00639L24.0676 9.50639Z" fill="#004A96" />
+		</svg>
+
+	</div>
+
 	<div class="bottom-footer">
+
 		<div>San Fernando - Todos los derechos reservados 2023</div>
 
 		<div class="terminos-footer">
@@ -329,4 +339,34 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 	$(function() {
 		$("#accordion").accordion();
 	});
+
+	$(document).ready(function() {
+
+		$('.button-up').click(function() {
+			$('body, html').animate({
+				scrollTop: '0px'
+			}, 300);
+		});
+
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 0) {
+				$('.button-up').slideDown(300);
+			} else {
+				$('.button-up').slideUp(300);
+			}
+		});
+
+	});
+
+	$(".footer-menu").on('click', function() {
+		$(".footer-menu").toggleClass('footer-menu-on');
+	})
+
+	$(".products-footer").click(function() {
+		$(".products-footer").toggleClass("products-footer-on");
+	})
+	//@ts-ignore
+	$(".products-vale").click(function() {
+		$(".products-vale").toggleClass("products-vale-on");
+	})
 </script>

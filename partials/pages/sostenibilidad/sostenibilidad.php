@@ -31,7 +31,7 @@ $imagen_seguridad = get_field("imagen_seguridad");
 
 ?>
 
-<section>
+<section class="sostenebilidad-contain">
 
     <div class="trabaja-head">
         <h1>
@@ -48,6 +48,7 @@ $imagen_seguridad = get_field("imagen_seguridad");
                 <h2><?= $subtitulo ?></h2>
 
                 <p class="description"><?= $description ?></p>
+
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1556 5" fill="none">
                     <mask id="mask0_2078_12866" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="1556" height="5">
