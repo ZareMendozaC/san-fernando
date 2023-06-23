@@ -198,7 +198,7 @@
           <a href="#" onclick="return false;">
             <button class="btn-comprar-mov">
               <div class="ico-text-btn-buy">
-                <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="80" height="80" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <mask id="mask0_1645_10987" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="45" height="44">
                     <path d="M44.0342 0H0V43.8604H44.0342V0Z" fill="white" />
                   </mask>
