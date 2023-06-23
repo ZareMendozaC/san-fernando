@@ -65,14 +65,12 @@ let observer = new IntersectionObserver(
 );
 
 if (window.matchMedia("(min-width: 728px)").matches) {
-  //observer.observe(target1);
+  // observer.observe(target1);
 } else {
   target2.forEach((t) => {
     observer.observe(t);
   });
 }
-
-
 timeline_events.forEach((li, index) => {
   li.addEventListener("click", () => {
     if (li.getAttribute("done")) {
