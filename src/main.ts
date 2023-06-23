@@ -82,22 +82,13 @@ $(".btn-comprar").hover(function () {
   $(".menu_compras").slideToggle(1500)
   $(".btn-comprar .arrow").toggleClass("arrow-btn-active")
 })
+
+// --------MOBILE--------------
 //@ts-ignore
 $(".toggle-menu").click(function () {
   $(".menu_mobile").slideToggle()
 })
-//@ts-ignore
-$(".btn-blog-mov").click(function () {
-  $(".blog_mov").slideToggle()
-})
-//@ts-ignore
-$(".btn-vales-mov").click(function () {
-  $(".vales_mov").slideToggle()
-})
-//@ts-ignore
-$(".btn-comprar-mov").click(function () {
-  $(".compras_mov").slideToggle()
-})
+
 //@ts-ignore
 $(".btn-blog-mov").click(function () {
   $(".li-blog_mov").slideToggle()
