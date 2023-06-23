@@ -4,14 +4,15 @@ section{
         margin-bottom: calculate(149)!important;
         .contain-1{
             display: flex;
+            
 
             .text-contain{
                 display: flex;
                 flex-direction: column;
 
                 svg{
-                    width: calculate(603);
-                    height: calculate(20);
+                    object-fit: none;
+                    width: calculate(550);
                 }
 
                 h2{
@@ -192,43 +193,46 @@ section{
                 }
             }
 
-            .list-social{
-                display: flex;
-                justify-content: center;
-                gap: calculate(24);
-
-                li{
-                    display: flex;
-                    flex-direction: column;
-                    gap: calculate(8);
-                    background-color: var(--color-white);
-                    border-radius: calculate(16);
-                    padding: 0 calculate(36);
-                    padding-top: calculate(33);
-                    padding-bottom: calculate(43);
-                    width: calculate(503);
-                    height: calculate(302);
-
-                    figure{
-                        width: calculate(58);
-                        height: calculate(58);
-                        img{
-                            width: calculate(58);
-                            height: calculate(58);
+            .lista-social{
+                // margin-left: calculate(15);
+                    .list-social-1{
+                        display: flex;
+                        justify-content: center;
+                        gap: calculate(24);
+        
+                        li{
+                            display: flex;
+                            flex-direction: column;
+                            gap: calculate(8);
+                            background-color: var(--color-white);
+                            border-radius: calculate(16);
+                            padding: 0 calculate(36);
+                            padding-top: calculate(33);
+                            padding-bottom: calculate(43);
+                            width: calculate(503);
+                            height: calculate(302);
+        
+                            figure{
+                                width: calculate(58);
+                                height: calculate(58);
+                                img{
+                                    width: calculate(58);
+                                    height: calculate(58);
+                                }
+                            }
+        
+                            h5{
+                                margin: 0;
+                                color: var(--color-blue);
+                                font-size: calculate(25);
+                                font-weight: 700;
+                            }
+                            p{
+                                margin: 0;
+                                font-size: calculate(16);
+                            }
                         }
                     }
-
-                    h5{
-                        margin: 0;
-                        color: var(--color-blue);
-                        font-size: calculate(25);
-                        font-weight: 700;
-                    }
-                    p{
-                        margin: 0;
-                        font-size: calculate(16);
-                    }
-                }
             }
 
         }
@@ -333,40 +337,42 @@ section{
 
             .inner-section-2{
                 padding-bottom: calculate(151);
-                .list-ambiental{
-                    display: flex;
-                    justify-content: center;
-                    gap: calculate(21);
-                    li{
+                .lista-ambiental{
+                    .list-ambiental-1{
                         display: flex;
-                        flex-direction: column;
-                        width: calculate(503);
-                        height: calculate(415);
-                        background-color: var(--color-white);
-                        border-radius: calculate(16);
-                        padding: calculate(32) calculate(52);
-                        gap: calculate(22);
-
-                        figure{
-                            background-color: var(--color-celeste);
-                            width: calculate(79);
-                            height: calculate(79);
-                            border-radius: calculate(515);
-                            padding: calculate(16) calculate(22);
-                            img{
-
-                                width: calculate(79);
-                                height: auto;
+                        justify-content: center;
+                        gap: calculate(21);
+                        li{
+                            display: flex;
+                            flex-direction: column;
+                            width: calculate(503);
+                            height: calculate(415);
+                            background-color: var(--color-white);
+                            border-radius: calculate(16);
+                            padding: calculate(32) calculate(52);
+                            gap: calculate(22);
     
+                            figure{
+                                background-color: var(--color-celeste);
+                                width: calculate(79);
+                                height: calculate(79);
+                                border-radius: calculate(515);
+                                padding: calculate(16) calculate(22);
+                                img{
+    
+                                    width: calculate(79);
+                                    height: auto;
+        
+                                }
                             }
+    
+                            p{
+                                margin: 0;
+                                height: 100%;
+                                font-size: calculate(16);
+                            }
+    
                         }
-
-                        p{
-                            margin: 0;
-                            height: 100%;
-                            font-size: calculate(16);
-                        }
-
                     }
                 }
 
