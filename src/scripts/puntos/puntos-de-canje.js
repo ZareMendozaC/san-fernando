@@ -492,10 +492,10 @@
         selectCard();
     });
     
-$('.selCiudad').select2({
-    placeholder: "Ubicación",
-    allowClear: true
-  });
+// $('.selCiudad').select2({
+//     placeholder: "Ubicación",
+//     allowClear: true
+//   });
 
 
 
