@@ -8,19 +8,26 @@ let target2 = document.querySelectorAll(".timeline .ul-time .li-time");
 const timeline_events = document.querySelectorAll(".ul-time .li-time");
 
 function showTime(e) {
-  //e.setAttribute("done", "true");
+  e.setAttribute("done", "true");
   e.querySelector(".timeline-point").style.background = "blue";
   e.querySelector(".date").style.opacity = "100%";
-  e.querySelector("p").style.opacity = "100%";
-  e.querySelector("p").style.transform = "translateY(0px)";
+  e.querySelector(".legend").style.opacity = "100%";
+  e.querySelector(".legend").style.transform = "translateY(0px)";
+  // e.querySelector(".img-legend").style.display = "block";
+  // e.querySelector(".img-legend").style.transform = "translateY(0px)";
+  // e.querySelector(".tex-legend").style.opacity = "100%";
 }
 
 function hideTime(e) {
   e.removeAttribute("done");
   e.querySelector(".timeline-point").style.background = "rgb(228, 228, 228)";
   e.querySelector(".date").style.opacity = "0%";
-  e.querySelector("p").style.opacity = "0%";
-  e.querySelector("p").style.transform = "translateY(-10px)";
+  e.querySelector(".legend").style.opacity = "0%";
+  e.querySelector(".legend").style.transform = "translateY(-10px)";
+  // e.querySelector(".img-legend").style.display = "none";
+  // e.querySelector(".img-legend").style.transform = "translateY(-10px)";
+  // e.querySelector(".tex-legend").style.opacity = "0%";
+  
 }
 
 function slowLoop() {

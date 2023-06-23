@@ -29,13 +29,13 @@ $archivos = get_field("archivos");
 
 <section class="section_info_nosotros ">
     <div class="head_nosotros show-desktop" style="background-image:url('<?= $img_fondo_nosotros['url'] ?>')">
-        <svg class="semi-circulo-ban-nos" width="742" height="322" viewBox="0 0 742 322" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- <svg class="semi-circulo-ban-nos" width="742" height="322" viewBox="0 0 742 322" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.75" d="M0 359C0 160.73 160.73 0 359 0H383C581.27 0 742 160.73 742 359H0Z" fill="white" />
         </svg>
         <svg class="semi-circulo-ban-nos2" width="742" height="322" viewBox="0 0 742 322" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.75" d="M0 359C0 160.73 160.73 0 359 0H383C581.27 0 742 160.73 742 359H0Z" fill="#024384" />
         </svg>
-        <img src="<?= $img_nosotros['url'] ?>" alt="" class="img_people_nos">
+        <img src="<?= $img_nosotros['url'] ?>" alt="" class="img_people_nos"> -->
     </div>
     <div class="head_nosotros_mov show-mobile">
         <h1><?= $nombre_nosotros; ?></h1>
@@ -64,16 +64,29 @@ $archivos = get_field("archivos");
                 $anio = $time['anio'];
                 $leyenda = $time['leyenda'];
                 ?>
-                <li class="li-time">
+                <li class="li-time" style="position:relative;">
                     <span class="timeline-point"></span>
                     <span class="date"><?= $anio; ?></span>
-                    <img src="<?= $foto['url']; ?>" alt="">
-                    <p><?= $leyenda; ?></p>
+                    <!-- <img class="img-legend" src="https://img.freepik.com/vector-premium/imagen-dibujos-animados-hongo-palabra-hongo_587001-200.jpg" alt="" style="width:80px; height:80px; display:none;"> -->
+                    <!-- <p ><?= $leyenda; ?></p> -->
+                    <div class="legend" >
+     
+                    <img class="img-legend" src="https://img.freepik.com/vector-premium/imagen-dibujos-animados-hongo-palabra-hongo_587001-200.jpg" alt="" style="width:80px; height:80px; display:none; position:absolute;     top: -100px;
+    left: 30px;">
+                    <p class="tex-legend" style="margin-top:100px;"><?= $leyenda; ?></p> 
+                        
+                    </div>
+                    <!-- <div class="card-blog legend">
+                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668-1.png">
+                        </div>
+                        <div class="btn-cat tex-legend">Nutrición</div>
+                        <p class="title-blog tex-legend">El buen sabor para una sopa de Pavo casera y reconfortante</p>
+                        <p class="text-blog tex-legend">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
+                    </div> -->
                 </li>
             <?php endforeach; ?>
         </ul>
     </section>
-
 </section>
 <section class="section_MV_valores container">
 
