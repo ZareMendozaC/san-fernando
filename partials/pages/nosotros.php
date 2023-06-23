@@ -29,13 +29,13 @@ $archivos = get_field("archivos");
 
 <section class="section_info_nosotros ">
     <div class="head_nosotros show-desktop" style="background-image:url('<?= $img_fondo_nosotros['url'] ?>')">
-        <svg class="semi-circulo-ban-nos" width="742" height="322" viewBox="0 0 742 322" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- <svg class="semi-circulo-ban-nos" width="742" height="322" viewBox="0 0 742 322" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.75" d="M0 359C0 160.73 160.73 0 359 0H383C581.27 0 742 160.73 742 359H0Z" fill="white" />
         </svg>
         <svg class="semi-circulo-ban-nos2" width="742" height="322" viewBox="0 0 742 322" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.75" d="M0 359C0 160.73 160.73 0 359 0H383C581.27 0 742 160.73 742 359H0Z" fill="#024384" />
         </svg>
-        <img src="<?= $img_nosotros['url'] ?>" alt="" class="img_people_nos">
+        <img src="<?= $img_nosotros['url'] ?>" alt="" class="img_people_nos"> -->
     </div>
     <div class="head_nosotros_mov show-mobile">
         <h1><?= $nombre_nosotros; ?></h1>
