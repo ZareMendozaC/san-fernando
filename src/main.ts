@@ -8,7 +8,7 @@ import '@splidejs/splide/css'
 import "./scripts/pages/inicio.js"
 import "./scripts/pages/sostenibilidad.js"
 import "./scripts/puntos/puntos-de-canje.js"
-import "./scripts/pages/time-line.js"
+//import "./scripts/pages/time-line.js"
 
 // import Masonry from "masonry-layout/dist/masonry";
 //@ts-ignore
