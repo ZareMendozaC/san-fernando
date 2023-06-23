@@ -76,8 +76,8 @@ $(".btn-vales").hover(function () {
 })
 //@ts-ignore
 $(".btn-comprar").hover(function () {
-  $(".menu_compras").slideToggle()
-  $(".btn-comprar .arrow").toggleClass("arrow-btn-active")
+  $(".menu_compras").slideToggle();
+  $(".btn-comprar .arrow").toggleClass("arrow-btn-active");
 }, function () {
   $(".menu_compras").slideToggle(1500)
   $(".btn-comprar .arrow").toggleClass("arrow-btn-active")
@@ -103,21 +103,21 @@ $(".btn-vales-mov").click(function () {
 $(".btn-comprar-mov").click(function () {
   $(".li-compras_mov").slideToggle()
   $(".btn-comprar-mov .arrow").toggleClass("arrow-btn-active")
-})
+});
 //@ts-ignore
 $(".footer-menu").click(function () {
-  $("#list-opcion1").toggleClass("list-menu")
-  $("#list-opcion1").toggleClass("list-menu-on")
+  $("#list-opcion1").toggleClass("list-menu");
+  $("#list-opcion1").toggleClass("list-menu-on");
 })
 //@ts-ignore
 $(".products-footer").click(function () {
-  $("#list-opcion2").toggleClass("list-menu-2")
-  $("#list-opcion2").toggleClass("list-menu-2_on")
+  $("#list-opcion2").toggleClass("list-menu-2");
+  $("#list-opcion2").toggleClass("list-menu-2_on");
 })
 //@ts-ignore
 $(".products-vale").click(function () {
-  $("#list-opcion3").toggleClass("list-menu-3")
-  $("#list-opcion3").toggleClass("list-menu-3_on")
+  $("#list-opcion3").toggleClass("list-menu-3");
+  $("#list-opcion3").toggleClass("list-menu-3_on");
 })
 //@ts-ignore
 var mediaqueryList = window.matchMedia("(max-width: 768px)")
@@ -125,3 +125,4 @@ var mediaqueryList = window.matchMedia("(max-width: 768px)")
 // mediaqueryList.addListener(function (EventoMediaQueryList) {
 //   $(".section-2").css("display", "none");
 // });
+

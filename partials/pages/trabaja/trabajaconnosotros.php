@@ -14,7 +14,7 @@ $url_politicas_trabaja = get_field("link_politicas_de_privacidad");
 
 
 
-<section>
+<section class="trabaja-contain">
     <div class="trabaja-head">
         <h1 class="color-white"><?php echo $main_title_trabaja ?></h1>
     </div>

@@ -33,6 +33,7 @@
     "partials/**/*",
     "templates/**/*",
     "page-templates/**/*",
+    "api/**/*",
     "footer.php",
     "functions.php",
     "header.php",
