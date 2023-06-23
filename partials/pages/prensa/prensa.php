@@ -112,7 +112,7 @@
                         <a href="<?php echo home_url(); ?>/detalle-prensa">Leer más</a>
                     </div>
                     <div class="card-blog">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668-1.png">
+                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668-1.png)">
                         </div>
                         <div class="btn-cat">Nutrición</div>
                         <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
