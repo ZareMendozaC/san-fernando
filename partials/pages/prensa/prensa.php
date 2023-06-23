@@ -3,7 +3,7 @@
         <h1 class="color-white">Prensa</h1>
     </div>
 </section>
-<section class="section-blog bg-skyblue-1">
+<section class="section-blog bg-skyblue-1 prensa_section">
     <div class="container-left">
         <div class="col-blog-1">
             <div class="content-h2">
@@ -71,7 +71,7 @@
             </div>
         </div>
 </section>
-<section class="section-entradas bg-beige">
+<section class="section-entradas bg-beige prensa_section2">
     <div class="container d-flex">
         <div class="row-etiquetas">
             <div class="box-cat active">Lanzamientos</div>
