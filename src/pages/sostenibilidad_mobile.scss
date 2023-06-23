@@ -314,8 +314,9 @@
             display: flex;
             align-items: center;
             flex-wrap: wrap-reverse;
-            gap: calculate(125);
-            padding-top: calculate(145);
+            gap: calculate(60);
+            padding-top: calculate(90);
+            margin-bottom: calculate(70)!important;
 
             div{
                 display: flex;
@@ -352,7 +353,9 @@
         }
 
         .inner-section-2{
-            padding-bottom: calculate(151);
+            margin-top: 0!important;
+            margin-bottom: calculate(80)!important;
+            padding-bottom: calculate(50);
             .lista-ambiental{
                 margin-left: calculate(15);
                     .list-ambiental-1{
