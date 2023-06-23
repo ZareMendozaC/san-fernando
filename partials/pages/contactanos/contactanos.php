@@ -7,7 +7,7 @@ $url_button_2 = get_field("url_button_2");
 
 ?>
 
-<section>
+<section class="contactanos-contain">
 
     <div class="trabaja-head">
         <h1><?php echo $titulo_principal ?></h1>

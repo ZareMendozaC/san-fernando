@@ -189,6 +189,25 @@ ul{
         }
     }
 
+    .button-up{
+        display: flex !important;;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: calculate(520);
+        right: calculate(220);
+        height: calculate(74);
+        width: calculate(74);
+        border-radius: calculate(515);
+        background:var(--color-white);
+        cursor:pointer;
+        svg{
+            height: calculate(30);
+            width: calculate(30);
+        }
+
+      }
+
     .bottom-footer{
         background-color: var(--dark-blue);
         color: var(--white-color);
