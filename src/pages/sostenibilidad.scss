@@ -198,8 +198,8 @@ section{
                     .list-social-1{
                         display: flex;
                         justify-content: center;
+                        height: calculate(300);
                         gap: calculate(24);
-        
                         li{
                             display: flex;
                             flex-direction: column;
@@ -413,4 +413,19 @@ section{
         }
 
     }
+
+    .slick-list{
+        .slick-track{
+            display: flex;
+            
+            gap: calculate(14);
+            div{
+                width: calculate(503);
+            }
+            
+    
+        }
+    }
 }
+
+

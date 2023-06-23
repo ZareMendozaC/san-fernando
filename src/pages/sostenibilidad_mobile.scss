@@ -101,7 +101,7 @@
           }
 
           .lista-logros{
-            margin-left: calculate(20);
+            margin-left: calculate(25);
               .splide__track{
                   .list-logros-1{
                       display: flex;
@@ -203,19 +203,11 @@
         }
 
         .lista-social{
-            visibility: visible;
             margin-left: calculate(15);
             .list-social-1{
               display: flex;
               justify-content: flex-start;
-              gap: calculate(24);
-              
-              .slick-list{
-
-                .slick-track{
-                    display: flex;
-                    justify-content: flex-s;
-                    gap: calculate(24);
+              gap: calculate(24);           
                     li{
                         display: flex;
                         flex-direction: column;
@@ -247,13 +239,12 @@
                             margin: 0;
                             font-size: calculate(16);
                         }
-                    }
-                }
-                
+                 
               }
               
             }
         }
+        ///
         
     }
 
@@ -374,7 +365,7 @@
                        .slick-track{
                           
                           display: flex;
-                          justify-content: flex-s;
+                          justify-content: flex-start;
                           gap: calculate(24);
                           
                          .slick-slide{
@@ -460,6 +451,20 @@
             }
         }
     }
+
+    }
+  }
+  .slick-list{
+    height: calculate(550)!important;
+    .slick-track{
+        display: flex;
+        
+        gap: calculate(14);
+        div{
+            width: calculate(313)!important;
+            height: calculate(390);
+        }
+        
 
     }
   }

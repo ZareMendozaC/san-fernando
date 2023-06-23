@@ -2,6 +2,28 @@
     .div-ban-campanias {
         margin-top: calculate(10) !important;
       }
+
+    .div-part-text{
+        flex-direction: column;
+        gap: calculate(40);
+        .w-50{
+            width: auto;
+        }
+    }
+
+    .subdiv_part_text{
+        position: relative;
+        .img_part_text{
+          position: absolute;
+          width: calculate(70);
+          height: auto;
+          left: calculate(110);
+          bottom: calculate(-8);
+        }
+      }
+      .mb-279{
+        margin-top: calculate(0);
+      }
 }
 @media only screen and (max-width: 576px){
     .grid{
