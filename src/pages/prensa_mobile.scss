@@ -41,4 +41,37 @@
       }
     }
   }
+
+  .trabaja-head:before,
+  .trabaja-head:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(
+        45deg,
+        transparent 33.333%,
+        var(--dark-blue) 33.333%,
+        var(--dark-blue) 66.667%,
+        transparent 66.667%
+      ),
+      linear-gradient(
+        -45deg,
+        transparent 33.333%,
+        var(--dark-blue) 33.333%,
+        var(--dark-blue) 66.667%,
+        transparent 66.667%
+      );
+    background-size: 15px 40px;
+  }
+
+  .trabaja-head:before {
+    top: calculate(-100);
+  }
+
+  .trabaja-head:after {
+    top: calculate(222);
+    transform: rotate(180deg);
+    margin-left: calculate(-1);
+  }
 }
