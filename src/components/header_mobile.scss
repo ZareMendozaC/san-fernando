@@ -137,6 +137,7 @@
     margin: 20px 10px;
   }
   .btn-comprar-mov {
+    height: calculate(60);
     font-style: normal;
     font-weight: 600;
     font-size: calc(100vw * (16 / var(--width_base)));
@@ -159,6 +160,9 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    svg{
+      width:calculate(40);
+    }
   }
   .div-btn-comprar .list-group .li-compras_mov {
     border-bottom: none !important;
