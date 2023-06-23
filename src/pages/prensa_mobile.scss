@@ -28,7 +28,7 @@
 
   .section-prensa .content-prensa {
     flex-direction: column;
-    // width: calculate(358)!important;
+    row-gap: calculate(30) !important;
     .prensa-1 {
       padding: calculate(5);
       width: 100%;
@@ -37,14 +37,7 @@
       }
       .texto-prensa {
         padding: calculate(4);
-        width: calculate(358) !important;
-        margin-bottom: 0px !important;
-        font-family: "FuturaStd";
-        font-style: normal;
-        font-weight: 400;
-        font-size: calc(100vw * (22 / var(--width_base)));
-        line-height: calc(100vw * (33 / var(--width_base)));
-        text-align: justify;
+
       }
     }
   }
