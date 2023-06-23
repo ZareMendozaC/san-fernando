@@ -12,8 +12,10 @@
     display: flex;
     align-items: center;
 }
+.icon-vale span{
+    font-size: calculate(14);
+}
 .section-encuentranos{
-
     font-family: "FuturaStd";
     .trabaja-head{
         flex-direction: column;
@@ -64,13 +66,13 @@
         color: var(--color-blue);
     }
     .icon-product {
-        font-size: calc(100vw * (calc(13 / var(--width_base))))
+        font-size: calc(100vw * (calc(14 / var(--width_base))))
     }
     .icon-vale {
         width: 35%;
         display: flex;
         justify-content: flex-start;
-        align-items: center
+        align-items: center;
     }
     .icon-product>span {
         margin-right: 15px;
