@@ -25,10 +25,6 @@ $lista_conoce = get_field("lista_conoce");
 $titulo_politicas = get_field("titulo_politicas");
 $descripcion_politicas = get_field("descripcion_politicas");
 $archivos = get_field("archivos");
-// CERTIFICACIONES
-// $titulo_certificaciones = get_field('titulo_certificaciones');
-// $descripcion_certificaciones = get_field('descripcion_certificaciones');
-// $listado_de_certificaciones = get_field('listado_de_certificaciones');
 ?>
 
 <section class="section_info_nosotros ">
@@ -56,7 +52,45 @@ $archivos = get_field("archivos");
 
 </section>
 <section class="section_time_line container">
-    <!-- TIME LINE -->
+<section class="timeline">
+      <div class="timeline-line">
+        <span class="timeline-innerline"></span>
+      </div>
+      <ul class="ul-time">
+        <li class="li-time">
+          <span class="timeline-point"></span>
+          <span class="date">1948</span>
+          <p>Lorem, ipsum dolor sit amet</p>
+        </li>
+        <li class="li-time">
+          <span class="timeline-point"></span>
+          <span class="date">1963</span>
+          <p>Lorem, ipsum dolor sit amet</p>
+        </li>
+        <li class="li-time">
+          <span class="timeline-point"></span>
+          <span class="date">1972</span>
+          <p>Lorem, ipsum dolor sit amet</p>
+        </li>
+        <li class="li-time">
+          <span class="timeline-point"></span>
+          <span class="date">1974</span>
+          <p>Lorem, ipsum dolor sit amet</p>
+        </li>
+        <li class="li-time">
+          <span class="timeline-point"></span>
+          <span class="date">1977</span>
+          <p>Lorem, ipsum dolor sit amet</p>
+        </li>
+        <li class="li-time">
+          <span class="timeline-point"></span>
+          <span class="date">1978</span>
+          <p>Lorem, ipsum dolor sit amet</p>
+        </li>
+        
+      </ul>
+    </section>
+
 </section>
 <section class="section_MV_valores container">
 
