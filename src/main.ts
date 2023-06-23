@@ -7,7 +7,8 @@ import "./style.scss";
 import '@splidejs/splide/css';
 import "./scripts/pages/inicio.js";
 import "./scripts/pages/sostenibilidad.js";
-
+import "./scripts/puntos/puntos-de-canje.js"
+import "./scripts/pages/time-line.js";
 
 // import Masonry from "masonry-layout/dist/masonry";
 //@ts-ignore
@@ -56,18 +57,30 @@ $(".slider-blog").slick({
   ]
 });
 */
+
 //@ts-ignore
-$(".btn-blog").click(function () {
+$(".btn-blog").hover(function () {
   $(".menu_blog").slideToggle();
+  $(".btn-blog .arrow").toggleClass("arrow-btn-active")
+}, function () {
+  $(".menu_blog").slideToggle(1500);
   $(".btn-blog .arrow").toggleClass("arrow-btn-active")
 });
 //@ts-ignore
-$(".btn-vales").click(function () {
+$(".btn-vales").hover(function () {
   $(".menu_vales").slideToggle();
+  $(".btn-vales .arrow").toggleClass("arrow-btn-active")
+}, function () {
+  $(".menu_vales").slideToggle(1500);
+  $(".btn-vales .arrow").toggleClass("arrow-btn-active")
 });
 //@ts-ignore
-$(".btn-comprar").click(function () {
-  $(".menu_compras").slideToggle();
+$(".btn-comprar").hover(function () {
+  $(".menu_compras").slideToggle(); 
+  $(".btn-comprar .arrow").toggleClass("arrow-btn-active");
+}, function () {
+  $(".menu_compras").slideToggle(1500);
+  $(".btn-comprar .arrow").toggleClass("arrow-btn-active");
 });
 //@ts-ignore
 $(".toggle-menu").click(function () {
