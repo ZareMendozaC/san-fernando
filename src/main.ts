@@ -57,15 +57,22 @@ $(".slider-blog").slick({
   ]
 });
 */
-
-//@ts-ignore
-$(".btn-blog").hover(function () {
-  $(".menu_blog").slideToggle()
-  $(".btn-blog .arrow").toggleClass("arrow-btn-active")
+$(".btn-blog, .menu_blog").hover(function () {
+  $(".menu_blog").slideDown();
+  $(".btn-blog .arrow").toggleClass("arrow-btn-active");
 }, function () {
-  $(".menu_blog").slideToggle(1500)
-  $(".btn-blog .arrow").toggleClass("arrow-btn-active")
-})
+  $(".menu_blog").slideUp();
+  $(".btn-blog .arrow").toggleClass("arrow-btn-active");
+});
+// ---------------NAVBAR-----------------
+//@ts-ignore
+// $(".btn-blog").hover(function () {
+//   $(".menu_blog").slideToggle()
+//   $(".btn-blog .arrow").toggleClass("arrow-btn-active")
+// }, function () {
+//   $(".menu_blog").slideToggle(1500)
+//   $(".btn-blog .arrow").toggleClass("arrow-btn-active")
+// })
 //@ts-ignore
 $(".btn-vales").hover(function () {
   $(".menu_vales").slideToggle()
@@ -82,22 +89,13 @@ $(".btn-comprar").hover(function () {
   $(".menu_compras").slideToggle(1500)
   $(".btn-comprar .arrow").toggleClass("arrow-btn-active")
 })
+
+// --------MOBILE--------------
 //@ts-ignore
 $(".toggle-menu").click(function () {
   $(".menu_mobile").slideToggle()
 })
-//@ts-ignore
-$(".btn-blog-mov").click(function () {
-  $(".blog_mov").slideToggle()
-})
-//@ts-ignore
-$(".btn-vales-mov").click(function () {
-  $(".vales_mov").slideToggle()
-})
-//@ts-ignore
-$(".btn-comprar-mov").click(function () {
-  $(".compras_mov").slideToggle()
-})
+
 //@ts-ignore
 $(".btn-blog-mov").click(function () {
   $(".li-blog_mov").slideToggle()
@@ -113,7 +111,21 @@ $(".btn-comprar-mov").click(function () {
   $(".li-compras_mov").slideToggle()
   $(".btn-comprar-mov .arrow").toggleClass("arrow-btn-active")
 });
-
+//@ts-ignore
+$(".footer-menu").click(function () {
+  $("#list-opcion1").toggleClass("list-menu");
+  $("#list-opcion1").toggleClass("list-menu-on");
+})
+//@ts-ignore
+$(".products-footer").click(function () {
+  $("#list-opcion2").toggleClass("list-menu-2");
+  $("#list-opcion2").toggleClass("list-menu-2_on");
+})
+//@ts-ignore
+$(".products-vale").click(function () {
+  $("#list-opcion3").toggleClass("list-menu-3");
+  $("#list-opcion3").toggleClass("list-menu-3_on");
+})
 //@ts-ignore
 var mediaqueryList = window.matchMedia("(max-width: 768px)")
 
