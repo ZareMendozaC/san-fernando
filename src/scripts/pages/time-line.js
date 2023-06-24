@@ -13,9 +13,9 @@ function showTime(e) {
   e.querySelector(".date").style.opacity = "100%";
   e.querySelector(".legend").style.opacity = "100%";
   e.querySelector(".legend").style.transform = "translateY(0px)";
-  // e.querySelector(".img-legend").style.display = "block";
-  // e.querySelector(".img-legend").style.transform = "translateY(0px)";
-  // e.querySelector(".tex-legend").style.opacity = "100%";
+  e.querySelector(".img-legend").style.display = "block";
+  e.querySelector(".img-legend").style.transform = "translateY(0px)";
+  e.querySelector(".tex-legend").style.opacity = "100%";
 }
 
 function hideTime(e) {
@@ -24,9 +24,9 @@ function hideTime(e) {
   e.querySelector(".date").style.opacity = "0%";
   e.querySelector(".legend").style.opacity = "0%";
   e.querySelector(".legend").style.transform = "translateY(-10px)";
-  // e.querySelector(".img-legend").style.display = "none";
-  // e.querySelector(".img-legend").style.transform = "translateY(-10px)";
-  // e.querySelector(".tex-legend").style.opacity = "0%";
+  e.querySelector(".img-legend").style.display = "none";
+  e.querySelector(".img-legend").style.transform = "translateY(-10px)";
+  e.querySelector(".tex-legend").style.opacity = "0%";
   
 }
 

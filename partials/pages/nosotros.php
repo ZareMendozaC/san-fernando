@@ -67,22 +67,14 @@ $archivos = get_field("archivos");
                 <li class="li-time" style="position:relative;">
                     <span class="timeline-point"></span>
                     <span class="date"><?= $anio; ?></span>
-                    <!-- <img class="img-legend" src="https://img.freepik.com/vector-premium/imagen-dibujos-animados-hongo-palabra-hongo_587001-200.jpg" alt="" style="width:80px; height:80px; display:none;"> -->
-                    <!-- <p ><?= $leyenda; ?></p> -->
+                   <!--  <img class="img-legend" src="https://img.freepik.com/vector-premium/imagen-dibujos-animados-hongo-palabra-hongo_587001-200.jpg" alt="" style="width:80px; height:80px; display:none;">
+                    <p class="legend"><?= $leyenda; ?></p> -->
+
                     <div class="legend" >
-     
-                    <img class="img-legend" src="https://img.freepik.com/vector-premium/imagen-dibujos-animados-hongo-palabra-hongo_587001-200.jpg" alt="" style="width:80px; height:80px; display:none; position:absolute;     top: -100px;
-    left: 30px;">
-                    <p class="tex-legend" style="margin-top:100px;"><?= $leyenda; ?></p> 
+                    <img class="img-legend" src="<?= $foto['url']; ?>" alt="foto" >
+                    <p class="tex-legend"><?= $leyenda; ?></p> 
                         
                     </div>
-                    <!-- <div class="card-blog legend">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668-1.png">
-                        </div>
-                        <div class="btn-cat tex-legend">Nutrición</div>
-                        <p class="title-blog tex-legend">El buen sabor para una sopa de Pavo casera y reconfortante</p>
-                        <p class="text-blog tex-legend">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
-                    </div> -->
                 </li>
             <?php endforeach; ?>
         </ul>
