@@ -71,7 +71,7 @@ let observer = new IntersectionObserver(
   { threshold: 1, rootMargin: "0px 0px -50px 0px" }
 );
 
-if (window.matchMedia("(min-width: 728px)").matches) {
+if (window.matchMedia("(min-width: 768px)").matches) {
   // observer.observe(target1);
 } else {
   target2.forEach((t) => {

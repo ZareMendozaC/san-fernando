@@ -51,9 +51,9 @@ $archivos = get_field("archivos");
     <p class="p-subtitle p_dsc"><?= $descripcion_nosotros; ?></p>
 
 </section>
-<section class="section_time_line container">
+<section class="section_time_line timeline section_linea">
 
-    <section class="timeline section_linea">
+    <!-- <section class=""> -->
         <div class="timeline-line">
             <span class="timeline-innerline"></span>
         </div>
@@ -78,7 +78,7 @@ $archivos = get_field("archivos");
                 </li>
             <?php endforeach; ?>
         </ul>
-    </section>
+    <!-- </section> -->
 </section>
 <section class="section_MV_valores container">
 
