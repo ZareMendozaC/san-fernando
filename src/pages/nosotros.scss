@@ -14,15 +14,17 @@
     display: none;
   }
   .head_nosotros {
+    background-position: bottom;
+    background-repeat: no-repeat;
     margin-top: calculate(100);
     position: relative;
     background-color: var(--dark-blue);
-    background-size: cover;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--color-white);
-    height: calculate(550);
+    height: calculate(480);
     margin-bottom: calculate(53);
     width: 100%;
     .semi-circulo-ban-nos {
