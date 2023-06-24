@@ -5,10 +5,11 @@
         display: flex;
         flex-wrap: wrap;
         gap: calc(100vw*(36 /var(--width_base)))!important;
+        padding-bottom: calculate(20)!important;
 
         .footer-first-line{
             width: 100vw!important;
-            gap: calculate(100)!important;
+            gap: calculate(60)!important;
 
             div{
                 display: flex;
@@ -71,6 +72,7 @@
                     }
                     svg{
                         display: flex !important;
+                        transition: all .3s ease-in-out;
                     }
                 }
     
@@ -80,6 +82,7 @@
                     margin: 0;
                     gap: calculate(17);
                     margin-top: calculate(20)!important;
+                    margin-left: calculate(10)!important;
                     transition: all 1s ease-in-out;
                     li{
                         font-weight: 600;
@@ -110,6 +113,7 @@
                     }
                     svg{
                         display: flex !important;
+                        transition: all .3s ease-in-out;
                     }
                 }
 
@@ -119,6 +123,7 @@
                     margin: 0;
                     gap: calculate(17);
                     margin-top: calculate(20)!important;
+                    margin-left: calculate(10)!important;
                     li{
                         font-weight: 600;
                         font-size: calc(100vw*(18/var(--width_base)));
@@ -142,6 +147,7 @@
                     }
                     svg{
                         display: flex !important;
+                        transition: all .3s ease-in-out;
                     }
                 }
 
@@ -151,6 +157,7 @@
                     margin: 0;
                     gap: calcualte(17);
                     margin-top: calculate(20)!important;
+                    margin-left: calculate(10)!important;
                     li{
                         font-weight: 600;
                         font-size: calc(100vw*(18/var(--width_base)));
@@ -230,17 +237,26 @@
 
 
 .footer-menu-on{
-    height: calculate(260)!important;
+    height: calculate(290)!important;
     transition: all .3s ease-in-out;
+    svg{
+        transform: rotate(180deg);
+    }
 }
 
 .products-footer-on{
-    height: calculate(260)!important;
+    height: calculate(290)!important;
     transition: all .3s ease-in-out;
+    svg{
+        transform: rotate(180deg);
+    }
 }
 
 .products-vale-on{
-    height: calculate(260)!important;
+    height: calculate(220)!important;
     transition: all .3s ease-in-out;
+    svg{
+        transform: rotate(180deg);
+    }
 }
 

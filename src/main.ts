@@ -113,21 +113,7 @@ $(".btn-comprar-mov").click(function () {
   $(".li-compras_mov").slideToggle()
   $(".btn-comprar-mov .arrow").toggleClass("arrow-btn-active")
 });
-//@ts-ignore
-$(".footer-menu").click(function () {
-  $("#list-opcion1").toggleClass("list-menu");
-  $("#list-opcion1").toggleClass("list-menu-on");
-})
-//@ts-ignore
-$(".products-footer").click(function () {
-  $("#list-opcion2").toggleClass("list-menu-2");
-  $("#list-opcion2").toggleClass("list-menu-2_on");
-})
-//@ts-ignore
-$(".products-vale").click(function () {
-  $("#list-opcion3").toggleClass("list-menu-3");
-  $("#list-opcion3").toggleClass("list-menu-3_on");
-})
+
 //@ts-ignore
 var mediaqueryList = window.matchMedia("(max-width: 768px)")
 
