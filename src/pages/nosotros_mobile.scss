@@ -14,12 +14,12 @@
       justify-content: center;
       align-items: flex-end;
       color: var(--color-white);
-      height: calculate(290);
+      height: calculate(326);
       margin-top: calculate(-100);
       margin-bottom: calculate(53);
       width: 100%;
       h1 {
-        margin-bottom: calculate(35);
+        margin-bottom: calculate(55);
       }
     }
 
@@ -293,7 +293,7 @@
   }
 
   .head_nosotros_mov:after {
-    top: calculate(189);
+    top: calculate(225);
     transform: rotate(180deg);
     margin-left: calculate(-1);
   }
