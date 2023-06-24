@@ -14,19 +14,14 @@
     display: none;
   }
   .head_nosotros {
+    position: relative;
+    width: 100%;
+    height: calculate(550);
+    background-repeat: no-repeat;
+    background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
-    margin-top: calculate(100);
-    position: relative;
-    background-color: var(--dark-blue);
-    background-size: contain;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--color-white);
-    height: calculate(480);
     margin-bottom: calculate(53);
-    width: 100%;
     .semi-circulo-ban-nos {
       position: absolute;
       z-index: 1;
@@ -385,7 +380,7 @@
     border-radius: 999px;
   }
 }
-.img-legend{
+.img-legend {
   width: 80px;
   height: 80px;
   display: none;
@@ -394,6 +389,6 @@
   left: 30px;
 }
 
-.tex-legend{
-  margin-top:100px
+.tex-legend {
+  margin-top: 100px;
 }
