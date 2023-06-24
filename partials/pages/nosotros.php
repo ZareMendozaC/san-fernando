@@ -51,9 +51,9 @@ $archivos = get_field("archivos");
     <p class="p-subtitle p_dsc"><?= $descripcion_nosotros; ?></p>
 
 </section>
-<section class="section_time_line timeline section_linea">
+<section class="section_time_line container">
 
-    <!-- <section class=""> -->
+    <div class="timeline section_linea">
         <div class="timeline-line">
             <span class="timeline-innerline"></span>
         </div>
@@ -67,18 +67,19 @@ $archivos = get_field("archivos");
                 <li class="li-time" style="position:relative;">
                     <span class="timeline-point"></span>
                     <span class="date"><?= $anio; ?></span>
-                   <!--  <img class="img-legend" src="https://img.freepik.com/vector-premium/imagen-dibujos-animados-hongo-palabra-hongo_587001-200.jpg" alt="" style="width:80px; height:80px; display:none;">
+                    <!-- <img class="img-legend" src="https://img.freepik.com/vector-premium/imagen-dibujos-animados-hongo-palabra-hongo_587001-200.jpg" alt="" style="width:80px; height:80px; display:none;">
                     <p class="legend"><?= $leyenda; ?></p> -->
 
                     <div class="legend" >
-                    <img class="img-legend" src="<?= $foto['url']; ?>" alt="foto" >
-                    <p class="tex-legend"><?= $leyenda; ?></p> 
+                    <!-- <img class="img-legend" src="<?= $foto['url']; ?>" alt="foto" > -->
+                    <img class="img-legend" src="https://img.freepik.com/vector-premium/imagen-dibujos-animados-hongo-palabra-hongo_587001-200.jpg" alt="foto" >
+                    <p class="tex-legend p-textline"><?= $leyenda; ?></p> 
                         
                     </div>
                 </li>
             <?php endforeach; ?>
         </ul>
-    <!-- </section> -->
+            </div>
 </section>
 <section class="section_MV_valores container">
 
