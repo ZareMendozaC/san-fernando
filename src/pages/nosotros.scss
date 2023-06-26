@@ -255,19 +255,19 @@
   margin: calculate(30) calculate(0);
   // width: calculate(1556);
   overflow: auto;
-  height: calculate(700);
+  height: calculate(1000);
 }
 .timeline {
-  margin-top: 35px;
+  margin-top: calculate(35);
   // padding: calculate(30) 0px;
-  padding-top: 50px;
+  padding-top: calculate(280);
   display: grid;
   grid-template-columns: 40% auto;
   justify-content: center;
 }
 
 .ul-time {
-  margin-top: 30px;
+  margin-top: calculate(42);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -400,7 +400,7 @@
     width: 15px;
     height: 15px;
 
-    top: -40px;
+    top: calculate(-58);
     left: 40%;
     transition: 1.5s ease;
   }
@@ -410,7 +410,7 @@
     height: 15px;
 
     // top: -97px;
-    top: calculate(-137);
+    top: calculate(-135);
     left: 40%;
     transition: 1.5s ease;
   }
@@ -434,19 +434,19 @@
   }
 
   .img-legend {
-    width:calculate(312);
-    height: calculate(260);
+    width:calculate(300);
+    height: calculate(250);
     position: absolute;
-    top: 95px;
-    left: 80px;
+    top: calculate(120);
+    left: calculate(40);
   }
 
   .li-time:nth-child(even) .legend .img-legend {
-    width:calculate(312);
-    height: calculate(260);
+    width:calculate(300);
+    height: calculate(250);
     position: absolute;
-    top: -90px;
-    left: 80px;
+    top:  calculate(-280);
+    left: calculate(40);
   }
   
   .tex-legend {
