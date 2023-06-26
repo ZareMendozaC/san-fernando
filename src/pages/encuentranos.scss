@@ -484,7 +484,8 @@
         height: 40px;
         margin: auto;
     }
-    
+
+    //media query
     @media screen and (max-width: 767px) {
         .btn-paviferia,.share-icons-paviferia {
             top:revert;
@@ -681,4 +682,31 @@
         }
     }
     
+}
+.select-tipo{
+    display: flex;
+    gap: calculate(16);
+    .btn-tipo{
+        width: calculate(192);
+        height: calculate(52);
+        border-radius: 500px;
+        background: rgba(229, 237, 245, 0.50);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: calculate(18);
+        font-family: 'FuturaStd';
+        font-weight: 600;
+        color: var(--color-blue);
+        cursor: pointer;
+    }
+    .btn-tipo:hover{
+        background: var(--color-blue);
+        color: var(--color-white);
+    }
+    .btn-tipo.active{
+        background: var(--color-blue);
+        color: var(--color-white);
+    }
 }
