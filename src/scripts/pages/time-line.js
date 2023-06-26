@@ -13,9 +13,9 @@ function showTime(e) {
   e.querySelector(".date").style.opacity = "100%";
   e.querySelector(".legend").style.opacity = "100%";
   e.querySelector(".legend").style.transform = "translateY(0px)";
-  // e.querySelector(".img-legend").style.display = "block";
-  // e.querySelector(".img-legend").style.transform = "translateY(0px)";
-  // e.querySelector(".tex-legend").style.opacity = "100%";
+  e.querySelector(".img-legend").style.display = "block";
+  e.querySelector(".img-legend").style.transform = "translateY(0px)";
+  e.querySelector(".tex-legend").style.opacity = "100%";
 }
 
 function hideTime(e) {
@@ -24,9 +24,9 @@ function hideTime(e) {
   e.querySelector(".date").style.opacity = "0%";
   e.querySelector(".legend").style.opacity = "0%";
   e.querySelector(".legend").style.transform = "translateY(-10px)";
-  // e.querySelector(".img-legend").style.display = "none";
-  // e.querySelector(".img-legend").style.transform = "translateY(-10px)";
-  // e.querySelector(".tex-legend").style.opacity = "0%";
+  e.querySelector(".img-legend").style.display = "none";
+  e.querySelector(".img-legend").style.transform = "translateY(-10px)";
+  e.querySelector(".tex-legend").style.opacity = "0%";
   
 }
 
@@ -71,8 +71,8 @@ let observer = new IntersectionObserver(
   { threshold: 1, rootMargin: "0px 0px -50px 0px" }
 );
 
-if (window.matchMedia("(min-width: 728px)").matches) {
-  observer.observe(target1);
+if (window.matchMedia("(min-width: 768px)").matches) {
+  // observer.observe(target1);
 } else {
   target2.forEach((t) => {
     observer.observe(t);
