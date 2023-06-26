@@ -148,14 +148,14 @@
     <ul class="list-group alter">
       <li class="list-group-item"><a href="#">Cotiza tu vale</a></li>
       <li class="list-group-item"><a href="#">Compra tu vale</a></li>
-      <li class="list-group-item"><a href="#">Canjea tu vale</a></li>
+      <li class="list-group-item"><a href="<?php echo home_url(); ?>/puntos-de-canje">Canjea tu vale</a></li>
     </ul>
   </div>
 
   <div class="menu_compras">
     <ul class="list-group">
       <li class="list-group-item"><a href="#">Ecommerce solo Lima</a></li>
-      <li class="list-group-item"><a href="#">Tiendas afiliadas</a></li>
+      <li class="list-group-item"><a href="<?php echo home_url(); ?>/puntos-de-venta">Tiendas afiliadas</a></li>
     </ul>
   </div>
 

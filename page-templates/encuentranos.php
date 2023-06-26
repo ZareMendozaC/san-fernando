@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Puntos de venta y canje */
+/* Template Name: Puntos de canje */
 
 get_header();
 
