@@ -5,10 +5,11 @@
   <?php
   wp_head();
   ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </head>
+
 <body>
   <header class="navbar">
     <div class="div_logo">
@@ -62,7 +63,7 @@
         <ul class="menu2">
           <li class="menu2-item"><a href="<?php echo home_url(); ?>/nosotros">Nosotros</a></li>
           <li class="menu2-item"><a href="<?php echo home_url(); ?>/prensa">Prensa</a></li>
-          <li class="menu2-item"><a href="<?php echo home_url(); ?>/sistenibilidad">Sostenibilidad</a></li>
+          <li class="menu2-item"><a href="<?php echo home_url(); ?>/sostenibilidad">Sostenibilidad</a></li>
           <li class="menu2-item"><a href="<?php echo home_url(); ?>/trabaja-con-nosotros">Trabaja con nosotros</a></li>
         </ul>
       </div>
@@ -73,16 +74,16 @@
           <li class="menu-item"><a href="#" class="btn-blog" onclick="return false;">Blog Bien Servido <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
                 <path d="M0.986328 1.93591L9.0002 9.94979L17.0141 1.93591L15.1285 0.0502939L9.00021 6.17855L2.87195 0.050293L0.986328 1.93591Z" fill="#ffffff" />
               </svg></a></li>
-          <li class="menu-item"><a href="<?php echo home_url(); ?>/contacto">Contacto</a></li>
+          <li class="menu-item"><a href="<?php echo home_url(); ?>/contactanos">Contacto</a></li>
           <li class="menu-item">
-          <a href="#" onclick="return false;" class="btn-vales">
+            <a href="#" onclick="return false;" class="btn-vales">
               <div class="ico-text-btn-vale-dsk" style="display:inline-flex;">
-              Vales
+                Vales
               </div>
               <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
                 <path d="M0.986328 1.93591L9.0002 9.94979L17.0141 1.93591L15.1285 0.0502939L9.00021 6.17855L2.87195 0.050293L0.986328 1.93591Z" fill="#ffffff" />
               </svg>
-          </a>
+            </a>
             <!-- <a href="#" onclick="return false;">
 
           <svg width="150" height="59" viewBox="0 0 150 59" fill="none" xmlns="http://www.w3.org/2000/svg" class="btn-vales">
@@ -94,8 +95,8 @@
             </a> -->
           </li>
           <li class="menu-item">
-          <a href="#" onclick="return false;" class="btn-rojo btn-comprar">
-            <!-- <button class="btn-comprar-mov"> -->
+            <a href="#" onclick="return false;" class="btn-rojo btn-comprar">
+              <!-- <button class="btn-comprar-mov"> -->
               <div class="ico-text-btn-buy-dsk" style="display:inline-flex;">
                 <svg class="ico-btn-buy" width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <mask id="mask0_1645_10987" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="45" height="44">
@@ -110,7 +111,7 @@
               <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
                 <path d="M0.986328 1.93591L9.0002 9.94979L17.0141 1.93591L15.1285 0.0502939L9.00021 6.17855L2.87195 0.050293L0.986328 1.93591Z" fill="#ffffff" />
               </svg>
-          </a>
+            </a>
             <!-- <a href="#" onclick="return false;"><svg width="253" height="60" viewBox="0 0 253 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="btn-comprar">
                 <rect x="0.734375" y="0.5" width="251.644" height="59" rx="29.5" fill="#DF0002" />
                 <mask id="mask0_1224_7253" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="8" y="8" width="45" height="44">
@@ -128,7 +129,7 @@
                 <path d="M218.423 34.9582L211.73 28.2645C211.458 27.9912 211.306 27.6216 211.306 27.2364C211.306 26.8511 211.458 26.4815 211.73 26.2082C211.865 26.0715 212.027 25.963 212.204 25.889C212.382 25.815 212.573 25.7769 212.765 25.7769C212.958 25.7769 213.148 25.815 213.326 25.889C213.504 25.963 213.665 26.0715 213.801 26.2082L220.48 32.9166C220.615 33.0532 220.777 33.1617 220.954 33.2358C221.132 33.3098 221.323 33.3479 221.515 33.3479C221.708 33.3479 221.898 33.3098 222.076 33.2358C222.254 33.1617 222.415 33.0532 222.551 32.9166L229.23 26.2082C229.502 25.9336 229.873 25.7786 230.26 25.7772C230.647 25.7758 231.019 25.9283 231.293 26.2009C231.568 26.4736 231.723 26.8442 231.724 27.2312C231.726 27.6182 231.573 27.9899 231.301 28.2645L224.607 34.9582C223.787 35.7775 222.675 36.2377 221.515 36.2377C220.356 36.2377 219.244 35.7775 218.423 34.9582Z" fill="white" />
                 <path d="M69.0935 23.2939V27.1913C68.4301 26.2957 67.3521 25.8148 66.241 25.8148C64.2509 25.8148 62.9075 27.3405 62.9075 29.2809C62.9075 31.2544 64.2674 32.6807 66.2907 32.6807C67.3521 32.6807 68.4135 32.1665 69.0935 31.3539V35.2512C68.0155 35.5829 67.236 35.8317 66.2244 35.8317C64.483 35.8317 62.8246 35.1683 61.531 33.9908C60.1545 32.747 59.5243 31.1217 59.5243 29.2643C59.5243 27.5561 60.1711 25.9143 61.3652 24.687C62.5924 23.4266 64.3669 22.6637 66.1249 22.6637C67.1697 22.6637 68.1316 22.8959 69.0935 23.2939ZM77.3882 22.5808C80.987 22.5808 84.3039 25.2343 84.3039 29.0155C84.3039 33.0621 81.4016 35.9146 77.3882 35.9146C73.3748 35.9146 70.4726 33.0621 70.4726 29.0155C70.4726 25.2343 73.7894 22.5808 77.3882 22.5808ZM77.3882 25.7318C75.4479 25.7318 73.8558 27.3073 73.8558 29.0321C73.8558 31.1881 75.4479 32.7636 77.3882 32.7636C79.3286 32.7636 80.9207 31.1881 80.9207 29.0321C80.9207 27.3073 79.3286 25.7318 77.3882 25.7318ZM85.0621 35.5L87.1849 22.9954H90.3857L92.9231 29.6789L95.6097 22.9954H98.8437L100.734 35.5H97.4838L96.5716 28.3024H96.5385L93.5367 35.5H92.2431L89.374 28.3024H89.3409L88.2961 35.5H85.0621ZM102.117 35.5V22.9954H107.093C109.779 22.9954 111.637 24.2392 111.637 27.1083C111.637 30.0603 110.045 31.3539 107.209 31.3539H105.368V35.5H102.117ZM105.368 25.6157V28.7336H105.915C107.093 28.7336 108.254 28.7336 108.254 27.2078C108.254 25.6323 107.176 25.6157 105.915 25.6157H105.368ZM119.55 30.3754L123.48 35.5H119.434L116.366 30.6905H116.332V35.5H113.082V22.9954H117.941C120.412 22.9954 122.286 24.1729 122.286 26.843C122.286 28.5678 121.324 30.0603 119.55 30.3754ZM116.332 25.4831V28.6009H116.647C117.709 28.6009 118.903 28.4019 118.903 27.042C118.903 25.6821 117.709 25.4831 116.647 25.4831H116.332ZM132.016 33.3275H127.538L126.676 35.5H123.226L128.036 22.9954H131.585L136.295 35.5H132.829L132.016 33.3275ZM131.137 30.8398L129.81 26.8596H129.777L128.434 30.8398H131.137ZM143.778 30.3754L147.709 35.5H143.662L140.594 30.6905H140.561V35.5H137.311V22.9954H142.17C144.641 22.9954 146.515 24.1729 146.515 26.843C146.515 28.5678 145.553 30.0603 143.778 30.3754ZM140.561 25.4831V28.6009H140.876C141.938 28.6009 143.132 28.4019 143.132 27.042C143.132 25.6821 141.938 25.4831 140.876 25.4831H140.561ZM161.929 33.3275H157.452L156.589 35.5H153.14L157.949 22.9954H161.498L166.208 35.5H162.742L161.929 33.3275ZM161.05 30.8398L159.724 26.8596H159.69L158.347 30.8398H161.05ZM175.582 30.2262L176.461 31.1383C176.843 30.6076 177.042 29.9277 177.042 29.2975C177.042 27.4234 175.483 25.7318 173.526 25.7318C171.586 25.7318 169.977 27.3073 169.977 29.0321C169.977 31.1881 171.586 32.7636 173.526 32.7636C173.858 32.7636 174.189 32.7138 174.521 32.5977L172.514 30.6076L175.582 30.2262ZM180.923 35.8151L177.937 36.2795L176.942 35.102C175.98 35.6824 174.853 35.9146 173.509 35.9146C169.496 35.9146 166.594 33.0621 166.594 29.0155C166.594 25.2343 169.911 22.5808 173.509 22.5808C177.407 22.5808 180.425 25.2177 180.425 29.2809C180.425 30.9393 179.861 32.3821 178.816 33.6757L180.923 35.8151ZM189.525 22.9954H192.776V30.0272C192.776 31.6359 192.709 33.2279 191.465 34.4386C190.421 35.4668 188.779 35.8317 187.319 35.8317C185.86 35.8317 184.218 35.4668 183.173 34.4386C181.93 33.2279 181.863 31.6359 181.863 30.0272V22.9954H185.114V29.5794C185.114 31.2047 185.23 32.9792 187.319 32.9792C189.409 32.9792 189.525 31.2047 189.525 29.5794V22.9954ZM198.088 22.9954V35.5H194.837V22.9954H198.088ZM198.801 19.7283L195.965 22.2325L194.622 21.2541L196.96 18.4016L198.801 19.7283Z" fill="white" />
               </svg></a> -->
-            </li>
+          </li>
         </ul>
       </div>
     </div>

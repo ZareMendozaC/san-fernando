@@ -122,7 +122,6 @@ $(".btn-comprar-mov").click(function () {
   $(".li-compras_mov").slideToggle()
   $(".btn-comprar-mov .arrow").toggleClass("arrow-btn-active")
 });
-// ----------------FOOTER-----------------
 //@ts-ignore
 $(".footer-menu").click(function () {
   $("#list-opcion1").toggleClass("list-menu");
