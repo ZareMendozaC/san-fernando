@@ -321,12 +321,9 @@ h2 p{
     height: calculate(290);
     padding-top: calculate(50);
     width: 100%;
-    --mask:
-    radial-gradient(calc(100vw*(7.67/var(--width_base))) at 50% calc(100% - calc(100vw*(10.75/var(--width_base)))),#000 99%,#0000 101%) calc(50% - calc(100vw*(10/var(--width_base)))) 0/calc(100vw*(20/var(--width_base))) 100%,
-    radial-gradient(calc(100vw*(7.67/var(--width_base)))at 50% calc(100% + calc(100vw*(5.75/var(--width_base)))),#0000 99%,#000 101%) 50% calc(100% - calc(100vw*(5/var(--width_base))))/calc(100vw*(20/var(--width_base))) 100% repeat-x;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-
+    --mask: conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/16.00px 100%;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
 
     h1{
         color: var(--color-white);
