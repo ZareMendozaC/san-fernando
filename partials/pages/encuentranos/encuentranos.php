@@ -8,6 +8,10 @@
             <div class="row-mrg-left">
                 <p class="color-blue title">Elige tu ubicación y tipo de vale</p>
                 <p class="subtitle">Recuerda revisar las restricciones en el punto de canje seleccionado.</p>
+                <div class="select-tipo">
+                    <div class="btn-tipo active">Puntos de canje</div>
+                    <div class="btn-tipo">Puntos de venta</div>
+                </div>
                 <div class="content-select">
                     <div class="box-select">
                         <!-- <label class="pos-lbl_1" for="ciudad">Ubicación</label>-->
@@ -94,8 +98,8 @@
             </div>
 
         </div>
-        <div class="col-md-7 col-xs-12 no-pdt scroll-r">
-            <img class="img-banner" src="http://localhost:10053/wp-content/uploads/2023/06/image-52.png" width="100%" height="100%" alt="mapa puntos canje">
+        <div class="col-md-7 col-xs-12 no-pdt">
+            <img class="img-banner" src="http://localhost:10053/wp-content/uploads/2023/06/mapa.png" width="100%" height="100%" alt="mapa puntos canje">
             <div class="content-info-card info-card" style="display: none;">
                 <p class="close-card show-res">Volver</p>
 
