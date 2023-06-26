@@ -6,6 +6,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       row-gap: calculate(10);
+      overflow: hidden;
     }
     .row-buscador {
       flex-wrap: wrap;

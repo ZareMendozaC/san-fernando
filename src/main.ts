@@ -57,38 +57,49 @@ $(".slider-blog").slick({
   ]
 });
 */
-$(".btn-blog, .menu_blog").hover(function () {
-  $(".menu_blog").slideDown();
-  $(".btn-blog .arrow").toggleClass("arrow-btn-active");
-}, function () {
-  $(".menu_blog").slideUp();
-  $(".btn-blog .arrow").toggleClass("arrow-btn-active");
-});
+
+// $(".btn-blog, .menu_blog").hover(function () {
+//   $(".menu_blog").css("display","block");
+//   $(".btn-blog .arrow").toggleClass("arrow-btn-active");
+// }, function () {
+//   $(".menu_blog").css("display","none");
+//   $(".btn-blog .arrow").toggleClass("arrow-btn-active");
+// });
+
+
+
+
 // ---------------NAVBAR-----------------
 //@ts-ignore
-// $(".btn-blog").hover(function () {
-//   $(".menu_blog").slideToggle()
-//   $(".btn-blog .arrow").toggleClass("arrow-btn-active")
-// }, function () {
-//   $(".menu_blog").slideToggle(1500)
-//   $(".btn-blog .arrow").toggleClass("arrow-btn-active")
-// })
-//@ts-ignore
-$(".btn-vales").hover(function () {
-  $(".menu_vales").slideToggle()
-  $(".btn-vales .arrow").toggleClass("arrow-btn-active")
+$(".btn-blog, .menu_blog").hover(function () {
+  $(".menu_blog").stop().slideDown(300);
+  $(".btn-blog .arrow").toggleClass("arrow-btn-active");
 }, function () {
-  $(".menu_vales").slideToggle(1500)
-  $(".btn-vales .arrow").toggleClass("arrow-btn-active")
-})
+  $(".menu_blog").stop().slideUp(300, function () {
+    $(this).css("display", "none");
+  });
+  $(".btn-blog .arrow").toggleClass("arrow-btn-active");
+});
 //@ts-ignore
-$(".btn-comprar").hover(function () {
-  $(".menu_compras").slideToggle();
+$(".btn-vales, .menu_vales").hover(function () {
+  $(".menu_vales").stop().slideDown(300);
+  $(".btn-vales .arrow").toggleClass("arrow-btn-active");
+}, function () {
+  $(".menu_vales").stop().slideUp(300, function () {
+    $(this).css("display", "none");
+  });
+  $(".btn-vales .arrow").toggleClass("arrow-btn-active");
+});
+//@ts-ignore
+$(".btn-comprar, .menu_compras").hover(function () {
+  $(".menu_compras").stop().slideDown(300);
   $(".btn-comprar .arrow").toggleClass("arrow-btn-active");
 }, function () {
-  $(".menu_compras").slideToggle(1500)
-  $(".btn-comprar .arrow").toggleClass("arrow-btn-active")
-})
+  $(".menu_compras").stop().slideUp(300, function () {
+    $(this).css("display", "none");
+  });
+  $(".btn-comprar .arrow").toggleClass("arrow-btn-active");
+});
 
 // --------MOBILE--------------
 //@ts-ignore
@@ -111,7 +122,6 @@ $(".btn-comprar-mov").click(function () {
   $(".li-compras_mov").slideToggle()
   $(".btn-comprar-mov .arrow").toggleClass("arrow-btn-active")
 });
-// ----------------FOOTER-----------------
 //@ts-ignore
 $(".footer-menu").click(function () {
   $("#list-opcion1").toggleClass("list-menu");
