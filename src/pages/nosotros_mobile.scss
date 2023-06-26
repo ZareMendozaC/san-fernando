@@ -300,6 +300,7 @@
 
   .section_linea {
     margin: calculate(30) calculate(20);
+    overflow: visible;
   }
 
   .timeline {
@@ -330,7 +331,7 @@
   }
 
   .legend{
-    width:calculate(263);
+    width:calculate(200);
     height: auto;
     background-color: var(--color-celeste-light);
     border-radius: calculate(8);
@@ -339,6 +340,6 @@
 
   .img-legend {
     width: calculate(80);
-margin: auto;
+margin-left: calculate(50);
   }
 }

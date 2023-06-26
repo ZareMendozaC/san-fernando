@@ -255,6 +255,7 @@
   margin: calculate(30) calculate(0);
   // width: calculate(1556);
   overflow: auto;
+  height: calculate(700);
 }
 .timeline {
   margin-top: 35px;
@@ -299,7 +300,7 @@
   border-radius: 12px;
   position: relative;
   justify-self: end;
-  margin-top: 60px!important;
+  margin-top: 160px!important;
 }
 
 .timeline-point {
@@ -337,6 +338,16 @@
   text-align: center;
 }
 
+.p-titleline{
+  margin-bottom: 0px !important;
+  font-family: 'FuturaStd';
+  font-style: normal;
+  font-weight: 600;
+  font-size:  calc(100vw*(18/var(--width_base)));
+  line-height:  calc(100vw*(27/var(--width_base)));
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .timeline {
     display: block;
@@ -350,11 +361,29 @@
     width: 100%;
     padding: 0px;
   }
-  .li-time .legend {
+  // .li-time .legend {
+  //   transform: translateY(-10px);
+  //   opacity: 0;
+  //   padding: 0 20px;
+  //   transition: 1.5s;
+  // }
+
+  .li-time:nth-child(odd) .legend {
     transform: translateY(-10px);
     opacity: 0;
     padding: 0 20px;
     transition: 1.5s;
+  }
+
+  .li-time:nth-child(even) .legend {
+    transform: translateY(-10px);
+    opacity: 0;
+    padding: 0 20px;
+    transition: 1.5s;
+    position: absolute;
+    top:calculate(-300);
+    left: -100px;
+
   }
 
   .date {
@@ -372,6 +401,16 @@
     height: 15px;
 
     top: -40px;
+    left: 40%;
+    transition: 1.5s ease;
+  }
+
+  .li-time:nth-child(even) .timeline-point {
+    width: 15px;
+    height: 15px;
+
+    // top: -97px;
+    top: calculate(-137);
     left: 40%;
     transition: 1.5s ease;
   }
@@ -395,11 +434,18 @@
   }
 
   .img-legend {
-    width: 80px;
-    height: 80px;
-    display: none;
+    width:calculate(312);
+    height: calculate(260);
     position: absolute;
-    top: -150px;
+    top: 95px;
+    left: 80px;
+  }
+
+  .li-time:nth-child(even) .legend .img-legend {
+    width:calculate(312);
+    height: calculate(260);
+    position: absolute;
+    top: -90px;
     left: 80px;
   }
   
@@ -415,6 +461,13 @@
     border-radius: calculate(8);
     margin-left: calculate(20);
     margin-right: calculate(20);
+    display: flex;
+  }
+
+  .p-titleline{
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
   }
 }
 
