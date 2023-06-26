@@ -24,6 +24,7 @@
     "jquery": "^3.7.0",
     "jquery-ui": "^1.13.2",
     "jquery-ui-dist": "^1.13.2",
+    "php": "^1.0.2",
     "sass": "^1.57.1",
     "slick-carousel": "^1.8.1"
   },
@@ -32,8 +33,8 @@
     "dist/**/*",
     "partials/**/*",
     "templates/**/*",
-    "page-templates/**/*",
     "api/**/*",
+    "page-templates/**/*",
     "footer.php",
     "functions.php",
     "header.php",
