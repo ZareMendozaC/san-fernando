@@ -98,7 +98,7 @@
             </div>
 
         </div>
-        <div class="col-md-7 col-xs-12 no-pdt">
+        <div class="col-md-7 col-xs-12 no-pdt scroll-r">
             <img class="img-banner" src="http://localhost:10053/wp-content/uploads/2023/06/mapa.png" width="100%" height="100%" alt="mapa puntos canje">
             <div class="content-info-card info-card" style="display: none;">
                 <p class="close-card show-res">Volver</p>
