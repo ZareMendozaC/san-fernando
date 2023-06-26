@@ -1,5 +1,4 @@
 <?php
-
 function sales_points_handler()
 {
   try {
