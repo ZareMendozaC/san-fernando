@@ -15,6 +15,10 @@
 .icon-vale span{
     font-size: calculate(14);
 }
+.text-result{
+    font-size: calculate(14);
+}
+
 .section-encuentranos{
     font-family: "FuturaStd";
     .trabaja-head{
@@ -60,7 +64,7 @@
     }
     #clear {
         text-align: right;
-        padding-right: calculate(67);
+        padding-right: calculate(40);
         cursor: pointer;
         font-size: calculate(14);
         color: var(--color-blue);
@@ -100,6 +104,10 @@
     .row-mrg-left {
         margin-left: calculate(78);
         margin-right: 0 !important;
+        .row{
+            display: flex;
+            justify-content: space-between;
+        }
     }
     
     .row-mrg {
@@ -229,7 +237,7 @@
         text-decoration: underline;
         text-align: right;
         position: absolute;
-        right: 15px;
+        right: calculate(20);
         color: #ed2b14;
         font-weight: 600
     }
@@ -242,7 +250,7 @@
         padding-top: calc(100vw * (calc(20 / var(--width_base))));
         border-top: 1px solid #e5e5e5;
         padding-left: calculate(78);
-        padding-right: 15px;
+        padding-right: calculate(15);
         direction: ltr;
         z-index: 1
     }
