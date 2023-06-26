@@ -9,6 +9,11 @@
   display: flex;
   justify-content: space-between;
   z-index: 900;
+  --mask:
+  radial-gradient(calc(100vw*(7.67/var(--width_base))) at 50% calc(100% - calc(100vw*(10.75/var(--width_base)))),#000 99%,#0000 101%) calc(50% - calc(100vw*(10/var(--width_base)))) 0/calc(100vw*(20/var(--width_base))) 100%,
+  radial-gradient(calc(100vw*(7.67/var(--width_base)))at 50% calc(100% + calc(100vw*(5.75/var(--width_base)))),#0000 99%,#000 101%) 50% calc(100% - calc(100vw*(5/var(--width_base))))/calc(100vw*(20/var(--width_base))) 100% repeat-x;
+-webkit-mask: var(--mask);
+        mask: var(--mask);
 }
 
 .div_logo {
@@ -234,38 +239,38 @@
   }
 }
 
-.navbar:before,
-.navbar:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 10px;
-  background: linear-gradient(
-      45deg,
-      transparent 33.333%,
-      var(--color-blue) 33.333%,
-      var(--color-blue) 66.667%,
-      transparent 66.667%
-    ),
-    linear-gradient(
-      -45deg,
-      transparent 33.333%,
-      var(--color-blue) 33.333%,
-      var(--color-blue) 66.667%,
-      transparent 66.667%
-    );
-  background-size: 15px 40px;
-}
+// .navbar:before,
+// .navbar:after {
+//   content: "";
+//   position: absolute;
+//   width: 100%;
+//   height: 10px;
+//   background: linear-gradient(
+//       45deg,
+//       transparent 33.333%,
+//       var(--color-blue) 33.333%,
+//       var(--color-blue) 66.667%,
+//       transparent 66.667%
+//     ),
+//     linear-gradient(
+//       -45deg,
+//       transparent 33.333%,
+//       var(--color-blue) 33.333%,
+//       var(--color-blue) 66.667%,
+//       transparent 66.667%
+//     );
+//   background-size: 15px 40px;
+// }
 
-.navbar:before {
-  top: -10px;
-}
+// .navbar:before {
+//   top: -10px;
+// }
 
-.navbar:after {
-  bottom: -10px;
-  transform: rotate(180deg);
-  margin-left: calculate(-182);
-}
+// .navbar:after {
+//   bottom: -10px;
+//   transform: rotate(180deg);
+//   margin-left: calculate(-182);
+// }
 
 .menu_mobile {
   display: none;
