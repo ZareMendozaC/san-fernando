@@ -111,8 +111,9 @@
     }
     
     .row-mrg {
-        margin-left: 0!important;
-        margin-right: 0!important;
+        margin-top: calculate(-7.67);
+        margin-left: 0 !important;
+        margin-right: 0 !important;
         display: flex;
     }
     
