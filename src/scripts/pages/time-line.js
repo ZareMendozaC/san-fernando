@@ -48,8 +48,8 @@ function timelineProgress(value) {
     line.css("width", progress);
     line.css("height", "4px");
   } else {
-    // line.css("height", progress);
-    // line.css("width", "4px");
+    line.css("height", progress);
+    line.css("width", "4px");
   }
 }
 
