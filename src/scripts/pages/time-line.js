@@ -45,6 +45,8 @@ function timelineProgress(value) {
   let pp = $(".section_linea").get(0).scrollWidth;
   let p2 = pp ;
   let progress = `${(value / timeline_events.length) * p2}px`;
+
+  console.log(value,p2, progress);
   if (window.matchMedia("(min-width: 768px)").matches) {
     line.css("width", progress);
     line.css("height", "4px");
@@ -81,7 +83,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 }
 
 timeline_events.each(function (index) {
-  $(this).hover(function () {
+  $(this).click(function () {
     if ($(this).attr("done")) {
       timelineProgress(index);
 

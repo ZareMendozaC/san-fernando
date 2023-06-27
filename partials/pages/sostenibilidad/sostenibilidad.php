@@ -125,7 +125,7 @@ $imagen_seguridad = get_field("imagen_seguridad");
 
         </article>
 
-        <article class="contain-2">
+        <article class="contain-2" id="logros">
             <h2>Logros</h2>
             <p class="description-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 

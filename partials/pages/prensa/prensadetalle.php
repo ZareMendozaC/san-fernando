@@ -46,7 +46,6 @@
                 </div>
                 <div class="select-options">
                     <p>Responsabilidad Corporativa</p>
-                    <p>Logros</p>
                     <p>Responsabilidad Social</p>
                     <p>Nuestros compromisos</p>
                     <p>Gestión Ambiental</p>

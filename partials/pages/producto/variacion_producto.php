@@ -39,12 +39,6 @@
         </div>
         <div class="card-icon">
             <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4866.png" alt="">
-            </div>
-            <p>Celebraciones</p>
-        </div>
-        <div class="card-icon">
-            <div class="circle-icon bg-skyblue">
                 <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4793.png" alt="">
             </div>
             <p>Huevos</p>
@@ -120,7 +114,7 @@
                 </svg>
             </div>
         </div>
-        <img class="col-739" src="<?php echo home_url(); ?>wp-content/uploads/2023/06/Group-4761.png" alt="">
+        <img class="col-739" src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4761.png" alt="">
     </div>
     <div class="container">
         <div class="col-blog-2">
