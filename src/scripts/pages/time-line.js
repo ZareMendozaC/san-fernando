@@ -41,10 +41,9 @@ function slowLoop() {
   }, 800);
 }
 
-let pp = $(".section_linea").get(0).scrollWidth;
-let p2 = pp + 200;
-
-function timelineProgress(value) {  
+function timelineProgress(value) {
+  let pp = $(".section_linea").get(0).scrollWidth;
+  let p2 = pp + 200;
   let progress = `${(value / timeline_events.length) * p2}px`;
   if (window.matchMedia("(min-width: 768px)").matches) {
     line.css("width", progress);
