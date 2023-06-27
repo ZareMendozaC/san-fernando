@@ -55,7 +55,7 @@
                     $('.chng_phone').css('display','none');
                 }else{
                     $('.chng_phone').css('display','block');
-                    $('.chng_phone').html('<strong>TelÃ©fono:</strong> '+info[0].telefono);
+                    $('.chng_phone').html('<strong>Teléfono:</strong> '+info[0].telefono);
                 }
                 
                 $('.chng_hr').html('<strong>Horario de atención:</strong> '+info[0].horario);
@@ -118,7 +118,7 @@
                     $('.chng_phone').css('display','none');
                 }else{
                     $('.chng_phone').css('display','block');
-                    $('.chng_phone').html('<strong>TelÃ©fono:</strong> '+info[0].telefono);
+                    $('.chng_phone').html('<strong>Teléfono:</strong> '+info[0].telefono);
                 }
                 
                 $('.chng_hr').html('<strong>Horario de atención:</strong> '+info[0].horario);
@@ -253,7 +253,7 @@
                 vale='';
             }
             
-            let figure = '<div class="card" data-id='+elemento.id+'><div class="data-layer-up" id="'+elemento.id_seguimiento+'"> </div> <div class="data-layer"><p class="txt-info">Más info</p><p class="title-card">'+elemento.ubicacion+' - '+elemento.tipo+'</p><p>'+elemento.direccion+'</p><span class="content-horario"><img src="images/puntoscanje/reloj.png" width="15px" height="15px" alt=""><p>'+elemento.horario+'</p></span><div class="row-icons"><div class="icon-product">'+iconos+'</div><div class="icon-vale">'+vale+'<span><img src="'+origin+'/sanfer/wp-content/uploads/2023/06/tarjeta-de-regalo-1.png" width="15px" height="15px" alt="">    Vale físico</span></div></div></div></div>';
+            let figure = '<div class="card" data-id='+elemento.id+'><div class="data-layer-up" id="'+elemento.id_seguimiento+'"> </div> <div class="data-layer"><p class="txt-info">Más info</p><p class="title-card">'+elemento.ubicacion+' - '+elemento.tipo+'</p><p>'+elemento.direccion+'</p><span class="content-horario"><p>'+elemento.horario+'</p></span><div class="row-icons"><div class="icon-product">'+iconos+'</div><div class="icon-vale">'+vale+'<span><img src="'+origin+'/sanfer/wp-content/uploads/2023/06/tarjeta-de-regalo-1.png" width="15px" height="15px" alt="">    Vale físico</span></div></div></div></div>';
             $('.list-results').append(figure);
             $('.card').fadeIn();
             

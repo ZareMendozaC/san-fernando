@@ -15,6 +15,10 @@
 .icon-vale span{
     font-size: calculate(14);
 }
+.text-result{
+    font-size: calculate(14);
+}
+
 .section-encuentranos{
     font-family: "FuturaStd";
     .trabaja-head{
@@ -60,7 +64,7 @@
     }
     #clear {
         text-align: right;
-        padding-right: calculate(67);
+        padding-right: calculate(40);
         cursor: pointer;
         font-size: calculate(14);
         color: var(--color-blue);
@@ -100,11 +104,16 @@
     .row-mrg-left {
         margin-left: calculate(78);
         margin-right: 0 !important;
+        .row{
+            display: flex;
+            justify-content: space-between;
+        }
     }
     
     .row-mrg {
-        margin-left: 0!important;
-        margin-right: 0!important;
+        margin-top: calculate(-7.67);
+        margin-left: 0 !important;
+        margin-right: 0 !important;
         display: flex;
     }
     
@@ -229,7 +238,7 @@
         text-decoration: underline;
         text-align: right;
         position: absolute;
-        right: 15px;
+        right: calculate(20);
         color: #ed2b14;
         font-weight: 600
     }
@@ -242,7 +251,7 @@
         padding-top: calc(100vw * (calc(20 / var(--width_base))));
         border-top: 1px solid #e5e5e5;
         padding-left: calculate(78);
-        padding-right: 15px;
+        padding-right: calculate(15);
         direction: ltr;
         z-index: 1
     }
@@ -401,7 +410,7 @@
     }
     
     .scroll-r {
-        height: calc(100vw * (calc(770/ var(--width_base))));
+        height: calc(100vw * (calc(835/ var(--width_base))));
         overflow-y: scroll
     }
     
@@ -476,7 +485,8 @@
         height: 40px;
         margin: auto;
     }
-    
+
+    //media query
     @media screen and (max-width: 767px) {
         .btn-paviferia,.share-icons-paviferia {
             top:revert;
@@ -673,4 +683,31 @@
         }
     }
     
+}
+.select-tipo{
+    display: flex;
+    gap: calculate(16);
+    .btn-tipo{
+        width: calculate(192);
+        height: calculate(52);
+        border-radius: 500px;
+        background: rgba(229, 237, 245, 0.50);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: calculate(18);
+        font-family: 'FuturaStd';
+        font-weight: 600;
+        color: var(--color-blue);
+        cursor: pointer;
+    }
+    .btn-tipo:hover{
+        background: var(--color-blue);
+        color: var(--color-white);
+    }
+    .btn-tipo.active{
+        background: var(--color-blue);
+        color: var(--color-white);
+    }
 }

@@ -67,15 +67,10 @@ $archivos = get_field("archivos");
                 <li class="li-time" style="position:relative;">
                     <span class="timeline-point"></span>
                     <span class="date" style="display:none;"><?= $anio; ?></span>
-                    <!-- <img class="img-legend" src="https://img.freepik.com/vector-premium/imagen-dibujos-animados-hongo-palabra-hongo_587001-200.jpg" alt="" style="width:80px; height:80px; display:none;">
-                    <p class="legend"><?= $leyenda; ?></p> -->
-
                     <div class="legend" >
      
-                    <!-- <img class="img-legend" src="<?= $foto['url']; ?>" alt="foto">
-                    <?= wp_get_attachment_url($foto) ; ?> -->
-                    <div class="img-legend"><?= wp_get_attachment_image($foto) ; ?></div>
-                    <!-- <img class="img-legend" src="https://img.freepik.com/vector-premium/imagen-dibujos-animados-hongo-palabra-hongo_587001-200.jpg" alt="foto" > -->
+                    <img class="img-legend" src="<?= wp_get_attachment_url($foto) ; ?>" alt="foto" style="display:<?= (!wp_get_attachment_url($foto))?'none':'' ; ?>">
+                    <!-- <div class="img-legend"><?= wp_get_attachment_url($foto) ; ?></div>  -->
                     <div class="p-titleline color-blue">
                     <?= $anio; ?>
                     </div>

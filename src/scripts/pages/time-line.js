@@ -8,7 +8,6 @@ let target1 = $(".timeline .ul-time");
 let target2 = $(".timeline .ul-time .li-time");
 
 const timeline_events = $(".ul-time .li-time");
-
 function showTime(e) {
   $(e).attr("done", "true");
   $(e).find(".timeline-point").css("background", "blue");
@@ -42,8 +41,12 @@ function slowLoop() {
   }, 800);
 }
 
+
+
 function timelineProgress(value) {
-  let progress = `${(value / timeline_events.length) * 100}%`;
+  let pp = $(".section_linea").get(0).scrollWidth;
+  let p2 = pp + 200;
+  let progress = `${(value / timeline_events.length) * p2}px`;
   if (window.matchMedia("(min-width: 768px)").matches) {
     line.css("width", progress);
     line.css("height", "4px");
@@ -112,3 +115,5 @@ function resizeEnd() {
   i = 0;
   slowLoop();
 }
+
+
