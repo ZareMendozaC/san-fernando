@@ -8,6 +8,9 @@
 .main-banner.slick-dotted.slick-slider{
     margin-bottom: 0px !important;
 }
+.main-banner .slick-next:before, .main-banner .slick-prev:before{
+    content: "" !important;
+}
 .bg-productos{
     width: 100%;
     height:  calc(100vw*(1170/var(--width_base)));
@@ -347,8 +350,8 @@
             height: 101%;
             background: #daf2f8;
             border-radius: calculate(16);
-           display: none;
-           padding: calculate(91) calculate(60);
+            display: none;
+            padding: calculate(91) calculate(60);
         }
         .data-certificacion{
             display: none;
@@ -451,7 +454,7 @@
     }
     .slick-dots {
         position: absolute;
-        bottom: calc(100vw * 54 / var(--width_base));
+        top: 88.5% !important;
         display: block;
         width: auto;
         padding-left: calc(100vw * 16 / var(--width_base)) !important;
@@ -478,16 +481,16 @@
         height: calculate(20);
     }
     .slick-next {
-        right: 45%;
-        top: 88%;
+        right: 48%;
+        top: 95%;
     }
     .slick-next svg{
         width: calculate(44);
         height: calculate(44);
     }
     .slick-prev {
-        left: 44%;
-        top: 88%;
+        left: 48%;
+        top: 95%;
         z-index: 1;
     }
     .slick-prev svg{
@@ -535,7 +538,7 @@
     }
     .slick-dots {
         position: absolute;
-        bottom: calc(100vw * -50 / var(--width_base));
+        top: calc(100vw * -50 / var(--width_base));
         display: block;
         width: auto;
         padding-left: calc(100vw * 16 / var(--width_base)) !important;
