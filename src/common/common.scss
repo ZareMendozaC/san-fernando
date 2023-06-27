@@ -322,13 +322,8 @@ h2 p{
     padding-top: calculate(50);
     width: 100%;
     --mask:
-<<<<<<< HEAD
     radial-gradient(2.23px at 50% calc(100% - 3.15px),#000 99%,#0000 101%) calc(50% - 3px) 0/6px 100%,
     radial-gradient(2.23px at 50% calc(100% + 1.65px),#0000 99%,#000 101%) 50% calc(100% - 1.5px)/6px 100% repeat-x;
-=======
-    radial-gradient(calc(100vw*(7.67/var(--width_base))) at 50% calc(100% - calc(100vw*(10.75/var(--width_base)))),#000 99%,#0000 101%) calc(50% - calc(100vw*(10/var(--width_base)))) 0/calc(100vw*(20/var(--width_base))) 100%,
-    radial-gradient(calc(100vw*(7.67/var(--width_base)))at 50% calc(100% + calc(100vw*(5.75/var(--width_base)))),#0000 99%,#000 101%) 50% calc(100% - calc(100vw*(5/var(--width_base))))/calc(100vw*(20/var(--width_base))) 100% repeat-x;
->>>>>>> 6075d04d47bccd42578c6ccf7259055759af9eae
   -webkit-mask: var(--mask);
           mask: var(--mask);
 
