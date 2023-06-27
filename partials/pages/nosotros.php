@@ -58,14 +58,14 @@ $archivos = get_field("archivos");
             <span class="timeline-innerline"></span>
         </div>
         <ul class="ul-time">
-            <?php foreach ($listado_timeline as $time) : ?>
+            <?php foreach ($listado_timeline as $key=> $time) : ?>
                 <?php
                 $foto = $time['foto'];
                 $anio = $time['anio'];
                 $leyenda = $time['leyenda'];
                 ?>
                 <li class="li-time" style="position:relative;">
-                    <span class="timeline-point"></span>
+                    <span class="timeline-point" data-point="<?=$key?>"></span>
                     <span class="date" style="display:none;"><?= $anio; ?></span>
                     <div class="legend">
 
@@ -82,6 +82,11 @@ $archivos = get_field("archivos");
                 </li>
             <?php endforeach; ?>
         </ul>
+    </div>
+    <div style="display:flex; justify-content:center;">
+    <button class="btn-menos" style="padding:5px 10px; border-radius:20px; background:red; text-align:center;"><</button>
+    <button class="btn-mas" style="padding:5px 10px; border-radius:20px; background:red; text-align:center;">></button>
+
     </div>
 </section>
 <section class="section_MV_valores container">
