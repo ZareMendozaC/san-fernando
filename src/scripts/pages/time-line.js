@@ -83,7 +83,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 }
 
 timeline_events.each(function (index) {
-  $(this).click(function () {
+  $(this).hover(function () {
     if ($(this).attr("done")) {
       timelineProgress(index);
 
