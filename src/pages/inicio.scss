@@ -24,7 +24,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding-top: calc(100vw*(400/var(--width_base)));
+    padding-top: calc(100vw*(420/var(--width_base)));
 }
 .center-btn{
     display: flex;
@@ -506,7 +506,7 @@
 }
 
 .img-product{
-    width: calculate(210) !important;
+    width: calculate(450) !important;
     position: relative;
     display: flex !important;
     justify-content: center;

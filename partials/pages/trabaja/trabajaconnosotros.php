@@ -8,7 +8,7 @@ $descripcion_trabaja = get_field("descripcion");
 $button_texto = get_field("textos_boton");
 $url_boton_trabaja = get_field("url_boton");
 $url_politicas_trabaja = get_field("link_politicas_de_privacidad");
-
+$img_1_trabaja = get_field("img_1_trabaja");
 
 ?>
 
@@ -38,7 +38,7 @@ $url_politicas_trabaja = get_field("link_politicas_de_privacidad");
         </article>
 
         <figure>
-            <img class="" src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/image-51.png" alt="">
+            <img class="" src="<?php echo $img_1_trabaja["url"] ?>" alt="imagen de trabajadores">
         </figure>
     </div>
 
