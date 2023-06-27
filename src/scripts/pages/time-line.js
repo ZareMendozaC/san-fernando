@@ -41,8 +41,6 @@ function slowLoop() {
   }, 800);
 }
 
-
-
 function timelineProgress(value) {
   let pp = $(".section_linea").get(0).scrollWidth;
   let p2 = pp ;
