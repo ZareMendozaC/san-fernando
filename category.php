@@ -7,7 +7,6 @@
  */
 
 get_header(); ?>
-
-<?php get_template_part('partials/posts/posts') ?>
+<?php get_template_part('partials/post-producto/posts') ?>
 
 <?php get_footer(); ?>
