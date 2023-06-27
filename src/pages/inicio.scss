@@ -24,7 +24,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding-top: calc(100vw*(400/var(--width_base)));
+    padding-top: calc(100vw*(420/var(--width_base)));
 }
 .center-btn{
     display: flex;
@@ -403,7 +403,7 @@
     }
 }
 .card-certificacion:nth-child(2)  .img-logo{
-    width: calculate(128);
+    width: calculate(71);
     height: auto;
 }
 .card-certificacion:nth-child(2){
@@ -417,7 +417,7 @@
     margin-bottom: calculate(39);
 }
 .card-certificacion:nth-child(3) .img-logo{
-    width: calculate(128);
+    width: calculate(71);
     height: auto;
 }
 .card-certificacion:nth-child(4) .img-logo{
@@ -506,7 +506,7 @@
 }
 
 .img-product{
-    width: calculate(210) !important;
+    width: calculate(450) !important;
     position: relative;
     display: flex !important;
     justify-content: center;

@@ -67,7 +67,7 @@ $lista_productos = get_field('listado_de_productos');
         </div>
 
         <div class="center-btn">
-            <a class="btn-ver-productos mrg-t_18" href="">Ver todos los productos</a>
+            <a class="btn-ver-productos mrg-t_18" href="<?php echo home_url(); ?>/productos">Ver todos los productos</a>
         </div>
     </div>
 </section>
@@ -118,7 +118,7 @@ $opciones_cotiza_y_compra = get_field('opciones_cotiza_y_compra');
                 </svg>
             </div>
             <p class="p-subtitle">Un espacio creado para ti, donde podrás encontrar consejos nutricionales y simpáticas ideas simples para aplicar en casa.</p>
-            <a class="btn-ver-articulos" href="">Ver todos los artículos</a>
+            <a class="btn-ver-articulos" target="_blank" href="https://www.san-fernando.com.pe/blog/">Ver todos los artículos</a>
         </div>
         <div class="splide splide1">
             <div class="col-blog-2 splide__track">
@@ -196,7 +196,7 @@ $lista_de_caracteristicas = get_field('lista_de_caracteristicas');
                 </svg>
             </div>
             <p class="p-subtitle color-white"> <?= $descripcion_nuestra_familia; ?></p>
-            <a class="btn-ver-mas" href="<?= $url_boton_ver_mas; ?>"><?= $texto_boton_ver_mas; ?> </a>
+            <a class="btn-ver-mas" href="<?php echo home_url(); ?>/nosotros"><?= $texto_boton_ver_mas; ?> </a>
         </div>
         <div class="col-nuestra-2">
             <div class="col-nuestra-22">

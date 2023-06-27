@@ -60,14 +60,6 @@
         <a href="">
             <div class="card-icon">
                 <div class="circle-icon bg-blue">
-                    <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4866.png" alt="">
-                </div>
-                <p>Celebraciones</p>
-            </div>
-        </a>
-        <a href="">
-            <div class="card-icon">
-                <div class="circle-icon bg-blue">
                     <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4793.png" alt="">
                 </div>
                 <p>Huevos</p>

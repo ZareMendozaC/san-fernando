@@ -39,12 +39,6 @@
         </div>
         <div class="card-icon">
             <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4866.png" alt="">
-            </div>
-            <p>Celebraciones</p>
-        </div>
-        <div class="card-icon">
-            <div class="circle-icon bg-skyblue">
                 <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4793.png" alt="">
             </div>
             <p>Huevos</p>
@@ -54,7 +48,7 @@
         <img class="line-pick" src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-14.png" alt="">
     </div>
     <div class="container container-productos">
-        <div class="lista-categorias">
+        <div id="lista-cate" class="lista-categorias">
             <div class="btn-lista-cat active">
                 Pollo congelado
             </div>
