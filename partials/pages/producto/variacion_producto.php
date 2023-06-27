@@ -21,7 +21,7 @@
         </div>
         <div class="card-icon">
             <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4797.png" alt="">
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/sausages-1-1.png" alt="">
             </div>
             <p>Embutidos</p>
         </div>
@@ -35,13 +35,13 @@
             <div class="circle-icon bg-skyblue">
                 <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4792.png" alt="">
             </div>
-            <p>Cerdos</p>
+            <p>Cerdo</p>
         </div>
         <div class="card-icon">
             <div class="circle-icon bg-skyblue">
                 <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4793.png" alt="">
             </div>
-            <p>Huevos</p>
+            <p>Huevo</p>
         </div>
     </div>
     <div class="container">
