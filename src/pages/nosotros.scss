@@ -357,11 +357,22 @@
     position: absolute;
 
   }
-  .li-time {
+  .li-time:nth-child(odd) {
     margin-top: 0px;
     position: relative;
     width: 100%;
     padding: 0px;
+    width: 300px;
+    height: auto;
+  }
+
+  .li-time:nth-child(even) {
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    width: 300px;
+    height: auto;
   }
 
   .li-time:nth-child(odd) .legend {
@@ -378,7 +389,7 @@
     transition: 1.5s;
     position: absolute;
     top: calculate(-300);
-    left: -150px;
+    left: calculate(0);
   }
 
   .date {
@@ -392,21 +403,21 @@
   }
 
   .li-time:nth-child(odd) .timeline-point {
-    width: 15px;
-    height: 15px;
+    width: calculate(17);
+    height: calculate(17);
 
     top: calculate(-55);
-    left: calculate(185);
+    left: calculate(200);
     transition: 1.5s ease;
   }
 
   .li-time:nth-child(even) .timeline-point {
-    width: 15px;
-    height: 15px;
+    width: calculate(17);
+    height: calculate(17);
 
     // top: -97px;
     top: calculate(-135);
-    left: calculate(-10);
+    left: calculate(200);
     transition: 1.5s ease;
   }
 

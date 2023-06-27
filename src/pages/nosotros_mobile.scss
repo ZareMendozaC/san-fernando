@@ -313,7 +313,7 @@
     margin-top: 35px;
     padding: 15px;
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 10% auto;
     justify-content: center;
   }
 
@@ -337,7 +337,7 @@
   }
 
   .legend{
-    width:calculate(200);
+    width:calculate(263);
     height: auto;
     background-color: var(--color-celeste-light);
     border-radius: calculate(8);
@@ -346,6 +346,11 @@
 
   .img-legend {
     width: calculate(80);
-margin-left: calculate(50);
+margin-left: calculate(70);
   }
+
+  .ul-time{
+margin-top: calculate(0);
+  }
+
 }

@@ -9,9 +9,9 @@
   display: flex;
   justify-content: space-between;
   z-index: 900;
-  --mask: conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/16.00px 100%;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
+  --mask: conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/16.00px 101%;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
 }
 
 .div_logo {
@@ -122,6 +122,8 @@
 }
 
 .btn-vales {
+  background-color: var(--color-celeste-light);
+  border: none;
   display: flex !important;
   justify-content: space-evenly;
   gap: calculate(5);
@@ -131,20 +133,23 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    color: var(--color-blue);
     .ico-btn-buy {
       width: 30px;
     }
   }
   .arrow {
     width: 12px;
+    path {
+      fill: var(--color-blue) !important;
+    }
   }
 }
-.btn-vales {
-  .arrow path:hover {
-    fill: var(--color-celeste-light);
-  }
+
+.btn-vales:hover {
+  background-color: var(--color-celeste);
   .ico-text-btn-vale-dsk:hover {
-    color: var(--color-celeste-light);
+    color: var(--color-gris);
   }
 }
 
