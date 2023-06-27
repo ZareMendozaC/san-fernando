@@ -84,26 +84,6 @@ $archivos = get_field("archivos");
         </ul>
     </div>
 </section>
-<!-- <section class="time-line2 container">
-    <div class="line-time">
-        <ul class="time-ul">
-            <?php foreach ($listado_timeline as $time) : ?>
-                <?php
-                $foto = $time['foto'];
-                $anio = $time['anio'];
-                $leyenda = $time['leyenda'];
-                ?>
-                <li class="time-li">
-
-
-                    <div class="p-titleline color-blue" style="padding:20px; background:red; width:358px;">
-                       <p> <?= $leyenda; ?></p>
-                    </div>
-                </li>
-            <?php endforeach; ?>
-        </ul>
-    </div>  
-</section> -->
 <section class="section_MV_valores container">
 
     <div class="container_misionvision">
