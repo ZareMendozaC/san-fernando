@@ -321,7 +321,7 @@ h2 p{
     height: calculate(290);
     padding-top: calculate(50);
     width: 100%;
-    --mask: conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/16.00px 100%;
+    --mask: conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/16.00px 101%;
     -webkit-mask: var(--mask);
             mask: var(--mask);
 
