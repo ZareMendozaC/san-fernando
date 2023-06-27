@@ -17,7 +17,7 @@ $fechaActual = date("d/m/Y");
       </svg>
       <h2><?= $fechaActual ?></h2>
     </div>
-    <p>Para poder ayudarte, por favor, brindanos tus datos personales</p>
+    <p>Para poder ayudarte, por favor, bríndanos tus datos personales</p>
   </div>
 
   <div class="formulario-recla">
