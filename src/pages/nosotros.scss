@@ -255,7 +255,7 @@
   margin: calculate(30) calculate(0);
   position: relative;
   overflow: auto !important;
-  height: calculate(900);
+  height: calculate(950);
 }
 .timeline {
   margin-top: calculate(35);
@@ -434,6 +434,7 @@
     position: absolute;
     top: calculate(120);
     left: calculate(40);
+    background-size: cover;
   }
 
   .li-time:nth-child(even) .legend .img-legend {
@@ -442,6 +443,7 @@
     position: absolute;
     top: calculate(-280);
     left: calculate(40);
+    background-size: cover;
   }
 
   .tex-legend {
