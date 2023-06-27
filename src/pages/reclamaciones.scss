@@ -62,6 +62,20 @@
               p{
                 margin: 0;
                 font-size: calculate(20);
+                // span{
+                //   &::after{
+                //     content: ' ';
+                //     position: absolute;
+                //     right: calculate(10);
+                //     top: calculate(20);
+                //     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2IiBpZD0iY2FyZXQtZG93biI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9Im5vbmUiPjwvcmVjdD48cG9seWxpbmUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMjQiIHBvaW50cz0iMjA4IDk2IDEyOCAxNzYgNDggOTYiPjwvcG9seWxpbmU+PC9zdmc+");                      background-repeat: no-repeat;
+                //     background-size: contain;
+                //     width: calculate(20);
+                //     height: calculate(20);
+                //     pointer-events: none;
+
+                //   }
+                // }
                 select{
                   appearance: none;
                   width: calculate(445);
@@ -73,7 +87,9 @@
                   background: var(--white, #FFF);
                   border-radius: calculate(8);
                   font-size: calculate(16);
+                  cursor: pointer;
                 }
+
               }
             }
 
@@ -189,6 +205,7 @@
                   background: var(--white, #FFF);
                   border-radius: calculate(8);
                   font-size: calculate(16);
+                  cursor: pointer;
                 }
               }
             }
@@ -211,6 +228,7 @@
                   background: var(--white, #FFF);
                   border-radius: calculate(8);
                   font-size: calculate(16);
+                  cursor: pointer;
                 }
               }
             }
@@ -233,6 +251,7 @@
                   background: var(--white, #FFF);
                   border-radius: calculate(8);
                   font-size: calculate(16);
+                  cursor: pointer;
                 }
               }
             }
@@ -403,6 +422,7 @@
                 font-size: calculate(20);
                 input{
                   appearance: none;
+                  cursor: pointer;
                   
                 }
               }

@@ -10,7 +10,7 @@ if ($('.lista-logros').length > 0) {
       768: {
         type: 'loop',
         perPage: 1.5,
-        perMove: 2,
+        perMove: 1.5,
       }
     }
   }).mount();
