@@ -392,8 +392,8 @@
   }
 
   .li-time:nth-child(odd) .timeline-point {
-    width: 15px;
-    height: 15px;
+    width: calculate(17);
+    height: calculate(17);
 
     top: calculate(-55);
     left: calculate(185);
@@ -401,8 +401,8 @@
   }
 
   .li-time:nth-child(even) .timeline-point {
-    width: 15px;
-    height: 15px;
+    width: calculate(17);
+    height: calculate(17);
 
     // top: -97px;
     top: calculate(-135);
