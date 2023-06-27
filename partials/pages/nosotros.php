@@ -67,22 +67,22 @@ $archivos = get_field("archivos");
                 <li class="li-time" style="position:relative;">
                     <span class="timeline-point"></span>
                     <span class="date" style="display:none;"><?= $anio; ?></span>
-                    <div class="legend" >
-     
-                    <img class="img-legend" src="<?= wp_get_attachment_url($foto) ; ?>" alt="foto" style="display:<?= (!wp_get_attachment_url($foto))?'none':'' ; ?>">
-                    <!-- <div class="img-legend"><?= wp_get_attachment_url($foto) ; ?></div>  -->
-                    <div class="p-titleline color-blue">
-                    <?= $anio; ?>
-                    </div>
-                    <div>
-                    <!-- <img class="img-legend" src="https://img.freepik.com/vector-premium/imagen-dibujos-animados-hongo-palabra-hongo_587001-200.jpg" alt="foto" > -->
-                    <p class="tex-legend p-textline color-gris"><?= $leyenda; ?></p> 
-                    </div>
+                    <div class="legend">
+
+                        <img class="img-legend" src="<?= wp_get_attachment_url($foto); ?>" alt="foto" style="display:<?= (!wp_get_attachment_url($foto)) ? 'none' : ''; ?>">
+                        <!-- <div class="img-legend"><?= wp_get_attachment_url($foto); ?></div>  -->
+                        <div class="p-titleline color-blue">
+                            <?= $anio; ?>
+                        </div>
+                        <div>
+                            <!-- <img class="img-legend" src="https://img.freepik.com/vector-premium/imagen-dibujos-animados-hongo-palabra-hongo_587001-200.jpg" alt="foto" > -->
+                            <p class="tex-legend p-textline color-gris"><?= $leyenda; ?></p>
+                        </div>
                     </div>
                 </li>
             <?php endforeach; ?>
         </ul>
-            </div>
+    </div>
 </section>
 <section class="section_MV_valores container">
 

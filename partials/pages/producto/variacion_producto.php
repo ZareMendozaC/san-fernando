@@ -120,7 +120,7 @@
                 </svg>
             </div>
         </div>
-        <img class="col-739" src="http://localhost:10053/wp-content/uploads/2023/06/Group-4761.png" alt="">
+        <img class="col-739" src="<?php echo home_url(); ?>wp-content/uploads/2023/06/Group-4761.png" alt="">
     </div>
     <div class="container">
         <div class="col-blog-2">
