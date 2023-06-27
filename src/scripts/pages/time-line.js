@@ -8,6 +8,8 @@ let target1 = $(".timeline .ul-time");
 let target2 = $(".timeline .ul-time .li-time");
 
 const timeline_events = $(".ul-time .li-time");
+const btn_mas = $(".btn-mas");
+const btn_menos =$(".btn-menos");
 function showTime(e) {
   $(e).attr("done", "true");
   $(e).find(".timeline-point").css("background", "blue");
@@ -42,10 +44,10 @@ function slowLoop() {
 }
 
 function timelineProgress(value) {
-  // let pp = $(".section_linea").get(0).scrollWidth;
+  // let pp = $(".section_linea").get(0).scrollWidth;  
   let pp = $(".ul-time").get(0).scrollWidth;
   let p2 = pp;
-  let progress = `${((value / timeline_events.length) * p2)-150}px`;
+  let progress = `${((value / timeline_events.length) * p2) - 150}px`;
   if (window.matchMedia("(min-width: 768px)").matches) {
     line.css("width", progress);
     line.css("height", "4px");
@@ -80,9 +82,12 @@ if (window.matchMedia("(min-width: 768px)").matches) {
     observer.observe($(this)[0]);
   });
 }
-
+var contar=0;
 timeline_events.each(function (index) {
-  $(this).hover(function () {
+  $(this).find(".timeline-point").hover(function (e) {
+    console.log($(e.target).data('point'));
+    let indice = $(e.target).data('point');
+    contar = indice;
     if ($(this).attr("done")) {
       timelineProgress(index);
 
@@ -102,6 +107,35 @@ timeline_events.each(function (index) {
       });
     }
   });
+});
+
+// btn_mas.click(function () {
+//   // if(contar = 0){
+//     // console.log("entro")
+    
+//   //   $(".li-time").eq(contar).trigger("mouseenter"); 
+//   // }else{ 
+//   //   $(".li-time").eq(contar).trigger("mouseenter"); 
+//   // }   
+//   $($(".li-time")[contar]).trigger("mouseenter"); 
+//   contar++;
+//   console.log(contar)
+// });
+
+btn_mas.click(function () {
+if(contar < timeline_events.length){
+    $($(".li-time")[contar]).find(".timeline-point").trigger("mouseenter"); 
+    contar++; 
+    // console.log(contar)
+}
+});
+
+btn_menos.click(function () {
+  if(contar > 0){
+    contar--;
+  $($(".li-time")[contar]).find(".timeline-point").trigger("mouseenter");  
+}
+ 
 });
 
 var doit;
