@@ -10,7 +10,9 @@
                 <p class="subtitle">Recuerda revisar las restricciones en el punto de canje seleccionado.</p>
                 <div class="select-tipo">
                     <div class="btn-tipo active">Puntos de canje</div>
-                    <a href="<?php echo home_url(); ?>/puntos-de-venta"><div class="btn-tipo">Puntos de venta</div></a>
+                    <a href="<?php echo home_url(); ?>/puntos-de-venta">
+                        <div class="btn-tipo">Puntos de venta</div>
+                    </a>
                 </div>
                 <div class="content-select">
                     <div class="box-select">
@@ -118,8 +120,6 @@
                         <a class="chng_google" target="_blank" href="https://www.google.com/maps/place/12%C2%B006'30.5%22S+77%C2%B001'02.6%22W/@-12.10845[…]ta=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d-12.1084611!4d-77.0173778">Abrir en Google Maps</a>
                         <a class="chng_waze" target="_blank" href="https://www.waze.com/livemap?ll=-12.10846,-77.01737&navigate=yes">Abrir en Waze</a>
                         <a class="chng_compartir" href="https://api.whatsapp.com/send?text=https://www.san-fernando.com.pe/puntosdecanje?id=1" data-action="share/whatsapp/share" target="_blank">Compartir</a>
-
-
                     </div>
                 </div>
                 <br>

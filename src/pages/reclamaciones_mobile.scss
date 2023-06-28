@@ -8,7 +8,6 @@
       padding: 0 calculate(10);
       padding-top: calculate(100);
       padding-bottom: calculate(50);
-      background-color: #EBECE6;
       div{
         display: flex;
         align-items: center;
@@ -36,7 +35,6 @@
           display: grid;
           .first-contact{
             width: calculate(375);
-            background-color: #EBECE6;
             display: flex;
             flex-direction: column;
             grid-template-columns: repeat(3,1fr);
@@ -370,7 +368,6 @@
             grid-template-columns: repeat(2,1fr);
             gap: calculate(50);
             padding: calculate(80) calculate(10);
-            background-color: #EBECE6;
             
             .title-third{
               grid-column-start: 1;

@@ -203,7 +203,7 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 							Trabaja con Nosotros
 						</a>
 					</li>
-					<li>
+					<li id="preguntas-frecuentes-link">
 						<a href="<?= $preguntas_frecuentes ?>">
 							Preguntas Frecuentes
 						</a>
@@ -371,5 +371,25 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 	//@ts-ignore
 	$(".products-vale").click(function() {
 		$(".products-vale").toggleClass("products-vale-on");
+	})
+
+
+
+	$("#preguntas-frecuentes-link").click(function() {
+
+		$(document).ready(function() {
+			$("html, body").animate({
+				scrollTop: 1090
+			}, 2000);
+			alert('Page is loaded');
+		});
+		// $("document").ready(function() {
+		// 	alert('Page is loaded');
+		// 	window.scroll({
+		// 		top: 1000,
+		// 		behavior: 'smooth'
+		// 	});
+		// })
+
 	})
 </script>

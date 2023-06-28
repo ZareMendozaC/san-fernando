@@ -207,7 +207,21 @@
             .list-social-1{
               display: flex;
               justify-content: flex-start;
-              gap: calculate(24);           
+              gap: calculate(24);      
+              .slick-list{
+                 height: calculate(550)!important;
+                 .slick-track{
+                     display: flex;
+                     
+                     gap: calculate(14);
+                     div{
+                         width: calculate(313)!important;
+                         height: calculate(390);
+                     }
+                     
+              
+                 }
+               }     
                     li{
                         display: flex;
                         flex-direction: column;
@@ -362,14 +376,18 @@
                       display: flex;
                       justify-content: flex-start;
                       gap: calculate(24);
-                      width: 100%;
+                      width: 100%; 
                      .slick-list{
-
+                        height: calculate(550)!important;
                        .slick-track{
                           
-                          display: flex;
-                          justify-content: flex-start;
-                          gap: calculate(24);
+                        display: flex;
+                            
+                        gap: calculate(14);
+                        div{
+                            width: calculate(313)!important;
+                            height: calculate(390);
+                        }
                           
                          .slick-slide{
                             div{
@@ -456,20 +474,7 @@
     }
 
     }
-  }
-  .slick-list{
-    height: calculate(550)!important;
-    .slick-track{
-        display: flex;
-        
-        gap: calculate(14);
-        div{
-            width: calculate(313)!important;
-            height: calculate(390);
-        }
-        
 
-    }
   }
 
 }

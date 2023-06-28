@@ -1,0 +1,66 @@
+@media only screen and (max-width: 768px) {
+
+  .section-encuentranos{
+    .trabaja-head{
+      height: calculate(300);
+      p{
+
+      }
+    }
+    .content-movil{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .col-md-5{
+        
+        width: 96%;
+        margin-left: calculate(10);
+        margin-top: calculate(50);
+        .row-mrg-left{
+          margin: auto;
+          width: calculate(355);
+          .content-select{
+            width: calculate(355);
+            .box-select{
+              width: calculate(110);
+              select{
+                height: calculate(40);
+              }
+            }
+            .input-control{
+              width: calculate(110);
+              height: calculate(40);
+              
+            }
+          }
+
+          
+        }
+        .list-results{
+          .card{
+            padding-left: calculate(20);
+            .data-layer{
+              .row-icons{
+                gap: calculate(10);
+                span{
+                  font-size: calculate(13);
+                }
+              }
+            }
+          }
+
+        }
+      }
+      .col-md-7{
+        width: 100%;
+        overflow-y: visible;
+        img{
+          width: calculate(375);
+          height: calculate(500);
+          margin: 0;
+        }
+      }
+    }
+  }
+
+}
