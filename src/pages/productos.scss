@@ -1,7 +1,4 @@
 .section-productos{
-    .general-banner-img{
-        margin-top:calculate(140);
-    }
     .text, #tabs{
         display: none;
     }
@@ -113,30 +110,30 @@
         }
     }
     padding-bottom: calculate(124);
-}
-.card-icon.active{
-    .circle-icon{
-        background-color: var(--color-blue);
-    }
-}
-.card-icon.active::after{
-    border: 4px dotted var(--color-red-btn);
-    content: '';
-    width: calculate(143);
-    height: calculate(143);
-    border-radius: 50%;
-    position: absolute;
-    top: calculate(-10);
-    visibility: visible;
-}
-.container-productos{
+    
+
+  .card-icon.active{
+      .circle-icon{
+          background-color: var(--color-blue);
+      }
+  }
+  .card-icon.active::after{
+      border: 4px dotted var(--color-red-btn);
+      content: '';
+      width: calculate(143);
+      height: calculate(143);
+      border-radius: 50%;
+      position: absolute;
+      top: calculate(-10);
+      visibility: visible;
+  }
+  .container-productos{
     #lista-cate{
         width: fit-content;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         margin: auto;
-
         .slick-list{
             height: calculate(70)!important;
             .slick-track{
@@ -183,9 +180,10 @@
             }
         }
     }
+  }
 }
 
-.lista-prod{
+  .lista-prod{
     .card-p{
         width: calculate(371);
         height: calculate(363);
@@ -218,14 +216,17 @@
     .card-p:hover .border-card{
         border: 2px solid #CDAC92;
     }
-}
+  }
 
-.lista-prod{
-    display: grid;
-    row-gap: calculate(62);
-    grid-template-columns: repeat(4,auto);
-    margin-top: calculate(65);
-}
+  .lista-prod{
+      display: grid;
+      row-gap: calculate(62);
+      grid-template-columns: repeat(4,auto);
+      margin-top: calculate(65);
+  }
+  
+
+
 
 .section-bog-bien-servido{
     background-color: var(--color-beige);
@@ -370,7 +371,7 @@
     }
     .div-img{
         width: calculate(404);
-        height: calculate(270);
+        height: calculate(404);
         background-repeat: no-repeat !important;
         background-position: center !important;
         background-size: cover !important;
