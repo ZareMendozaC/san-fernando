@@ -18,11 +18,9 @@
       margin-top: calculate(-100);
       margin-bottom: calculate(53);
       width: 100%;
-      --mask:
-      radial-gradient(calc(100vw*(7.67/var(--width_base))) at 50% calc(100% - calc(100vw*(10.75/var(--width_base)))),#000 99%,#0000 101%) calc(50% - calc(100vw*(10/var(--width_base)))) 0/calc(100vw*(20/var(--width_base))) 100%,
-      radial-gradient(calc(100vw*(7.67/var(--width_base)))at 50% calc(100% + calc(100vw*(5.75/var(--width_base)))),#0000 99%,#000 101%) 50% calc(100% - calc(100vw*(5/var(--width_base))))/calc(100vw*(20/var(--width_base))) 100% repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
+      --mask: conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/16.00px 101%;
+      -webkit-mask: var(--mask);
+      mask: var(--mask);
       h1 {
         margin-bottom: calculate(55);
       }
@@ -304,8 +302,7 @@
   // }
 
   .section_linea {
-    margin: calculate(30) calculate(20);
-    overflow: visible;
+    overflow: visible !important;
     height: 100%;
   }
 
@@ -313,13 +310,13 @@
     margin-top: 35px;
     padding: 15px;
     display: grid;
-    grid-template-columns: 10% auto;
+    grid-template-columns: 15% auto;
     justify-content: center;
   }
 
   .timeline-line {
     background: rgb(228, 228, 228);
-    width: 4px;
+    width: 4px !important;
     border-radius: 12px;
     position: relative;
     justify-self: end;
@@ -353,4 +350,18 @@ margin-left: calculate(70);
 margin-top: calculate(0);
   }
 
+  .li-time {
+    margin-top: 30px;
+    position: relative;
+    padding: 25px;
+  }
+
+  .li-time .legend {
+    padding: 0 20px !important;
+    transition: 1.5s !important;
+  }
+
+  .div_btn_scroll_timeline{
+    display:none;
+  }
 }
