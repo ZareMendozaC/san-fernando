@@ -39,6 +39,7 @@
     "functions.php",
     "header.php",
     "page.php",
+    "category.php",
     "style.css"
   ]
 }
