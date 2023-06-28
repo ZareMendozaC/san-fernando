@@ -4,10 +4,11 @@
     display: flex;
     flex-direction: column;
     gap: calculate(50);
+    margin-top: calculate(-10);
     padding: 0 calculate(300);
     padding-top: calculate(100);
     padding-bottom: calculate(50);
-    background-color: #EBECE6;
+    background-color: #96DAEA;
     div{
       display: flex;
       align-items: center;
@@ -33,7 +34,7 @@
         display: grid;
         .first-contact{
           width: 100%;
-          background-color: #EBECE6;
+          background-color: #96DAEA;
           display: grid;
           grid-template-columns: repeat(3,1fr);
           padding: 0 calculate(300);
@@ -47,7 +48,7 @@
             gap: calculate(50);
             width: 100%;
             padding-bottom: calculate(30);
-            border-bottom: 2px solid #DDDDDD;
+            border-bottom: calculate(2) solid #ffffff;
 
           }
           
@@ -382,7 +383,7 @@
           grid-template-columns: repeat(2,1fr);
           gap: calculate(50);
           padding: calculate(80) calculate(300);
-          background-color: #EBECE6;
+          background-color: #96DAEA;
           .title-third{
             grid-column-start: 1;
             grid-column-end: 3;
