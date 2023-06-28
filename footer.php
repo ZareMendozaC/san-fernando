@@ -276,16 +276,24 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 			<div class="products-buy">
 				<ul>
 					<li>
+						<a href="https://delivery.redsanfernando.pe/">
 						Compra aquí
+						</a>
 					</li>
 					<li>
+						<a href="https://www.san-fernando.com.pe/blog/">
 						Blog Bien Servido
+						</a>
 					</li>
 					<li>
-						Intranet
+						<a href="https://sites.google.com/a/san-fernando.com.pe/sanfernetprd/home">
+						Intranet	
+						</a>						
 					</li>
 					<li>
+						<a href="https://clientesyproveedores.san-fernando.com.pe/">
 						Acceso a proveedores y clientes
+						</a>
 					</li>
 
 					<li>
