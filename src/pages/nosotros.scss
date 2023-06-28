@@ -253,21 +253,17 @@
 
 
 .section_linea {
-  margin: calculate(30) calculate(0);
   position: relative;
   overflow: auto !important;
-  height: calculate(950);
+  height: calculate(900);
 }
-// .section_linea::-webkit-scrollbar {
-//   visibility: hidden;
-// }
+.section_linea::-webkit-scrollbar {
+  display: none;
+}
 
 .timeline {
-  margin-top: calculate(35);
+  // margin-top: calculate(35);
   padding-top: calculate(240);
-  display: grid;
-  grid-template-columns: 40% auto;
-  justify-content: center;
 }
 
 .ul-time {
@@ -279,15 +275,7 @@
   list-style: none;
   padding: 0;
 }
-.li-time {
-  margin-top: 30px;
-  position: relative;
-  padding: 25px;
-}
-.li-time .legend {
-  padding: 0 20px !important;
-  transition: 1.5s !important;
-}
+
 
 .date {
   position: absolute;
@@ -362,6 +350,12 @@
     position: absolute;
 
   }
+
+  .li-time .legend .inLegend {
+    padding: 5px 10px !important;
+    transition: 1.5s !important;
+  }
+
   .li-time:nth-child(odd) {
     margin-top: 0px;
     position: relative;
@@ -383,17 +377,17 @@
   .li-time:nth-child(odd) .legend {
     transform: translateY(-10px);
     opacity: 0;
-    padding: 0 20px;
+    // padding: 0 20px;
     transition: 1.5s;
   }
 
   .li-time:nth-child(even) .legend {
     transform: translateY(-10px);
     opacity: 0;
-    padding: 0 20px;
+    // padding: 0 20px;
     transition: 1.5s;
     position: absolute;
-    top: calculate(-300);
+    top: calculate(-310);
     left: calculate(0);
   }
 
@@ -420,8 +414,7 @@
     width: 15px;
     height: 15px;
 
-    // top: -97px;
-    top: calculate(-135);
+    top: calculate(-145);
     left: calculate(200);
     transition: 1.5s ease;
   }
@@ -468,6 +461,16 @@
 
   .legend {
     width: calculate(368);
+    height:calculate(140);
+    margin-bottom: calculate(40);
+    background-color: transparent;
+    border-radius: calculate(8);
+    margin-left: calculate(20);
+    margin-right: calculate(20);
+  }
+
+  .inLegend {
+    width: 100%;
     height: auto;
     margin-bottom: calculate(40);
     background-color: var(--color-celeste-light);
@@ -482,4 +485,19 @@
     align-items: center;
     padding-right: 5px;
   }
+}
+
+.div_btn_scroll_timeline{
+  display:flex; justify-content:center; gap: 5px;
+}
+
+.btn_scroll_timeline{
+  width: 8px;
+  height: 8px; border-radius: 50%; background:#DF0002; display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_scroll_timeline:focus{
+  background:#DF0002;
 }

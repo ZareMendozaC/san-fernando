@@ -304,7 +304,6 @@
   // }
 
   .section_linea {
-    margin: calculate(30) calculate(20);
     overflow: visible;
     height: 100%;
   }
@@ -313,13 +312,13 @@
     margin-top: 35px;
     padding: 15px;
     display: grid;
-    grid-template-columns: 10% auto;
+    grid-template-columns: 15% auto;
     justify-content: center;
   }
 
   .timeline-line {
     background: rgb(228, 228, 228);
-    width: 4px;
+    width: 4px !important;
     border-radius: 12px;
     position: relative;
     justify-self: end;
@@ -353,4 +352,14 @@ margin-left: calculate(70);
 margin-top: calculate(0);
   }
 
+  .li-time {
+    margin-top: 30px;
+    position: relative;
+    padding: 25px;
+  }
+
+  .li-time .legend {
+    padding: 0 20px !important;
+    transition: 1.5s !important;
+  }
 }

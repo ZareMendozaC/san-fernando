@@ -58,35 +58,33 @@ $archivos = get_field("archivos");
             <span class="timeline-innerline"></span>
         </div>
         <ul class="ul-time">
-            <?php foreach ($listado_timeline as $key=> $time) : ?>
+            <?php foreach ($listado_timeline as $key => $time) : ?>
                 <?php
                 $foto = $time['foto'];
                 $anio = $time['anio'];
                 $leyenda = $time['leyenda'];
                 ?>
                 <li class="li-time" style="position:relative;">
-                    <span class="timeline-point" data-point="<?=$key?>"></span>
+                    <span class="timeline-point" data-point="<?= $key ?>"></span>
                     <span class="date" style="display:none;"><?= $anio; ?></span>
                     <div class="legend">
-
-                        <img class="img-legend" src="<?= wp_get_attachment_url($foto); ?>" alt="foto" style="display:<?= (!wp_get_attachment_url($foto)) ? 'none' : ''; ?>">
-                        <!-- <div class="img-legend"><?= wp_get_attachment_url($foto); ?></div>  -->
-                        <div class="p-titleline color-blue">
-                            <?= $anio; ?>
-                        </div>
-                        <div>
-                            <!-- <img class="img-legend" src="https://img.freepik.com/vector-premium/imagen-dibujos-animados-hongo-palabra-hongo_587001-200.jpg" alt="foto" > -->
-                            <p class="tex-legend p-textline color-gris"><?= $leyenda; ?></p>
+                        <div class="inLegend">
+                            <img class="img-legend" src="<?= wp_get_attachment_url($foto); ?>" alt="foto" style="display:<?= (!wp_get_attachment_url($foto)) ? 'none' : ''; ?>">
+                            <div class="p-titleline color-blue">
+                                <?= $anio; ?>
+                            </div>
+                            <div>
+                                <p class="tex-legend p-textline color-gris"><?= $leyenda; ?></p>
+                            </div>
                         </div>
                     </div>
                 </li>
             <?php endforeach; ?>
         </ul>
     </div>
-    <div style="display:flex; justify-content:center;">
-    <button class="btn-menos" style="padding:5px 10px; border-radius:20px; background:red; text-align:center;"><</button>
-    <button class="btn-mas" style="padding:5px 10px; border-radius:20px; background:red; text-align:center;">></button>
-
+    <div class="div_btn_scroll_timeline">
+        <button class="btn-menos btn_scroll_timeline"><</button>
+        <button class="btn-mas btn_scroll_timeline">></button>
     </div>
 </section>
 <section class="section_MV_valores container">
