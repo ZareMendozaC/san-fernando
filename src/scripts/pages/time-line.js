@@ -125,9 +125,11 @@ timeline_events.each(function (index) {
 btn_mas.click(function () {
   if (contar < timeline_events.length) {
     $($(".li-time")[contar]).find(".timeline-point").trigger("mouseenter");
+    if(contar != 0){
+      $('.section_linea').scrollLeft($('.section_linea').scrollLeft() + 100);
+    }
     contar++;
   }
-  $('.section_linea').scrollLeft($('.section_linea').scrollLeft() + 100);
 
 });
 

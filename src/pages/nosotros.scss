@@ -243,6 +243,9 @@
     .btn-azul {
       gap: calculate(10);
     }
+    .btn-azul:hover{
+color: var(--color-celeste-light);
+    }
   }
 }
 
@@ -251,7 +254,26 @@
   height: calculate(50);
 }
 
+.p_width-mt{
+  width: calculate(420);
+  margin-top: calculate(30);
+}
+.section_time_line{
+  position: relative;
+}
+.btn-menos{
+  position: absolute;
+  right:calculate(1600);
+  top:calculate(435);
+}
+.btn-mas{
+  position: absolute;
+  left:calculate(1600);
+  top:calculate(435);
+}
 
+
+// TIME-LINE
 .section_linea {
   position: relative;
   overflow: auto !important;
@@ -485,19 +507,4 @@
     align-items: center;
     padding-right: 5px;
   }
-}
-
-.div_btn_scroll_timeline{
-  display:flex; justify-content:center; gap: 5px;
-}
-
-.btn_scroll_timeline{
-  width: 8px;
-  height: 8px; border-radius: 50%; background:#DF0002; display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn_scroll_timeline:focus{
-  background:#DF0002;
 }
