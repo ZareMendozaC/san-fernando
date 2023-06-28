@@ -13,8 +13,8 @@ $args = array(
 ?>
 
 <h1 class="h1-marker">Productos</h1>
-<section class="container-full section-productos">
-    <div class="general-banner-img" style="background: url('<?php echo home_url(); ?>/wp-content/uploads/2023/06/image-112-1.png');">
+<section id="post-category" class="container-full section-productos">
+    <div class="general-banner-img" style="display: none; background: url('<?php echo home_url(); ?>/wp-content/uploads/2023/06/image-112-1.png');">
     </div>
     <div class="container pdt-productos">
         <h2 class="color-blue text-center">Productos</h2>
@@ -187,42 +187,4 @@ get_template_part('loop'); // if no sub categories exist, show the posts
             </div>
         </div>
     </div>
-    <?php
-    $args = array(
-        'post_type' => 'producto',
-        'tax_query' => array(
-            'relation' => 'AND',
-            array(
-                'taxonomy' => 'category',
-                'field'    => 'name',
-                'terms'    => array( $current_category->name ),
-            ),
-            array(
-                'relation' => 'OR',
-                array(
-                    'taxonomy' => 'category',
-                    'field'    => 'name',
-                    'terms'    => array( 'horneados' ),
-                ),
-            ),
-        ),
-    );
-$query = new WP_Query($args);
-    // Comprobar si hay publicaciones que cumplan con los criterios de búsqueda
-    if ($query->have_posts()) {
-        while ($query->have_posts()) {
-            $query->the_post();
-            // Aquí puedes acceder a los datos de cada publicación
-            echo "<li>";
-            the_title(); // Ejemplo: Imprimir el título de la publicación
-            echo "</xsli>";
-
-        }
-    } else {
-        // No se encontraron publicaciones
-        echo "No se encontraron publicaciones.";
-    }
-    // Restaurar datos originales de la consulta principal
-    wp_reset_postdata();
-    ?>
 </section>
