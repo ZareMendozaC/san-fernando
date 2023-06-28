@@ -151,9 +151,13 @@ function resizeEnd() {
   slowLoop();
 }
 
-// if ($(window).width() > 768) {
-//   let width_sxroll = $(".ul-time").get(0).scrollWidth();
-//   width_sxroll = width_sxroll;
-//   $('.timeline-line').css('width', width_sxroll);
-// }
+if (window.location.href.indexOf("nosotros") !== -1) {
+  if ($(window).width() > 768) {
+    let width_sxroll = $(".ul-time").get(0).scrollWidth;
+    width_sxroll = width_sxroll;
+    $('.timeline-line').css('width', width_sxroll);
+  }
+}
+
+
 
