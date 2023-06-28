@@ -13,7 +13,7 @@ $('#lista-cate').slick({
   centerMode: false,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 769,
       settings:
       {
         slidesToShow: 1,
@@ -33,7 +33,7 @@ $('#slider-blog-list').slick({
   centerMode: false,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 769,
       settings:
       {
         slidesToShow: 1,

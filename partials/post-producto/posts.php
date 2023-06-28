@@ -121,7 +121,7 @@ $terms = get_terms([
 echo '<div id="lista-cate" class="lista-categorias">';
 foreach ( $terms as $term) {
    // echo '<a href="' . get_term_link( $term ) . '"><div class="btn-lista-cat">' . $term->name . '</div></a>';  
-   echo '<div class="btn-lista-cat">' . $term->name . '</div>'; 
+   echo '<div class="btn-lista-cat" data-category="'.$term->name.'">' . $term->name . '</div>'; 
 }
 echo "</div>";
 
@@ -220,4 +220,42 @@ get_template_part('loop'); // if no sub categories exist, show the posts
             </div>
         </div>
     </div>
+    <?php
+$args = array(
+    'post_type' => 'producto',
+    'tax_query' => array(
+        'relation' => 'AND',
+        array(
+            'taxonomy' => 'category',
+            'field'    => 'name',
+            'terms'    => array( $current_category->name ),
+        ),
+        array(
+             'relation' => 'OR',
+             array(
+                  'taxonomy' => 'category',
+                  'field'    => 'name',
+                  'terms'    => array( 'horneados' ),
+             ),
+        ),
+    ),
+);
+$query = new WP_Query($args);
+    // Comprobar si hay publicaciones que cumplan con los criterios de búsqueda
+    if ($query->have_posts()) {
+        while ($query->have_posts()) {
+            $query->the_post();
+            // Aquí puedes acceder a los datos de cada publicación
+            echo "<li>";
+            the_title(); // Ejemplo: Imprimir el título de la publicación
+            echo "</xsli>";
+
+        }
+    } else {
+        // No se encontraron publicaciones
+        echo "No se encontraron publicaciones.";
+    }
+    // Restaurar datos originales de la consulta principal
+    wp_reset_postdata();
+    ?>
 </section>

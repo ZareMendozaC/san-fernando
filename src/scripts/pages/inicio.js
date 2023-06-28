@@ -1,10 +1,10 @@
 import $ from "jquery";
 import Splide from "@splidejs/splide";
-if($('.splide.splide1').length>0){
-  new Splide( '.splide.splide1' , {
+if ($('.splide.splide1').length > 0) {
+  new Splide('.splide.splide1', {
     type: 'loop',
     pagination: false,
-}).mount();
+  }).mount();
 
 }
 
@@ -38,25 +38,26 @@ function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
   });
 } // Mobile Only Slider
 
-$(".card-certificacion").click(function(){
-    let data= $(this).find('.data-certificacion').html();
-    $('#dCertificacion').html(data);
-    $('.modal-certificacion').fadeIn();
+$(".card-certificacion").click(function () {
+  let data = $(this).find('.data-certificacion').html();
+  $('#dCertificacion').html(data);
+  $('.modal-certificacion').fadeIn();
 });
-$(".close-certificacion").click(function(){
-    $('#dCertificacion').html('');
-    $('.modal-certificacion').fadeOut();
+$(".close-certificacion").click(function () {
+  $('#dCertificacion').html('');
+  $('.modal-certificacion').fadeOut();
 });
-$( document ).ready(function() {
-    $( ".close-des" ).on( "click", function() {
-      if($(this).hasClass('open-des')){
-        $(this).parent().parent().find('.select-options').slideUp();
-        $(this).css('transform','rotate(180deg)')
-        $(this).removeClass('open-des');
-      }else{
-        $(this).parent().parent().find('.select-options').slideDown();
-        $(this).css('transform','rotate(0deg)')
-        $(this).addClass('open-des');
-      }
-    } );
+$(document).ready(function () {
+  $(".close-des").on("click", function () {
+    if ($(this).hasClass('open-des')) {
+      $(this).parent().parent().find('.select-options').slideUp();
+      $(this).css('transform', 'rotate(180deg)')
+      $(this).removeClass('open-des');
+    } else {
+      $(this).parent().parent().find('.select-options').slideDown();
+      $(this).css('transform', 'rotate(0deg)')
+      $(this).addClass('open-des');
+    }
+  });
 });
+

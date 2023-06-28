@@ -26,7 +26,7 @@ $('#social-carousel').slick({
   centerMode: false,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 769,
       settings:
       {
         slidesToShow: 1,
@@ -36,45 +36,6 @@ $('#social-carousel').slick({
     }
   ]
 })
-
-
-
-
-// mobileOnlySlider2("#social-carousel", false, true, 768);
-
-
-
-// function mobileOnlySlider2($slidername, $dots, $arrows, $breakpoint) {
-//   var slider = $($slidername);
-//   var settings = {
-//     mobileFirst: true,
-//     dots: $dots,
-//     arrows: $arrows,
-//     variableWidth: true,
-//     centerMode: false,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     infinite: true,
-//     responsive: [
-//       {
-//         breakpoint: $breakpoint,
-//         settings: "unslick"
-//       }
-//     ]
-//   };
-
-//   slider.slick(settings);
-
-//   $(window).on("resize", function () {
-//     if ($(window).width() > $breakpoint) {
-//       return;
-//     }
-//     if (!slider.hasClass("slick-initialized")) {
-//       return slider.slick(settings);
-//     }
-//   });
-// } // Mobile Only Slider
-
 
 
 mobileOnlySlider3(".list-ambiental-1", false, false, 768);
