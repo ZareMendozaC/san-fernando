@@ -138,8 +138,8 @@
       <li class="list-group-item"><a href="#">Recetas</a></li>
       <li class="list-group-item"><a href="#">Nutrición</a></li>
       <li class="list-group-item"><a href="#">Soluciones</a></li>
-      <li class="list-group-item"><a href="#">Calculadora de proteina</a></li>
-      <li class="list-group-item"><a href="#">Crea tu menú</a></li>
+      <!-- <li class="list-group-item"><a href="#">Calculadora de proteina</a></li>
+      <li class="list-group-item"><a href="#">Crea tu menú</a></li> -->
     </ul>
   </div>
 
