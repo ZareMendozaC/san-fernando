@@ -50,7 +50,7 @@ $url_button_2 = get_field("url_button_2");
         </svg>
     </div>
 
-    <section class="content-2 container">
+    <section class="content-2 container" id="preguntas">
         <h2>
             Preguntas frecuentes
         </h2>

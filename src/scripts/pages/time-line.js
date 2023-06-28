@@ -125,9 +125,11 @@ timeline_events.each(function (index) {
 btn_mas.click(function () {
   if (contar < timeline_events.length) {
     $($(".li-time")[contar]).find(".timeline-point").trigger("mouseenter");
+    if(contar != 0){
+      $('.section_linea').scrollLeft($('.section_linea').scrollLeft() + 100);
+    }
     contar++;
   }
-  $('.section_linea').scrollLeft($('.section_linea').scrollLeft() + 100);
 
 });
 
@@ -151,8 +153,13 @@ function resizeEnd() {
   slowLoop();
 }
 
-// if ($(window).width() > 768) {
-//   let width_sxroll = $(".ul-time").get(0).scrollWidth;
-//   width_sxroll = width_sxroll;
-//   $('.timeline-line').css('width', width_sxroll);
-// }
+if (window.location.href.indexOf("nosotros") !== -1) {
+  if ($(window).width() > 768) {
+    let width_sxroll = $(".ul-time").get(0).scrollWidth;
+    width_sxroll = width_sxroll;
+    $('.timeline-line').css('width', width_sxroll);
+  }
+}
+
+
+

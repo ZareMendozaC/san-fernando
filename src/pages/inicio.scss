@@ -67,7 +67,7 @@
 .list-cotiza{
     padding-top: calc(100vw*(82/var(--width_base)));
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .list-cotiza{
     padding-bottom: calc(100vw*(174/var(--width_base)));
@@ -266,6 +266,7 @@
     background-repeat: no-repeat !important;
     background-position: center !important;
     position: relative;
+    border-radius: calculate(20);
 }
 .box-i-textos{
     font-family: 'FuturaStd';
@@ -302,6 +303,7 @@
     background-repeat: no-repeat !important;
     background-position: center !important;
     position: relative;
+    border-radius: calculate(20);
     .box-i-textos{
         left: calculate(22);
     }
@@ -313,6 +315,7 @@
     background-repeat: no-repeat !important;
     background-position: center !important;
     position: relative;
+    border-radius: calculate(20);
 }
 .mrg-t-23{
     margin-top: calculate(23);

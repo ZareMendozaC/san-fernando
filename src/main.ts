@@ -73,34 +73,34 @@ $(".slider-blog").slick({
 // ---------------NAVBAR-----------------
 //@ts-ignore
 $(".btn-blog, .menu_blog").hover(function () {
-  $(".menu_blog").stop().slideDown(300);
-  $(".btn-blog .arrow").toggleClass("arrow-btn-active");
+  $(".menu_blog").stop().slideDown(300)
+  $(".btn-blog .arrow").toggleClass("arrow-btn-active")
 }, function () {
   $(".menu_blog").stop().slideUp(300, function () {
-    $(this).css("display", "none");
-  });
-  $(".btn-blog .arrow").toggleClass("arrow-btn-active");
-});
+    $(this).css("display", "none")
+  })
+  $(".btn-blog .arrow").toggleClass("arrow-btn-active")
+})
 //@ts-ignore
 $(".btn-vales, .menu_vales").hover(function () {
-  $(".menu_vales").stop().slideDown(300);
-  $(".btn-vales .arrow").toggleClass("arrow-btn-active");
+  $(".menu_vales").stop().slideDown(300)
+  $(".btn-vales .arrow").toggleClass("arrow-btn-active")
 }, function () {
   $(".menu_vales").stop().slideUp(300, function () {
-    $(this).css("display", "none");
-  });
-  $(".btn-vales .arrow").toggleClass("arrow-btn-active");
-});
+    $(this).css("display", "none")
+  })
+  $(".btn-vales .arrow").toggleClass("arrow-btn-active")
+})
 //@ts-ignore
 $(".btn-comprar, .menu_compras").hover(function () {
-  $(".menu_compras").stop().slideDown(300);
-  $(".btn-comprar .arrow").toggleClass("arrow-btn-active");
+  $(".menu_compras").stop().slideDown(300)
+  $(".btn-comprar .arrow").toggleClass("arrow-btn-active")
 }, function () {
   $(".menu_compras").stop().slideUp(300, function () {
-    $(this).css("display", "none");
-  });
-  $(".btn-comprar .arrow").toggleClass("arrow-btn-active");
-});
+    $(this).css("display", "none")
+  })
+  $(".btn-comprar .arrow").toggleClass("arrow-btn-active")
+})
 
 // --------MOBILE--------------
 //@ts-ignore
@@ -122,7 +122,7 @@ $(".btn-vales-mov").click(function () {
 $(".btn-comprar-mov").click(function () {
   $(".li-compras_mov").slideToggle()
   $(".btn-comprar-mov .arrow").toggleClass("arrow-btn-active")
-});
+})
 
 //@ts-ignore
 var mediaqueryList = window.matchMedia("(max-width: 768px)")
