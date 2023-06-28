@@ -302,7 +302,7 @@
   // }
 
   .section_linea {
-    overflow: visible;
+    overflow: visible !important;
     height: 100%;
   }
 
@@ -359,5 +359,9 @@ margin-top: calculate(0);
   .li-time .legend {
     padding: 0 20px !important;
     transition: 1.5s !important;
+  }
+
+  .div_btn_scroll_timeline{
+    display:none;
   }
 }

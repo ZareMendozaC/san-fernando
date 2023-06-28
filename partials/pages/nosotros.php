@@ -64,7 +64,7 @@ $archivos = get_field("archivos");
                 $anio = $time['anio'];
                 $leyenda = $time['leyenda'];
                 ?>
-                <li class="li-time" style="position:relative;">
+                <li class="li-time">
                     <span class="timeline-point" data-point="<?= $key ?>"></span>
                     <span class="date" style="display:none;"><?= $anio; ?></span>
                     <div class="legend">
