@@ -204,7 +204,7 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 							Trabaja con Nosotros
 						</a>
 					</li>
-					<li id="preguntas-frecuentes-link">
+					<li>
 						<a href="<?= $preguntas_frecuentes ?>">
 							Preguntas Frecuentes
 						</a>
