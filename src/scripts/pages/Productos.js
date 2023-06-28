@@ -2,8 +2,6 @@ import $ from "jquery";
 import Splide from "@splidejs/splide";
 
 
-
-
 $('#lista-cate').slick({
   slidesToShow: 5,
   infinite: true,
@@ -13,7 +11,7 @@ $('#lista-cate').slick({
   centerMode: false,
   responsive: [
     {
-      breakpoint: 769,
+      breakpoint: 1024,
       settings:
       {
         slidesToShow: 1,

@@ -386,7 +386,6 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 			$("html, body").animate({
 				scrollTop: 1090
 			}, 2000);
-			alert('Page is loaded');
 		});
 		// $("document").ready(function() {
 		// 	alert('Page is loaded');
