@@ -3,11 +3,11 @@
   .section-productos{
     .general-banner-img{
       width: 100%;
-      height: calc(100vw*(330/var(--width_base))) !important;
+      height: calc(100vw*(430/var(--width_base))) !important;
       background-repeat: no-repeat !important;
       background-size: cover !important;
       background-position: center !important;
-      margin-top:calculate(0);
+      margin-top:calculate(30);
     }
     .container-full{
       margin-top: calculate(145);

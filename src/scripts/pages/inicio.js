@@ -38,12 +38,12 @@ function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
   });
 } // Mobile Only Slider
 
-$(".card-certificacion").click(function () {
+$(".card-certificacion").hover(function () {
   let data = $(this).find('.data-certificacion').html();
   $('#dCertificacion').html(data);
   $('.modal-certificacion').fadeIn();
 });
-$(".close-certificacion").click(function () {
+$(".close-certificacion").hover(function () {
   $('#dCertificacion').html('');
   $('.modal-certificacion').fadeOut();
 });
