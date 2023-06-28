@@ -1,5 +1,6 @@
 <?php 
     $imagen_banner= get_field('imagen_banner');
+    $imagen_banner_mobile= get_field('imagen_banner_mobile');
     $titulo_productos= get_field('titulo_productos');
     $descripcion_productos= get_field('descripcion_productos');
     $titulo_llena_tu_refri= get_field('titulo_llena_tu_refri');
@@ -10,7 +11,9 @@
 ?>
 <h1 class="h1-marker">Productos</h1>
 <section class="container-full section-productos">
-    <div class="general-banner-img" style="background: url('<?php echo $imagen_banner['url'];?>');">
+    <div class="general-banner-img show-desktop" style="background: url('<?php echo $imagen_banner['url'];?>');">
+    </div>
+    <div class="general-banner-img show-mobile" style="background: url('<?php echo $imagen_banner_mobile['url'];?>');">
     </div>
     <div class="container pdt-productos">
         <h2 class="color-blue text-center"><?= $titulo_productos; ?></h2>
