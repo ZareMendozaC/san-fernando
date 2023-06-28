@@ -243,6 +243,9 @@
     .btn-azul {
       gap: calculate(10);
     }
+    .btn-azul:hover{
+color: var(--color-celeste-light);
+    }
   }
 }
 
