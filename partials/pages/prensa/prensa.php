@@ -73,7 +73,7 @@ $categories = get_categories_by_post_type();
                 </svg>
             </div>
             <p class="p-subtitle">Un espacio creado para ti, donde podrás encontrar consejos nutricionales y simpáticas ideas simples para aplicar en casa.</p>
-            <a class="btn-ver-articulos" href="">Ver todos los artículos</a>
+            <!-- <a class="btn-ver-articulos" href="">Ver todos los artículos</a> -->
         </div>
         <?php if ($last_posts) : ?>
             <div class="splide splide1">
