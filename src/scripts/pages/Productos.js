@@ -92,5 +92,5 @@ $( ".btn-lista-cat" ).on( "click", function() {
 
 if($( ".btn-lista-cat" ).length >0)
 {
-  $('#lista-cate .slick-track').children(':first-child').find('.btn-lista-cat').click();
+  //$('#lista-cate .slick-track').children(':first-child').find('.btn-lista-cat').click();
 }
