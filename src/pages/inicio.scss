@@ -67,7 +67,7 @@
 .list-cotiza{
     padding-top: calc(100vw*(82/var(--width_base)));
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .list-cotiza{
     padding-bottom: calc(100vw*(174/var(--width_base)));
