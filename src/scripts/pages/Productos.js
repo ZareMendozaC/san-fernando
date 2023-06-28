@@ -45,6 +45,10 @@ $('#slider-blog-list').slick({
 })
 
 $( ".btn-lista-cat" ).on( "click", function() {
+  $( ".btn-lista-cat" ).removeClass('active');
+  $(this).addClass('active');
+  let producto_html= '';
+  $('.lista-prod a').remove();
     let padre = $('#catPadre').val();
     let hija = $(this).attr('data-category');
     //console.log( wpCredentials.url);
@@ -54,9 +58,21 @@ $( ".btn-lista-cat" ).on( "click", function() {
       url : wpCredentials.url,
       data : {action: "get_categories", post_padre : padre, post_hija: hija},
       success: function(response) {
-        console.log(response['success']);
         if(response['success'] == true) {
-            console.log(response['data']['posts']);
+          //console.log(response);
+            for(var i=0; i<response['data'].length;i++){
+              let $imgid = response['data'][i].ID;
+              console.log(response['data']);
+              producto_html= producto_html+
+              `<a href="${response['data'][i].guid}">
+                <div class="card-p">
+                    <div class="border-card" style="background:url(${response['data'][i].bgimage})"></div>
+                    <p class="color-blue">${response['data'][i].post_title}</p>
+                </div>
+              </a>`
+            }
+            $('.lista-prod').append(producto_html);
+            
         }
         else {
             alert("Your vote could not be added")
@@ -64,3 +80,8 @@ $( ".btn-lista-cat" ).on( "click", function() {
       }
     })   
 } );
+
+if($( ".btn-lista-cat" ).length >0)
+{
+  $('#lista-cate .slick-track').children(':first-child').find('.btn-lista-cat').click();
+}

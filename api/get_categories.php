@@ -20,7 +20,16 @@ function get_categories_handler() {
             ),
         ),
     );
-$query = new WP_Query($args);
+$query = get_posts($args);
+$query = array_map(function($item){
+    //$item['imagen']= get_image_url($item->ID);
+    return [
+        'id' => $item->ID,
+        "post_title" =>  $item->post_title,
+        "guid" =>  $item->guid,
+        "bgimage" => get_the_post_thumbnail_url($item->ID, 'full'),
+      ];
+},$query);
  
  return wp_send_json_success($query);
 } catch (\Throwable $th) {
