@@ -203,7 +203,7 @@ $archivos = get_field("archivos");
             $texto_boton_politicas = $archivo["texto_boton_politicas"];
             $url_boton_politicas = $archivo["url_boton_politicas"];
             ?>
-            <a class="btn-azul" href="<?= $url_boton_politicas; ?>"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="btn-azul" href="<?= $url_boton_politicas; ?>" target="_blank"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.5 11.0449L12.5 14.0449L22.5 4.04492" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M21.5 12.0449V19.0449C21.5 19.5754 21.2893 20.0841 20.9142 20.4591C20.5391 20.8342 20.0304 21.0449 19.5 21.0449H5.5C4.96957 21.0449 4.46086 20.8342 4.08579 20.4591C3.71071 20.0841 3.5 19.5754 3.5 19.0449V5.04492C3.5 4.51449 3.71071 4.00578 4.08579 3.63071C4.46086 3.25564 4.96957 3.04492 5.5 3.04492H16.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg><?= $texto_boton_politicas; ?>
