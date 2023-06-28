@@ -14,7 +14,7 @@ $args = array(
 
 <h1 class="h1-marker">Productos</h1>
 <section id="post-category" class="container-full section-productos">
-    <div class="general-banner-img" style="display: none; background: url('<?php echo home_url(); ?>/wp-content/uploads/2023/06/image-112-1.png');">
+    <div class="general-banner-img" style="background: url('<?php echo $current_category->description; ?>');">
     </div>
     <div class="container pdt-productos">
         <h2 class="color-blue text-center">Productos</h2>

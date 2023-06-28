@@ -1,4 +1,13 @@
 <h1 class="h1-marker">Productos</h1>
+<?php
+$categories = get_the_category();
+
+if (!empty($categories)) {
+    foreach ($categories as $category) {
+        echo esc_html( $category->name );
+    }
+}
+?>
 <section class="container-full section-productos">
     <div class="general-banner-img" style="background: url('<?php echo home_url(); ?>/wp-content/uploads/2023/06/image-112-1.png');">
     </div>
