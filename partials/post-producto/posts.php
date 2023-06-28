@@ -8,7 +8,8 @@ $args = array(
     'parent' => 0
   );
   $current_category = get_category( get_query_var( 'cat' ), false );
-  echo $current_category->name;
+  echo '<input id="catPadre" value="'.$current_category->name.'" type="hidden">';
+  
 ?>
 
 <h1 class="h1-marker">Productos</h1>
@@ -221,25 +222,25 @@ get_template_part('loop'); // if no sub categories exist, show the posts
         </div>
     </div>
     <?php
-$args = array(
-    'post_type' => 'producto',
-    'tax_query' => array(
-        'relation' => 'AND',
-        array(
-            'taxonomy' => 'category',
-            'field'    => 'name',
-            'terms'    => array( $current_category->name ),
+    $args = array(
+        'post_type' => 'producto',
+        'tax_query' => array(
+            'relation' => 'AND',
+            array(
+                'taxonomy' => 'category',
+                'field'    => 'name',
+                'terms'    => array( $current_category->name ),
+            ),
+            array(
+                'relation' => 'OR',
+                array(
+                    'taxonomy' => 'category',
+                    'field'    => 'name',
+                    'terms'    => array( 'horneados' ),
+                ),
+            ),
         ),
-        array(
-             'relation' => 'OR',
-             array(
-                  'taxonomy' => 'category',
-                  'field'    => 'name',
-                  'terms'    => array( 'horneados' ),
-             ),
-        ),
-    ),
-);
+    );
 $query = new WP_Query($args);
     // Comprobar si hay publicaciones que cumplan con los criterios de búsqueda
     if ($query->have_posts()) {
