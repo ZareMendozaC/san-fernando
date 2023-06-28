@@ -40,7 +40,7 @@
     "header.php",
     "page.php",
     "category.php",
-    "single-producto",
+    "single-producto.php",
     "style.css"
   ]
 }
