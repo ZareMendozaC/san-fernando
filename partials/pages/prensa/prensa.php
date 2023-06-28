@@ -1,3 +1,16 @@
+<?php
+// wordpress last 4 post
+$last_posts = get_posts(array(
+    'posts_per_page' => 4,
+    'post_type' => 'post',
+    'orderby' => 'post_date',
+    'order' => 'DESC',
+    'post_status' => 'publish'
+));
+
+?>
+
+
 <section>
     <div class="trabaja-head">
         <h1 class="color-white">Prensa</h1>
@@ -16,61 +29,57 @@
             <p class="p-subtitle">Un espacio creado para ti, donde podrás encontrar consejos nutricionales y simpáticas ideas simples para aplicar en casa.</p>
             <a class="btn-ver-articulos" href="">Ver todos los artículos</a>
         </div>
-        <div class="splide splide1">
-            <div class="col-blog-2 splide__track">
-                <div class="slider-blog splide__list">
-                    <div class="card-blog splide__slide">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668.png)">
-                        </div>
-                        <div class="btn-cat">Nutrición</div>
-                        <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
-                        <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
-                        <a href="<?php echo home_url(); ?>/detalle-prensa">Leer más</a>
-                    </div>
-                    <div class="card-blog splide__slide">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668-1.png">
-                        </div>
-                        <div class="btn-cat">Nutrición</div>
-                        <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
-                        <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
-                        <a href="<?php echo home_url(); ?>/detalle-prensa">Leer más</a>
-                    </div>
-                    <div class="card-blog splide__slide">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Mask-group-35.png)">
-                        </div>
-                        <div class="btn-cat">Nutrición</div>
-                        <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
-                        <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
-                        <a href="<?php echo home_url(); ?>/detalle-prensa">Leer más</a>
-                    </div>
-                    <div class="card-blog splide__slide">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668-1.png">
-                        </div>
-                        <div class="btn-cat">Nutrición</div>
-                        <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
-                        <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
-                        <a href="<?php echo home_url(); ?>/detalle-prensa">Leer más</a>
-                    </div>
-                    <div class="card-blog splide__slide">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668-1.png">
-                        </div>
-                        <div class="btn-cat">Nutrición</div>
-                        <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
-                        <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
-                        <a href="<?php echo home_url(); ?>/detalle-prensa">Leer más</a>
-                    </div>
-                    <div class="card-blog splide__slide">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668-1.png">
-                        </div>
-                        <div class="btn-cat">Nutrición</div>
-                        <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
-                        <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
-                        <a href="<?php echo home_url(); ?>/detalle-prensa">Leer más</a>
+        <?php if ($last_posts) : ?>
+            <div class="splide splide1">
+                <div class="col-blog-2 splide__track">
+                    <div class="slider-blog splide__list">
+                        <?php foreach ($last_posts as $post) : ?>
+                            <?php
+                            $post_id = $post->ID;
+                            $post_title = $post->post_title;
+                            $post_image_id = get_post_thumbnail_id($post);
+                            $post_content = wp_strip_all_tags($post->post_content);
+                            $post_date = $post->post_date;
+                            $post_category = get_the_category($post_id);
+                            $post_date_format = date_i18n('j \d\e F\, Y', strtotime($post_date));
+                            $post_url = get_permalink($post_id);
+                            ?>
+                            <div class="card-blog splide__slide">
+                                <div class="img-blog" style="background: url(<?= get_image_url($post_image_id) ?>)">
+                                </div>
+
+                                <?php foreach ($post_category as $category) : ?>
+                                    <div class="btn-cat"><?= $category->name ?></div>
+                                <?php endforeach; ?>
+
+                                <p class="title-blog">
+                                    <?= substr($post_title, 0, 50) ?>
+                                    <?= strlen($post_title) > 50 ? '...' : '' ?>
+                                </p>
+                                <p class="text-blog">
+                                    <?= substr($post_content, 0, 80) ?>...
+                                </p>
+                                <a href="<?= $post_url ?>">Leer más</a>
+                            </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
-        </div>
+        <?php endif; ?>
 </section>
+
+
+<?php
+// wordpress last 4 post
+$category_posts = get_posts(array(
+    'posts_per_page' => 4,
+    'post_type' => 'post',
+    'orderby' => 'title',
+    'order' => 'DESC',
+    'post_status' => 'publish'
+));
+
+?>
 <section class="section-entradas bg-beige prensa_section2">
     <div class="container d-flex">
         <div class="row-etiquetas">
@@ -85,40 +94,33 @@
         </div>
     </div>
     <div class="container">
-   
-                <div class="slider-blog">
+
+        <?php if ($category_posts) : ?>
+            <div class="slider-blog">
+                <?php foreach ($category_posts as $post) : ?>
+                    <?php
+                    $post_id = $post->ID;
+                    $post_title = $post->post_title;
+                    $post_image_id = get_post_thumbnail_id($post);
+                    $post_content = wp_strip_all_tags($post->post_content);
+                    $post_date = $post->post_date;
+                    $post_category = get_the_category($post_id);
+                    $post_date_format = date_i18n('j \d\e F\, Y', strtotime($post_date));
+                    $post_url = get_permalink($post_id);
+                    ?>
                     <div class="card-blog">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668.png)">
+                        <div class="img-blog" style="background: url(<?= get_image_url($post_image_id) ?>)">
                         </div>
-                        <div class="btn-cat">Nutrición</div>
-                        <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
-                        <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
-                        <a href="<?php echo home_url(); ?>/detalle-prensa">Leer más</a>
+                        <?php foreach ($post_category as $category) : ?>
+                            <div class="btn-cat"><?= $category->name ?></div>
+                        <?php endforeach; ?>
+                        <p class="title-blog"><?= substr($post_title, 0, 100) ?></p>
+                        <p class="text-blog"><?= substr($post_content, 0, 100) ?>...</p>
+                        <a href="<?= $post_url ?>">Leer más</a>
                     </div>
-                    <div class="card-blog">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668-1.png">
-                        </div>
-                        <div class="btn-cat">Nutrición</div>
-                        <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
-                        <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
-                        <a href="<?php echo home_url(); ?>/detalle-prensa">Leer más</a>
-                    </div>
-                    <div class="card-blog">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Mask-group-35.png)">
-                        </div>
-                        <div class="btn-cat">Nutrición</div>
-                        <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
-                        <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
-                        <a href="<?php echo home_url(); ?>/detalle-prensa">Leer más</a>
-                    </div>
-                    <div class="card-blog">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668-1.png)">
-                        </div>
-                        <div class="btn-cat">Nutrición</div>
-                        <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
-                        <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
-                        <a href="<?php echo home_url(); ?>/detalle-prensa">Leer más</a>
-                    </div>
-                </div>
-        </div>
+                <?php endforeach; ?>
+
+            </div>
+        <?php endif ?>
+    </div>
 </section>
