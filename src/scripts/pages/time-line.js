@@ -152,7 +152,8 @@ function resizeEnd() {
 }
 
 // if ($(window).width() > 768) {
-//   let width_sxroll = $(".ul-time").get(0).scrollWidth;
+//   let width_sxroll = $(".ul-time").get(0).scrollWidth();
 //   width_sxroll = width_sxroll;
 //   $('.timeline-line').css('width', width_sxroll);
 // }
+
