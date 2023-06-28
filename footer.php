@@ -19,6 +19,7 @@ $prensa = get_field("prensa", 17);
 $sostenibilidad = get_field("sostenibilidad", 17);
 $trabaja_nosotros = get_field("trabaja_con_nosotros", 17);
 $preguntas_frecuentes = get_field("preguntas_frecuentes", 17);
+$contacto = get_field("contacto_url", 17);
 
 $libro_reclamaciones = get_field("libro_de_reclamaciones", 17);
 
@@ -208,7 +209,11 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 							Preguntas Frecuentes
 						</a>
 					</li>
-					<li></li>
+					<li>
+						<a href="<?= $contacto ?>">
+							Contacto
+						</a>
+					</li>
 				</ul>
 
 
