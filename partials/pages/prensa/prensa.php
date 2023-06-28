@@ -8,8 +8,54 @@ $last_posts = get_posts(array(
     'post_status' => 'publish'
 ));
 
-?>
+/**
+ * Get post categories only post entries
+ * @return array
+ */
+function get_categories_by_post_type($taxonomy = 'category', $post_type = 'post', $args = array())
+{
+    global $wpdb;
+    $sql = $wpdb->prepare(
+        "
+            SELECT
+                {$wpdb->prefix}term_taxonomy.term_id
+            FROM
+                {$wpdb->prefix}term_relationships
+            LEFT JOIN {$wpdb->prefix}posts ON {$wpdb->prefix}term_relationships.object_id = {$wpdb->prefix}posts.ID
+            LEFT JOIN {$wpdb->prefix}term_taxonomy ON {$wpdb->prefix}term_relationships.term_taxonomy_id = {$wpdb->prefix}term_taxonomy.term_taxonomy_id
+            WHERE
+                {$wpdb->prefix}term_taxonomy.taxonomy = '%s'
+            AND {$wpdb->prefix}posts.post_type = '%s'
+            GROUP BY
+                term_id
+        ",
+        $taxonomy,
+        $post_type,
+    );
+    $term_ids = $wpdb->get_col($sql);
+    if (empty($term_ids)) {
+        return array();
+    }
+    if (!empty($args['exclude'])) {
+        $exclude = is_string($args['exclude']) ? (array) $args['exclude'] : $args['exclude'];
+        $term_ids = array_filter($term_ids, function ($term_id) use ($exclude) {
+            return !in_array($term_id, $exclude);
+        });
+    }
+    $args = wp_parse_args(
+        $args,
+        array(
+            'taxonomy' => $taxonomy,
+            'hide_empty' => false,
+            'include' => $term_ids,
+        ),
+    );
+    return get_terms($args);
+}
 
+$categories = get_categories_by_post_type();
+
+?>
 
 <section>
     <div class="trabaja-head">
@@ -76,22 +122,27 @@ $category_posts = get_posts(array(
     'post_type' => 'post',
     'orderby' => 'title',
     'order' => 'DESC',
-    'post_status' => 'publish'
+    'post_status' => 'publish',
+    'category_name' => $_GET['categoria'] ? $_GET['categoria'] : ''
 ));
 
 ?>
 <section class="section-entradas bg-beige prensa_section2">
     <div class="container d-flex">
         <div class="row-etiquetas">
-            <div class="box-cat active">Lanzamientos</div>
-            <div class="box-cat">Innovación</div>
-            <div class="box-cat">Novedades</div>
-            <div class="box-cat">Entrevistas</div>
+            <?php if ($categories) : ?>
+                <?php foreach ($categories as $key => $category) : ?>
+                    <!-- <a href="<?= get_category_link($category->term_id) ?>" class="box-cat <?= $key == 0 ? 'active' : '' ?>"> -->
+                    <a href="<?= home_url("prensa/?categoria=$category->slug") ?>" class="box-cat <?= $key == 0 ? 'active' : '' ?>">
+                        <?= $category->name ?>
+                    </a>
+                <?php endforeach; ?>
+            <?php endif ?>
         </div>
-        <div class="row-buscador d-flex">
+        <form action="<?php echo home_url('/'); ?>" role="search" method="get" class="row-buscador d-flex">
             <input class="search-i" placeholder="Palabra clave" type="text">
-            <a class="btn-search" href="">Buscar</a>
-        </div>
+            <button type="submit" class="btn-search" href="">Buscar</button>
+        </form>
     </div>
     <div class="container">
 
