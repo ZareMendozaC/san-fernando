@@ -5,7 +5,7 @@ import Splide from "@splidejs/splide";
 
 
 $('#lista-cate').slick({
-  slidesToShow: 4,
+  slidesToShow: 5,
   infinite: true,
   dots: false,
   arrows: false,

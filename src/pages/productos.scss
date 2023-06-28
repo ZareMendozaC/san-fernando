@@ -1,4 +1,7 @@
 .section-productos{
+    .text, #tabs{
+        display: none;
+    }
     .general-banner-img{
         width: 100%;
         height: calc(100vw*(550/var(--width_base))) !important;

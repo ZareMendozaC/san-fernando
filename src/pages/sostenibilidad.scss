@@ -1,4 +1,7 @@
 .sostenebilidad-contain{
+    #logros{
+        display: none !important;
+    }
     section{
         margin-top: calculate(104)!important;
         margin-bottom: calculate(149)!important;
@@ -96,9 +99,6 @@
                 width: calculate(689);
                 margin: auto;
                 font-size: calculate(18);
-            }
-            #logros{
-                display: none;
             }
             .lista-logros{
                 .splide__track{

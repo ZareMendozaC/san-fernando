@@ -24,7 +24,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding-top: calc(100vw*(420/var(--width_base)));
+    padding-top: calc(100vw*(580/var(--width_base)));
 }
 .center-btn{
     display: flex;
@@ -538,7 +538,7 @@
     }
     .slick-dots {
         position: absolute;
-        top: calc(100vw * -50 / var(--width_base));
+        top: calc(100vw * 400 / var(--width_base));
         display: block;
         width: auto;
         padding-left: calc(100vw * 16 / var(--width_base)) !important;
@@ -586,7 +586,7 @@
     font-weight: 600;
     font-family: 'FuturaStd';
     color: var(--color-blue);
-    top: calculate(-50);
+    top: calculate(-80);
     svg{
         margin-left: calculate(10);
         width: calculate(33);
