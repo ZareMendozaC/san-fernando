@@ -1,4 +1,16 @@
 <h1 class="h1-marker">Productos</h1>
+<?php
+$category = get_the_category(); 
+$category_parent_id = $category[0]->category_parent;
+if ( $category_parent_id != 0 ) {
+    $category_parent = get_term( $category_parent_id, 'category' );
+    $css_slug = $category_parent->slug;
+} else {
+    $css_slug = $category[0]->slug;
+}
+$current_category_name = $category_parent->name;
+//echo $current_category_name;
+?>
 <section class="container-full section-productos">
     <div class="general-banner-img" style="background: url('<?php echo home_url(); ?>/wp-content/uploads/2023/06/image-112-1.png');">
     </div>
@@ -7,42 +19,92 @@
         <p class="p-subtitle-2 color-gris">Conoce todos nuestros productos de gran sabor</p>
     </div>
     <div class="row-icon-productos">
-        <div class="card-icon active">
+    <a href="<?php echo home_url(); ?>/category/pollo">
+      <?php
+      if($current_category_name=='pollo'){
+        echo '<div class="card-icon active">';
+      }else{
+        echo '<div class="card-icon">';
+      }
+      ?>
             <div class="circle-icon bg-skyblue">
                 <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4796.png" alt="">
             </div>
             <p>Pollo</p>
         </div>
-        <div class="card-icon">
+    </a>
+    <a href="<?php echo home_url(); ?>/category/pavo">
+        <?php
+          if($current_category_name=='pavo'){
+            echo '<div class="card-icon active">';
+          }else{
+            echo '<div class="card-icon">';
+          }
+        ?>
             <div class="circle-icon bg-skyblue">
                 <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4795.png" alt="">
             </div>
             <p>Pavo</p>
         </div>
-        <div class="card-icon">
+    </a>
+    <a href="<?php echo home_url(); ?>/category/embutidos">
+        <?php
+          if($current_category_name=='embutidos'){
+            echo '<div class="card-icon active">';
+          }else{
+            echo '<div class="card-icon">';
+          }
+        ?>
             <div class="circle-icon bg-skyblue">
                 <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/sausages-1-1.png" alt="">
             </div>
             <p>Embutidos</p>
         </div>
-        <div class="card-icon">
+    </a>
+    <a href="<?php echo home_url(); ?>/category/congelados">
+        <?php
+          if($current_category_name=='congelados'){
+            echo '<div class="card-icon active">';
+          }else{
+            echo '<div class="card-icon">';
+          }
+        ?>
             <div class="circle-icon bg-skyblue">
                 <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4797.png" alt="">
             </div>
             <p>Congelados</p>
         </div>
-        <div class="card-icon">
+    </a>
+    <a href="<?php echo home_url(); ?>/category/cerdo">
+        <?php
+          if($current_category_name=='cerdo'){
+            echo '<div class="card-icon active">';
+          }else{
+            echo '<div class="card-icon">';
+          }
+        ?>
             <div class="circle-icon bg-skyblue">
                 <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4792.png" alt="">
             </div>
             <p>Cerdo</p>
         </div>
-        <div class="card-icon">
+    </a>
+    <a href="<?php echo home_url(); ?>/category/huevo">
+        <?php
+          if($current_category_name=='huevo'){
+            echo '<div class="card-icon active">';
+          }else{
+            echo '<div class="card-icon">';
+          }
+        ?>
             <div class="circle-icon bg-skyblue">
                 <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4793.png" alt="">
             </div>
             <p>Huevo</p>
         </div>
+        </a>
+        
+      
     </div>
     <div class="container">
         <img class="line-pick" src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-14.png" alt="">
@@ -93,7 +155,7 @@
             </div>
         </div>
         <div class="col-img-prod">
-            <div class="etiqueta-rango">
+            <div class="etiqueta-rango" style="display: none;">
                 <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_880_7871)">
                         <path d="M19.3427 0.755688C19.3232 0.83857 19.3037 0.921452 19.2891 1.00433C19.0014 2.3792 17.846 3.3299 16.4418 3.33965C15.7105 3.34453 14.9841 3.33965 14.2528 3.33965C14.1845 3.33965 14.1212 3.33965 14.0383 3.33965C14.0383 3.8662 14.0383 4.37812 14.0383 4.91441C14.204 4.91441 14.3649 4.91441 14.5258 4.91441C15.7398 4.91441 16.5394 5.71398 16.5394 6.9182C16.5394 9.94095 16.5394 12.9637 16.5394 15.9865C16.5394 17.1956 15.7398 17.9951 14.5258 18C11.5079 18.0049 8.49493 18 5.47706 18C5.38443 18 5.29667 17.9951 5.20403 17.9854C4.25333 17.9171 3.48302 17.1273 3.46839 16.1717C3.45376 15.2356 3.46351 14.2996 3.46351 13.3635C3.46351 11.1988 3.46351 9.03413 3.46351 6.86945C3.46351 5.92849 4.03394 5.18256 4.91639 4.97291C5.08703 4.93391 5.26254 4.92904 5.43805 4.91928C5.61357 4.90953 5.78908 4.91928 5.96947 4.91928C5.96947 4.38787 5.96947 3.88082 5.96947 3.35428C5.90122 3.3494 5.83784 3.34453 5.77446 3.34453C5.06265 3.34453 4.35084 3.34453 3.63903 3.34453C2.0789 3.34453 0.8893 2.30607 0.674782 0.760563C0.660156 0.648429 0.660156 0.546046 0.660156 0.443662C0.669907 0.204767 0.816169 0.0438787 1.05019 0.0146262C1.11844 0.00487541 1.18182 0.00487541 1.25008 0.00487541C7.08107 0.00487541 12.9121 0.00487541 18.7479 0C19.0161 0 19.2208 0.0682557 19.3476 0.316901C19.3427 0.463164 19.3427 0.609426 19.3427 0.755688ZM15.6667 11.4572C15.6667 9.9507 15.652 8.43933 15.6715 6.93283C15.6813 6.22589 15.1547 5.78223 14.5258 5.78223C11.5079 5.79686 8.49493 5.79686 5.47706 5.78223C4.84813 5.77736 4.32646 6.22589 4.33134 6.93283C4.35084 9.9507 4.34596 12.9637 4.33134 15.9816C4.32646 16.6203 4.76525 17.1322 5.47706 17.1322C8.49493 17.1224 11.5079 17.1224 14.5258 17.1322C15.2474 17.1371 15.6813 16.6154 15.6715 15.9816C15.6472 14.4702 15.6667 12.9637 15.6667 11.4572ZM1.59136 0.887324C1.61086 0.960455 1.62061 1.00921 1.63524 1.05309C1.90338 1.90141 2.68345 2.4572 3.61953 2.4572C4.61899 2.4572 5.61357 2.45233 6.61303 2.44745C8.87522 2.44745 11.1374 2.44745 13.3996 2.44745C14.3991 2.44745 15.3936 2.4572 16.3931 2.4572C17.334 2.4572 18.1044 1.90141 18.3774 1.05309C18.392 1.00433 18.4018 0.950704 18.4164 0.887324C12.795 0.887324 7.20783 0.887324 1.59136 0.887324ZM13.1412 3.35428C11.035 3.35428 8.95322 3.35428 6.87142 3.35428C6.87142 3.87595 6.87142 4.39274 6.87142 4.90466C8.96785 4.90466 11.0496 4.90466 13.1412 4.90466C13.1412 4.38299 13.1412 3.87595 13.1412 3.35428Z" fill="#DF0002" />
@@ -108,11 +170,14 @@
                 </svg>
                 Rango de 0.9 a 1.3 kg.
             </div>
-            <div class="div-img" style="background: url('<?php echo home_url(); ?>/wp-content/uploads/2023/06/272-1.png');">
+            <?php
+            $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+            ?>
+            <div class="div-img" style="background: url('<?php echo $feat_image; ?>');">
             </div>
         </div>
         <div class="col-detail-prod">
-            <p class="title">Muslo de pollo <br>fresco termoformado</p>
+            <p class="title"><?php echo the_title(); ?></p>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt vestibulum nisl, ac faucibus neque. Proin a molestie enim. Praesent viverra scelerisque lacus, vel tincidunt leo. Praesent dapibus velit arcu.</p>
             <div id="tabs">
                 <ul>
