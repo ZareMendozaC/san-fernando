@@ -41,14 +41,25 @@ $('#slider-blog-list').slick({
     }
   ]
 })
-
+  //agregando variable al path
+  $(location).attr('href');
+  var bn_pathname = window.location.href;
 $( ".btn-lista-cat" ).on( "click", function() {
+
   $( ".btn-lista-cat" ).removeClass('active');
   $(this).addClass('active');
   let producto_html= '';
   $('.lista-prod a').remove();
     let padre = $('#catPadre').val();
     let hija = $(this).attr('data-category');
+
+    let url_hija= hija.toLowerCase().replace(' ', '-');
+    
+  
+    var en_pathname = bn_pathname+'/'+url_hija;
+    history.pushState(null, "", en_pathname);
+
+
     //console.log( wpCredentials.url);
     jQuery.ajax({
       type : "post",

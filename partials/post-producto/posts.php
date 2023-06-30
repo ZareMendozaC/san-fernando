@@ -14,14 +14,14 @@ $args = array(
 
 <h1 class="h1-marker">Productos</h1>
 <section id="post-category" class="container-full section-productos">
-    <div class="general-banner-img" style="display: none; background: url('<?php echo home_url(); ?>/wp-content/uploads/2023/06/image-112-1.png');">
+    <div class="general-banner-img" style="background: url('<?php echo $current_category->description; ?>');">
     </div>
     <div class="container pdt-productos">
         <h2 class="color-blue text-center">Productos</h2>
         <p class="p-subtitle-2 color-gris">Conoce todos nuestros productos de gran sabor</p>
     </div>
     <div class="row-icon-productos">
-    <a href="<?php echo home_url(); ?>/category/pollo">
+    <a href="<?php echo home_url(); ?>/categoria/pollo">
       <?php
       if($current_category->name=='pollo'){
         echo '<div class="card-icon active">';
@@ -35,7 +35,7 @@ $args = array(
             <p>Pollo</p>
         </div>
     </a>
-    <a href="<?php echo home_url(); ?>/category/pavo">
+    <a href="<?php echo home_url(); ?>/categoria/pavo">
         <?php
           if($current_category->name=='pavo'){
             echo '<div class="card-icon active">';
@@ -49,7 +49,7 @@ $args = array(
             <p>Pavo</p>
         </div>
     </a>
-    <a href="<?php echo home_url(); ?>/category/embutidos">
+    <a href="<?php echo home_url(); ?>/categoria/embutidos">
         <?php
           if($current_category->name=='embutidos'){
             echo '<div class="card-icon active">';
@@ -63,7 +63,7 @@ $args = array(
             <p>Embutidos</p>
         </div>
     </a>
-    <a href="<?php echo home_url(); ?>/category/congelados">
+    <a href="<?php echo home_url(); ?>/categoria/congelados">
         <?php
           if($current_category->name=='congelados'){
             echo '<div class="card-icon active">';
@@ -77,7 +77,7 @@ $args = array(
             <p>Congelados</p>
         </div>
     </a>
-    <a href="<?php echo home_url(); ?>/category/cerdo">
+    <a href="<?php echo home_url(); ?>/categoria/cerdo">
         <?php
           if($current_category->name=='cerdo'){
             echo '<div class="card-icon active">';
@@ -91,7 +91,7 @@ $args = array(
             <p>Cerdo</p>
         </div>
     </a>
-    <a href="<?php echo home_url(); ?>/category/huevo">
+    <a href="<?php echo home_url(); ?>/categoria/huevo">
         <?php
           if($current_category->name=='huevo'){
             echo '<div class="card-icon active">';

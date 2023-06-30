@@ -1,5 +1,6 @@
 <?php 
     $imagen_banner= get_field('imagen_banner');
+    $imagen_banner_mobile= get_field('imagen_banner_mobile');
     $titulo_productos= get_field('titulo_productos');
     $descripcion_productos= get_field('descripcion_productos');
     $titulo_llena_tu_refri= get_field('titulo_llena_tu_refri');
@@ -10,14 +11,16 @@
 ?>
 <h1 class="h1-marker">Productos</h1>
 <section class="container-full section-productos">
-    <div class="general-banner-img" style="background: url('<?php echo $imagen_banner['url'];?>');">
+    <div class="general-banner-img show-desktop" style="background: url('<?php echo $imagen_banner['url'];?>');">
+    </div>
+    <div class="general-banner-img show-mobile" style="background: url('<?php echo $imagen_banner_mobile['url'];?>');">
     </div>
     <div class="container pdt-productos">
         <h2 class="color-blue text-center"><?= $titulo_productos; ?></h2>
         <p class="p-subtitle-2 color-gris"><?= $descripcion_productos; ?></p>
     </div>
     <div class="row-icon-productos">
-        <a href="<?php echo home_url(); ?>/category/pollo">
+        <a href="<?php echo home_url(); ?>/categoria/pollo">
             <div class="card-icon">
                 <div class="circle-icon bg-blue">
                     <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4796.png" alt="">
@@ -25,7 +28,7 @@
                 <p>Pollo</p>
             </div>
         </a>
-        <a href="<?php echo home_url(); ?>/category/pavo">
+        <a href="<?php echo home_url(); ?>/categoria/pavo">
             <div class="card-icon">
                 <div class="circle-icon bg-blue">
                     <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4795.png" alt="">
@@ -33,7 +36,7 @@
                 <p>Pavo</p>
             </div>
         </a>
-        <a href="<?php echo home_url(); ?>/category/embutidos">
+        <a href="<?php echo home_url(); ?>/categoria/embutidos">
             <div class="card-icon">
                 <div class="circle-icon bg-blue">
                     <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/sausages-1-1.png" alt="">
@@ -41,7 +44,7 @@
                 <p>Embutidos</p>
             </div>
         </a>
-        <a href="<?php echo home_url(); ?>/category/congelados">
+        <a href="<?php echo home_url(); ?>/categoria/congelados">
             <div class="card-icon">
                 <div class="circle-icon bg-blue">
                     <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4797.png" alt="">
@@ -49,7 +52,7 @@
                 <p>Congelados</p>
             </div>
         </a>
-        <a href="<?php echo home_url(); ?>/category/cerdo">
+        <a href="<?php echo home_url(); ?>/categoria/cerdo">
             <div class="card-icon">
                 <div class="circle-icon bg-blue">   
                     <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4792.png" alt="">
@@ -57,7 +60,7 @@
                 <p>Cerdo</p>
             </div>
         </a>
-        <a href="<?php echo home_url(); ?>/category/huevo">
+        <a href="<?php echo home_url(); ?>/categoria/huevo">
             <div class="card-icon">
                 <div class="circle-icon bg-blue">
                     <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4793.png" alt="">

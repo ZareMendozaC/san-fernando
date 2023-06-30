@@ -359,11 +359,11 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 
 		<div class="terminos-footer">
 			<ul>
-				<li>
+				<!-- <li>
 					<a href="<?php echo $terminos_condiciones ?>">
 						Términos y condiciones de campañas
 					</a>
-				</li>
+				</li> -->
 				<li>
 					<a href="<?php echo $politicas_privacidad ?>">
 						Políticas de privacidad
