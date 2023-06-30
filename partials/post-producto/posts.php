@@ -333,6 +333,7 @@ get_template_part('loop'); // if no sub categories exist, show the posts
     </div>
 </section>
 <?php
+
 $list_subcat = array();
 if ( !empty($cat) ) $list_subcat = get_categories( ['hide_empty' => false, 'parent' => $cat] );
 
@@ -343,15 +344,10 @@ if ( count($list_subcat)):
 
 		$category_link = get_category_link( $item_subcat->term_id );
     $list_subsubcat= get_categories(['hide_empty'=> false, 'parent' => $item_subcat->term_id]);
-   // echo '1'.$item_subcat->name;
-
-   var_dump($list_subcat);
-
-  foreach($list_subsubcat as $item){
-    $list_subsubsubcat= get_categories(['hide_empty'=> false, 'parent' => $item->term_id]);
-    var_dump($list_subsubsubcat);
-  }
-  echo "------<br>";
+    echo $item_subcat->term_id;
+    echo "------ <br>";
+   // $list_subsubsubcat = get_categories(['hide_empty'=> false, 'parent' => $item_subsubcat->term_id]);
+   // echo $list_subsubsubcat[0]->name;
 	}
 	echo "</div>";
 endif;
