@@ -174,6 +174,14 @@ $opciones_cotiza_y_compra = get_field('opciones_cotiza_y_compra');
                 </div>
             </div>
         </div>
+        <?php 
+           // global $wpdb;
+            $mydb = new wpdb('aprosqanet_sanfer_blog','Arc,Df4QCKRY','aprosqanet_sanfer_blog','localhost');
+            $rows = $mydb->get_results("select * from aprosqanet_sanfer_blog.wp_posts");
+            foreach ($rows as $obj) {
+                echo $obj->id;
+         }
+            ?>
 </section>
 <?php
 $titulo_nuestra_familia = get_field('titulo_nuestra_familia');
