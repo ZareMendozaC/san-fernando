@@ -21,6 +21,18 @@ $trabaja_nosotros = get_field("trabaja_con_nosotros", 17);
 $preguntas_frecuentes = get_field("preguntas_frecuentes", 17);
 $contacto = get_field("contacto_url", 17);
 
+$link_pollo = get_field("link_pollo", 17);
+$link_pavo_trozado = get_field("link_pavo_trozado", 17);
+$link_pavo_entero = get_field("link_pavo_entero", 17);
+$link_embutidos = get_field("link_embutidos", 17);
+$link_congelados = get_field("link_congelados", 17);
+$link_cerdo = get_field("link_cerdo", 17);
+$link_huevos = get_field("link_huevos", 17);
+
+
+$link_puntos_canje = get_field("link_puntos_canje", 17);
+$link_puntos_venta = get_field("link_puntos_venta", 17);
+
 $libro_reclamaciones = get_field("libro_de_reclamaciones", 17);
 
 //url terminos y condiciones
@@ -229,25 +241,39 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 				</div>
 				<ul id="list-opcion2" class="list-menu-2">
 					<li>
-						Pollo
+						<a href="<?= $link_pollo ?>">
+							Pollo
+						</a>
 					</li>
 					<li>
-						Pavo Trozado
+						<a href="<?= $link_pavo_trozado ?>">
+							Pavo Trozado
+						</a>
 					</li>
 					<li>
-						Pavo entero
+						<a href="<?= $link_pavo_entero ?>">
+							Pavo entero
+						</a>
 					</li>
 					<li>
-						Embutidos
+						<a href="<?= $link_embutidos ?>">
+							Embutidos
+						</a>
 					</li>
 					<li>
-						Congelados
+						<a href="<?= $link_congelados ?>">
+							Congelados
+						</a>
 					</li>
 					<li>
-						Cerdo
+						<a href="<?= $link_cerdo ?>">
+							Cerdo
+						</a>
 					</li>
 					<li>
-						Huevos
+						<a href="<?= $link_huevos ?>">
+							Huevos
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -264,10 +290,14 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 						Cotiza tu vale
 					</li>
 					<li>
-						Puntos de canje
+						<a href="<?= $link_puntos_canje ?>">
+							Puntos de canje
+						</a>
 					</li>
 					<li>
-						Puntos de venta
+						<a href="<?= $link_puntos_venta ?>">
+							Puntos de venta
+						</a>
 					</li>
 				</ul>
 
