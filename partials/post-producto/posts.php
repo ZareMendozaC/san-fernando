@@ -343,42 +343,16 @@ if ( count($list_subcat)):
 
 		$category_link = get_category_link( $item_subcat->term_id );
     $list_subsubcat= get_categories(['hide_empty'=> false, 'parent' => $item_subcat->term_id]);
+   // echo '1'.$item_subcat->name;
+
+   var_dump($list_subcat);
 
   foreach($list_subsubcat as $item){
-  
-    query_posts('cat=97&orderby;=date&order;=ASC&posts;_per_page=-1');
-    if ( have_posts() ){
-        $content = '<ul>';
-        while ( have_posts() ){
-            the_post();
-            $content .= the_title('<li><a href="'.get_permalink().'">', '</a></li>', true);
-        }
-        $content .= '</ul>';
-    }
-    //Reset query
-    wp_reset_query();
-  
-   
-    
+    $list_subsubsubcat= get_categories(['hide_empty'=> false, 'parent' => $item->term_id]);
+    var_dump($list_subsubsubcat);
   }
-  //echo "------<br>";
+  echo "------<br>";
 	}
 	echo "</div>";
- 
-
 endif;
 ?>
-<ul>
-    <?php
-    $args = array( 'posts_per_page' => 5, 'offset'=> 1, 'category' => 145 );
-
-    $myposts = get_posts( $args );
-    foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-        <li>
-            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-        </li>
-    <?php endforeach; 
-    wp_reset_postdata();?>
-
-
-    </ul>
