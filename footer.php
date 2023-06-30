@@ -229,25 +229,39 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 				</div>
 				<ul id="list-opcion2" class="list-menu-2">
 					<li>
+						<a href="#">
 						Pollo
+						</a>
 					</li>
 					<li>
+						<a href="#">
 						Pavo Trozado
+						</a>
 					</li>
 					<li>
+						<a href="#">
 						Pavo entero
+						</a>
 					</li>
 					<li>
+						<a href="#">
 						Embutidos
+						</a>
 					</li>
 					<li>
+						<a href="#">
 						Congelados
+						</a>
 					</li>
 					<li>
+						<a href="#">
 						Cerdo
+						</a>
 					</li>
 					<li>
+						<a href="#">
 						Huevos
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -264,10 +278,14 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 						Cotiza tu vale
 					</li> -->
 					<li>
+						<a href="#">
 						Puntos de canje
+						</a>
 					</li>
 					<li>
+						<a href="#">
 						Puntos de venta
+						</a>
 					</li>
 				</ul>
 
