@@ -158,7 +158,7 @@ function resizeEnd() {
   slowLoop();
 }
 
-if (window.location.href.indexOf("nosotros") !== -1) {
+if (window.location.href.indexOf("nosotros") !== -1 && window.location.href.split("nosotros")[1].length === 0) {
   if ($(window).width() > 768) {
     let width_sxroll = $(".ul-time").get(0).scrollWidth;
     width_sxroll = width_sxroll;
