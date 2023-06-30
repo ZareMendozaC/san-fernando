@@ -135,9 +135,9 @@
 
   <div class="menu_blog">
     <ul class="list-group">
-      <li class="list-group-item"><a href="#">Recetas</a></li>
-      <li class="list-group-item"><a href="#">Nutrición</a></li>
-      <li class="list-group-item"><a href="#">Soluciones</a></li>
+      <li class="list-group-item"><a href="https://apros-qa.net.pe/sanfer/blog/categoria/recetas/">Recetas</a></li>
+      <li class="list-group-item"><a href="https://apros-qa.net.pe/sanfer/blog/categoria/nutricion/">Nutrición</a></li>
+      <li class="list-group-item"><a href="https://apros-qa.net.pe/sanfer/blog/categoria/soluciones/">Soluciones</a></li>
       <!-- <li class="list-group-item"><a href="#">Calculadora de proteina</a></li>
       <li class="list-group-item"><a href="#">Crea tu menú</a></li> -->
     </ul>
