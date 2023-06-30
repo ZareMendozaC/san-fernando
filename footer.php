@@ -229,25 +229,39 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 				</div>
 				<ul id="list-opcion2" class="list-menu-2">
 					<li>
+						<a href="#">
 						Pollo
+						</a>
 					</li>
 					<li>
+						<a href="#">
 						Pavo Trozado
+						</a>
 					</li>
 					<li>
+						<a href="#">
 						Pavo entero
+						</a>
 					</li>
 					<li>
+						<a href="#">
 						Embutidos
+						</a>
 					</li>
 					<li>
+						<a href="#">
 						Congelados
+						</a>
 					</li>
 					<li>
+						<a href="#">
 						Cerdo
+						</a>
 					</li>
 					<li>
+						<a href="#">
 						Huevos
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -260,14 +274,18 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 					</svg>
 				</div>
 				<ul id="list-opcion3" class="list-menu-3">
-					<li>
+					<!-- <li>
 						Cotiza tu vale
-					</li>
+					</li> -->
 					<li>
+						<a href="#">
 						Puntos de canje
+						</a>
 					</li>
 					<li>
+						<a href="#">
 						Puntos de venta
+						</a>
 					</li>
 				</ul>
 
@@ -276,22 +294,22 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 			<div class="products-buy">
 				<ul>
 					<li>
-						<a href="https://delivery.redsanfernando.pe/">
+						<a href="https://delivery.redsanfernando.pe/" target="_blank">
 						Compra aquí
 						</a>
 					</li>
 					<li>
-						<a href="https://www.san-fernando.com.pe/blog/">
+						<a href="https://www.san-fernando.com.pe/blog/" target="_blank">
 						Blog Bien Servido
 						</a>
 					</li>
 					<li>
-						<a href="https://sites.google.com/a/san-fernando.com.pe/sanfernetprd/home">
+						<a href="https://sites.google.com/a/san-fernando.com.pe/sanfernetprd/home" target="_blank">
 						Intranet	
 						</a>						
 					</li>
 					<li>
-						<a href="https://clientesyproveedores.san-fernando.com.pe/">
+						<a href="https://clientesyproveedores.san-fernando.com.pe/" target="_blank">
 						Acceso a proveedores y clientes
 						</a>
 					</li>
