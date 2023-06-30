@@ -9,13 +9,10 @@
   display: flex;
   justify-content: space-between;
   z-index: 900;
-  --mask: conic-gradient(
-      from -45deg at bottom,
+  --mask: conic-gradient(from -45deg at bottom,
       #0000,
       #000 1deg 89deg,
-      #0000 90deg
-    )
-    50%/16px 101%;
+      #0000 90deg) 50%/16px 101%;
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
@@ -36,6 +33,7 @@
 .div_menu1 {
   //  margin-top: calculate(10);
 }
+
 .menu {
   height: 100%;
   display: flex;
@@ -58,12 +56,15 @@
     a {
       color: var(--color-white);
     }
+
     a .arrow path {
       fill: var(--color-white);
     }
+
     a:hover {
       color: var(--color-celeste-light);
     }
+
     a .arrow path:hover {
       fill: var(--color-celeste-light);
     }
@@ -74,6 +75,7 @@
   display: flex;
   justify-content: flex-end;
 }
+
 .menu2 {
   height: 100%;
   display: flex;
@@ -97,6 +99,7 @@
     a {
       color: var(--color-blue);
     }
+
     a:hover {
       color: var(--color-gris);
     }
@@ -107,20 +110,24 @@
   display: flex !important;
   justify-content: space-evenly;
   gap: 5px;
+
   // padding: 0 4px;
   .ico-text-btn-buy-dsk {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
+
     .ico-btn-buy {
       width: 30px;
     }
   }
+
   .arrow {
     width: 12px;
   }
 }
+
 .btn-blog {
   .arrow {
     width: 12px;
@@ -134,18 +141,22 @@
   justify-content: space-evenly;
   gap: calculate(5);
   padding: 0 10px;
+
   .ico-text-btn-vale-dsk {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     color: var(--color-blue);
+
     .ico-btn-buy {
       width: 30px;
     }
   }
+
   .arrow {
     width: 12px;
+
     path {
       fill: var(--color-blue) !important;
     }
@@ -154,6 +165,7 @@
 
 .btn-vales:hover {
   background-color: var(--color-celeste);
+
   .ico-text-btn-vale-dsk:hover {
     color: var(--color-gris);
   }
@@ -199,30 +211,39 @@
 .menu_compras,
 .menu_vales {
   width: calculate(272);
+
   .list-group {
     list-style-type: none;
     padding: 0;
+
     li {
-      background: #daf2f8;
+      background: #fff;
+      // background: #daf2f8;
       padding: calculate(16);
     }
+
     li:nth-child(odd) {
       background: var(--color-white);
     }
+
     li:first-child {
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
     }
+
     li:last-child {
       border-bottom-left-radius: 6px;
       border-bottom-right-radius: 6px;
     }
+
     &.alter {
       li {
         background: var(--color-white);
       }
+
       li:nth-child(odd) {
-        background: #daf2f8;
+        // background: #daf2f8;
+        background: #fff;
       }
     }
   }
@@ -244,6 +265,7 @@
   line-height: calc(100vw * (20 / var(--width_base)));
   font-family: "FuturaStd";
   color: var(--color-blue);
+
   a:hover {
     color: var(--color-blue);
   }

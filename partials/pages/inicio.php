@@ -99,7 +99,7 @@ $opciones_cotiza_y_compra = get_field('opciones_cotiza_y_compra');
                         <img src="<?= $icono['url']; ?>" alt="">
                         <div class="card-cotiza-text">
                             <p><?= $titulo_quiero; ?></p>
-                            <a class="btn-c" href="<?= $link_boton_quiero; ?>"><?= $texto_boton_quiero; ?></a>
+                            <a class="btn-c" href="<?= $link_boton_quiero; ?>" target="_blank"><?= $texto_boton_quiero; ?></a>
                         </div>
                     </div>
                 <?php endwhile; ?>
@@ -274,10 +274,10 @@ $listado_de_certificaciones = get_field('listado_de_certificaciones');
                 <?php while (have_rows('listado_de_certificaciones')) : the_row();
                     $image = get_sub_field('logo_certificacion');
                     $nombre_certificacion = get_sub_field('nombre_certificacion');
-                    $detalle= get_sub_field('detalle');
+                    $detalle = get_sub_field('detalle');
                 ?>
                     <div class="card-certificacion">
-                        <div class="data-certificacion"><?= $detalle;?></div>
+                        <div class="data-certificacion"><?= $detalle; ?></div>
                         <svg class="show-desktop" width="162" height="9" viewBox="0 0 162 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 4.28711H158" stroke="#96DAEA" stroke-width="8" stroke-linecap="round" />
                         </svg>
@@ -290,10 +290,10 @@ $listado_de_certificaciones = get_field('listado_de_certificaciones');
                 <?php endwhile; ?>
             <?php endif; ?>
             <div class="modal-certificacion">
-            <svg class="close-certificacion" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M28.6504 7.34999C22.8004 1.49999 13.2004 1.49999 7.35039 7.34999C1.50039 13.2 1.50039 22.8 7.35039 28.65C13.2004 34.5 22.6504 34.5 28.5004 28.65C34.3504 22.8 34.5004 13.2 28.6504 7.34999ZM22.2004 24.3L18.0004 20.1L13.8004 24.3L11.7004 22.2L15.9004 18L11.7004 13.8L13.8004 11.7L18.0004 15.9L22.2004 11.7L24.3004 13.8L20.1004 18L24.3004 22.2L22.2004 24.3Z" fill="#004A96"/>
-            </svg>
-            <div id="dCertificacion"></div>
+                <svg class="close-certificacion" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.6504 7.34999C22.8004 1.49999 13.2004 1.49999 7.35039 7.34999C1.50039 13.2 1.50039 22.8 7.35039 28.65C13.2004 34.5 22.6504 34.5 28.5004 28.65C34.3504 22.8 34.5004 13.2 28.6504 7.34999ZM22.2004 24.3L18.0004 20.1L13.8004 24.3L11.7004 22.2L15.9004 18L11.7004 13.8L13.8004 11.7L18.0004 15.9L22.2004 11.7L24.3004 13.8L20.1004 18L24.3004 22.2L22.2004 24.3Z" fill="#004A96" />
+                </svg>
+                <div id="dCertificacion"></div>
 
             </div>
         </div>
