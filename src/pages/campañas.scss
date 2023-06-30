@@ -58,6 +58,7 @@
 .grid .grid-item img,video{
     width: 100% !important;
     height: 100% !important;
+    border-radius: calculate(20);
 }
 
 .subdiv_part_text{
