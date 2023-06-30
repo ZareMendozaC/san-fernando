@@ -106,7 +106,7 @@
       background-color: var(--color-celeste-light);
       height: calculate(280);
       width: calculate(634);
-      padding: calculate(71);
+      padding: calculate(51) calculate(71);
       border-left: 6px solid #96daea !important;
       .texto_box {
         color: var(--color-plomo);
@@ -115,7 +115,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // margin-bottom: calculate(10);
+        margin-bottom: calculate(25);
         svg {
           width: calculate(52);
         }
@@ -256,7 +256,7 @@ color: var(--color-celeste-light);
 
 .p_width-mt{
   width: calculate(420);
-  margin-top: calculate(30);
+  // margin-top: calculate(30);
 }
 .section_time_line{
   position: relative;

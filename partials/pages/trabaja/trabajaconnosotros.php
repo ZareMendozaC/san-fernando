@@ -27,7 +27,7 @@ $img_1_trabaja = get_field("img_1_trabaja");
                 <?php echo $descripcion_trabaja ?>
             </p>
 
-            <a class="button-oferta" href="<?= $url_boton_trabaja ?>">
+            <a class="button-oferta" href="<?= $url_boton_trabaja ?>" target="_blank">
                 <?php echo $button_texto ?>
             </a>
 
@@ -68,7 +68,7 @@ $img_1_trabaja = get_field("img_1_trabaja");
 
             <p><?php echo $descripcion2_trabaja ?></p>
 
-            <a href=""><?php echo $text_boton_trabaja ?></a>
+            <a href="" target="_blank"><?php echo $text_boton_trabaja ?></a>
         </div>
 
 

@@ -82,18 +82,19 @@ if (window.matchMedia("(min-width: 768px)").matches) {
     observer.observe($(this)[0]);
   });
 }
-var contar = 0;
+let contar = 0;
 timeline_events.each(function (index) {
   $(this).find(".timeline-point").hover(function (e) {
-    console.log($(e.target).data('point'));
+    // console.log($(e.target).data('point'));
     let indice = $(e.target).data('point');
     contar = indice;
-    if ($(this).attr("done")) {
-      timelineProgress(index);
+    // console.log($(this).parent());
+    if ($(this).parent().attr("done")) {
+      timelineProgress(index+1);
 
       // hide all timeline events from last upto the point clicked
       timeline_events.each(function (idx) {
-        if (idx >= index) {
+        if (idx >= index+1) {
           hideTime($(this));
         }
       });
@@ -123,13 +124,15 @@ timeline_events.each(function (index) {
 // });
 
 btn_mas.click(function () {
-  if (contar < timeline_events.length) {
+  if (contar <= timeline_events.length) {
     contar++;
     $($(".li-time")[contar]).find(".timeline-point").trigger("mouseenter");
     // if(contar != 0){
-      $('.section_linea').scrollLeft($('.section_linea').scrollLeft() + 100);
+      $('.section_linea').scrollLeft($('.section_linea').scrollLeft() + 150);
     // }
     // contar++;
+  }else{
+    $('.section_linea').scrollLeft($('.section_linea').scrollLeft() + 120);
   }
 
 });
@@ -137,9 +140,10 @@ btn_mas.click(function () {
 btn_menos.click(function () {
   if (contar > 0) {
     contar--;
-    $($(".li-time")[contar]).find(".timeline-point").trigger("mouseenter");
+    // $($(".li-time")[contar]).find(".timeline-point").trigger("mouseenter");
   }
-  $('.section_linea').scrollLeft($('.section_linea').scrollLeft() - 100);
+  $('.section_linea').scrollLeft($('.section_linea').scrollLeft() - 120);
+
 });
 
 
@@ -154,7 +158,7 @@ function resizeEnd() {
   slowLoop();
 }
 
-if (window.location.href.indexOf("nosotros") !== -1) {
+if (window.location.href.indexOf("nosotros") !== -1 && window.location.href.split("nosotros")[1].length === 0) {
   if ($(window).width() > 768) {
     let width_sxroll = $(".ul-time").get(0).scrollWidth;
     width_sxroll = width_sxroll;
