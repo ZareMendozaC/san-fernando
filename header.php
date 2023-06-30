@@ -62,7 +62,7 @@
       <div class="div_menu2">
         <ul class="menu2">
           <li class="menu2-item"><a href="<?php echo home_url(); ?>/nosotros">Nosotros</a></li>
-          <li class="menu2-item"><a href="<?php echo home_url(); ?>/prensa">Prensa</a></li>
+          <!--<li class="menu2-item"><a href="<?php echo home_url(); ?>/prensa">Prensa</a></li>-->
           <li class="menu2-item"><a href="<?php echo home_url(); ?>/sostenibilidad">Sostenibilidad</a></li>
           <li class="menu2-item"><a href="<?php echo home_url(); ?>/trabaja-con-nosotros">Trabaja con nosotros</a></li>
         </ul>

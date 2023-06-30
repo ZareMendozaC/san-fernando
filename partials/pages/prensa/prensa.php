@@ -1,7 +1,7 @@
 <?php
 // wordpress last 4 post
 $last_posts = get_posts(array(
-    'posts_per_page' => 1,
+    'posts_per_page' => 4,
     'post_type' => 'post',
     'orderby' => 'post_date',
     'order' => 'DESC',
@@ -123,7 +123,7 @@ $category_posts = get_posts(array(
     'orderby' => 'title',
     'order' => 'DESC',
     'post_status' => 'publish',
-    'category_name' => $_GET['categoria'] ? $_GET['categoria'] : ''
+    'category_name' => array_key_exists('categoria', $_GET) ? $_GET['categoria']  : ''
 ));
 
 ?>
