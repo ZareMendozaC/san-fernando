@@ -1,7 +1,7 @@
 <?php
 // wordpress last 4 post
 $last_posts = get_posts(array(
-    'posts_per_page' => 4,
+    'posts_per_page' => 1,
     'post_type' => 'post',
     'orderby' => 'post_date',
     'order' => 'DESC',

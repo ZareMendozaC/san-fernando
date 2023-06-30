@@ -2,7 +2,7 @@ import $ from "jquery";
 import Splide from "@splidejs/splide";
 if ($('.splide.splide1').length > 0) {
   new Splide('.splide.splide1', {
-    type: 'loop',
+    type: 'slide',
     pagination: false,
   }).mount();
 
