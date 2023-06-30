@@ -128,7 +128,7 @@
 
   <div class="menu_compras">
     <ul class="list-group">
-      <li class="list-group-item"><a href="https://delivery.redsanfernando.pe/">Ecommerce solo Lima</a></li>
+      <li class="list-group-item"><a href="https://delivery.redsanfernando.pe/" target="_blank">Ecommerce solo Lima</a></li>
       <li class="list-group-item"><a href="<?php echo home_url(); ?>/puntos-de-venta">Tiendas afiliadas</a></li>
     </ul>
   </div>
