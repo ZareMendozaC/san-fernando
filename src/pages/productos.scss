@@ -1,4 +1,7 @@
 .section-productos{
+    .text, #tabs{
+        display: none;
+    }
     .general-banner-img{
         width: 100%;
         height: calc(100vw*(550/var(--width_base))) !important;
@@ -189,9 +192,9 @@
             border: 1px solid #F1EBD8;
             border-radius: calculate(16);
             width: calculate(371);
-            height: calculate(310);
+            height: calculate(355);
             background-size: cover !important;
-            background-position: center !important;
+            background-position: top !important;
             background-repeat: no-repeat !important;
             transition: all ease-in 0.1s;
         }
@@ -515,4 +518,7 @@ background-color: transparent;
 }
 .close-des{
     transform: rotate(180deg);
+}
+#post-category{
+    margin-top: calculate(120);
 }

@@ -9,9 +9,15 @@
   display: flex;
   justify-content: space-between;
   z-index: 900;
-  --mask: conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/16.00px 101%;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
+  --mask: conic-gradient(
+      from -45deg at bottom,
+      #0000,
+      #000 1deg 89deg,
+      #0000 90deg
+    )
+    50%/16px 101%;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
 }
 
 .div_logo {
@@ -198,6 +204,7 @@
     padding: 0;
     li {
       background: #daf2f8;
+      padding: calculate(16);
     }
     li:nth-child(odd) {
       background: var(--color-white);
