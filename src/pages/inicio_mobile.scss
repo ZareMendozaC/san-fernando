@@ -16,8 +16,12 @@
         bottom: calc(2000vw / var(--width_base));
     }
     .main-banner{  
+        margin-top: calculate(70);
         .slick-track{
             height: calc(100vw * 438 / var(--width_base))!important;
+        }
+        .slick-prev,.slick-next{
+            display:none;
         }
     }
     .bg-productos {

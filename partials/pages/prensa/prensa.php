@@ -1,7 +1,7 @@
 <?php
 // wordpress last 4 post
 $last_posts = get_posts(array(
-    'posts_per_page' => 4,
+    'posts_per_page' => 1,
     'post_type' => 'post',
     'orderby' => 'post_date',
     'order' => 'DESC',
@@ -105,7 +105,7 @@ $categories = get_categories_by_post_type();
                                 <p class="text-blog">
                                     <?= substr($post_content, 0, 80) ?>...
                                 </p>
-                                <a href="<?= $post_url ?>">Leer más</a>
+                                <a href="<?php echo home_url(); ?>/detalle-prensa/?id=<?= $post_id; ?>">Leer más</a>
                             </div>
                         <?php endforeach; ?>
                     </div>
@@ -167,7 +167,7 @@ $category_posts = get_posts(array(
                         <?php endforeach; ?>
                         <p class="title-blog"><?= substr($post_title, 0, 100) ?></p>
                         <p class="text-blog"><?= substr($post_content, 0, 100) ?>...</p>
-                        <a href="<?= $post_url ?>">Leer más</a>
+                        <a href="<?php echo home_url(); ?>/detalle-prensa/?id=<?= $post_id; ?>">Leer más</a>
                     </div>
                 <?php endforeach; ?>
 

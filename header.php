@@ -120,7 +120,7 @@
 
   <div class="menu_vales">
     <ul class="list-group alter">
-      <li class="list-group-item"><a href="#">Cotiza tu vale</a></li>
+      <!-- <li class="list-group-item"><a href="#">Cotiza tu vale</a></li> -->
       <li class="list-group-item"><a href="#">Compra tu vale</a></li>
       <li class="list-group-item"><a href="<?php echo home_url(); ?>/puntos-de-canje">Canjea tu vale</a></li>
     </ul>
@@ -128,7 +128,7 @@
 
   <div class="menu_compras">
     <ul class="list-group">
-      <li class="list-group-item"><a href="https://delivery.redsanfernando.pe/">Ecommerce solo Lima</a></li>
+      <li class="list-group-item"><a href="https://delivery.redsanfernando.pe/" target="_blank">Ecommerce solo Lima</a></li>
       <li class="list-group-item"><a href="<?php echo home_url(); ?>/puntos-de-venta">Tiendas afiliadas</a></li>
     </ul>
   </div>
@@ -191,7 +191,7 @@
             </button>
           </a>
           <ul class="list-group">
-            <li class="list-group-item li-compras_mov"><a href="#">Ecommerce sólo Lima</a></li>
+            <li class="list-group-item li-compras_mov"><a href="https://delivery.redsanfernando.pe/" target="_blank">Ecommerce sólo Lima</a></li>
             <li class="list-group-item li-compras_mov"><a href="#">Tiendas afiliadas</a></li>
           </ul>
         </div>

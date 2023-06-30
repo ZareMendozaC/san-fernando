@@ -18,7 +18,7 @@
                     <div class="box-select">
                         <!-- <label class="pos-lbl_1" for="ciudad">Ubicación</label>-->
                         <select name="ciudad" class="input-control selCiudad">
-                            <option value="" selected disabled></option>
+                            <option value="" selected disabled>Ubicación</option>
                             <optgroup label="Distritos Lima">
                                 <option value="Ate/Salamanca">Ate/Salamanca</option>
                                 <option value="Breña">Breña</option>
