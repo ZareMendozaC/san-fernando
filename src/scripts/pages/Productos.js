@@ -46,6 +46,8 @@ $('#slider-blog-list').slick({
   var bn_pathname = window.location.href;
 
 $( ".btn-lista-cat" ).on( "click", function() {
+  $('.col-des-menu').css('display','none');
+  $('.col-des-menu[data-tab='+$(this).attr('data-id')+']').css('display','block');
   $('.lista-prod').css('display','grid');
   $('.detalle-prod').css('display','none');
   $( ".btn-lista-cat" ).removeClass('active');
@@ -97,15 +99,11 @@ if($( ".btn-lista-cat" ).length >0)
 }
 
 
-
+/*
 //funcion al hacer click en los  cards de los productos carga la data
 $(document).on('click','.select-producto-final', function(){ 
   $('.lista-prod').css('display','none');
   $('.detalle-prod').css('display','flex');
-  //$( ".btn-lista-cat" ).removeClass('active');
-  //$(this).addClass('active');
-  //let producto_html= '';
-  // $('.lista-prod a').remove();
 
     let padre = $('#catPadre').val();
     let hija = $(this).attr('data-category');
@@ -128,3 +126,4 @@ $(document).on('click','.select-producto-final', function(){
       }
     })   
 } );
+*/
