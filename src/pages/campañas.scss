@@ -25,14 +25,6 @@
   color:var(--color-gris)
 }
 
-.flex-colu {
-  display: flex;
-  flex-direction: column;
-}
-
-.w-50 {
-  width: calculate(778)
-}
 .mb-279{
     margin-bottom:calculate(279);
     margin-top:calculate(200);
@@ -63,10 +55,19 @@
 
 .subdiv_part_text{
   position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  h2{
+    display:flex;
+    gap:10px;
+    align-items: baseline;
+  }
   .img_part_text{
     position: absolute;
     width: calculate(200);
     height: auto;
-    left: calculate(280);
+    left: calculate(1180);
+    top:calculate(110)
   }
 }
