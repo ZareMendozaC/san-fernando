@@ -120,7 +120,7 @@
 
   <div class="menu_vales">
     <ul class="list-group alter">
-      <li class="list-group-item"><a href="#">Cotiza tu vale</a></li>
+      <!-- <li class="list-group-item"><a href="#">Cotiza tu vale</a></li> -->
       <li class="list-group-item"><a href="#">Compra tu vale</a></li>
       <li class="list-group-item"><a href="<?php echo home_url(); ?>/puntos-de-canje">Canjea tu vale</a></li>
     </ul>
