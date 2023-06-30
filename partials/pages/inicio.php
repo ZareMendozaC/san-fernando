@@ -234,8 +234,8 @@ $lista_de_caracteristicas = get_field('lista_de_caracteristicas');
                 </div>
             </div>
             <div class="col-nuestra-22 mrg-t-23">
-                <div class="box-image-1" style="background: url(<?php echo $lista_de_caracteristicas[1]['imagen_de_fondo']['url']; ?>);">
-                    <div class="box-i-textos">
+                <!-- <div class="box-image-1" style="background: url(<?php echo $lista_de_caracteristicas[1]['imagen_de_fondo']['url']; ?>);">
+                   <div class="box-i-textos">
                         <p class="color-white"><?php echo $lista_de_caracteristicas[1]['nombre']; ?></p>
                         <a href="<?php echo home_url(); ?>/prensa" target="_blank">Ver más <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.277344" y="0.639526" width="28" height="28" rx="14" fill="#DF0002" />
@@ -243,7 +243,7 @@ $lista_de_caracteristicas = get_field('lista_de_caracteristicas');
                             </svg>
                         </a>
                     </div>
-                </div>
+                </div> -->
                 <div class="box-image-2" style="background: url(<?php echo $lista_de_caracteristicas[2]['imagen_de_fondo']['url']; ?>);">
                     <div class="box-i-textos">
                         <p class="color-white"><?php echo $lista_de_caracteristicas[2]['nombre']; ?></p>
