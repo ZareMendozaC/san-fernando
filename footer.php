@@ -240,40 +240,57 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 					</svg>
 				</div>
 				<ul id="list-opcion2" class="list-menu-2">
-					<li>
-						<a href="<?= $link_pollo ?>">
-							Pollo
-						</a>
-					</li>
-					<li>
-						<a href="<?= $link_pavo_trozado ?>">
-							Pavo Trozado
-						</a>
-					</li>
-					<li>
-						<a href="<?= $link_pavo_entero ?>">
-							Pavo entero
-						</a>
-					</li>
-					<li>
-						<a href="<?= $link_embutidos ?>">
-							Embutidos
-						</a>
-					</li>
-					<li>
-						<a href="<?= $link_congelados ?>">
-							Congelados
-						</a>
-					</li>
-					<li>
-						<a href="<?= $link_cerdo ?>">
-							Cerdo
-						</a>
-					</li>
-					<li>
-						<a href="<?= $link_huevos ?>">
-							Huevos
-          </li>
+					<?php if ($link_pollo) : ?>
+						<li>
+							<a href="<?= $link_pollo ?>">
+								Pollo
+							</a>
+						</li>
+					<?php endif ?>
+					<?php if ($link_pavo_trozado) : ?>
+						<li>
+							<a href="<?= $link_pavo_trozado ?>">
+								Pavo Trozado
+							</a>
+						</li>
+					<?php endif ?>
+
+					<?php if ($link_pavo_entero) : ?>
+						<li>
+							<a href="<?= $link_pavo_entero ?>">
+								Pavo entero
+							</a>
+						</li>
+					<?php endif ?>
+
+					<?php if ($link_embutidos) : ?>
+						<li>
+							<a href="<?= $link_embutidos ?>">
+								Embutidos
+							</a>
+						</li>
+					<?php endif ?>
+
+					<?php if ($link_congelados) : ?>
+						<li>
+							<a href="<?= $link_congelados ?>">
+								Congelados
+							</a>
+						</li>
+					<?php endif ?>
+					<?php if ($link_cerdo) : ?>
+						<li>
+							<a href="<?= $link_cerdo ?>">
+								Cerdo
+							</a>
+						</li>
+					<?php endif ?>
+					<?php if ($link_huevos) : ?>
+						<li>
+							<a href="<?= $link_huevos ?>">
+								Huevos
+						</li>
+					<?php endif ?>
 				</ul>
 			</div>
 
@@ -306,22 +323,22 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 				<ul>
 					<li>
 						<a href="https://delivery.redsanfernando.pe/" target="_blank">
-						Compra aquí
+							Compra aquí
 						</a>
 					</li>
 					<li>
 						<a href="https://www.san-fernando.com.pe/blog/" target="_blank">
-						Blog Bien Servido
+							Blog Bien Servido
 						</a>
 					</li>
 					<li>
 						<a href="https://sites.google.com/a/san-fernando.com.pe/sanfernetprd/home" target="_blank">
-						Intranet	
-						</a>						
+							Intranet
+						</a>
 					</li>
 					<li>
 						<a href="https://clientesyproveedores.san-fernando.com.pe/" target="_blank">
-						Acceso a proveedores y clientes
+							Acceso a proveedores y clientes
 						</a>
 					</li>
 
