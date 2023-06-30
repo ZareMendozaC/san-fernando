@@ -176,7 +176,7 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 							</defs>
 						</svg>
 
-						<p>Av. Republica de Panamá 4295, Surquillo. <br> Lima - Perú</p>
+						<p>Jr. Portocarerro N°333, Surquillo <br> Lima - Perú</p>
 
 					</a>
 
@@ -201,11 +201,11 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 							Nosotros
 						</a>
 					</li>
-					<li>
+					<!-- <li> Luego se activara
 						<a href="<?= $prensa ?>">
 							Prensa
 						</a>
-					</li>
+					</li> -->
 					<li>
 						<a href="<?= $sostenibilidad ?>">
 							Sostenibilidad

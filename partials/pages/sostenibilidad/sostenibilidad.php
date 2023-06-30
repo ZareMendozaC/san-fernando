@@ -83,9 +83,9 @@ $imagen_seguridad = get_field("imagen_seguridad");
                     <div class="text-icon">
                         <p><?= $opcion_texto ?></p>
 
-                        <a href="<?= $link_saber_mas ?>">
+                        <!-- <a href="<?= $link_saber_mas ?>">  se mostrara posteriormente
                             Saber más
-                        </a>
+                        </a> -->
                     </div>
 
                 </div>
