@@ -191,7 +191,7 @@
             </button>
           </a>
           <ul class="list-group">
-            <li class="list-group-item li-compras_mov"><a href="#">Ecommerce sólo Lima</a></li>
+            <li class="list-group-item li-compras_mov"><a href="https://delivery.redsanfernando.pe/" target="_blank">Ecommerce sólo Lima</a></li>
             <li class="list-group-item li-compras_mov"><a href="#">Tiendas afiliadas</a></li>
           </ul>
         </div>

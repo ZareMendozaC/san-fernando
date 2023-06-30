@@ -260,9 +260,9 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 					</svg>
 				</div>
 				<ul id="list-opcion3" class="list-menu-3">
-					<li>
+					<!-- <li>
 						Cotiza tu vale
-					</li>
+					</li> -->
 					<li>
 						Puntos de canje
 					</li>
@@ -276,22 +276,22 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 			<div class="products-buy">
 				<ul>
 					<li>
-						<a href="https://delivery.redsanfernando.pe/">
+						<a href="https://delivery.redsanfernando.pe/" target="_blank">
 						Compra aquí
 						</a>
 					</li>
 					<li>
-						<a href="https://www.san-fernando.com.pe/blog/">
+						<a href="https://www.san-fernando.com.pe/blog/" target="_blank">
 						Blog Bien Servido
 						</a>
 					</li>
 					<li>
-						<a href="https://sites.google.com/a/san-fernando.com.pe/sanfernetprd/home">
+						<a href="https://sites.google.com/a/san-fernando.com.pe/sanfernetprd/home" target="_blank">
 						Intranet	
 						</a>						
 					</li>
 					<li>
-						<a href="https://clientesyproveedores.san-fernando.com.pe/">
+						<a href="https://clientesyproveedores.san-fernando.com.pe/" target="_blank">
 						Acceso a proveedores y clientes
 						</a>
 					</li>
