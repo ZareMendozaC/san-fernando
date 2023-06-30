@@ -58,6 +58,13 @@ if ($query->have_posts()) {
                         <p class="active">Geatión de seguridad y salud en el trabajo</p>
                     </div>
                 </div>
+                <div class="col-des-menu">
+                    <div class="select-title">
+                        <a href="https://www.san-fernando.com.pe/blog/" class="btn-rojo" target="_blank">
+                            Blog Bien Servido
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
