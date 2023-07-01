@@ -22,12 +22,12 @@
 
 .justificar {
   text-align: justify;
-  color:var(--color-gris)
+  color: var(--color-gris)
 }
 
-.mb-279{
-    margin-bottom:calculate(279);
-    margin-top:calculate(200);
+.mb-279 {
+  margin-bottom: calculate(279);
+  margin-top: calculate(200);
 }
 
 .grid {
@@ -41,33 +41,89 @@
 }
 
 .grid .grid-item {
-    display: block;
-    width: 100% !important;
-    height: 100% !important;
-    margin-bottom: 10px;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  margin-bottom: 10px;
 }
 
-.grid .grid-item img,video{
-    width: 100% !important;
-    height: 100% !important;
-    border-radius: calculate(20);
+.grid .grid-item img,
+video {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: calculate(20);
 }
 
-.subdiv_part_text{
+.subdiv_part_text {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
-  h2{
-    display:flex;
-    gap:10px;
+
+  h2 {
+    display: flex;
+    gap: 10px;
     align-items: baseline;
   }
-  .img_part_text{
+
+  .img_part_text {
     position: absolute;
     width: calculate(200);
     height: auto;
     left: calculate(1180);
-    top:calculate(110)
+    top: calculate(110)
   }
 }
+
+/*
+* Begind modal styles
+* Video modal styles
+* only this page
+*/
+
+.video-modal {
+  transition-duration: .2s;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-property: transform, opacity, visibility;
+  overflow-y: hidden;
+  position: fixed;
+  border: none;
+  border-radius: calculate(10);
+  padding: 0;
+
+  &[open] {
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &::backdrop {
+    background-color: #0000004d;
+    animation: modal-pop .2s ease-out;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    button {
+      background-color: var(--color-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@keyframes modal-pop {
+  0% {
+    opacity: 0
+  }
+}
+
+/*
+* End modal styles
+* Video modal styles
+* only this page
+*/
