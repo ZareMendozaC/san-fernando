@@ -15,12 +15,15 @@
 
     .subdiv_part_text{
         position: relative;
+        h2{
+            flex-direction: column;
+        }
         .img_part_text{
           position: absolute;
           width: calculate(70);
           height: auto;
           left: calculate(110);
-          bottom: calculate(-8);
+          top:calculate(100);
         }
       }
       .mb-279{
