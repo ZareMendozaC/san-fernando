@@ -150,6 +150,8 @@
     }
 
     input[type="text"],
+    input[type="tel"],
+    input[type="email"],
     textarea {
         width: 100%;
         min-height: calc(100vw * 52 / var(--width_base));

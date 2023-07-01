@@ -94,7 +94,7 @@ $img_1_trabaja = get_field("img_1_trabaja");
   <dialog id="modal_work_us" class="modal-work-us">
     <h3 class="color-blue text-center font-bold">¿Quieres ser distribuidor?</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a justo magna.</p>
-    <?= do_shortcode('[contact-form-7 id="2220" title="¿Quieres ser distribuidor?"]'); ?>
+    <?= do_shortcode('[contact-form-7 id="2188" title="Distribuidores"]'); ?>
     <form method="dialog" class="modal-close">
       <button class="btn">
         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
