@@ -24,6 +24,7 @@
     .trabaja-head{
         flex-direction: column;
         display: flex;
+        height: calculate(280);
         h1{
             margin-bottom: calculate(25) !important;
         }

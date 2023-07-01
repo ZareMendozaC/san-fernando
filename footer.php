@@ -21,6 +21,18 @@ $trabaja_nosotros = get_field("trabaja_con_nosotros", 17);
 $preguntas_frecuentes = get_field("preguntas_frecuentes", 17);
 $contacto = get_field("contacto_url", 17);
 
+$link_pollo = get_field("link_pollo", 17);
+$link_pavo_trozado = get_field("link_pavo_trozado", 17);
+$link_pavo_entero = get_field("link_pavo_entero", 17);
+$link_embutidos = get_field("link_embutidos", 17);
+$link_congelados = get_field("link_congelados", 17);
+$link_cerdo = get_field("link_cerdo", 17);
+$link_huevos = get_field("link_huevos", 17);
+
+
+$link_puntos_canje = get_field("link_puntos_canje", 17);
+$link_puntos_venta = get_field("link_puntos_venta", 17);
+
 $libro_reclamaciones = get_field("libro_de_reclamaciones", 17);
 
 //url terminos y condiciones
@@ -164,7 +176,7 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 							</defs>
 						</svg>
 
-						<p>Av. Republica de Panamá 4295, Surquillo. <br> Lima - Perú</p>
+						<p>Jr. Portocarerro N°333, Surquillo <br> Lima - Perú</p>
 
 					</a>
 
@@ -189,11 +201,11 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 							Nosotros
 						</a>
 					</li>
-					<li>
+					<!-- <li> Luego se activara
 						<a href="<?= $prensa ?>">
 							Prensa
 						</a>
-					</li>
+					</li> -->
 					<li>
 						<a href="<?= $sostenibilidad ?>">
 							Sostenibilidad
@@ -228,41 +240,57 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 					</svg>
 				</div>
 				<ul id="list-opcion2" class="list-menu-2">
-					<li>
-						<a href="#">
-						Pollo
-						</a>
-					</li>
-					<li>
-						<a href="#">
-						Pavo Trozado
-						</a>
-					</li>
-					<li>
-						<a href="#">
-						Pavo entero
-						</a>
-					</li>
-					<li>
-						<a href="#">
-						Embutidos
-						</a>
-					</li>
-					<li>
-						<a href="#">
-						Congelados
-						</a>
-					</li>
-					<li>
-						<a href="#">
-						Cerdo
-						</a>
-					</li>
-					<li>
-						<a href="#">
-						Huevos
-						</a>
-					</li>
+					<?php if ($link_pollo) : ?>
+						<li>
+							<a href="<?= $link_pollo ?>">
+								Pollo
+							</a>
+						</li>
+					<?php endif ?>
+					<?php if ($link_pavo_trozado) : ?>
+						<li>
+							<a href="<?= $link_pavo_trozado ?>">
+								Pavo Trozado
+							</a>
+						</li>
+					<?php endif ?>
+
+					<?php if ($link_pavo_entero) : ?>
+						<li>
+							<a href="<?= $link_pavo_entero ?>">
+								Pavo entero
+							</a>
+						</li>
+					<?php endif ?>
+
+					<?php if ($link_embutidos) : ?>
+						<li>
+							<a href="<?= $link_embutidos ?>">
+								Embutidos
+							</a>
+						</li>
+					<?php endif ?>
+
+					<?php if ($link_congelados) : ?>
+						<li>
+							<a href="<?= $link_congelados ?>">
+								Congelados
+							</a>
+						</li>
+					<?php endif ?>
+					<?php if ($link_cerdo) : ?>
+						<li>
+							<a href="<?= $link_cerdo ?>">
+								Cerdo
+							</a>
+						</li>
+					<?php endif ?>
+					<?php if ($link_huevos) : ?>
+						<li>
+							<a href="<?= $link_huevos ?>">
+								Huevos
+						</li>
+					<?php endif ?>
 				</ul>
 			</div>
 
@@ -278,13 +306,13 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 						Cotiza tu vale
 					</li> -->
 					<li>
-						<a href="#">
-						Puntos de canje
+						<a href="<?= $link_puntos_canje ?>">
+							Puntos de canje
 						</a>
 					</li>
 					<li>
-						<a href="#">
-						Puntos de venta
+						<a href="<?= $link_puntos_venta ?>">
+							Puntos de venta
 						</a>
 					</li>
 				</ul>
@@ -295,22 +323,22 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 				<ul>
 					<li>
 						<a href="https://delivery.redsanfernando.pe/" target="_blank">
-						Compra aquí
+							Compra aquí
 						</a>
 					</li>
 					<li>
 						<a href="https://www.san-fernando.com.pe/blog/" target="_blank">
-						Blog Bien Servido
+							Blog Bien Servido
 						</a>
 					</li>
 					<li>
 						<a href="https://sites.google.com/a/san-fernando.com.pe/sanfernetprd/home" target="_blank">
-						Intranet	
-						</a>						
+							Intranet
+						</a>
 					</li>
 					<li>
 						<a href="https://clientesyproveedores.san-fernando.com.pe/" target="_blank">
-						Acceso a proveedores y clientes
+							Acceso a proveedores y clientes
 						</a>
 					</li>
 

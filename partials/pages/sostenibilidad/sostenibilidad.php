@@ -83,9 +83,9 @@ $imagen_seguridad = get_field("imagen_seguridad");
                     <div class="text-icon">
                         <p><?= $opcion_texto ?></p>
 
-                        <a href="<?= $link_saber_mas ?>">
+                        <!-- <a href="<?= $link_saber_mas ?>">  se mostrara posteriormente
                             Saber más
-                        </a>
+                        </a> -->
                     </div>
 
                 </div>
@@ -166,9 +166,9 @@ $imagen_seguridad = get_field("imagen_seguridad");
                 <p><?= $description_responsabilidad ?></p>
             </div>
 
-
             <div class="lista-social container">
                 <ul id="social-carousel" class="list-social-1">
+
                     <?php foreach ($lista_responsabilidad as $list_res) : ?>
 
                         <?php
@@ -199,7 +199,7 @@ $imagen_seguridad = get_field("imagen_seguridad");
 
         </article>
 
-        <article class="contain-4 container">
+        <article class="contain-4 container" id="sostenibilidad">
             <figure>
                 <img src="<?= $imagen_compromisos["url"] ?>" alt="imagen 2 personas">
             </figure>
@@ -258,6 +258,7 @@ $imagen_seguridad = get_field("imagen_seguridad");
                         <?php foreach ($lista_gestion as $list_ges) : ?>
 
                             <?php
+                            $titulo = get_data('titulo', $list_ges);
                             $item_gestion_img = $list_ges["icono"];
                             $item_gestion_image_url = $item_gestion_img ? $item_gestion_img["url"] : null;
                             $list_text = $list_ges["descripcion"];
@@ -266,9 +267,15 @@ $imagen_seguridad = get_field("imagen_seguridad");
                             <?php if ($list_ges) : ?>
                                 <li>
                                     <figure>
-                                        <img src="<?= $item_gestion_image_url ?>" alt="">
+                                        <picture>
+                                            <img src="<?= $item_gestion_image_url ?>" alt="">
+                                        </picture>
+                                        <figcaption>
+                                            <?php if ($titulo) : ?>
+                                                <h5><?= $titulo ?></h5>
+                                            <?php endif; ?>
+                                        </figcaption>
                                     </figure>
-
                                     <p><?= $list_text ?></p>
 
                                 </li>

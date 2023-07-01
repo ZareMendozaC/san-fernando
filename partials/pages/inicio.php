@@ -99,7 +99,7 @@ $opciones_cotiza_y_compra = get_field('opciones_cotiza_y_compra');
                         <img src="<?= $icono['url']; ?>" alt="">
                         <div class="card-cotiza-text">
                             <p><?= $titulo_quiero; ?></p>
-                            <a class="btn-c" href="<?= $link_boton_quiero; ?>"><?= $texto_boton_quiero; ?></a>
+                            <a class="btn-c" href="<?= $link_boton_quiero; ?>" target="_blank"><?= $texto_boton_quiero; ?></a>
                         </div>
                     </div>
                 <?php endwhile; ?>
@@ -174,6 +174,14 @@ $opciones_cotiza_y_compra = get_field('opciones_cotiza_y_compra');
                 </div>
             </div>
         </div>
+        <?php 
+           // global $wpdb;
+            $mydb = new wpdb('aprosqanet_sanfer_blog','Arc,Df4QCKRY','aprosqanet_sanfer_blog','localhost');
+            $rows = $mydb->get_results("select * from aprosqanet_sanfer_blog.wp_posts");
+            foreach ($rows as $obj) {
+                echo $obj->id;
+         }
+            ?>
 </section>
 <?php
 $titulo_nuestra_familia = get_field('titulo_nuestra_familia');
@@ -225,7 +233,7 @@ $lista_de_caracteristicas = get_field('lista_de_caracteristicas');
                 <div class="box-image" style="background: url(<?php echo $lista_de_caracteristicas[0]['imagen_de_fondo']['url']; ?>);">
                     <div class="box-i-textos">
                         <p class="color-white"><?php echo $lista_de_caracteristicas[0]['nombre']; ?></p>
-                        <a href="<?php echo home_url(); ?>/sostenibilidad">Ver más <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="<?php echo home_url(); ?>/sostenibilidad" target="_blank">Ver más <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.277344" y="0.639526" width="28" height="28" rx="14" fill="#DF0002" />
                                 <path d="M17.6776 12.5196L13.0876 7.92959C12.9003 7.74334 12.6468 7.63879 12.3826 7.63879C12.1184 7.63879 11.865 7.74334 11.6776 7.92959C11.5839 8.02255 11.5095 8.13315 11.4587 8.25501C11.408 8.37687 11.3818 8.50757 11.3818 8.63959C11.3818 8.7716 11.408 8.9023 11.4587 9.02416C11.5095 9.14602 11.5839 9.25662 11.6776 9.34959L16.2776 13.9296C16.3714 14.0226 16.4458 14.1332 16.4965 14.255C16.5473 14.3769 16.5734 14.5076 16.5734 14.6396C16.5734 14.7716 16.5473 14.9023 16.4965 15.0242C16.4458 15.146 16.3714 15.2566 16.2776 15.3496L11.6776 19.9296C11.4893 20.1166 11.383 20.3707 11.3821 20.6361C11.3811 20.9014 11.4857 21.1563 11.6726 21.3446C11.8596 21.5329 12.1137 21.6392 12.3791 21.6401C12.6445 21.6411 12.8993 21.5366 13.0876 21.3496L17.6776 16.7596C18.2394 16.1971 18.555 15.4346 18.555 14.6396C18.555 13.8446 18.2394 13.0821 17.6776 12.5196Z" fill="white" />
                             </svg>
@@ -234,20 +242,20 @@ $lista_de_caracteristicas = get_field('lista_de_caracteristicas');
                 </div>
             </div>
             <div class="col-nuestra-22 mrg-t-23">
-                <div class="box-image-1" style="background: url(<?php echo $lista_de_caracteristicas[1]['imagen_de_fondo']['url']; ?>);">
-                    <div class="box-i-textos">
+                <!-- <div class="box-image-1" style="background: url(<?php echo $lista_de_caracteristicas[1]['imagen_de_fondo']['url']; ?>);">
+                   <div class="box-i-textos">
                         <p class="color-white"><?php echo $lista_de_caracteristicas[1]['nombre']; ?></p>
-                        <a href="<?php echo home_url(); ?>/prensa">Ver más <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="<?php echo home_url(); ?>/prensa" target="_blank">Ver más <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.277344" y="0.639526" width="28" height="28" rx="14" fill="#DF0002" />
                                 <path d="M17.6776 12.5196L13.0876 7.92959C12.9003 7.74334 12.6468 7.63879 12.3826 7.63879C12.1184 7.63879 11.865 7.74334 11.6776 7.92959C11.5839 8.02255 11.5095 8.13315 11.4587 8.25501C11.408 8.37687 11.3818 8.50757 11.3818 8.63959C11.3818 8.7716 11.408 8.9023 11.4587 9.02416C11.5095 9.14602 11.5839 9.25662 11.6776 9.34959L16.2776 13.9296C16.3714 14.0226 16.4458 14.1332 16.4965 14.255C16.5473 14.3769 16.5734 14.5076 16.5734 14.6396C16.5734 14.7716 16.5473 14.9023 16.4965 15.0242C16.4458 15.146 16.3714 15.2566 16.2776 15.3496L11.6776 19.9296C11.4893 20.1166 11.383 20.3707 11.3821 20.6361C11.3811 20.9014 11.4857 21.1563 11.6726 21.3446C11.8596 21.5329 12.1137 21.6392 12.3791 21.6401C12.6445 21.6411 12.8993 21.5366 13.0876 21.3496L17.6776 16.7596C18.2394 16.1971 18.555 15.4346 18.555 14.6396C18.555 13.8446 18.2394 13.0821 17.6776 12.5196Z" fill="white" />
                             </svg>
                         </a>
                     </div>
-                </div>
+                </div> -->
                 <div class="box-image-2" style="background: url(<?php echo $lista_de_caracteristicas[2]['imagen_de_fondo']['url']; ?>);">
                     <div class="box-i-textos">
                         <p class="color-white"><?php echo $lista_de_caracteristicas[2]['nombre']; ?></p>
-                        <a href="<?php echo home_url(); ?>/trabaja-con-nosotros">Ver más <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="<?php echo home_url(); ?>/trabaja-con-nosotros" target="_blank">Ver más <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.277344" y="0.639526" width="28" height="28" rx="14" fill="#DF0002" />
                                 <path d="M17.6776 12.5196L13.0876 7.92959C12.9003 7.74334 12.6468 7.63879 12.3826 7.63879C12.1184 7.63879 11.865 7.74334 11.6776 7.92959C11.5839 8.02255 11.5095 8.13315 11.4587 8.25501C11.408 8.37687 11.3818 8.50757 11.3818 8.63959C11.3818 8.7716 11.408 8.9023 11.4587 9.02416C11.5095 9.14602 11.5839 9.25662 11.6776 9.34959L16.2776 13.9296C16.3714 14.0226 16.4458 14.1332 16.4965 14.255C16.5473 14.3769 16.5734 14.5076 16.5734 14.6396C16.5734 14.7716 16.5473 14.9023 16.4965 15.0242C16.4458 15.146 16.3714 15.2566 16.2776 15.3496L11.6776 19.9296C11.4893 20.1166 11.383 20.3707 11.3821 20.6361C11.3811 20.9014 11.4857 21.1563 11.6726 21.3446C11.8596 21.5329 12.1137 21.6392 12.3791 21.6401C12.6445 21.6411 12.8993 21.5366 13.0876 21.3496L17.6776 16.7596C18.2394 16.1971 18.555 15.4346 18.555 14.6396C18.555 13.8446 18.2394 13.0821 17.6776 12.5196Z" fill="white" />
                             </svg>
@@ -274,10 +282,10 @@ $listado_de_certificaciones = get_field('listado_de_certificaciones');
                 <?php while (have_rows('listado_de_certificaciones')) : the_row();
                     $image = get_sub_field('logo_certificacion');
                     $nombre_certificacion = get_sub_field('nombre_certificacion');
-                    $detalle= get_sub_field('detalle');
+                    $detalle = get_sub_field('detalle');
                 ?>
                     <div class="card-certificacion">
-                        <div class="data-certificacion"><?= $detalle;?></div>
+                        <div class="data-certificacion"><?= $detalle; ?></div>
                         <svg class="show-desktop" width="162" height="9" viewBox="0 0 162 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 4.28711H158" stroke="#96DAEA" stroke-width="8" stroke-linecap="round" />
                         </svg>
@@ -290,10 +298,10 @@ $listado_de_certificaciones = get_field('listado_de_certificaciones');
                 <?php endwhile; ?>
             <?php endif; ?>
             <div class="modal-certificacion">
-            <svg class="close-certificacion" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M28.6504 7.34999C22.8004 1.49999 13.2004 1.49999 7.35039 7.34999C1.50039 13.2 1.50039 22.8 7.35039 28.65C13.2004 34.5 22.6504 34.5 28.5004 28.65C34.3504 22.8 34.5004 13.2 28.6504 7.34999ZM22.2004 24.3L18.0004 20.1L13.8004 24.3L11.7004 22.2L15.9004 18L11.7004 13.8L13.8004 11.7L18.0004 15.9L22.2004 11.7L24.3004 13.8L20.1004 18L24.3004 22.2L22.2004 24.3Z" fill="#004A96"/>
-            </svg>
-            <div id="dCertificacion"></div>
+                <svg class="close-certificacion" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.6504 7.34999C22.8004 1.49999 13.2004 1.49999 7.35039 7.34999C1.50039 13.2 1.50039 22.8 7.35039 28.65C13.2004 34.5 22.6504 34.5 28.5004 28.65C34.3504 22.8 34.5004 13.2 28.6504 7.34999ZM22.2004 24.3L18.0004 20.1L13.8004 24.3L11.7004 22.2L15.9004 18L11.7004 13.8L13.8004 11.7L18.0004 15.9L22.2004 11.7L24.3004 13.8L20.1004 18L24.3004 22.2L22.2004 24.3Z" fill="#004A96" />
+                </svg>
+                <div id="dCertificacion"></div>
 
             </div>
         </div>

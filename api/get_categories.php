@@ -3,6 +3,7 @@ function get_categories_handler() {
  try{
     $args = array(
         'post_type' => 'producto',
+        'posts_per_page' => -1,
         'tax_query' => array(
             'relation' => 'AND',
             array(
