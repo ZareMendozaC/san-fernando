@@ -307,13 +307,13 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 						Cotiza tu vale
 					</li> -->
 					<li>
-						<a href="<?= $link_puntos_canje ?>">
+						<a href="<?= $link_puntos_canje ?>" target="_blank">
 							Compra tu vale
 						</a>
 					</li>
 					<li>
-						<a href="<?= $link_puntos_venta ?>">
-							Canje tu vale
+						<a href="<?= $link_puntos_venta ?>" target="_blank">
+							Canjea tu vale
 						</a>
 					</li>
 				</ul>

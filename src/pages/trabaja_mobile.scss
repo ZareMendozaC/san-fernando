@@ -113,26 +113,32 @@
         }
 
         .section-2-mobile{
-            display: block;
+            display:block;
+            height: calculate(830);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 69%;
+            z-index: -1;
 
             div{
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
                 gap: calculate(22);
-                width: calculate(720);
+                width: calculate(320);
                 height: auto;
-                padding-top: calculate(200);
-                padding-left: calculate(231);
+                padding-top: calculate(40);
+                padding-left: calculate(31);
                 h2{
                     color: var(--color-blue);
-                    font-size: calculate(72);
+                    font-size: calculate(42);
+                    line-height: calculate(60);
                     margin: 0;
                 }
         
                 p{
                     margin: 0;
-                    font-size: calculate(18);
+                    font-size: calculate(15);
                     
                 }
     
@@ -140,7 +146,7 @@
                     background-color: var(--color-red-btn);
                     color: var(--color-white);
                     font-size: calculate(18);
-                    width: calculate(218);
+                    width: calculate(200);
                     text-align: center;
                     border-radius: calculate(515);
                     padding: calculate(12);

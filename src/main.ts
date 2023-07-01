@@ -124,10 +124,4 @@ $(".btn-comprar-mov").click(function () {
   $(".btn-comprar-mov .arrow").toggleClass("arrow-btn-active")
 })
 
-//@ts-ignore
-var mediaqueryList = window.matchMedia("(max-width: 768px)")
-
-// mediaqueryList.addListener(function (EventoMediaQueryList) {
-//   $(".section-2").css("display", "none");
-// });
 

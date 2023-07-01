@@ -45,7 +45,6 @@ $img_1_trabaja = get_field("img_1_trabaja");
 
     <?php
     $fondo_trabaja = get_field("imagen_de_fondo_lista");
-
     foreach ($fondo_trabaja as $item) {
         $desktop_image = $item["imagen_desktop"];
         $mobile_image = $item["imagen_mobile"];
@@ -55,6 +54,26 @@ $img_1_trabaja = get_field("img_1_trabaja");
     ?>
 
     <div class="section-2" style="background-image: url(<?= $desktop_image["url"] ?>);">
+
+
+        <div>
+            <?php
+            $titulo_trabaja = get_field("titulo");
+            $descripcion2_trabaja = get_field("descripcion_2");
+            $text_boton_trabaja = get_field("texto_boton");
+
+            ?>
+            <h2><?php echo $titulo_trabaja ?></h2>
+
+            <p><?php echo $descripcion2_trabaja ?></p>
+
+            <a href="" target="_blank"><?php echo $text_boton_trabaja ?></a>
+        </div>
+
+
+    </div>
+
+    <div class="section-2-mobile" style="background-image: url(<?= $mobile_image["url"] ?>);">
 
 
         <div>
