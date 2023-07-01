@@ -16,7 +16,7 @@ $url_button_2 = get_field("url_button_2");
     <section class="content-1 container">
         <h2>Escríbenos</h2>
         <p>Déjanos tus datos y nos contactaremos contigo a la brevedad</p>
-        <?php echo do_shortcode('[contact-form-7 id="375" title="Contact form 1"]'); ?>
+        <?php echo do_shortcode('[contact-form-7 id="727" title="Contactanos"]'); ?>
     </section>
 
 
