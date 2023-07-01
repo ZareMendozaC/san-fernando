@@ -72,9 +72,14 @@ $imagen_de_fondo_llena_tu_refri = get_field('imagen_de_fondo_llena_tu_refri');
     <div class="container">
         <img class="line-pick" src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-14.png" alt="">
     </div>
-    <div class="container bg-llena-tu-refri" style="background: url('<?php echo $imagen_de_fondo_llena_tu_refri['url']; ?>'),#96DAEA;">
-        <p class="title color-blue"><?= $titulo_llena_tu_refri; ?></p>
-        <p class="texto color-gris"><?= $descripcion_llena_tu_refri; ?></p>
-        <a class="btn-menu" href="<?= $url_boton_llena_tu_refri; ?>" target="_blank"><?= $texto_boton_refri; ?></a>
+    <div class="container bg-llena-tu-refri" style="background:#96DAEA;">
+        <div class="info">
+            <p class="title color-blue"><?= $titulo_llena_tu_refri; ?></p>
+            <p class="texto color-gris"><?= $descripcion_llena_tu_refri; ?></p>
+            <a class="btn-menu" href="<?= $url_boton_llena_tu_refri; ?>" target="_blank"><?= $texto_boton_refri; ?></a>
+        </div>
+        <div class="image">
+            <?= render_image($imagen_de_fondo_llena_tu_refri) ?>
+        </div>
     </div>
 </section>

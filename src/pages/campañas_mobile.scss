@@ -1,58 +1,75 @@
 @media (max-width: 768px) {
     .banner_campanias {
-       width:100% !important;
-       background-size: cover;
-       margin-top: calculate(30);
-      }
+        width: 100% !important;
+        background-size: cover;
+        margin-top: calculate(30);
+        background-image: var(--bg-mobile-image);
+    }
 
-    .div-part-text{
+    .div-part-text {
         flex-direction: column;
         gap: calculate(40);
-        .w-50{
+        margin-top: calculate(40);
+        margin-bottom: calculate(40);
+
+        h2 {
+            display: block;
+            text-align: center;
+        }
+
+        .w-50 {
             width: auto;
+        }
+
+        svg {
+            display: none;
         }
     }
 
-    .subdiv_part_text{
+    .subdiv_part_text {
         position: relative;
-        .img_part_text{
-          position: absolute;
-          width: calculate(70);
-          height: auto;
-          left: calculate(110);
-          bottom: calculate(-8);
+
+        .img_part_text {
+            position: absolute;
+            width: calculate(70);
+            height: auto;
+            left: calculate(110);
+            bottom: calculate(-8);
         }
-      }
-      .mb-279{
+    }
+
+    .mb-279 {
         margin-top: calculate(0);
-      }
+        margin-bottom: calculate(70);
+    }
 }
-@media only screen and (max-width: 576px){
-    .grid{
+
+@media only screen and (max-width: 576px) {
+    .grid {
         -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;
     }
 }
 
-@media only screen and (min-width: 576px){
-    .grid{
+@media only screen and (min-width: 576px) {
+    .grid {
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
     }
 }
 
-@media only screen and (min-width: 768px){
-    .grid{
+@media only screen and (min-width: 768px) {
+    .grid {
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
     }
 }
 
-@media only screen and (min-width: 992px){
-    .grid{
+@media only screen and (min-width: 992px) {
+    .grid {
         -webkit-column-count: 3;
         -moz-column-count: 3;
         column-count: 3;

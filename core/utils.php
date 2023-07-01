@@ -4,7 +4,7 @@
  * Render image by ID
  * Require AFC plugin
  */
-function render_image(int $id, array $attr = [])
+function render_image($id, array $attr = [])
 {
   //If not exist $id return null
   if (!$id) return null;

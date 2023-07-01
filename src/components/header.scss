@@ -188,7 +188,7 @@
   position: fixed;
   z-index: 910;
   top: calculate(135);
-  left: calculate(1230);
+  left: calculate(1280);
 }
 
 .menu_compras {
@@ -196,7 +196,7 @@
   position: fixed;
   z-index: 910;
   top: calculate(135);
-  left: calculate(1550);
+  left: calculate(1500);
 }
 
 .menu_blog {
@@ -204,13 +204,13 @@
   position: fixed;
   z-index: 910;
   top: calculate(135);
-  left: calculate(910);
+  left: calculate(970);
 }
 
 .menu_blog,
 .menu_compras,
 .menu_vales {
-  width: calculate(272);
+  width: calculate(217);
 
   .list-group {
     list-style-type: none;
