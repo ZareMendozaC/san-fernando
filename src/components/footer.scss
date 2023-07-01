@@ -1,5 +1,4 @@
-
-ul{
+ul {
     list-style: none;
     margin: 0;
 }
@@ -12,63 +11,67 @@ ul{
     background-color: var(--color-blue);
     font-family: 'FuturaStd';
 
-    .footer-content-1{
+    .footer-content-1 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         gap: calculate(36);
+
         padding: calculate(94) 0;
-        .footer-first-line{
+
+        .footer-first-line {
             display: flex;
             flex-direction: column;
             width: calc(100vw*(500 /var(--width_base)));
             gap: calc(100vw*(36/var(--width_base)));
 
-            div{
+            div {
                 display: flex;
                 flex-direction: column;
                 gap: calc(100vw*(40/var(--width_base)));
 
-                .logo-footer{
-                    width: calc(100vw*(124 /var(--width_base)))!important;
+                .logo-footer {
+                    width: calc(100vw*(124 /var(--width_base))) !important;
                     height: auto;
                 }
 
-                .contact-redes{
+                .contact-redes {
                     list-style: none;
                     display: flex;
                     margin: 0;
                     gap: calc(100vw*(10/var(--width_base)));
                     height: auto;
-                    li{
-                        svg{
+
+                    li {
+                        svg {
                             width: calculate(40);
                             height: auto;
                         }
                     }
                 }
-    
+
             }
 
-            .contact-info{
+            .contact-info {
                 list-style: none;
                 display: flex;
                 flex-direction: column;
                 gap: calc(100vw*(20/var(--width_base)));
-    
-                .info-text{
-                    a{
+
+                .info-text {
+                    a {
                         display: flex;
                         gap: calculate(20);
                         align-items: center;
                         color: var(--color-white);
-                        p{
+
+                        p {
                             margin: 0;
                             font-weight: 400;
-                            font-size: calc(100vw*(16/var(--width_base)))!important;
+                            font-size: calc(100vw*(16/var(--width_base))) !important;
                         }
 
-                        svg{
+                        svg {
                             width: calcualte(16);
                             height: auto;
                         }
@@ -77,120 +80,134 @@ ul{
             }
         }
 
-        .footer-content-2{
+        .footer-content-2 {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
             width: 100%;
             color: var(--color-white);
-            .footer-menu{
-                .footer-menu--option1{
-                    p{
+
+            .footer-menu {
+                .footer-menu--option1 {
+                    p {
                         display: none;
                         font-size: calc(100vw*(18/var(--width_base)));
                     }
-                    svg{
+
+                    svg {
                         display: none;
                     }
                 }
-    
-                .list-menu{
+
+                .list-menu {
                     display: flex;
                     flex-direction: column;
                     margin: 0;
                     gap: calc(100vw*(20/var(--width_base)));
-                    li{
+
+                    li {
                         font-weight: 700;
                         font-size: calc(100vw*(18/var(--width_base)));
-                        a{
-                            color: var(--color-white); 
+
+                        a {
+                            color: var(--color-white);
                         }
-    
+
                     }
                 }
             }
-    
-            .products-footer{
-                .footer-menu--option2{
-                    p{
+
+            .products-footer {
+                .footer-menu--option2 {
+                    p {
                         display: flex;
                         font-size: calc(100vw*(18/var(--width_base)));
-    
+
                     }
-                    svg{
+
+                    svg {
                         display: none;
                     }
                 }
 
-                .list-menu-2{
+                .list-menu-2 {
                     display: flex;
                     flex-direction: column;
                     margin: 0;
                     gap: calc(100vw*(20/var(--width_base)));
-                    li{
+
+                    li {
                         font-weight: 400;
                         font-size: calc(100vw*(16/var(--width_base)));
-                        a{
-                            color: var(--color-white); 
+
+                        a {
+                            color: var(--color-white);
                         }
                     }
                 }
             }
-    
-            .products-vale{
-                .footer-menu--option3{
-                    p{
+
+            .products-vale {
+                .footer-menu--option3 {
+                    p {
                         display: flex;
                         font-size: calc(100vw*(18/var(--width_base)));
-                        
+
                     }
-                    svg{
+
+                    svg {
                         display: none;
                     }
                 }
 
-                .list-menu-3{
+                .list-menu-3 {
                     display: flex;
                     flex-direction: column;
                     margin: 0;
                     gap: calculate(27);
-                    li{
+
+                    li {
                         font-weight: 400;
                         font-size: calc(100vw*(16/var(--width_base)));
-                        a{
-                            color: var(--color-white); 
+
+                        a {
+                            color: var(--color-white);
                         }
                     }
                 }
             }
 
-            .products-buy{
+            .products-buy {
 
-                ul{
+                ul {
                     display: flex;
                     flex-direction: column;
                     margin: 0;
                     gap: calculate(20);
-                    li{
+
+                    li {
                         font-weight: 700;
                         font-size: calc(100vw*(18/var(--width_base)));
-                        a{
-                            color: var(--color-white); 
+
+                        a {
+                            color: var(--color-white);
                         }
-                        svg{
+
+                        svg {
                             width: calculate(250);
                             height: auto;
                         }
-    
+
                     }
                 }
             }
-    
+
         }
     }
 
-    .button-up{
-        display: flex !important;;
+    .button-up {
+        display: flex !important;
+        ;
         justify-content: center;
         align-items: center;
         position: relative;
@@ -199,16 +216,17 @@ ul{
         height: calculate(74);
         width: calculate(74);
         border-radius: calculate(515);
-        background:var(--color-white);
-        cursor:pointer;
-        svg{
+        background: var(--color-white);
+        cursor: pointer;
+
+        svg {
             height: calculate(30);
             width: calculate(30);
         }
 
-      }
+    }
 
-    .bottom-footer{
+    .bottom-footer {
         background-color: var(--dark-blue);
         color: var(--white-color);
         width: 100vw;
@@ -220,24 +238,26 @@ ul{
         padding-top: calculate(61);
         padding-bottom: calculate(37);
         font-weight: 600;
-        .terminos-footer{
-   
-           ul{
-               display: flex;
-               gap: calculate(30);
-               li{
-                a{
-                    color: var(--color-white);
 
+        .terminos-footer {
+
+            ul {
+                display: flex;
+                gap: calculate(30);
+
+                li {
+                    a {
+                        color: var(--color-white);
+
+                    }
                 }
-               }
-           }
-   
-        }
-   
-   
-   
-      }
+            }
 
-  
+        }
+
+
+
+    }
+
+
 }

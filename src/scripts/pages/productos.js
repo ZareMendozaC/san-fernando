@@ -67,8 +67,6 @@ $(".btn-lista-cat").on("click", function () {
   var en_pathname = bn_pathname + '/' + url_hija
   history.pushState(null, "", en_pathname)
 
-
-  //console.log( wpCredentials.url);
   jQuery.ajax({
     type: "post",
     dataType: "json",

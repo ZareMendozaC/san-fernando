@@ -109,6 +109,7 @@
     padding: calculate(30);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 15px;
 
     .div_misionvision {
@@ -136,7 +137,6 @@
 
     .div_valores {
       background-color: var(--color-celeste-light);
-      height: calculate(583);
       width: calculate(899);
       padding: calculate(71);
       border-left: 6px solid #96daea !important;
@@ -283,11 +283,6 @@
 .icono_valor {
   width: calculate(50);
   height: calculate(50);
-}
-
-.p_width-mt {
-  width: calculate(420);
-  // margin-top: calculate(30);
 }
 
 .section_time_line {

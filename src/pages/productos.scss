@@ -187,6 +187,7 @@
                     cursor: pointer;
                     margin-right: calculate(32);
                     transition: all 0.2s ease-in;
+                    text-transform: capitalize;
                 }
 
                 .btn-lista-cat:hover {
@@ -611,8 +612,4 @@ a.ui-button:active,
 
 .close-des {
     transform: rotate(180deg);
-}
-
-#post-category {
-    margin-top: calculate(120);
 }
