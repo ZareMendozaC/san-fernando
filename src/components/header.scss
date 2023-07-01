@@ -217,7 +217,8 @@
     padding: 0;
 
     li {
-      background: #daf2f8;
+      // background: #daf2f8;
+      background: #fff;
       padding: calculate(16);
     }
 
@@ -241,7 +242,8 @@
       }
 
       li:nth-child(odd) {
-        background: #daf2f8;
+        // background: #daf2f8;
+        background: #fff;
       }
     }
   }

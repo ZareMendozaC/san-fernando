@@ -97,14 +97,7 @@
     }
 
     .bg-llena-tu-refri {
-      // height: calc(100vw*(672/var(--width_base))) !important;
-      background-repeat: no-repeat !important;
-      background-size: contain !important;
-      background-position: center !important;
       border-radius: calculate(24);
-    }
-
-    .bg-llena-tu-refri {
       font-family: 'FuturaStd';
       flex-direction: column;
 
@@ -288,6 +281,7 @@
       width: calculate(739);
       left: calculate(54);
       position: relative;
+      display: none;
     }
 
     #slider-blog-list {
