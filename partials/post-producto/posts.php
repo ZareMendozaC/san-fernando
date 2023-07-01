@@ -6,10 +6,10 @@ $args = array(
     'orderby' => 'name',
     'order' => 'ASC',
     'parent' => 0
-  );
-  $current_category = get_category( get_query_var( 'cat' ), false );
-  echo '<input id="catPadre" value="'.$current_category->name.'" type="hidden">';
-  
+);
+$current_category = get_category(get_query_var('cat'), false);
+echo '<input id="catPadre" value="' . $current_category->name . '" type="hidden">';
+
 ?>
 
 <h1 class="h1-marker">Productos</h1>
@@ -21,160 +21,160 @@ $args = array(
         <p class="p-subtitle-2 color-gris">Conoce todos nuestros productos de gran sabor</p>
     </div>
     <div class="row-icon-productos">
-    <a href="<?php echo home_url(); ?>/categoria/pollo">
-      <?php
-      if($current_category->name=='pollo'){
-        echo '<div class="card-icon active">';
-      }else{
-        echo '<div class="card-icon">';
-      }
-      ?>
+        <a href="<?php echo home_url(); ?>/categoria/pollo">
+            <?php
+            if ($current_category->name == 'pollo') {
+                echo '<div class="card-icon active">';
+            } else {
+                echo '<div class="card-icon">';
+            }
+            ?>
             <div class="circle-icon bg-skyblue">
                 <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4796.png" alt="">
             </div>
             <p>Pollo</p>
-        </div>
+    </div>
     </a>
     <a href="<?php echo home_url(); ?>/categoria/pavo">
         <?php
-          if($current_category->name=='pavo'){
+        if ($current_category->name == 'pavo') {
             echo '<div class="card-icon active">';
-          }else{
+        } else {
             echo '<div class="card-icon">';
-          }
+        }
         ?>
-            <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4795.png" alt="">
-            </div>
-            <p>Pavo</p>
+        <div class="circle-icon bg-skyblue">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4795.png" alt="">
+        </div>
+        <p>Pavo</p>
         </div>
     </a>
     <a href="<?php echo home_url(); ?>/categoria/embutidos">
         <?php
-          if($current_category->name=='embutidos'){
+        if ($current_category->name == 'embutidos') {
             echo '<div class="card-icon active">';
-          }else{
+        } else {
             echo '<div class="card-icon">';
-          }
+        }
         ?>
-            <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/sausages-1-1.png" alt="">
-            </div>
-            <p>Embutidos</p>
+        <div class="circle-icon bg-skyblue">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/sausages-1-1.png" alt="">
+        </div>
+        <p>Embutidos</p>
         </div>
     </a>
     <a href="<?php echo home_url(); ?>/categoria/congelados">
         <?php
-          if($current_category->name=='congelados'){
+        if ($current_category->name == 'congelados') {
             echo '<div class="card-icon active">';
-          }else{
+        } else {
             echo '<div class="card-icon">';
-          }
+        }
         ?>
-            <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4797.png" alt="">
-            </div>
-            <p>Congelados</p>
+        <div class="circle-icon bg-skyblue">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4797.png" alt="">
+        </div>
+        <p>Congelados</p>
         </div>
     </a>
     <a href="<?php echo home_url(); ?>/categoria/cerdo">
         <?php
-          if($current_category->name=='cerdo'){
+        if ($current_category->name == 'cerdo') {
             echo '<div class="card-icon active">';
-          }else{
+        } else {
             echo '<div class="card-icon">';
-          }
+        }
         ?>
-            <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4792.png" alt="">
-            </div>
-            <p>Cerdo</p>
+        <div class="circle-icon bg-skyblue">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4792.png" alt="">
+        </div>
+        <p>Cerdo</p>
         </div>
     </a>
     <a href="<?php echo home_url(); ?>/categoria/huevo">
         <?php
-          if($current_category->name=='huevo'){
+        if ($current_category->name == 'huevo') {
             echo '<div class="card-icon active">';
-          }else{
+        } else {
             echo '<div class="card-icon">';
-          }
+        }
         ?>
-            <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4793.png" alt="">
-            </div>
-            <p>Huevo</p>
+        <div class="circle-icon bg-skyblue">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4793.png" alt="">
         </div>
-        </a>
+        <p>Huevo</p>
+        </div>
+    </a>
     </div>
 
     <div class="container">
         <img class="line-pick" src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-14.png" alt="">
     </div>
     <div class="container container-productos">
-      
+
         <?php
 
-$terms = get_terms([
-    'taxonomy' => get_queried_object()->taxonomy,
-    'parent'   => get_queried_object_id(),
-]);
+        $terms = get_terms([
+            'taxonomy' => get_queried_object()->taxonomy,
+            'parent'   => get_queried_object_id(),
+        ]);
 
-echo '<div id="lista-cate" class="lista-categorias">';
-foreach ( $terms as $term) {
- 
-   // echo '<a href="' . get_term_link( $term ) . '"><div class="btn-lista-cat">' . $term->name . '</div></a>';  
-   echo '<div class="btn-lista-cat" data-id="'.$term->term_id.'" data-category="'.$term->name.'">' . $term->name . '</div>'; 
-}
-echo "</div>";
+        echo '<div id="lista-cate" class="lista-categorias">';
+        foreach ($terms as $term) {
 
-get_template_part('loop'); // if no sub categories exist, show the posts
+            // echo '<a href="' . get_term_link( $term ) . '"><div class="btn-lista-cat">' . $term->name . '</div></a>';  
+            echo '<div class="btn-lista-cat" data-id="' . $term->term_id . '" data-category="' . $term->name . '">' . $term->name . '</div>';
+        }
+        echo "</div>";
 
-?>
+        get_template_part('loop'); // if no sub categories exist, show the posts
+
+        ?>
     </div>
     <div class="container lista-prod">
-      
+
     </div>
 
     <div class="container detalle-prod">
         <div class="col-des-menu-1">
-        <?php
-$list_subcat = array();
-if (!empty($cat)) $list_subcat = get_categories([
-    'hide_empty' => false,
-    'parent' => $cat
-]);
-if (count($list_subcat)) :
-    foreach ($list_subcat as $item_subcat) {
-        
-       // echo $item_subcat->name.'-'.$item_subcat->term_id.'<br>';
-        $subsubcategories = get_categories([
-            'parent' => $item_subcat->term_id
-        ]);
-        foreach ($subsubcategories as $key => $item_subsubcat) {
-            $get = get_posts([
-                'post_type' => 'producto',
-                'posts_per_page' => -1,
-                'category' => $item_subsubcat->term_id
+            <?php
+            $list_subcat = array();
+            if (!empty($cat)) $list_subcat = get_categories([
+                'hide_empty' => false,
+                'parent' => $cat
             ]);
-            echo '<div class="col-des-menu" data-tab='.$item_subcat->term_id.'>';
-              echo '<div class="select-title">
-                      <p class="color-blue">'.$item_subsubcat->name.'</p>
+            if (count($list_subcat)) :
+                foreach ($list_subcat as $item_subcat) {
+
+                    // echo $item_subcat->name.'-'.$item_subcat->term_id.'<br>';
+                    $subsubcategories = get_categories([
+                        'parent' => $item_subcat->term_id
+                    ]);
+                    foreach ($subsubcategories as $key => $item_subsubcat) {
+                        $get = get_posts([
+                            'post_type' => 'producto',
+                            'posts_per_page' => -1,
+                            'category' => $item_subsubcat->term_id
+                        ]);
+                        echo '<div class="col-des-menu" data-tab=' . $item_subcat->term_id . '>';
+                        echo '<div class="select-title">
+                      <p class="color-blue">' . $item_subsubcat->name . '</p>
                         <svg class="close-des" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.28921 15.7901C5.38217 15.8839 5.49277 15.9583 5.61463 16.009C5.73649 16.0598 5.8672 16.0859 5.99921 16.0859C6.13122 16.0859 6.26192 16.0598 6.38378 16.009C6.50564 15.9583 6.61624 15.8839 6.70921 15.7901L11.2892 11.2101C11.3822 11.1164 11.4928 11.042 11.6146 10.9912C11.7365 10.9405 11.8672 10.9143 11.9992 10.9143C12.1312 10.9143 12.2619 10.9405 12.3838 10.9912C12.5056 11.042 12.6162 11.1164 12.7092 11.2101L17.2892 15.7901C17.3822 15.8839 17.4928 15.9583 17.6146 16.009C17.7365 16.0598 17.8672 16.0859 17.9992 16.0859C18.1312 16.0859 18.2619 16.0598 18.3838 16.009C18.5056 15.9583 18.6162 15.8839 18.7092 15.7901C18.8955 15.6028 19 15.3493 19 15.0851C19 14.821 18.8955 14.5675 18.7092 14.3801L14.1192 9.79014C13.5567 9.22834 12.7942 8.91278 11.9992 8.91278C11.2042 8.91278 10.4417 9.22834 9.87921 9.79014L5.28921 14.3801C5.10296 14.5675 4.99841 14.821 4.99841 15.0851C4.99841 15.3493 5.10296 15.6028 5.28921 15.7901Z" fill="#004A96" />
                         </svg>
                     </div>';
-              echo ' <div class="select-options">';
-              foreach ($get as $key => $g) {
-                  echo "<p>";
-                  print_r($g->post_title);
-                  echo "</p>";
-              }
-              echo '</div>';
-            echo "</div>";
-        }
-    }
-endif;
-?>
+                        echo ' <div class="select-options">';
+                        foreach ($get as $key => $g) {
+                            echo "<p>";
+                            print_r($g->post_title);
+                            echo "</p>";
+                        }
+                        echo '</div>';
+                        echo "</div>";
+                    }
+                }
+            endif;
+            ?>
         </div>
         <div class="col-img-prod">
             <div class="etiqueta-rango" style="display: none;">
@@ -296,8 +296,8 @@ endif;
         <div class="col-817 center-vertical">
             <div>
                 <p class="subtitle color-blue">Blog Bien Servido</p>
-                <h2 class="color-blue">Encuentra la <br>solución para tu cocina con nuestro pollos</h2>
-                <p class="p-subtitle color-gris">Lorem ipsum dolor sit amet, consectetur ipsum dolor adipiscing elit. Proin a justo dolor magna.</p>
+                <h2 class="color-blue">Encuentra la <br>solución para tu cocina con nuestro productos</h2>
+                <p class="p-subtitle color-gris">Tendrás todas nuestras recetas y valiosos consejos nutricionales creamos para ti y tu familia.</p>
                 <svg width="288" height="95" viewBox="0 0 288 95" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M137.245 2.36188C222.581 -4.44131 284.401 20.4051 286.028 40.9626C287.803 62.7033 225.391 85.4792 146.711 91.6908C68.0302 97.9024 2.95621 85.1834 1.18146 63.4427C-0.593284 41.7021 61.8186 19.0741 140.499 12.8625" stroke="#004A96" stroke-width="2.32669" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
@@ -344,4 +344,3 @@ endif;
         </div>
     </div>
 </section>
-

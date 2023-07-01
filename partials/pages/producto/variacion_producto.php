@@ -107,7 +107,7 @@
         <div class="col-817 center-vertical">
             <div>
                 <p class="subtitle color-blue">Blog Bien Servido</p>
-                <h2 class="color-blue">Encuentra la <br>solución para tu cocina con nuestro pollos</h2>
+                <h2 class="color-blue">Encuentra la <br>solución para tu cocina con nuestro productos</h2>
                 <p class="p-subtitle color-gris">Lorem ipsum dolor sit amet, consectetur ipsum dolor adipiscing elit. Proin a justo dolor magna.</p>
                 <svg width="288" height="95" viewBox="0 0 288 95" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M137.245 2.36188C222.581 -4.44131 284.401 20.4051 286.028 40.9626C287.803 62.7033 225.391 85.4792 146.711 91.6908C68.0302 97.9024 2.95621 85.1834 1.18146 63.4427C-0.593284 41.7021 61.8186 19.0741 140.499 12.8625" stroke="#004A96" stroke-width="2.32669" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
