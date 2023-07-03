@@ -123,65 +123,23 @@ $opciones_cotiza_y_compra = get_field('opciones_cotiza_y_compra');
         <div class="splide splide1">
             <div class="col-blog-2 splide__track">
                 <div class="slider-blog splide__list">
-                    <div class="card-blog splide__slide">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668.png)">
-                        </div>
-                        <div class="btn-cat">Nutrición</div>
-                        <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
-                        <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
-                        <a href="">Leer más</a>
-                    </div>
-                    <div class="card-blog splide__slide">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668-1.png">
-                        </div>
-                        <div class="btn-cat">Nutrición</div>
-                        <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
-                        <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
-                        <a href="">Leer más</a>
-                    </div>
-                    <div class="card-blog splide__slide">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Mask-group-35.png)">
-                        </div>
-                        <div class="btn-cat">Nutrición</div>
-                        <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
-                        <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
-                        <a href="">Leer más</a>
-                    </div>
-                    <div class="card-blog splide__slide">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668-1.png">
-                        </div>
-                        <div class="btn-cat">Nutrición</div>
-                        <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
-                        <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
-                        <a href="">Leer más</a>
-                    </div>
-                    <div class="card-blog splide__slide">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668-1.png">
-                        </div>
-                        <div class="btn-cat">Nutrición</div>
-                        <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
-                        <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
-                        <a href="">Leer más</a>
-                    </div>
-                    <div class="card-blog splide__slide">
-                        <div class="img-blog" style="background: url(<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4668-1.png">
-                        </div>
-                        <div class="btn-cat">Nutrición</div>
-                        <p class="title-blog">El buen sabor para una sopa de Pavo casera y reconfortante</p>
-                        <p class="text-blog">Comer pavo es una delicia en todas sus presentaciones, pero es muy probable que…</p>
-                        <a href="">Leer más</a>
-                    </div>
+                    <?php 
+                        $mydb = new wpdb('aprosqanet_sanfer_blog','Arc,Df4QCKRY','aprosqanet_sanfer_blog','localhost');
+                        $rows = $mydb->get_results("SELECT wp_posts.ID, wp_posts.guid, wp_posts.post_title, wp_posts.post_content , wp_postmeta.meta_key, wp_postmeta.meta_value, tabla2.guid 'url' from wp_posts INNER JOIN wp_term_relationships ON wp_term_relationships.object_id = wp_posts.ID INNER JOIN wp_postmeta ON wp_postmeta.post_id = wp_posts.ID INNER JOIN wp_posts as tabla2 ON tabla2.ID = wp_postmeta.meta_value WHERE wp_term_relationships.term_taxonomy_id=22 AND wp_postmeta.meta_key = '_thumbnail_id' ORDER BY wp_posts.post_date DESC LIMIT 5");
+                        foreach ($rows as $obj) {
+                            
+                            echo '<div class="card-blog splide__slide">
+                                    <div class="img-blog" data-id='.$obj->ID.' style="background: url('.$obj->url.')">
+                                    </div>
+                                    <div class="btn-cat">Recetas</div>
+                                    <p class="title-blog">'.$obj->post_title.'</p>
+                                    <a href="'.$obj->guid.'">Leer más</a>
+                                </div>';
+                        }
+                    ?>
                 </div>
             </div>
         </div>
-        <?php 
-           // global $wpdb;
-            $mydb = new wpdb('aprosqanet_sanfer_blog','Arc,Df4QCKRY','aprosqanet_sanfer_blog','localhost');
-            $rows = $mydb->get_results("select * from aprosqanet_sanfer_blog.wp_posts");
-            foreach ($rows as $obj) {
-                echo $obj->id;
-         }
-            ?>
 </section>
 <?php
 $titulo_nuestra_familia = get_field('titulo_nuestra_familia');
