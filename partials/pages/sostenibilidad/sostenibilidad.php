@@ -196,7 +196,7 @@ $imagen_seguridad = get_field("imagen_seguridad");
 
         </article>
 
-        <article class="contain-4 container" id="sostenibilidad">
+        <article class="contain-4 container" id="compromiso">
             <figure>
                 <img src="<?= $imagen_compromisos["url"] ?>" alt="imagen 2 personas">
             </figure>
