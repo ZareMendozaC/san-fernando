@@ -1,6 +1,7 @@
 <?php
 
 $img_portada = get_field("img_portada");
+$img_portada_mobil = get_field("portada_mobil");
 
 $text_opcion1 = get_field("puntos_canje_text");
 $url_opcion1 = get_field("puntos_de_canje");
@@ -28,7 +29,11 @@ $mas_informacion = get_field("mas_informacion");
     <img src="<?= $img_portada["url"] ?>" alt="imagen-portada">
   </figure>
 
-  <section class="containt-canje container">
+  <figure class="portada-mobil">
+    <img src="<?= $img_portada_mobil["url"] ?>" alt="imagen-portada">
+  </figure>
+
+  <section id="opciones-canje" class="containt-canje container">
     <div class="section-1-canje">
       <h2>Opción 1</h2>
       <p class="first-text">Canjea tu vale presencialmente</p>

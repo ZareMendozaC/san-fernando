@@ -27,12 +27,12 @@ function initSplideSubCategories() {
 }
 
 $('#lista-cate').slick({
-  slidesToShow: 5,
+  slidesToShow: 4,
   slidesToScroll: 1,
   dots: false,
   arrows: false,
   variableWidth: false,
-  centerMode: true,
+  centerMode: false,
   responsive: [
     {
       breakpoint: 769,

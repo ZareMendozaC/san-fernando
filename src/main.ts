@@ -10,6 +10,7 @@ import "./scripts/pages/sostenibilidad.js"
 import "./scripts/puntos/puntos-de-canje.js"
 import "./scripts/pages/time-line.js"
 import "./scripts/pages/productos.js"
+import "./scripts/pages/opciones-canje.js"
 
 // import Masonry from "masonry-layout/dist/masonry";
 //@ts-ignore
