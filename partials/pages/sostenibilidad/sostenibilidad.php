@@ -196,7 +196,7 @@ $imagen_seguridad = get_field("imagen_seguridad");
 
         </article>
 
-        <article class="contain-4 container" id="sostenibilidad">
+        <article class="contain-4 container" id="compromiso">
             <figure>
                 <img src="<?= $imagen_compromisos["url"] ?>" alt="imagen 2 personas">
             </figure>
@@ -251,7 +251,7 @@ $imagen_seguridad = get_field("imagen_seguridad");
             <section class="inner-section-2">
 
                 <div class="lista-ambiental">
-                    <ul class="list-ambiental-1">
+                    <ul id="list-ambiental-slide" class="list-ambiental-1">
                         <?php foreach ($lista_gestion as $list_ges) : ?>
 
                             <?php
@@ -267,6 +267,7 @@ $imagen_seguridad = get_field("imagen_seguridad");
                                         <picture>
                                             <img src="<?= $item_gestion_image_url ?>" alt="">
                                         </picture>
+
                                         <figcaption>
                                             <?php if ($titulo) : ?>
                                                 <h5><?= $titulo ?></h5>
