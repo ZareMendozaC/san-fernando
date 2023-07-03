@@ -4,7 +4,10 @@ function sales_points_handler()
   try {
     //code...
 
-    $type = $_POST['type'];
+    $type = 'venta';
+    if (array_key_exists('type', $_POST)) {
+      $type = $_POST['type'];
+    }
 
     $sales_points = get_posts([
       'post_type' => 'puntos_de_venta',
@@ -13,7 +16,7 @@ function sales_points_handler()
       'orderby' => 'post_date',
       'order' => 'DESC',
       'meta_key' => 'tipo', // Nombre del campo ACF
-      'meta_value' => 'venta', // Valor deseado del campo ACF
+      'meta_value' => $type, // Valor deseado del campo ACF ---> canje|venta
       'meta_compare' => '=', // Comparador de igualdad
     ]);
 

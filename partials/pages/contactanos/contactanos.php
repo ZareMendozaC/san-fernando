@@ -5,6 +5,20 @@ $texto_button = get_field("texto_button");
 $url_button_1 = get_field("url_button_1");
 $url_button_2 = get_field("url_button_2");
 
+$pregunta_1 = get_field("pregunta_1");
+$pregunta_2 = get_field("pregunta_2");
+$pregunta_3 = get_field("pregunta_3");
+$pregunta_4 = get_field("pregunta_4");
+$pregunta_5 = get_field("pregunta_5");
+$pregunta_6 = get_field("pregunta_6");
+
+$pregunta_1_url = get_field("pregunta_1_url");
+$pregunta_2_url = get_field("pregunta_2_url");
+
+$pregunta_4_url = get_field("pregunta_4_url");
+$pregunta_5_url = get_field("pregunta_5_rul");
+$pregunta_6_url = get_field("pregunta_6_url");
+
 ?>
 
 <section class="contactanos-contain">
@@ -67,7 +81,7 @@ $url_button_2 = get_field("url_button_2");
             </div>
             <div>
                 <p>
-                    Para poder encontrar dónde puedes canjear tus vales, según tu provincia y distrito, ingresa al enlace que hemos creado para ayudarte aquí.
+                    <?php echo $pregunta_1 ?><a href="<?= $pregunta_1_url ?>" target="_blank"> aquí.</a>
                 </p>
             </div>
 
@@ -78,7 +92,9 @@ $url_button_2 = get_field("url_button_2");
                 </svg>
             </div>
             <div>
-                <p>Para poder encontrar dónde puedes canjear tus vales, según tu provincia y distrito, ingresa al enlace que hemos creado para ayudarte aquí.</p>
+                <p>
+                    <?php echo $pregunta_2 ?> <a href="<?= $pregunta_2_url ?>"> tienda virtual.</a>
+                </p>
 
             </div>
 
@@ -89,7 +105,9 @@ $url_button_2 = get_field("url_button_2");
                 </svg>
             </div>
             <div>
-                <p>Para poder encontrar dónde puedes canjear tus vales, según tu provincia y distrito, ingresa al enlace que hemos creado para ayudarte aquí.</p>
+                <p>
+                    <?php echo $pregunta_3 ?>
+                </p>
 
             </div>
 
@@ -100,7 +118,9 @@ $url_button_2 = get_field("url_button_2");
                 </svg>
             </div>
             <div>
-                <p>Para poder encontrar dónde puedes canjear tus vales, según tu provincia y distrito, ingresa al enlace que hemos creado para ayudarte aquí.</p>
+                <p>
+                    <?php echo $pregunta_4 ?> <a href="<?= $pregunta_4_url ?>"> ingresa a este enlace.</a>
+                </p>
 
             </div>
 
@@ -111,7 +131,9 @@ $url_button_2 = get_field("url_button_2");
                 </svg>
             </div>
             <div>
-                <p>Para poder encontrar dónde puedes canjear tus vales, según tu provincia y distrito, ingresa al enlace que hemos creado para ayudarte aquí.</p>
+                <p>
+                    <?php echo $pregunta_5 ?> <a href="<?= $pregunta_5_url ?>"> aquí.</a>
+                </p>
 
             </div>
 
@@ -122,7 +144,9 @@ $url_button_2 = get_field("url_button_2");
                 </svg>
             </div>
             <div>
-                <p>Para poder encontrar dónde puedes canjear tus vales, según tu provincia y distrito, ingresa al enlace que hemos creado para ayudarte aquí.</p>
+                <p>
+                    <?php echo $pregunta_6 ?> <a href="<?= $pregunta_6_url ?>"> encontrar nuestros productos accediendo a este espacio.</a>
+                </p>
             </div>
 
         </div>

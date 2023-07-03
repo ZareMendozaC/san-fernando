@@ -26,6 +26,7 @@ function initSplideSubCategories() {
   splide.mount()
 }
 
+
 $('#slider-blog-list').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
@@ -103,3 +104,4 @@ document.addEventListener('DOMContentLoaded', function () {
   //get products
   $(".btn-lista-cat").first().trigger("click")
 })
+

@@ -246,6 +246,12 @@
                     margin: 0;
                     color: var(--color-gris);
                 }
+                p{
+                    a{
+                        text-decoration: underline!important;
+                        font-weight: 700;
+                    }
+                }
 
                 svg {
                     transform: rotate(180deg);
