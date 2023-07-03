@@ -236,16 +236,16 @@
       border-bottom-right-radius: 6px;
     }
 
-    &.alter {
-      li {
-        background: var(--color-white);
-      }
+    // &.alter {
+    //   li {
+    //     background: var(--color-white);
+    //   }
 
-      li:nth-child(odd) {
-        // background: #daf2f8;
-        background: #fff;
-      }
-    }
+    //   li:nth-child(odd) {
+    //     // background: #daf2f8;
+    //     background: #fff;
+    //   }
+    // }
   }
 }
 

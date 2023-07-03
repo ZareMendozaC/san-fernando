@@ -121,8 +121,8 @@
   <div class="menu_vales">
     <ul class="list-group alter">
       <!-- <li class="list-group-item"><a href="#">Cotiza tu vale</a></li> -->
-      <li class="list-group-item"><a href="#" target="_blank">Compra tu vale</a></li>
-      <li class="list-group-item"><a href="https://www.san-fernando.com.pe/opciones-de-canje" target="_blank">Canjea tu vale</a></li>
+      <li class="list-group-item"><a href="<?php echo home_url(); ?>/puntos-de-venta/" target="_blank">Compra tu vale</a></li>
+      <li class="list-group-item"><a href="<?php echo home_url(); ?>/puntos-de-canje/" target="_blank">Canjea tu vale</a></li>
     </ul>
   </div>
 
@@ -169,9 +169,9 @@
               </svg></button>
           </a>
           <ul class="list-group">
-            <li class="list-group-item li-vales_mov"><a href="#">Cotiza tu vale</a></li>
-            <li class="list-group-item li-vales_mov"><a href="#">Compra tu vale</a></li>
-            <li class="list-group-item li-vales_mov"><a href="#">Canjea tu vale</a></li>
+            <!-- <li class="list-group-item li-vales_mov"><a href="#">Cotiza tu vale</a></li> -->
+            <li class="list-group-item li-vales_mov"><a href="<?php echo home_url(); ?>/puntos-de-venta/">Compra tu vale</a></li>
+            <li class="list-group-item li-vales_mov"><a href="<?php echo home_url(); ?>/puntos-de-canje/">Canjea tu vale</a></li>
           </ul>
         </div>
       </li>
