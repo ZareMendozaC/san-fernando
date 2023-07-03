@@ -6,10 +6,10 @@ $args = array(
     'orderby' => 'name',
     'order' => 'ASC',
     'parent' => 0
-  );
-  $current_category = get_category( get_query_var( 'cat' ), false );
-  echo '<input id="catPadre" value="'.$current_category->name.'" type="hidden">';
-  $banner_mobile = get_field('banner_mobile');
+);
+$current_category = get_category(get_query_var('cat'), false);
+echo '<input id="catPadre" value="' . $current_category->name . '" type="hidden">';
+$banner_mobile = get_field('banner_mobile');
 ?>
 
 <h1 class="h1-marker">Productos</h1>
@@ -23,160 +23,162 @@ $args = array(
         <p class="p-subtitle-2 color-gris">Conoce todos nuestros productos de gran sabor</p>
     </div>
     <div class="row-icon-productos">
-    <a href="<?php echo home_url(); ?>/categoria/pollo">
-      <?php
-      if($current_category->name=='pollo'){
-        echo '<div class="card-icon active">';
-      }else{
-        echo '<div class="card-icon">';
-      }
-      ?>
+        <a href="<?php echo home_url(); ?>/categoria/pollo">
+            <?php
+            if ($current_category->name == 'pollo') {
+                echo '<div class="card-icon active">';
+            } else {
+                echo '<div class="card-icon">';
+            }
+            ?>
             <div class="circle-icon bg-skyblue">
                 <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4796.png" alt="">
             </div>
             <p>Pollo</p>
-        </div>
+    </div>
     </a>
     <a href="<?php echo home_url(); ?>/categoria/pavo">
         <?php
-          if($current_category->name=='pavo'){
+        if ($current_category->name == 'pavo') {
             echo '<div class="card-icon active">';
-          }else{
+        } else {
             echo '<div class="card-icon">';
-          }
+        }
         ?>
-            <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4795.png" alt="">
-            </div>
-            <p>Pavo</p>
+        <div class="circle-icon bg-skyblue">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4795.png" alt="">
+        </div>
+        <p>Pavo</p>
         </div>
     </a>
     <a href="<?php echo home_url(); ?>/categoria/embutidos">
         <?php
-          if($current_category->name=='embutidos'){
+        if ($current_category->name == 'embutidos') {
             echo '<div class="card-icon active">';
-          }else{
+        } else {
             echo '<div class="card-icon">';
-          }
+        }
         ?>
-            <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/sausages-1-1.png" alt="">
-            </div>
-            <p>Embutidos</p>
+        <div class="circle-icon bg-skyblue">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/sausages-1-1.png" alt="">
+        </div>
+        <p>Embutidos</p>
         </div>
     </a>
     <a href="<?php echo home_url(); ?>/categoria/congelados">
         <?php
-          if($current_category->name=='congelados'){
+        if ($current_category->name == 'congelados') {
             echo '<div class="card-icon active">';
-          }else{
+        } else {
             echo '<div class="card-icon">';
-          }
+        }
         ?>
-            <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4797.png" alt="">
-            </div>
-            <p>Congelados</p>
+        <div class="circle-icon bg-skyblue">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4797.png" alt="">
+        </div>
+        <p>Congelados</p>
         </div>
     </a>
     <a href="<?php echo home_url(); ?>/categoria/cerdo">
         <?php
-          if($current_category->name=='cerdo'){
+        if ($current_category->name == 'cerdo') {
             echo '<div class="card-icon active">';
-          }else{
+        } else {
             echo '<div class="card-icon">';
-          }
+        }
         ?>
-            <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4792.png" alt="">
-            </div>
-            <p>Cerdo</p>
+        <div class="circle-icon bg-skyblue">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4792.png" alt="">
+        </div>
+        <p>Cerdo</p>
         </div>
     </a>
     <a href="<?php echo home_url(); ?>/categoria/huevo">
         <?php
-          if($current_category->name=='huevo'){
+        if ($current_category->name == 'huevo') {
             echo '<div class="card-icon active">';
-          }else{
+        } else {
             echo '<div class="card-icon">';
-          }
+        }
         ?>
-            <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4793.png" alt="">
-            </div>
-            <p>Huevo</p>
+        <div class="circle-icon bg-skyblue">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4793.png" alt="">
         </div>
-        </a>
+        <p>Huevo</p>
+        </div>
+    </a>
     </div>
 
     <div class="container">
         <img class="line-pick" src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-14.png" alt="">
     </div>
-    <div class="container container-productos">
-      
+
+
+    <!-- Begind: Filter productos by categories -->
+    <div class="splide container container-productos" id="splide-subcategories">
         <?php
-
-$terms = get_terms([
-    'taxonomy' => get_queried_object()->taxonomy,
-    'parent'   => get_queried_object_id(),
-]);
-
-echo '<div id="lista-cate" class="lista-categorias">';
-foreach ( $terms as $term) {
- 
-   // echo '<a href="' . get_term_link( $term ) . '"><div class="btn-lista-cat">' . $term->name . '</div></a>';  
-   echo '<div class="btn-lista-cat" data-id="'.$term->term_id.'" data-category="'.$term->name.'">' . $term->name . '</div>'; 
-}
-echo "</div>";
-
-get_template_part('loop'); // if no sub categories exist, show the posts
-
-?>
+        $terms = get_terms([
+            'taxonomy' => get_queried_object()->taxonomy,
+            'parent'   => get_queried_object_id(),
+        ]);
+        ?>
+        <div class="splide__track">
+            <div id="lista-cate" class="splide__list lista-categorias">
+                <?php foreach ($terms as $term) : ?>
+                    <div class="splide__slide btn-lista-cat" data-id="<?php echo $term->term_id ?>" data-category="<?php echo $term->name ?>">
+                        <?php echo $term->name ?>
+                    </div>
+                    <?= get_template_part('loop') ?>
+                <?php endforeach ?>
+            </div>
+        </div>
     </div>
+    <!-- End: Filter productos by categories -->
+
     <div class="container lista-prod">
-      
+
     </div>
 
     <div class="container detalle-prod">
         <div class="col-des-menu-1">
-        <?php
-$list_subcat = array();
-if (!empty($cat)) $list_subcat = get_categories([
-    'hide_empty' => false,
-    'parent' => $cat
-]);
-if (count($list_subcat)) :
-    foreach ($list_subcat as $item_subcat) {
-        
-       // echo $item_subcat->name.'-'.$item_subcat->term_id.'<br>';
-        $subsubcategories = get_categories([
-            'parent' => $item_subcat->term_id
-        ]);
-        foreach ($subsubcategories as $key => $item_subsubcat) {
-            $get = get_posts([
-                'post_type' => 'producto',
-                'posts_per_page' => -1,
-                'category' => $item_subsubcat->term_id
+            <?php
+            $list_subcat = array();
+            if (!empty($cat)) $list_subcat = get_categories([
+                'hide_empty' => false,
+                'parent' => $cat
             ]);
-            echo '<div class="col-des-menu" data-tab='.$item_subcat->term_id.'>';
-              echo '<div class="select-title">
-                      <p class="color-blue">'.$item_subsubcat->name.'</p>
+            if (count($list_subcat)) :
+                foreach ($list_subcat as $item_subcat) {
+
+                    // echo $item_subcat->name.'-'.$item_subcat->term_id.'<br>';
+                    $subsubcategories = get_categories([
+                        'parent' => $item_subcat->term_id
+                    ]);
+                    foreach ($subsubcategories as $key => $item_subsubcat) {
+                        $get = get_posts([
+                            'post_type' => 'producto',
+                            'posts_per_page' => -1,
+                            'category' => $item_subsubcat->term_id
+                        ]);
+                        echo '<div class="col-des-menu" data-tab=' . $item_subcat->term_id . '>';
+                        echo '<div class="select-title">
+                      <p class="color-blue">' . $item_subsubcat->name . '</p>
                         <svg class="close-des" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.28921 15.7901C5.38217 15.8839 5.49277 15.9583 5.61463 16.009C5.73649 16.0598 5.8672 16.0859 5.99921 16.0859C6.13122 16.0859 6.26192 16.0598 6.38378 16.009C6.50564 15.9583 6.61624 15.8839 6.70921 15.7901L11.2892 11.2101C11.3822 11.1164 11.4928 11.042 11.6146 10.9912C11.7365 10.9405 11.8672 10.9143 11.9992 10.9143C12.1312 10.9143 12.2619 10.9405 12.3838 10.9912C12.5056 11.042 12.6162 11.1164 12.7092 11.2101L17.2892 15.7901C17.3822 15.8839 17.4928 15.9583 17.6146 16.009C17.7365 16.0598 17.8672 16.0859 17.9992 16.0859C18.1312 16.0859 18.2619 16.0598 18.3838 16.009C18.5056 15.9583 18.6162 15.8839 18.7092 15.7901C18.8955 15.6028 19 15.3493 19 15.0851C19 14.821 18.8955 14.5675 18.7092 14.3801L14.1192 9.79014C13.5567 9.22834 12.7942 8.91278 11.9992 8.91278C11.2042 8.91278 10.4417 9.22834 9.87921 9.79014L5.28921 14.3801C5.10296 14.5675 4.99841 14.821 4.99841 15.0851C4.99841 15.3493 5.10296 15.6028 5.28921 15.7901Z" fill="#004A96" />
                         </svg>
                     </div>';
-              echo ' <div class="select-options">';
-              foreach ($get as $key => $g) {
-                  echo "<p>";
-                  print_r($g->post_title);
-                  echo "</p>";
-              }
-              echo '</div>';
-            echo "</div>";
-        }
-    }
-endif;
-?>
+                        echo ' <div class="select-options">';
+                        foreach ($get as $key => $g) {
+                            echo "<p>";
+                            print_r($g->post_title);
+                            echo "</p>";
+                        }
+                        echo '</div>';
+                        echo "</div>";
+                    }
+                }
+            endif;
+            ?>
         </div>
         <div class="col-img-prod">
             <div class="etiqueta-rango" style="display: none;">
@@ -310,22 +312,21 @@ endif;
     <div class="container">
         <div class="col-blog-2">
             <div id="slider-blog-list" class="slider-blog">
-                <?php 
-                    $mydb = new wpdb('aprosqanet_sanfer_blog','Arc,Df4QCKRY','aprosqanet_sanfer_blog','localhost');
-                    $rows = $mydb->get_results("SELECT wp_posts.ID, wp_posts.guid, wp_posts.post_title, wp_posts.post_content , wp_postmeta.meta_key, wp_postmeta.meta_value, tabla2.guid 'url' from wp_posts INNER JOIN wp_term_relationships ON wp_term_relationships.object_id = wp_posts.ID INNER JOIN wp_postmeta ON wp_postmeta.post_id = wp_posts.ID INNER JOIN wp_posts as tabla2 ON tabla2.ID = wp_postmeta.meta_value WHERE wp_term_relationships.term_taxonomy_id=22 AND wp_postmeta.meta_key = '_thumbnail_id' ORDER BY wp_posts.post_date DESC LIMIT 4");
-                    foreach ($rows as $obj) {
-                        
-                        echo '<div class="card-blog">
-                                <div class="img-blog" data-id='.$obj->ID.' style="background: url('.$obj->url.')">
-                                </div>
-                                <div class="btn-cat">Recetas</div>
-                                <p class="title-blog">'.$obj->post_title.'</p>
-                                <a href="'.$obj->guid.'">Leer más</a>
-                            </div>';
-                    }
+                <?php
+                // $mydb = new wpdb('aprosqanet_sanfer_blog', 'Arc,Df4QCKRY', 'aprosqanet_sanfer_blog', 'localhost');
+                // $rows = $mydb->get_results("SELECT wp_posts.ID, wp_posts.guid, wp_posts.post_title, wp_posts.post_content , wp_postmeta.meta_key, wp_postmeta.meta_value, tabla2.guid 'url' from wp_posts INNER JOIN wp_term_relationships ON wp_term_relationships.object_id = wp_posts.ID INNER JOIN wp_postmeta ON wp_postmeta.post_id = wp_posts.ID INNER JOIN wp_posts as tabla2 ON tabla2.ID = wp_postmeta.meta_value WHERE wp_term_relationships.term_taxonomy_id=22 AND wp_postmeta.meta_key = '_thumbnail_id' ORDER BY wp_posts.post_date DESC LIMIT 4");
+                // foreach ($rows as $obj) {
+
+                //     echo '<div class="card-blog">
+                //                 <div class="img-blog" data-id=' . $obj->ID . ' style="background: url(' . $obj->url . ')">
+                //                 </div>
+                //                 <div class="btn-cat">Recetas</div>
+                //                 <p class="title-blog">' . $obj->post_title . '</p>
+                //                 <a href="' . $obj->guid . '">Leer más</a>
+                //             </div>';
+                // }
                 ?>
             </div>
         </div>
     </div>
 </section>
-
