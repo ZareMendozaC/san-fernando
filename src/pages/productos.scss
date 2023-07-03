@@ -161,50 +161,62 @@
     }
 
     .container-productos {
-        .splide__track {
-            margin-left: auto;
-            margin-right: auto;
-            width: fit-content;
+        // .splide__track {
+        //     margin-left: auto;
+        //     margin-right: auto;
+        //     width: fit-content;
 
             .lista-categorias {
-                .btn-lista-cat {
-                    height: calculate(52);
-                    width: fit-content;
-                    padding-left: calculate(50);
-                    padding-right: calculate(50);
-                    display: flex !important;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: var(--color-celeste-light);
-                    font-family: 'FuturaStd';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: calculate(18);
-                    line-height: calculate(32);
-                    text-align: center;
-                    color: var(--color-blue);
-                    border-radius: calculate(500);
-                    cursor: pointer;
-                    margin-right: calculate(32);
-                    transition: all 0.2s ease-in;
-                    text-transform: capitalize;
+                display: flex;
+                .slick-list{
+                    display: flex;
+                    width: 100%;
+                .slick-track{
+                    display: flex;
+                    gap: calculate(30);
+                    width: 100%!important;
+                    
+                    .btn-lista-cat {
+                        height: calculate(52);
+                        width: fit-content;
+                        padding-left: calculate(50);
+                        padding-right: calculate(50);
+                        display: flex !important;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: var(--color-celeste-light);
+                        font-family: 'FuturaStd';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: calculate(18);
+                        line-height: calculate(32);
+                        text-align: center;
+                        color: var(--color-blue);
+                        border-radius: calculate(500);
+                        cursor: pointer;
+                        margin-right: calculate(32);
+                        transition: all 0.2s ease-in;
+                        text-transform: capitalize;
+                    }
+    
+                    .btn-lista-cat:hover {
+                        background-color: var(--color-blue);
+                        color: var(--color-white);
+                    }
+    
+                    .btn-lista-cat:last-child {
+                        margin-right: 0px;
+                    }
+    
+                    .btn-lista-cat.active {
+                        background-color: var(--color-blue);
+                        color: var(--color-white);
+                    }
                 }
-
-                .btn-lista-cat:hover {
-                    background-color: var(--color-blue);
-                    color: var(--color-white);
-                }
-
-                .btn-lista-cat:last-child {
-                    margin-right: 0px;
-                }
-
-                .btn-lista-cat.active {
-                    background-color: var(--color-blue);
-                    color: var(--color-white);
-                }
+               }
+               
             }
-        }
+        // }
     }
 }
 
