@@ -144,8 +144,6 @@
       <li class="list-group-item">
         <a href="https://apros-qa.net.pe/sanfer/blog/categoria/soluciones/" target="_blank">Soluciones</a>
       </li>
-      <!-- <li class="list-group-item"><a href="#">Calculadora de proteina</a></li>
-      <li class="list-group-item"><a href="#">Crea tu menú</a></li> -->
     </ul>
   </div>
 
@@ -156,11 +154,9 @@
       <li class="list-group-item li-mov-menu"><a href="#" class="btn-blog-mov" onclick="return false;">Blog Bien Servido <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
             <path d="M0.986328 1.93591L9.0002 9.94979L17.0141 1.93591L15.1285 0.0502939L9.00021 6.17855L2.87195 0.050293L0.986328 1.93591Z" fill="#004C97" />
           </svg></a></li>
-      <!-- <li class="list-group-item li-blog_mov"><a href="#">Recetas</a></li> -->
-      <li class="list-group-item li-blog_mov"><a href="#">Nutrición</a></li>
-      <li class="list-group-item li-blog_mov"><a href="#">Soluciones</a></li>
-      <li class="list-group-item li-blog_mov"><a href="#">Calculadora de proteina</a></li>
-      <li class="list-group-item li-blog_mov"><a href="#">Crea tu menú</a></li>
+      <li class="list-group-item li-blog_mov"><a href="https://apros-qa.net.pe/sanfer/blog/categoria/recetas/">Recetas</a></li>
+      <li class="list-group-item li-blog_mov"><a href="https://apros-qa.net.pe/sanfer/blog/categoria/nutricion/">Nutrición</a></li>
+      <li class="list-group-item li-blog_mov"><a href="https://apros-qa.net.pe/sanfer/blog/categoria/soluciones/">Soluciones</a></li>
       <li class="list-group-item li-mov-menu"><a href="<?php echo home_url(); ?>/contacto">Contacto</a></li>
       <li class="menu-item">
         <div class="div-btn-vales"><a href="#" onclick="return false;">
