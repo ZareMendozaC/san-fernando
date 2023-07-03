@@ -7,12 +7,12 @@
   text-align: center;
   margin-bottom: calculate(150);
 
-  .head_nosotros_mov {
-    display: none;
-  }
+  picture {
+    width: 100%;
 
-  .img_nosotros {
-    display: none;
+    img {
+      width: 100%;
+    }
   }
 
   .head_nosotros {
@@ -53,6 +53,7 @@
 
   .div_h2_nos {
     position: relative;
+    padding-top: calculate(70);
   }
 
   h2 {

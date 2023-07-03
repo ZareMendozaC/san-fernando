@@ -100,10 +100,12 @@
       border-radius: calculate(24);
       font-family: 'FuturaStd';
       flex-direction: column;
-      .title{
+
+      .title {
         font-size: calculate(31) !important;
         line-height: calculate(34) !important;
       }
+
       .info,
       .image {
         width: 100%;
@@ -115,6 +117,10 @@
 
       .image {
         margin-bottom: calculate(-10);
+      }
+
+      .btn-menu {
+        margin: auto;
       }
 
     }
@@ -144,7 +150,6 @@
         border-radius: calculate(16);
         width: calculate(150);
         height: calculate(160);
-        background-size: cover !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         transition: all ease-in 0.1s;

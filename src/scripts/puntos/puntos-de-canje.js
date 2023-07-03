@@ -161,10 +161,11 @@
         
         let id= getUrlParameter('id');
         let url = origin+"/js/puntos_canje.js";
-
+        let tipo_venta_canje = $('#tipoEncuentranos').val();
         const formdata = new FormData()
         formdata.append("nonce", wpCredentials.security)
         formdata.append("action", "sales_points")
+        formdata.append("type", tipo_venta_canje)
 
         fetch(wpCredentials.url, {
             method: 'POST',

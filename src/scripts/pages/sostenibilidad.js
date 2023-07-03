@@ -26,7 +26,27 @@ $('#social-carousel').slick({
   centerMode: false,
   responsive: [
     {
-      breakpoint: 769,
+      breakpoint: 1024,
+      settings:
+      {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    }
+  ]
+})
+
+$('#list-ambiental-slide').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: false,
+  variableWidth: true,
+  centerMode: false,
+  responsive: [
+    {
+      breakpoint: 1024,
       settings:
       {
         slidesToShow: 1,
@@ -38,38 +58,39 @@ $('#social-carousel').slick({
 })
 
 
-mobileOnlySlider3(".list-ambiental-1", false, false, 768);
 
-function mobileOnlySlider3($slidername, $dots, $arrows, $breakpoint) {
-  var slider = $($slidername);
-  var settings = {
-    mobileFirst: true,
-    dots: $dots,
-    arrows: $arrows,
-    variableWidth: true,
-    centerMode: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: true,
-    responsive: [
-      {
-        breakpoint: $breakpoint,
-        settings: "unslick"
-      }
-    ]
-  };
+// mobileOnlySlider3("#list-ambiental-slide", false, false, 768);
 
-  slider.slick(settings);
+// function mobileOnlySlider3($slidername, $dots, $arrows, $breakpoint) {
+//   var slider = $($slidername);
+//   var settings = {
+//     mobileFirst: true,
+//     dots: $dots,
+//     arrows: $arrows,
+//     variableWidth: true,
+//     centerMode: false,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     infinite: true,
+//     responsive: [
+//       {
+//         breakpoint: $breakpoint,
+//         settings: "unslick"
+//       }
+//     ]
+//   };
 
-  $(window).on("resize", function () {
-    if ($(window).width() > $breakpoint) {
-      return;
-    }
-    if (!slider.hasClass("slick-initialized")) {
-      return slider.slick(settings);
-    }
-  });
-} // Mobile Only Slider
+// slider.slick(settings);
+
+// $(window).on("resize", function () {
+//   if ($(window).width() > $breakpoint) {
+//     return;
+//   }
+//   if (!slider.hasClass("slick-initialized")) {
+//     return slider.slick(settings);
+//   }
+// });
+// } // Mobile Only Slider
 
 
 
