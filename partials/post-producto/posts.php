@@ -9,12 +9,14 @@ $args = array(
   );
   $current_category = get_category( get_query_var( 'cat' ), false );
   echo '<input id="catPadre" value="'.$current_category->name.'" type="hidden">';
-  
+  $banner_mobile = get_field('banner_mobile');
 ?>
 
 <h1 class="h1-marker">Productos</h1>
 <section id="post-category" class="container-full section-productos">
-    <div class="general-banner-img" style="background: url('<?php echo $current_category->description; ?>');">
+    <div class="general-banner-img show-desktop" style="background: url('<?php echo $current_category->description; ?>');">
+    </div>
+    <div class="general-banner-img show-mobile" style="background: url('<?php echo $banner_mobile['url']; ?>');">
     </div>
     <div class="container pdt-productos">
         <h2 class="color-blue text-center">Productos</h2>
