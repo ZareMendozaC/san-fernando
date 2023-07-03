@@ -43,7 +43,7 @@ $(".card-certificacion").hover(function () {
   $('#dCertificacion').html(data);
   $('.modal-certificacion').fadeIn();
 });
-$(".close-certificacion").hover(function () {
+$(".close-certificacion").click(function () {
   $('#dCertificacion').html('');
   $('.modal-certificacion').fadeOut();
 });
