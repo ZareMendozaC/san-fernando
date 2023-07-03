@@ -254,7 +254,7 @@
         .contain-4 {
             display: flex;
             gap: calculate(90);
-            padding: calculate(120) 0;
+            padding: calculate(120) calculate(0);
 
             figure {
                 width: calculate(766);
@@ -336,7 +336,7 @@
 
                     p {
                         color: var(--color-white);
-                        font-size: calculate(18);
+                        font-size: calculate(22);
                         width: calculate(766);
                         text-align: justify;
                     }
@@ -344,7 +344,7 @@
                     span {
                         padding-top: calculate(10);
                         color: var(--color-white);
-                        font-size: calculate(18);
+                        font-size: calculate(22);
                         width: calculate(766);
                     }
                 }
