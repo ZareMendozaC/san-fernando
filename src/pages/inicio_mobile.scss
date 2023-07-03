@@ -131,13 +131,9 @@
             line-height: calculate(60);
         }
 
-        .btn-ver-articulos {
-            display: none;
-        }
-
         .card-blog {
             width: calc(100vw * 283 / var(--width_base)) !important;
-            height: calc(100vw * 420 / var(--width_base)) !important;
+            height: calc(100vw * 380 / var(--width_base)) !important;
             padding-top: calc(100vw * 16 / var(--width_base));
             padding-left: calc(100vw * 14 / var(--width_base));
             padding-right: calc(100vw * 14 / var(--width_base));
@@ -173,10 +169,6 @@
         .slick-slide {
             margin-right: calc(100vw * 16 / var(--width_base));
             margin-left: 0px;
-        }
-
-        a {
-            display: none;
         }
 
         .slider-arrows {

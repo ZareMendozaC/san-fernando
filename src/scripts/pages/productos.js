@@ -26,6 +26,7 @@ function initSplideSubCategories() {
   splide.mount()
 }
 
+<<<<<<< HEAD
 $('#lista-cate').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
@@ -45,6 +46,8 @@ $('#lista-cate').slick({
     }
   ]
 })
+=======
+>>>>>>> 7c02b5de568fe153a2dad66899786e6b20b00ad7
 
 $('#slider-blog-list').slick({
   slidesToShow: 4,
@@ -114,12 +117,40 @@ $(".btn-lista-cat").on("click", function () {
     }
   })
 })
+if($( ".btn-lista-cat" ).length >0)
+{
+  $('#lista-cate').children(':first-child').click();
+}
+/*
+//funcion al hacer click en los  cards de los productos carga la data
+$(document).on('click','.select-producto-final', function(){ 
+  $('.lista-prod').css('display','none');
+  $('.detalle-prod').css('display','flex');
 
+    let padre = $('#catPadre').val();
+    let hija = $(this).attr('data-category');
+    let id_product = $(this).attr('data-id');
+
+    jQuery.ajax({
+      type : "post",
+      dataType : "json",
+      url : wpCredentials.url,
+      data : {action: "get_productofinal", post_padre : padre, id_product: id_product},
+      success: function(response) {
+        if(response['success'] == true) {
+          $('.imgProductFinal').css("background","url("+response['data']['data'].bgimage+")");
+          $('.titleProductFinal').text(response['data']['data'].post_title);
+        }
+        else {
+            alert("Lo sentimos no se pudieron cargar los datos, revisa tu conexión");
+        }
+      }
+    })   
+} );
+*/
 
 
 document.addEventListener('DOMContentLoaded', function () {
   initSplideSubCategories()
-
-  //get products
-  $(".btn-lista-cat").first().trigger("click")
 })
+

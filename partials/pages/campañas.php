@@ -52,7 +52,7 @@ $galeria = get_field("galeria");
                         <?php endif; ?>
                     </a>
                 <?php else : ?>
-                    <div>
+                    <div class="grid-item">
                         <?php if ($item_image) : ?>
                             <?= render_image($item_image['ID']) ?>
                         <?php endif; ?>
