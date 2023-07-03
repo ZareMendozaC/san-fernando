@@ -45,12 +45,18 @@ $galeria = get_field("galeria");
                             <?= render_image($item_image['ID']) ?>
                         <?php endif; ?>
                     </div>
-                <?php else : ?>
+                <?php elseif ($item_link) : ?>
                     <a href="<?= default_value($item_link, '#') ?>" target="<?= default_value($item_link ? '_blank' : null, '_self') ?>" rel="nofollow" class="grid-item">
                         <?php if ($item_image) : ?>
                             <?= render_image($item_image['ID']) ?>
                         <?php endif; ?>
                     </a>
+                <?php else : ?>
+                    <div>
+                        <?php if ($item_image) : ?>
+                            <?= render_image($item_image['ID']) ?>
+                        <?php endif; ?>
+                    </div>
                 <?php endif; ?>
 
             <?php endif; ?>
