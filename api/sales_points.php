@@ -3,12 +3,18 @@ function sales_points_handler()
 {
   try {
     //code...
+
+    $type = $_POST['type'];
+
     $sales_points = get_posts([
       'post_type' => 'puntos_de_venta',
       'post_status' => 'publish',
       'posts_per_page' => -1,
       'orderby' => 'post_date',
       'order' => 'DESC',
+      'meta_key' => 'tipo', // Nombre del campo ACF
+      'meta_value' => 'venta', // Valor deseado del campo ACF
+      'meta_compare' => '=', // Comparador de igualdad
     ]);
 
     $sales_points = array_map(function ($sales_point) {
