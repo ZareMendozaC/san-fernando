@@ -6,12 +6,12 @@
 
     .slick-next {
         right: 23% !important;
-        top: 85% !important;
+        top: 81.5% !important;
     }
 
     .slick-prev {
         left: 22% !important;
-        top: 85% !important;
+        top: 81.5% !important;
     }
 
     .main-banner .slick-dots {
@@ -20,7 +20,14 @@
     }
 
     .main-banner {
-
+        .slick-next svg{
+            width: calculate(40);
+            height: calculate(40);
+        }
+        .slick-prev svg{
+            width: calculate(40);
+            height: calculate(40);
+        }
         .slick-track {
             height: calc(100vw * 438 / var(--width_base)) !important;
         }
@@ -238,6 +245,7 @@
     .box-i-textos {
         left: calculate(14);
         bottom: calculate(16);
+        display: block;
     }
 
     .box-image-1 {
@@ -246,9 +254,7 @@
         }
     }
 
-    .box-i-textos a {
-        display: none;
-    }
+
 
     .mrg-t-23 {
         margin-top: calc(100vw * 16 / var(--width_base));
@@ -361,11 +367,30 @@
     }
 
     .lista-productos {
-        padding-top: calculate(200);
-
+        padding-top: calculate(146);
+        .link-product{
+            visibility: visible;
+            top: calculate(-58);
+        }
+        .link-product[data-name="Huevo"]{
+            top: calculate(110);
+        }
+        .link-product[data-name="Congelados"]{
+            top: calculate(100);
+        }
+        .link-product[data-name="ViveBien"]{
+            top: calculate(130);
+        }
+        .link-product[data-name="Pollo entero"]{
+            top: calculate(-10);
+        }
+        .link-product[data-name="Pavo entero"]{
+            top: calculate(-30);
+        }
         .slick-track {
             display: flex;
             align-items: flex-end;
+            padding-top: calculate(60);
         }
 
         .slick-slide {

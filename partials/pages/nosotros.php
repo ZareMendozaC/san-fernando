@@ -4,6 +4,7 @@ $nombre_nosotros = get_field("nombre_nosotros");
 $img_nosotros = get_field("imagen_principal_nosotros");
 $img_nosotros_mov = get_field("imagen_principal_nosotros_mov");
 $img_fondo_nosotros = get_field("imagen_fondo_nosotros");
+$img_fondo_nosotros_mov = get_field("imagen_fondo_nosotros_mobile");
 $titulo_nosotros = get_field("titulo_nosotros");
 $descripcion_nosotros = get_field("descripcion_nosotros");
 $url_boton_trabaja = get_field("url_boton");
@@ -29,6 +30,9 @@ $archivos = get_field("archivos");
 
 <section class="section_info_nosotros ">
     <div class="head_nosotros show-desktop" style="background-image:url('<?= $img_fondo_nosotros['url'] ?>')">
+    </div>
+    <div class="head_nosotros_mov show-mobile" style="background-image:url('<?= $img_fondo_nosotros_mov['url'] ?>')">
+    </div>
         <!-- <svg class="semi-circulo-ban-nos" width="742" height="322" viewBox="0 0 742 322" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.75" d="M0 359C0 160.73 160.73 0 359 0H383C581.27 0 742 160.73 742 359H0Z" fill="white" />
         </svg>
@@ -36,12 +40,12 @@ $archivos = get_field("archivos");
             <path opacity="0.75" d="M0 359C0 160.73 160.73 0 359 0H383C581.27 0 742 160.73 742 359H0Z" fill="#024384" />
         </svg>
         <img src="<?= $img_nosotros['url'] ?>" alt="" class="img_people_nos"> -->
-    </div>
-    <div class="head_nosotros_mov show-mobile">
+    
+    <!-- <div class="head_nosotros_mov show-mobile">
         <h1><?= $nombre_nosotros; ?></h1>
-    </div>
+    </div> -->
 
-    <img src="<?= $img_nosotros_mov['url'] ?>" alt="" class="img_nosotros">
+    <!-- <img src="<?= $img_nosotros_mov['url'] ?>" alt="" class="img_nosotros"> -->
     <div class="div_h2_nos">
         <h2 class="color-blue"><?= $titulo_nosotros; ?></h2>
         <svg class="img_sub_nos" width="241" height="30" viewBox="0 0 241 30" fill="none" xmlns="http://www.w3.org/2000/svg">
