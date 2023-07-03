@@ -100,9 +100,9 @@
       border-radius: calculate(24);
       font-family: 'FuturaStd';
       flex-direction: column;
-      p{
-        font-size: calculate(31);
-        line-height: calculate(34);
+      .title{
+        font-size: calculate(31) !important;
+        line-height: calculate(34) !important;
       }
       .info,
       .image {

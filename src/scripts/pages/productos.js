@@ -103,3 +103,4 @@ document.addEventListener('DOMContentLoaded', function () {
   //get products
   $(".btn-lista-cat").first().trigger("click")
 })
+
