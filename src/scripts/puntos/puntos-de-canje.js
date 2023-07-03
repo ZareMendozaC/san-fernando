@@ -46,7 +46,7 @@
                 $(this).css('background','#F9F9F9');
                 $('.t__1').html($(this).find('.title-card').html());
                 $('.list-results').css('display','none');
-                //$('.list-results').addClass('animate__animated  animate__fadeOut');
+                $('.list-results').addClass('animate__animated  animate__fadeOut');
                 $('html, body').animate({scrollTop:0}, 'slow');
                
                 $('.chng_name').html(info[0].ubicacion+ ' - '+info[0].tipo);
@@ -60,15 +60,15 @@
                 
                 $('.chng_hr').html('<strong>Horario de atención:</strong> '+info[0].horario);
                 $('.chng_res').html('<strong>Restricciones:</strong> '+info[0].restricciones);
-                $('.chng_fototienda').attr('src',origin+info[0].urlfoto);
+                $('.chng_fototienda').attr('src',info[0].urlfoto);
                 $('.chng_names').html('<strong>'+info[0].nombre+'</strong>');
                 if(info[0].url_tienda_jpg || info[0].url_tienda_webp){
                         if(detectBrowser()=='Safari'){
-                            $('.chng_fototienda').attr('src',origin+'/'+info[0].url_tienda_jpg);
+                            $('.chng_fototienda').attr('src',info[0].url_tienda_jpg);
                             $('.chng_fototienda').css('display','block');
                         }
                         else{
-                            $('.chng_fototienda').attr('src',origin+'/'+info[0].url_tienda_webp);
+                            $('.chng_fototienda').attr('src',info[0].url_tienda_webp);
                             $('.chng_fototienda').css('display','block');
                         }
                 }
@@ -93,7 +93,7 @@
                     $('.txt-info-card').css('display','none');
                 }
                 setTimeout(function(){ 
-                let tam= $('.content-info-card').height()+100;
+                let tam= $('.content-info-card').height()+500;
                 $('.content-movil').css('height',tam+'px');
                 }, 500);
         });  

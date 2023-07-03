@@ -108,7 +108,7 @@
 
                 <p class="title-card-2 t__1 chng_name blue">Breña: Tienda de Juan Lopez</p>
                 <!--<p class="txt-info-card chng_names"></p>-->
-                <img class="chng_fototienda" src="images/puntoscanje/tienda.webp" width="100%" height="" alt="tienda puntos canje">
+                <img class="chng_fototienda" src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/grupo-vertiz-sac-4.webp" width="100%" height="" alt="tienda puntos canje">
 
                 <p class="txt-info-card space-20 chng_address"><strong>Dirección:</strong></p>
                 <p class="txt-info-card chng_phone"> </p>
@@ -123,8 +123,8 @@
                         <a class="chng_compartir" href="https://api.whatsapp.com/send?text=https://www.san-fernando.com.pe/puntosdecanje?id=1" data-action="share/whatsapp/share" target="_blank">Compartir</a>
                     </div>
                 </div>
-                <br>
-                <img class="chng_mapa" src="images/puntoscanje/ubicacion.webp" width="100%" height="100%" alt="ubicacion puntos canje">
+              
+                <img class="chng_mapa" src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/map-grupo-vertiz-sac-4.webp" width="100%" height="100%" alt="ubicacion puntos canje">
                 <div class="content-btn show-res">
                     <a class="chng_google" target="_blank" href="https://www.google.com/maps/place/12%C2%B006'30.5%22S+77%C2%B001'02.6%22W/@-12.10845[…]ta=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d-12.1084611!4d-77.0173778">Abrir en Google Maps</a>
                     <a class="chng_waze" target="_blank" href="https://www.waze.com/livemap?ll=-12.10846,-77.01737&navigate=yes">Abrir en Waze</a>
@@ -134,3 +134,21 @@
         </div>
     </div>
 </section>
+<script>
+$( document ).ready(function() {
+    /*
+    $('.selCiudad').select2({
+      placeholder: "Ubicación",
+      allowClear: true
+    });
+    */
+    $(document).on('click', '.close-card', function () {
+        $('.content-info-card').css('display','none');
+        $('.content-info-card').removeClass('animate__animated animate__fadeInRight');
+        $('.list-results').css('display','block');
+        $('.content-movil').css('height','auto');
+        $('.list-results').addClass('animate__animated animate__fadeIn');
+    });
+});
+
+</script>
