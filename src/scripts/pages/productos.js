@@ -26,25 +26,6 @@ function initSplideSubCategories() {
   splide.mount()
 }
 
-$('#lista-cate').slick({
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  dots: false,
-  arrows: false,
-  variableWidth: false,
-  centerMode: true,
-  responsive: [
-    {
-      breakpoint: 769,
-      settings:
-      {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-      }
-    }
-  ]
-})
 
 $('#slider-blog-list').slick({
   slidesToShow: 4,
