@@ -97,7 +97,7 @@ $(".btn-lista-cat").on("click", function () {
 })
 if($( ".btn-lista-cat" ).length >0)
 {
- $('#lista-cate').children(':first-child').click();
+  $('#lista-cate').children(':first-child').click();
 }
 /*
 //funcion al hacer click en los  cards de los productos carga la data
