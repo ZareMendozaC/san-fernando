@@ -100,7 +100,10 @@
       border-radius: calculate(24);
       font-family: 'FuturaStd';
       flex-direction: column;
-
+      .title{
+        font-size: calculate(31) !important;
+        line-height: calculate(34) !important;
+      }
       .info,
       .image {
         width: 100%;
@@ -129,7 +132,7 @@
 
 
   .lista-prod {
-    width: calculate(355);
+    width: 100%;
 
     .card-p {
       width: calculate(150);
@@ -139,8 +142,8 @@
       .border-card {
         border: 1px solid #F1EBD8;
         border-radius: calculate(16);
-        width: calculate(169);
-        height: calculate(141);
+        width: calculate(150);
+        height: calculate(160);
         background-size: cover !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
@@ -149,7 +152,7 @@
 
       p {
         text-align: center;
-        padding-top: calculate(30);
+        padding-top: calculate(15);
         margin-bottom: 0px !important;
         font-family: 'FuturaStd';
         font-style: normal;
@@ -171,7 +174,7 @@
 
   .lista-prod {
     display: grid;
-    row-gap: calculate(62);
+    row-gap: calculate(65);
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
     margin-top: calculate(65);
