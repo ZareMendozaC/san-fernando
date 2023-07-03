@@ -142,7 +142,7 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 
 				</li>
 
-				<li class="info-text">
+				<!-- <li class="info-text">
 
 					<a href="<?= $email ?>" target="_blank">
 						<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -159,7 +159,7 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 						<p>central@san-fernando.com.pe</p>
 					</a>
 
-				</li>
+				</li> -->
 
 				<li class="info-text">
 
