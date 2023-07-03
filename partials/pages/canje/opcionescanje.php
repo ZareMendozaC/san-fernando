@@ -13,8 +13,12 @@ $urle_opcion2 = get_field("visitar_web");
 $img_tienda_online = get_field("img_tienda_online");
 $img_tienda_app = get_field("img_tienda_app");
 
+$url_google_app = get_field("url_google_app");
+$url_ios_app = get_field("url_ios_app");
 $img_google = get_field("img_google");
 $img_ios = get_field("img_ios");
+
+$mas_informacion = get_field("mas_informacion");
 
 ?>
 
@@ -64,10 +68,17 @@ $img_ios = get_field("img_ios");
           <img class="icono-movil" src="<?= $img_tienda_app["url"] ?>" alt="">
           <p class="text-2">Recibe tu pavito sin salir de casa y vive la experiencia San Fernando desde nuestra APP</p>
           <figure>
-            <img src="<?= $img_google["url"] ?>" alt="">
-            <img src="<?= $img_ios["url"] ?>" alt="">
+            <a href="<?= $url_google_app ?>">
+              <img src="<?= $img_google["url"] ?>" alt="">
+            </a>
+            <a href="<?= $url_ios_app ?>">
+              <img src="<?= $img_ios["url"] ?>" alt="">
+            </a>
+
           </figure>
-          <p class="link-info">Más Informacion</p>
+          <a href="<?= $mas_informacion ?>">
+            <p class="link-info">Más Informacion</p>
+          </a>
         </div>
 
       </div>

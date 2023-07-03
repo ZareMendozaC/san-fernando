@@ -1,10 +1,12 @@
 @media (max-width: 768px) {
+
   .li-compras_mov,
   .li-vales_mov,
   .li-blog_mov,
   .div_menu {
     display: none;
   }
+
   .navbar {
     height: auto !important;
     width: 100%;
@@ -12,6 +14,7 @@
     padding-right: calculate(0);
     justify-content: space-between;
   }
+
   .navbar:after {
     margin-left: 0;
   }
@@ -48,6 +51,7 @@
     .list-group {
       list-style-type: none;
       padding: 0;
+
       .list-group-item {
         font-style: normal;
         font-weight: 600;
@@ -55,10 +59,12 @@
         line-height: calc(100vw * (20 / var(--width_base)));
         font-family: "FuturaStd";
         border-bottom: 2px solid #daf2f8;
+
         a {
           color: var(--dark-blue);
         }
       }
+
       .li-mov-menu {
         display: flex;
         align-items: center;
@@ -67,6 +73,7 @@
 
       .li-blog_mov {
         border-bottom: 1px solid #daf2f8;
+
         a {
           margin-left: calculate(20);
           font-style: normal;
@@ -75,6 +82,7 @@
           line-height: calc(100vw * (20 / var(--width_base)));
           font-family: "FuturaStd";
           color: var(--color-blue);
+
           a:hover {
             color: var(--color-blue);
           }
@@ -94,6 +102,7 @@
     width: 95%;
     margin: 20px 10px;
   }
+
   .btn-vales-mov {
     font-style: normal;
     font-weight: 600;
@@ -109,12 +118,15 @@
     align-items: center;
     height: calculate(50);
   }
-  .btn-vales-mov:focus{
+
+  .btn-vales-mov:focus {
     background: var(--color-light-blue);
     color: var(--color-blue);
   }
+
   .div-btn-vales .list-group .li-vales_mov {
     border-bottom: none !important;
+
     a {
       margin-left: calculate(20);
       font-style: normal;
@@ -123,6 +135,7 @@
       line-height: calc(100vw * (20 / var(--width_base)));
       font-family: "FuturaStd";
       color: var(--color-blue);
+
       a:hover {
         color: var(--color-blue);
       }
@@ -136,6 +149,7 @@
     width: 95%;
     margin: 20px 10px;
   }
+
   .btn-comprar-mov {
     height: calculate(60);
     font-style: normal;
@@ -153,19 +167,24 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   .btn-comprar-mov:focus {
     background: var(--color-red-btn);
   }
+
   .ico-text-btn-buy {
     display: flex;
     align-items: center;
     gap: 5px;
-    svg{
-      width:calculate(40);
+
+    svg {
+      width: calculate(40);
     }
   }
+
   .div-btn-comprar .list-group .li-compras_mov {
     border-bottom: none !important;
+
     a {
       margin-left: calculate(20);
       font-style: normal;
@@ -174,35 +193,20 @@
       line-height: calc(100vw * (20 / var(--width_base)));
       font-family: "FuturaStd";
       color: var(--color-white);
+
       a:hover {
         color: var(--color-white);
       }
     }
   }
+
   .submenu_mobile {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-gap: calculate(20);
     grid-auto-rows: minmax(40px, auto);
-    // margin-bottom: calculate(80);
     margin: calculate(20) 0 calculate(30) 0;
-
-    .div-one {
-      grid-column: 1 / 2;
-      grid-row: 1;
-    }
-    .div-two {
-      grid-column: 2 / 3;
-      grid-row: 1;
-    }
-    .div-three {
-      grid-column: 1 / 2;
-      grid-row: 2;
-    }
-    .div-four {
-      grid-column: 2 / 3;
-      grid-row: 2;
-    }
+    padding: 1rem;
   }
 
   div.menu_mobile .submenu_mobile {
@@ -211,6 +215,7 @@
     font-weight: 600;
     font-size: calculate(16) !important;
     line-height: calculate(24) !important;
+
     .div-one,
     .div-two,
     .div-three,
@@ -218,6 +223,7 @@
       height: 100%;
       display: inline-flex;
       justify-content: flex-start;
+
       a {
         color: var(--color-blue);
         margin-left: calculate(20);

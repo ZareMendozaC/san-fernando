@@ -1,8 +1,7 @@
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   height: calculate(170) !important;
-  width: calculate(var(--width_base));
   padding-left: calculate(182);
   padding-right: calculate(182);
   background-color: var(--color-blue);
@@ -15,6 +14,7 @@
       #0000 90deg) 50%/16px 101%;
   -webkit-mask: var(--mask);
   mask: var(--mask);
+  margin-bottom: -15px;
 }
 
 .div_logo {
@@ -188,7 +188,7 @@
   position: fixed;
   z-index: 910;
   top: calculate(135);
-  left: calculate(1230);
+  left: calculate(1280);
 }
 
 .menu_compras {
@@ -196,7 +196,7 @@
   position: fixed;
   z-index: 910;
   top: calculate(135);
-  left: calculate(1550);
+  left: calculate(1500);
 }
 
 .menu_blog {
@@ -204,21 +204,21 @@
   position: fixed;
   z-index: 910;
   top: calculate(135);
-  left: calculate(910);
+  left: calculate(970);
 }
 
 .menu_blog,
 .menu_compras,
 .menu_vales {
-  width: calculate(272);
+  width: calculate(217);
 
   .list-group {
     list-style-type: none;
     padding: 0;
 
     li {
-      background: #fff;
       // background: #daf2f8;
+      background: #fff;
       padding: calculate(16);
     }
 
@@ -270,39 +270,6 @@
     color: var(--color-blue);
   }
 }
-
-// .navbar:before,
-// .navbar:after {
-//   content: "";
-//   position: absolute;
-//   width: 100%;
-//   height: 10px;
-//   background: linear-gradient(
-//       45deg,
-//       transparent 33.333%,
-//       var(--color-blue) 33.333%,
-//       var(--color-blue) 66.667%,
-//       transparent 66.667%
-//     ),
-//     linear-gradient(
-//       -45deg,
-//       transparent 33.333%,
-//       var(--color-blue) 33.333%,
-//       var(--color-blue) 66.667%,
-//       transparent 66.667%
-//     );
-//   background-size: 15px 40px;
-// }
-
-// .navbar:before {
-//   top: -10px;
-// }
-
-// .navbar:after {
-//   bottom: -10px;
-//   transform: rotate(180deg);
-//   margin-left: calculate(-182);
-// }
 
 .menu_mobile {
   display: none;

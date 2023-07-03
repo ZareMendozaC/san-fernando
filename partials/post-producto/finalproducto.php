@@ -1,9 +1,9 @@
 <h1 class="h1-marker">Productos</h1>
 <?php
-$category = get_the_category(); 
+$category = get_the_category();
 $category_parent_id = $category[0]->category_parent;
-if ( $category_parent_id != 0 ) {
-    $category_parent = get_term( $category_parent_id, 'category' );
+if ($category_parent_id != 0) {
+    $category_parent = get_term($category_parent_id, 'category');
     $css_slug = $category_parent->slug;
 } else {
     $css_slug = $category[0]->slug;
@@ -19,92 +19,92 @@ $current_category_name = $category_parent->name;
         <p class="p-subtitle-2 color-gris">Conoce todos nuestros productos de gran sabor</p>
     </div>
     <div class="row-icon-productos">
-    <a href="<?php echo home_url(); ?>/category/pollo">
-      <?php
-      if($current_category_name=='pollo'){
-        echo '<div class="card-icon active">';
-      }else{
-        echo '<div class="card-icon">';
-      }
-      ?>
+        <a href="<?php echo home_url(); ?>/category/pollo">
+            <?php
+            if ($current_category_name == 'pollo') {
+                echo '<div class="card-icon active">';
+            } else {
+                echo '<div class="card-icon">';
+            }
+            ?>
             <div class="circle-icon bg-skyblue">
                 <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4796.png" alt="">
             </div>
             <p>Pollo</p>
-        </div>
+    </div>
     </a>
     <a href="<?php echo home_url(); ?>/category/pavo">
         <?php
-          if($current_category_name=='pavo'){
+        if ($current_category_name == 'pavo') {
             echo '<div class="card-icon active">';
-          }else{
+        } else {
             echo '<div class="card-icon">';
-          }
+        }
         ?>
-            <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4795.png" alt="">
-            </div>
-            <p>Pavo</p>
+        <div class="circle-icon bg-skyblue">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4795.png" alt="">
+        </div>
+        <p>Pavo</p>
         </div>
     </a>
     <a href="<?php echo home_url(); ?>/category/embutidos">
         <?php
-          if($current_category_name=='embutidos'){
+        if ($current_category_name == 'embutidos') {
             echo '<div class="card-icon active">';
-          }else{
+        } else {
             echo '<div class="card-icon">';
-          }
+        }
         ?>
-            <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/sausages-1-1.png" alt="">
-            </div>
-            <p>Embutidos</p>
+        <div class="circle-icon bg-skyblue">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/sausages-1-1.png" alt="">
+        </div>
+        <p>Embutidos</p>
         </div>
     </a>
     <a href="<?php echo home_url(); ?>/category/congelados">
         <?php
-          if($current_category_name=='congelados'){
+        if ($current_category_name == 'congelados') {
             echo '<div class="card-icon active">';
-          }else{
+        } else {
             echo '<div class="card-icon">';
-          }
+        }
         ?>
-            <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4797.png" alt="">
-            </div>
-            <p>Congelados</p>
+        <div class="circle-icon bg-skyblue">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4797.png" alt="">
+        </div>
+        <p>Congelados</p>
         </div>
     </a>
     <a href="<?php echo home_url(); ?>/category/cerdo">
         <?php
-          if($current_category_name=='cerdo'){
+        if ($current_category_name == 'cerdo') {
             echo '<div class="card-icon active">';
-          }else{
+        } else {
             echo '<div class="card-icon">';
-          }
+        }
         ?>
-            <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4792.png" alt="">
-            </div>
-            <p>Cerdo</p>
+        <div class="circle-icon bg-skyblue">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4792.png" alt="">
+        </div>
+        <p>Cerdo</p>
         </div>
     </a>
     <a href="<?php echo home_url(); ?>/category/huevo">
         <?php
-          if($current_category_name=='huevo'){
+        if ($current_category_name == 'huevo') {
             echo '<div class="card-icon active">';
-          }else{
+        } else {
             echo '<div class="card-icon">';
-          }
+        }
         ?>
-            <div class="circle-icon bg-skyblue">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4793.png" alt="">
-            </div>
-            <p>Huevo</p>
+        <div class="circle-icon bg-skyblue">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4793.png" alt="">
         </div>
-        </a>
-        
-      
+        <p>Huevo</p>
+        </div>
+    </a>
+
+
     </div>
     <div class="container">
         <img class="line-pick" src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-14.png" alt="">
@@ -171,7 +171,7 @@ $current_category_name = $category_parent->name;
                 Rango de 0.9 a 1.3 kg.
             </div>
             <?php
-            $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+            $feat_image = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
             ?>
             <div class="div-img" style="background: url('<?php echo $feat_image; ?>');">
             </div>
@@ -276,11 +276,11 @@ $current_category_name = $category_parent->name;
         <div class="col-817 center-vertical">
             <div>
                 <p class="subtitle color-blue">Blog Bien Servido</p>
-                <h2 class="color-blue">Encuentra la <br>solución para tu cocina con nuestro pollos</h2>
+                <h2 class="color-blue">Encuentra la <br>solución para tu cocina con nuestro productos</h2>
                 <p class="p-subtitle color-gris">Lorem ipsum dolor sit amet, consectetur ipsum dolor adipiscing elit. Proin a justo dolor magna.</p>
             </div>
         </div>
-        <img class="col-739" src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4761.png" alt="">
+        <img class="col-739" src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4761.png" alt="Productos">
     </div>
     <div class="container">
         <div class="col-blog-2">

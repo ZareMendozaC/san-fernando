@@ -176,7 +176,7 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 							</defs>
 						</svg>
 
-						<p>Jr. Portocarerro N°333, Surquillo <br> Lima - Perú</p>
+						<p>Jr. Portocarerro N° 333, Surquillo <br> Lima - Perú</p>
 
 					</a>
 
@@ -289,6 +289,7 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 						<li>
 							<a href="<?= $link_huevos ?>">
 								Huevos
+							</a>
 						</li>
 					<?php endif ?>
 				</ul>
@@ -306,13 +307,13 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 						Cotiza tu vale
 					</li> -->
 					<li>
-						<a href="<?= $link_puntos_canje ?>">
-							Puntos de canje
+						<a href="<?= $link_puntos_canje ?>" target="_blank">
+							Compra tu vale
 						</a>
 					</li>
 					<li>
-						<a href="<?= $link_puntos_venta ?>">
-							Puntos de venta
+						<a href="<?= $link_puntos_venta ?>" target="_blank">
+							Canjea tu vale
 						</a>
 					</li>
 				</ul>
