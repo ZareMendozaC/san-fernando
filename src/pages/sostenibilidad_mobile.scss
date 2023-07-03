@@ -80,7 +80,7 @@
 
         .contain-2{
           margin-top: calculate(87);
-          margin-bottom: calculate(109);
+          margin-bottom: calculate(87);
           display: flex;
           flex-direction: column;
           gap: calculate(40);
@@ -173,8 +173,8 @@
         flex-direction: column;
         background-color: var(--color-blue);
         margin-bottom: calculate(105);
-        padding-top: calculate(103);
-        padding-bottom: calculate(120);
+        padding-top: calculate(100);
+        padding-bottom: calculate(100);
 
         .text-social{
             display: flex;
@@ -266,6 +266,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: calculate(41);
+        
         margin-bottom: calculate(45);
         figure{
             width: calculate(352);
@@ -380,7 +381,6 @@
                      .slick-list{
                         height: calculate(550)!important;
                        .slick-track{
-                          
                         display: flex;
                             
                         gap: calculate(14);
@@ -399,28 +399,25 @@
                                   background-color: var(--color-white);
                                   border-radius: calculate(16);
                                   padding: calculate(22) calculate(32);
-                                  gap: calculate(22);
+                                  gap: calculate(20);
               
-                                  figure{
-                                      background-color: var(--color-celeste);
-                                      width: calculate(65);
-                                      height: calculate(65);
-                                      border-radius: calculate(515);
-                                      padding: calculate(16) calculate(22);
-                                      img{
-              
-                                          width: calculate(65);
-                                          height: auto;
-              
-                                      }
-                                  }
+                                  picture{
+                                    background-color: var(--color-celeste);
+                                    padding: calculate(15) calculate(15);
+                                    border-radius: calculate(115);
+                                    img {
+                                    
+                                        width: calculate(39);
+                                        height: calculate(39);      
+   
+                                    }
+                                }
               
                                   p{
                                       margin: 0;
                                       width: calculate(212);
                                       height: auto;
                                       font-size: calculate(14);
-                                      margin-top: calculate(22);
                                   }
         
                                 }  
