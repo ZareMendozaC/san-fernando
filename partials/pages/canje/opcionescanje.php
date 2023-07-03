@@ -34,7 +34,7 @@ $mas_informacion = get_field("mas_informacion");
       <p class="first-text">Canjea tu vale presencialmente</p>
       <p class="second-text">A nivel nacional</p>
 
-      <h2>FERIAS Y TIENDAS</h2>
+      <h3>TIENDAS</h3>
       <p class="third-text">Para vale digital y físico</p>
 
       <img src="<?= $img1["url"] ?>" alt="">
