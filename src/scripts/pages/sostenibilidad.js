@@ -26,7 +26,7 @@ $('#social-carousel').slick({
   centerMode: false,
   responsive: [
     {
-      breakpoint: 769,
+      breakpoint: 1024,
       settings:
       {
         slidesToShow: 1,
