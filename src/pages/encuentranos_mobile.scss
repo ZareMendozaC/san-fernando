@@ -3,9 +3,6 @@
   .section-encuentranos{
     .trabaja-head{
       height: calculate(300);
-      p{
-
-      }
     }
     .content-movil{
       display: flex;
@@ -13,8 +10,7 @@
       width: 100%;
       .col-md-5{
         
-        width: 96%;
-        margin-left: calculate(10);
+        width: 100%;
         margin-top: calculate(50);
         .row-mrg-left{
           margin: auto;
@@ -38,7 +34,7 @@
         }
         .list-results{
           .card{
-            padding-left: calculate(20);
+            padding-left: calculate(15);
             .data-layer{
               .row-icons{
                 gap: calculate(10);
@@ -48,7 +44,9 @@
               }
             }
           }
-
+          .txt-info{
+            right: 0;
+          }
         }
       }
       .col-md-7{
@@ -62,5 +60,20 @@
       }
     }
   }
-
+  .title-card {
+    font-weight: 600 !important;
+    font-size: calc(100vw * (calc(15/ var(--width_base)))) !important;
+    line-height: calc(100vw * (calc(17 / var(--width_base))));
+    margin-bottom: calc(100vw * (calc(10 / var(--width_base))))!important;
+    width: 98%;
+}
+.data-layer p{
+  font-size: calculate(14);
+}
+     .img-banner {
+        display: none !important;
+    }
+    .info-card {
+      padding: 20px 15px 20px 16px !important;
+  }
 }

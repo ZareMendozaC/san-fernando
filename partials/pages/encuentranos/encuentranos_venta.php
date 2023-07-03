@@ -9,9 +9,8 @@
                 <p class="color-blue title">Elige tu ubicación y tipo de vale</p>
                 <p class="subtitle">Recuerda revisar las restricciones en el punto de canje seleccionado.</p>
                 <div class="select-tipo">
-                    <a href="<?php echo home_url(); ?>/puntos-de-canje">
-                        <div class="btn-tipo">Puntos de canje</div>
-                    </a>
+                <input id="tipoEncuentranos" type="hidden" name="" value="venta">
+                    <a href="<?php echo home_url(); ?>/puntos-de-canje"><div class="btn-tipo">Puntos de canje</div></a>
                     <div class="btn-tipo active">Puntos de venta</div>
                 </div>
                 <div class="content-select">

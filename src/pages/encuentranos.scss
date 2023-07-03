@@ -268,14 +268,11 @@
     .title-card {
         font-style: normal;
         font-weight: 700;
-        font-size: calc(100vw * (calc(20/ var(--width_base)))) !important;
+        font-size: calc(100vw * (calc(20/ var(--width_base))));
         line-height: calc(100vw * (calc(17 / var(--width_base))));
         margin-bottom: calc(100vw * (calc(10 / var(--width_base))))!important;
         color: #012e88;
         text-transform: capitalize
-    }
-    .data-layer p{
-        font-size: calculate(14);
     }
     .title-card-2 {
         font-size: calc(100vw * (calc(20 / var(--width_base))));
