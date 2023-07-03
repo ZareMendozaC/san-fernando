@@ -100,7 +100,10 @@
       border-radius: calculate(24);
       font-family: 'FuturaStd';
       flex-direction: column;
-
+      p{
+        font-size: calculate(31);
+        line-height: calculate(34);
+      }
       .info,
       .image {
         width: 100%;
