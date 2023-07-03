@@ -14,19 +14,25 @@
         margin-top: calculate(50);
         .row-mrg-left{
           margin: auto;
-          width: calculate(355);
+          width: 100%;
+          padding-left: calculate(15);
+          padding-right: calculate(15);
           .content-select{
-            width: calculate(355);
+            width: 100%;
+            flex-direction: column;
             .box-select{
-              width: calculate(110);
+              width: 100%;
+              margin-right: 0px;
               select{
                 height: calculate(40);
               }
+              margin-bottom: calculate(10);
             }
             .input-control{
-              width: calculate(110);
+              width: 100%;
               height: calculate(40);
-              
+              margin-right: 0px;
+              margin-bottom: calculate(10);
             }
           }
 
@@ -52,9 +58,10 @@
       .col-md-7{
         width: 100%;
         overflow-y: visible;
+        height: auto;
         img{
           width: calculate(375);
-          height: calculate(500);
+          height: auto;
           margin: 0;
         }
       }
@@ -76,4 +83,38 @@
     .info-card {
       padding: 20px 15px 20px 16px !important;
   }
+  .list-results {
+    height: auto !important;
+    overflow-y: hidden !important; 
+}
+.close-card {
+  text-decoration: underline;
+  float: right;
+  font-size: calculate(16);
+}
+.show-desk{
+  display: none !important;
+}
+.show-res{
+  display: flex !important;
+}
+.content-btn{
+  flex-direction: column;
+}
+ .content-btn a{
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #db3f29;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 0;
+  width: 100%;
+  margin-bottom: 6px;
+}
+.content-btn a{
+  margin-right: 0px !important;
+}
 }
