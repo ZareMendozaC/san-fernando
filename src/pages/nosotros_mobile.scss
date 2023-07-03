@@ -1,14 +1,4 @@
 @media only screen and (max-width: 768px) {
-  .head_nosotros_mov {
-    display: flex !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    height: calculate(733);
-    // margin-top: calculate(20);
-    margin-bottom: calculate(53);
-    width: 100%;
-
-  }
 
   .section_info_nosotros {
     font-family: "FuturaStd";
@@ -85,6 +75,7 @@
   }
 
   .section_time_line {
+
     .btn-menos,
     .btn-mas {
       display: none;

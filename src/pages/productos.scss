@@ -219,7 +219,7 @@
             border-radius: calculate(16);
             width: calculate(371);
             height: calculate(355);
-            background-size: cover !important;
+            background-size: contain !important;
             background-position: top !important;
             background-repeat: no-repeat !important;
             transition: all ease-in 0.1s;

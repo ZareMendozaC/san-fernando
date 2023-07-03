@@ -29,10 +29,11 @@ $archivos = get_field("archivos");
 ?>
 
 <section class="section_info_nosotros ">
-    <div class="head_nosotros show-desktop" style="background-image:url('<?= $img_fondo_nosotros['url'] ?>')">
-    </div>
-    <div class="head_nosotros_mov show-mobile" style="background-image:url('<?= $img_fondo_nosotros_mov['url'] ?>')">
-    </div>
+
+    <picture>
+        <source srcset="<?= wp_get_attachment_image_srcset($img_fondo_nosotros['ID']) ?>" media="(min-width: 768px)" width="1920">
+        <?= render_image($img_fondo_nosotros_mov['ID']) ?>
+    </picture>
     <!-- <svg class="semi-circulo-ban-nos" width="742" height="322" viewBox="0 0 742 322" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.75" d="M0 359C0 160.73 160.73 0 359 0H383C581.27 0 742 160.73 742 359H0Z" fill="white" />
         </svg>
@@ -186,8 +187,8 @@ $archivos = get_field("archivos");
                 <p class="texto_card color-white show-desktop"><?= $lista_conoce['1']["texto"]; ?></p>
                 <a class="btn-rojo show-desktop" href="<?= $lista_conoce['1']["link_boton"]; ?>" target="_blank"><?= $lista_conoce['1']["texto_boton"]; ?></a>
                 <div class="div_link_card show-mobile">
-                    <p class="texto_card color-white"><?= $lista_conoce['1']["texto_boton"]; ?></p>
-                    <a href="<?= $lista_conoce['1']["link_boton"]; ?>">
+                    <p class="texto_card color-white"><?= $lista_conoce[1]["texto_boton"]; ?></p>
+                    <a href="<?= $lista_conoce[1]["link_boton"]; ?>">
                         <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="0.128906" y="0.0893555" width="28" height="28" rx="14" fill="#DF0002" />
                             <path d="M17.5287 11.9694L12.9387 7.37942C12.7513 7.19316 12.4979 7.08862 12.2337 7.08862C11.9695 7.08862 11.7161 7.19316 11.5287 7.37942C11.435 7.47238 11.3606 7.58298 11.3098 7.70484C11.259 7.8267 11.2329 7.9574 11.2329 8.08942C11.2329 8.22143 11.259 8.35213 11.3098 8.47399C11.3606 8.59585 11.435 8.70645 11.5287 8.79942L16.1287 13.3794C16.2224 13.4724 16.2968 13.583 16.3476 13.7048C16.3984 13.8267 16.4245 13.9574 16.4245 14.0894C16.4245 14.2214 16.3984 14.3521 16.3476 14.474C16.2968 14.5959 16.2224 14.7065 16.1287 14.7994L11.5287 19.3794C11.3404 19.5664 11.2341 19.8205 11.2332 20.0859C11.2322 20.3512 11.3367 20.6061 11.5237 20.7944C11.7107 20.9827 11.9648 21.089 12.2302 21.09C12.4955 21.0909 12.7504 20.9864 12.9387 20.7994L17.5287 16.2094C18.0905 15.6469 18.4061 14.8844 18.4061 14.0894C18.4061 13.2944 18.0905 12.5319 17.5287 11.9694Z" fill="white" />
@@ -200,8 +201,8 @@ $archivos = get_field("archivos");
             <p class="texto_card color-white show-desktop"><?= $lista_conoce['2']["texto"]; ?></p>
             <a class="btn-rojo show-desktop" href="<?= $lista_conoce['2']["link_boton"]; ?>" target="_blank"><?= $lista_conoce['2']["texto_boton"]; ?></a>
             <div class="div_link_card show-mobile">
-                <p class="texto_card color-white"><?= $lista_conoce['2']["texto_boton"]; ?></p>
-                <a href="<?= $lista_conoce['2']["link_boton"]; ?>">
+                <p class="texto_card color-white"><?= $lista_conoce[2]["texto_boton"]; ?></p>
+                <a href="<?= $lista_conoce[2]["link_boton"]; ?>">
                     <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.128906" y="0.0893555" width="28" height="28" rx="14" fill="#DF0002" />
                         <path d="M17.5287 11.9694L12.9387 7.37942C12.7513 7.19316 12.4979 7.08862 12.2337 7.08862C11.9695 7.08862 11.7161 7.19316 11.5287 7.37942C11.435 7.47238 11.3606 7.58298 11.3098 7.70484C11.259 7.8267 11.2329 7.9574 11.2329 8.08942C11.2329 8.22143 11.259 8.35213 11.3098 8.47399C11.3606 8.59585 11.435 8.70645 11.5287 8.79942L16.1287 13.3794C16.2224 13.4724 16.2968 13.583 16.3476 13.7048C16.3984 13.8267 16.4245 13.9574 16.4245 14.0894C16.4245 14.2214 16.3984 14.3521 16.3476 14.474C16.2968 14.5959 16.2224 14.7065 16.1287 14.7994L11.5287 19.3794C11.3404 19.5664 11.2341 19.8205 11.2332 20.0859C11.2322 20.3512 11.3367 20.6061 11.5237 20.7944C11.7107 20.9827 11.9648 21.089 12.2302 21.09C12.4955 21.0909 12.7504 20.9864 12.9387 20.7994L17.5287 16.2094C18.0905 15.6469 18.4061 14.8844 18.4061 14.0894C18.4061 13.2944 18.0905 12.5319 17.5287 11.9694Z" fill="white" />
