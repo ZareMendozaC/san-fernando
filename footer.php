@@ -22,12 +22,10 @@ $preguntas_frecuentes = get_field("preguntas_frecuentes", 17);
 $contacto = get_field("contacto_url", 17);
 
 $link_pollo = get_field("link_pollo", 17);
-$link_pavo_trozado = get_field("link_pavo_trozado", 17);
-$link_pavo_entero = get_field("link_pavo_entero", 17);
+$link_pavo = get_field("link_pavo", 17);
 $link_embutidos = get_field("link_embutidos", 17);
 $link_congelados = get_field("link_congelados", 17);
-$link_cerdo = get_field("link_cerdo", 17);
-$link_huevos = get_field("link_huevos", 17);
+$link_cerdo_huevo = get_field("link_cerdo_huevo", 17);
 
 
 $link_puntos_canje = get_field("link_puntos_canje", 17);
@@ -247,18 +245,10 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 							</a>
 						</li>
 					<?php endif ?>
-					<?php if ($link_pavo_trozado) : ?>
+					<?php if ($link_pavo) : ?>
 						<li>
-							<a href="<?= $link_pavo_trozado ?>">
-								Pavo Trozado
-							</a>
-						</li>
-					<?php endif ?>
-
-					<?php if ($link_pavo_entero) : ?>
-						<li>
-							<a href="<?= $link_pavo_entero ?>">
-								Pavo entero
+							<a href="<?= $link_pavo ?>">
+								Pavo
 							</a>
 						</li>
 					<?php endif ?>
@@ -278,20 +268,15 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 							</a>
 						</li>
 					<?php endif ?>
-					<?php if ($link_cerdo) : ?>
+
+					<?php if ($link_cerdo_huevo) : ?>
 						<li>
-							<a href="<?= $link_cerdo ?>">
-								Cerdo
+							<a href="<?= $link_cerdo_huevo ?>">
+								Cerdo y huevo
 							</a>
 						</li>
 					<?php endif ?>
-					<?php if ($link_huevos) : ?>
-						<li>
-							<a href="<?= $link_huevos ?>">
-								Huevos
-							</a>
-						</li>
-					<?php endif ?>
+
 				</ul>
 			</div>
 
