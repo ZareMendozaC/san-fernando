@@ -4,6 +4,7 @@ if ($('.splide.splide1').length > 0) {
   new Splide('.splide.splide1', {
     type: 'slide',
     pagination: false,
+    autoplay: true,
   }).mount();
 
 }
@@ -38,7 +39,7 @@ function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
   });
 } // Mobile Only Slider
 
-$(".card-certificacion").hover(function () {
+$(".card-certificacion").click(function () {
   let data = $(this).find('.data-certificacion').html();
   $('#dCertificacion').html(data);
   $('.modal-certificacion').fadeIn();
@@ -60,4 +61,14 @@ $(document).ready(function () {
     }
   });
 });
-
+jQuery(".modal-close").click(function() {
+   
+  jQuery('#video_modal_0 iframe').each(function(index) {
+  
+    jQuery(this).attr('src', jQuery(this).attr('src'));
+ 
+      return false;
+ 
+    });
+ 
+  });

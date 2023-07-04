@@ -26,7 +26,7 @@ function initSplideSubCategories() {
   splide.mount()
 }
 
-
+/*
 $('#slider-blog-list').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
@@ -45,7 +45,7 @@ $('#slider-blog-list').slick({
       }
     }
   ]
-})
+})*/
 //agregando variable al path
 $(location).attr('href')
 var bn_pathname = window.location.href

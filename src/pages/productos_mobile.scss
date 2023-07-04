@@ -257,11 +257,15 @@
     }
 
     .card-blog {
-      margin-right: 0px !important;
+      margin-right: calculate(16) !important;
       height: calculate(560) !important;
+      width: calculate(283) !important;
+      padding-top: calculate(16);
+      padding-right: calculate(14);
+      padding-left: calculate(14);
 
       .img-blog {
-        width: calculate(273) !important;
+        width: calculate(255) !important;
         height: calculate(238) !important;
       }
 

@@ -309,15 +309,15 @@ $banner_mobile = get_field('banner_mobile');
         </div>
         <img class="col-739" src="<?php echo home_url(); ?>/wp-content/uploads/2023/06/Group-4761.png" alt="">
     </div>
-    <div class="container">
-        <div class="col-blog-2">
-            <div id="slider-blog-list" class="slider-blog">
+    <div class="container splide splide1">
+        <div class="col-blog-2 splide__track">
+            <div id="slider-blog-list" class="slider-blog splide__list">
                 <?php
                 $mydb = new wpdb('aprosqanet_sanfer_blog', 'Arc,Df4QCKRY', 'aprosqanet_sanfer_blog', 'localhost');
                 $rows = $mydb->get_results("SELECT wp_posts.ID, wp_posts.guid, wp_posts.post_title, wp_posts.post_content , wp_postmeta.meta_key, wp_postmeta.meta_value, tabla2.guid 'url' from wp_posts INNER JOIN wp_term_relationships ON wp_term_relationships.object_id = wp_posts.ID INNER JOIN wp_postmeta ON wp_postmeta.post_id = wp_posts.ID INNER JOIN wp_posts as tabla2 ON tabla2.ID = wp_postmeta.meta_value WHERE wp_term_relationships.term_taxonomy_id=22 AND wp_postmeta.meta_key = '_thumbnail_id' ORDER BY wp_posts.post_date DESC LIMIT 4");
                 foreach ($rows as $obj) {
 
-                    echo '<div class="card-blog">
+                    echo '<div class="card-blog splide__slide">
                                 <div class="img-blog" data-id=' . $obj->ID . ' style="background: url(' . $obj->url . ')">
                                 </div>
                                 <div class="btn-cat">Recetas</div>
@@ -330,3 +330,5 @@ $banner_mobile = get_field('banner_mobile');
         </div>
     </div>
 </section>
+
+
