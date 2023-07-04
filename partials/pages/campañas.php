@@ -40,10 +40,16 @@ $galeria = get_field("galeria");
             ?>
             <?php if ($item_image) : ?>
                 <?php if ($item_video) : ?>
-                    <div onclick="video_modal_<?= $key ?>.showModal()" class="grid-item" style="cursor: pointer;">
+                    <div onclick="video_modal_<?= $key ?>.showModal()" class="grid-item bg-video" style="cursor: pointer;">
                         <?php if ($item_image) : ?>
                             <?= render_image($item_image['ID']) ?>
                         <?php endif; ?>
+                        <div class="hover-video">
+                            <svg width="99" height="99" viewBox="0 0 99 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="49.4946" cy="49.3666" r="48.6821" fill="#004A96"/>
+                            <path d="M68.9742 44.2101L43.7271 29.6235C43.0054 29.1966 42.1835 28.9683 41.345 28.9619C40.0269 28.9619 38.7627 29.4855 37.8307 30.4175C36.8986 31.3496 36.375 32.6137 36.375 33.9319V65.2371C36.3752 66.1118 36.6097 66.9705 37.0541 67.7239C37.4985 68.4773 38.1366 69.0979 38.9021 69.5212C39.6676 69.9444 40.5325 70.1549 41.4069 70.1307C42.2813 70.1065 43.1332 69.8486 43.8741 69.3836L69.1506 53.4149C69.9365 52.923 70.5817 52.236 71.0231 51.4206C71.4645 50.6053 71.6872 49.6895 71.6694 48.7625C71.6516 47.8355 71.394 46.929 70.9217 46.1311C70.4493 45.3333 69.7784 44.6715 68.9742 44.2101Z" fill="white"/>
+                            </svg>
+                        </div>
                     </div>
                 <?php elseif ($item_link) : ?>
                     <a href="<?= default_value($item_link, '#') ?>" target="<?= default_value($item_link ? '_blank' : null, '_self') ?>" rel="nofollow" class="grid-item">

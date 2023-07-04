@@ -33,8 +33,10 @@ $mas_informacion = get_field("mas_informacion");
     <img src="<?= $img_portada_mobil["url"] ?>" alt="imagen-portada">
   </figure>
 
-  <section id="opciones-canje" class="containt-canje container">
-    <div class="section-1-canje">
+  <div id="opciones-canje" class="containt-canje container splide">
+    <div class="splide__track">
+      <div class="splide__list">
+    <div class="section-1-canje splide__slide">
       <h2>Opción 1</h2>
       <p class="first-text">Canjea tu vale presencialmente</p>
       <p class="second-text">A nivel nacional</p>
@@ -50,13 +52,12 @@ $mas_informacion = get_field("mas_informacion");
       </a>
     </div>
 
-    <section class="section-2-canje">
+    <div class="section-2-canje splide__slide">
       <div class="title-canje-2">
         <h2>Opción 2</h2>
         <p class="text-1">Canjea tu vale vía Delivery</p>
         <p class="text-2">Solo válido para Lima</p>
       </div>
-
       <div class="part-1-canje">
         <div class="canje-block--1">
           <h2>TIENDA ONLINE</h2>
@@ -79,18 +80,16 @@ $mas_informacion = get_field("mas_informacion");
             <a href="<?= $url_ios_app ?>">
               <img src="<?= $img_ios["url"] ?>" alt="">
             </a>
-
           </figure>
           <a href="<?= $mas_informacion ?>">
             <p class="link-info">Más Informacion</p>
           </a>
         </div>
-
       </div>
-
-
-    </section>
-  </section>
+    </div>
+    </div>
+    </div>
+  </div>
 
 
 

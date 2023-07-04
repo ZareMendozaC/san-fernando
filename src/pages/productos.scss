@@ -261,6 +261,9 @@
     background-color: var(--color-beige);
     padding-top: calculate(208);
     padding-bottom: calculate(208);
+    .splide__arrows{
+        display: none;
+    }
 
     .col-817 {
         width: calculate(817);
@@ -316,6 +319,27 @@
 
     .card-blog {
         margin-right: 0px !important;
+    }
+    
+    .splide__arrow {
+        background: var(--color-red-btn);
+        opacity: 1;
+        height: calc(100vw * 44 / var(--width_base));
+        width: calc(100vw * 44 / var(--width_base));
+        bottom: calc(100vw * -80 / var(--width_base));
+        top: auto;
+    }
+    .splide__arrow--prev {
+        left: calculate(15);
+    }
+    .splide__arrow--next {
+        right: auto;
+        left: calc(100vw* 65 / var(--width_base));
+    }
+    .splide__arrow svg {
+        fill: #fff;
+        height: calc(100vw * 18 / var(--width_base));
+        width: calc(100vw * 18 / var(--width_base));
     }
 }
 
