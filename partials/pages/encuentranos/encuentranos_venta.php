@@ -10,7 +10,7 @@
                 <p class="subtitle">Recuerda revisar las restricciones en el punto de canje seleccionado.</p>
                 <div class="select-tipo">
                     <input id="tipoEncuentranos" type="hidden" name="" value="venta">
-                    <a href="<?php echo home_url(); ?>/puntos-de-canje">
+                    <a href="<?php echo home_url(); ?>/puntosdecanje">
                         <div class="btn-tipo">Puntos de canje</div>
                     </a>
                     <div class="btn-tipo active">Puntos de venta</div>
