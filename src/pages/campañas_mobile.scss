@@ -1,4 +1,11 @@
 @media (max-width: 768px) {
+    .bg-video .hover-video{
+        display: flex;
+      }
+    .bg-video .hover-video svg{
+       width: calculate(60);
+       height: calculate(60);
+    }
     .banner_campanias {
         width: 100% !important;
         background-size: cover;

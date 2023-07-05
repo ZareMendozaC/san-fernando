@@ -1,0 +1,47 @@
+.section-404{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    p{
+        margin-bottom: 0px !important;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 0px !important;
+        position: absolute;
+        top: calculate(55);
+        left:  calculate(165);
+
+    }
+    .text-num{
+        text-align: center;
+        font-size: calculate(450);
+        font-family: 'Portuguesa';
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 0px !important;
+        line-height: calculate(450);
+    }
+    .text-404{
+        color: #58596C;
+        text-align: center;
+        font-size: calculate(22);
+        font-family: 'FuturaStd';
+        font-style: normal;
+        font-weight: 500;
+        line-height: calculate(24);
+    }
+    .bg-404{
+        position: relative;
+    }
+    a{
+        text-align: center;
+        margin: auto;
+        margin-top: calculate(20);
+        margin: auto;
+    }
+}

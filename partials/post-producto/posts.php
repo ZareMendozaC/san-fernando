@@ -8,6 +8,10 @@ $args = array(
     'parent' => 0
 );
 $current_category = get_category(get_query_var('cat'), false);
+
+$actual_link = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+$actual_link1 = explode("/", $actual_link);
+//echo $actual_link1[4];
 echo '<input id="catPadre" value="' . $current_category->name . '" type="hidden">';
 $banner_mobile = get_field('banner_mobile');
 ?>
@@ -136,7 +140,36 @@ $banner_mobile = get_field('banner_mobile');
     <!-- End: Filter productos by categories -->
 
     <div class="container lista-prod">
-
+        <?php 
+       /* $args = array(
+            'post_type' => 'producto',
+            'posts_per_page' => -1,
+            'tax_query' => array(
+                'relation' => 'AND',
+                array(
+                    'taxonomy' => 'category',
+                    'field'    => 'name',
+                    'terms'    => array($current_category->name),
+                ),
+                array(
+                    'relation' => 'OR',
+                    array(
+                        'taxonomy' => 'category',
+                        'field'    => 'name',
+                        'terms'    => array($terms[0]->name),
+                    ),
+                ),
+            ),
+        );
+    $query = get_posts($args);
+    
+    foreach($query as $item){
+        echo '<div data-id="'.$item->ID.'" class="card-p select-producto-final">';
+        echo '<div class="border-card" style="background:url('. get_the_post_thumbnail_url($item->ID, 'full').')"></div>';
+        echo '<p class="color-blue">'.$item->post_title.'</p></div>';
+    }
+    */
+        ?>
     </div>
 
     <div class="container detalle-prod">
@@ -331,4 +364,15 @@ $banner_mobile = get_field('banner_mobile');
     </div>
 </section>
 
-
+<script>
+    /*
+$( document ).ready(function() {
+    var my_pathname = window.location.href;
+    var my_pathname_origin= window.location.origin;
+    var my_pathname_1 = my_pathname.split('/');
+    if(my_pathname_1[5]){
+        location.href = my_pathname_origin+'/categoria/'+my_pathname_1[4];
+    }
+});
+*/
+</script>
