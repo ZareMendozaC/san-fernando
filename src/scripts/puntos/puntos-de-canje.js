@@ -105,7 +105,7 @@
                     let info = lista.filter(obj => {
                         return obj.id === parseInt(indice);
                     });
-                    console.log(info);
+                    //console.log(info);
                 $('.img-banner').hide();
                 $('.content-info-card').css('display','block');
                 $('.content-info-card').addClass('animate__animated animate__fadeIn');
@@ -175,7 +175,7 @@
             .then(d => {
                 lista = d.data;
                 resultado = d.data;
-            console.log(d.data);
+           // console.log(d.data);
                 if(id){
                         resultado = lista.filter(objeto => objeto.id_seguimiento === id);
                         paint_lista(resultado);
