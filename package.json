@@ -35,6 +35,7 @@
     "templates/**/*",
     "api/**/*",
     "page-templates/**/*",
+    "404.php",
     "footer.php",
     "functions.php",
     "header.php",

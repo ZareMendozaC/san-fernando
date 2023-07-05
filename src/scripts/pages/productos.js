@@ -48,7 +48,7 @@ $('#slider-blog-list').slick({
 })*/
 //agregando variable al path
 $(location).attr('href')
-var bn_pathname = window.location.href
+var bn_pathname = window.location.origin
 
 $(".btn-lista-cat").on("click", function () {
   $('.col-des-menu').css('display', 'none')
@@ -64,8 +64,8 @@ $(".btn-lista-cat").on("click", function () {
 
   let url_hija = hija.toLowerCase().replace(' ', '-')
 
-
-  var en_pathname = bn_pathname + '/' + url_hija
+  console.log(bn_pathname,url_hija);
+  var en_pathname = bn_pathname + '/sanfer/categoria/'+padre+'/'+ url_hija
   history.pushState(null, "", en_pathname)
 
   jQuery.ajax({

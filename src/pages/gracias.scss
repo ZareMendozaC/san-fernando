@@ -1,0 +1,48 @@
+.section-gracias{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(color-beige);
+    background:  #EBECE6;
+}
+
+.bg-gracias{
+    width: calculate(750);
+    height: calculate(750);
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        margin-bottom: 0px !important;
+    }
+    a{
+        text-align: center;
+        margin: auto;
+        margin-top: calculate(20);
+        margin: auto;
+    }
+    .text-cursive{
+        font-family: 'Portuguesa';
+        font-size: calculate(130);
+        font-weight: 400;
+        line-height: calculate(50);
+        padding-bottom: calculate(50);
+    }
+    .text-404{
+        color: #58596C;
+        text-align: center;
+        font-size: calculate(22);
+        font-family: 'FuturaStd';
+        font-style: normal;
+        font-weight: 500;
+        line-height: calculate(24);
+    }
+}
+

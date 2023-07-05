@@ -145,3 +145,7 @@ video {
 .bg-video:hover .hover-video{
   display: flex;
 }
+.bg-video svg{
+  width: calculate(75);
+  height: calculate(75);
+}
