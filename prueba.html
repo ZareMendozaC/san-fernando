@@ -1,146 +1,165 @@
-<div class="first-contact">
-    <div class="select-doc">
-     <div>Tipo Documento</div>
-     <div>[select TipoDocumento class:select-doc "DNI" "Pasaporte" "Carnet de Extranjeria"]</div>
-    </div>
-   
-    <div class="doc"> 
-     <div>Nro Documento</div>
-     <div>[text* your-docu class:input-document placeholder "Escribe tu número de documento"]</div> 
-    </div>
-   
-    <div class="name"> 
-     <div>Nombres</div>
-     <div>[text* your-name class:input-name  placeholder "Nombres Completos"]</div> 
-    </div>
-   
-    <div class="paterno"> 
-     <div>Apellido Paterno</div>
-     <div>[text* paterno class:input-paterno  placeholder "Apellido Paterno"]</div> 
-    </div>
-   
-    <div class="materno"> 
-     <div>Apellido Materno</div>
-     <div>[text* materno class:input-materno  placeholder "Apellido Materno"]</div> 
-    </div>
-   
-   
-    <div class="correo">
-     <div>¿A dónde preferirías recibir nuestra respuesta?</div>
-     <div>[select Respuesta class:select-resp "A mi casa" "A mi correo E-mail"]</div>
-    </div>
-   
-    <div class="departamento">
-     <div>Departamento</div>
-     <div>[select Departamento class:select-depar "Amazonas" "La libertad"]</div>
-    </div>
-   
-    <div class="provincia">
-     <div>Provincia</div>
-     <div>[select Provincia class:select-prov "Amazonas" "La libertad"]</div>
-    </div>
-   
-    <div class="distrito">
-     <div>Distrito</div>
-     <div>[select Distrito class:select-dist "Amazonas" "La libertad"]</div>
-    </div>
-   
-    <div class="direccion"> 
-     <div>Ingrese Dirección</div>
-     <div>[text* Direccion class:input-dir placeholder "Direccion del domicilio"]</div> 
-    </div>
-   
-    <div class="tele"> 
-     <div>Ingrese Telefono</div>
-     <div>[tel* Telefono class:input-tele placeholder "Numero de Teléfono"]</div> 
-    </div>
-   
-    <div class="mail"> 
-     <div>Ingrese Dirección</div>
-     <div>[email* Email class:input-email placeholder "Email"]</div> 
-    </div>
+<div class="hidden">
+  [dynamichidden CodigoReclamo id:counter-libro "CF7_counter_libro"]
+  [hidden Departamento id:departamento]
+  [hidden Provincia id:provincia]
+  [hidden Distrito id:distrito]
+  </div>
+  <div class="first-contact">
+   <div class="select-doc">
+    <div>Tipo Documento</div>
+    <div>[select TipoDocumento class:select-doc "DNI" "Pasaporte" "Carnet de Extranjeria"]</div>
    </div>
-   
-   
-   <div class="second-contact"> 
-   <div class="field-menor-edad">
-     <div>Menor de Edad</div>
-     <div>[radio MenordeEdad class:edad label_first default:2 "Si" "No"]</div> 
+  
+   <div class="doc"> 
+    <div>Nro Documento</div>
+    <div>[text* NroDocumento class:input-document placeholder "Escribe tu número de documento"]</div> 
    </div>
-   [group Apoderado]
-   <div class="apoderado">
-   
-    <div class="name"> 
-     <div>Nombres</div>
-     <div>[text* your-name class:input-name  placeholder "Nombres Completos"]</div> 
-    </div>
-   
-    <div class="paterno"> 
-     <div>Apellido Paterno</div>
-     <div>[text* paterno class:input-paterno  placeholder "Apellido Paterno"]</div> 
-    </div>
-   
+  
+   <div class="name"> 
+    <div>Nombres</div>
+    <div>[text* Nombres class:input-name  placeholder "Nombres Completos"]</div> 
    </div>
-   [/group]
+  
+   <div class="paterno"> 
+    <div>Apellido Paterno</div>
+    <div>[text* ApellidoPaterno class:input-paterno  placeholder "Apellido Paterno"]</div> 
    </div>
-   
-   <div class="third-contact"> 
-     <div class="title-third" >Informacion general del caso</div>
-       <div class="name-product">
-         <div>Nombre del Producto</div>
-         <div>[text NombreProducto class:input-nom-prod placeholder "Nombre del producto"]</div> 
-       </div>
-   
-       <div class="incidente">
-         <div>Fecha de Indicente</div>  
-         <div>[date FechaIncidente class:date-incidente placeholder "dd/mm/aaaa"]</div>
-       </div>
-   
-       <div class="lugar">
-         <div>Lugar</div>  
-         <div>[text Lugar class:input-lugar placeholder "Lugar"]</div>
-       </div>
-   
-       <div class="monto">
-         <div>Monto Reclamo S/:</div>  
-         <div>[text Monto class:input-monto placeholder "S/."]</div>
-       </div>
-   
-       <div class="lugar-producto">
-         <div>Lugar donde adquirió el producto</div>  
-         <div>[text LugaradProducto class:input-ad-prod placeholder "Lugar donde adquirió el producto"]</div>
-       </div>
-   
-       
+  
+   <div class="materno"> 
+    <div>Apellido Materno</div>
+    <div>[text* ApellidoMaterno class:input-materno  placeholder "Apellido Materno"]</div> 
    </div>
-   
-   
-   <div class="fourth-contact"> 
-       <div class="option-incidente">
-         <div>Cuéntenos su Incidente</div>
-         <div>[radio radio-472 class:input-incidente use_label_element default:1 "Reclamo" "Queja"]</div>
-       </div>
-   
-       <div class="detalles">
-         <div>Detalle su incidente</div>  
-         <div>[textarea IncidenteDetalles class:input-detalles placeholder "Detalle su incidente"]</div>
-       </div>
-   
-       <div class="solicitud">
-         <div>Solicitud del Cliente (Ejem: Cambio de producto):</div>  
-         <div>[textarea Solicitud class:input-solcitud placeholder "Solicitud del Cliente (Ejem: Cambio de producto):"]</div>
-       </div>
-   
-       <div class="file"> 
-         <div>Adjuntar documentos adicionales:[file DocumentoAdcional limit:5 class:input-doc-adicional]</div>
-         <div>*Peso máximo 5MB</div>
-       </div>
-   
-        <div class="aceptacion-1">[acceptance your-acceptance class:fw-300 class:fs-16 class:lh-16] Declaro ser el titular del servicio y acepto el contenido del presente formulario manifestando bajo declaración jurada la veracidad de los hechos descritos. [/acceptance]</div>
-   
-        <div class="aceptacion-2">[acceptance your-acceptance class:fw-300 class:fs-16 class:lh-16] He leído y acepto la política de <a href="">protección de datos personales.</a> [/acceptance]</div>
-   
-   <div class="btn-enviar"> [submit "Enviar"] </div>
-   
-       
+  
+  
+   <div class="correo">
+    <div>¿A dónde preferirías recibir nuestra respuesta?</div>
+    <div>[select ADondePrefieresRecibirNuestraRespuesta class:select-resp "A mi casa" "A mi correo E-mail"]</div>
    </div>
+  
+   <div class="departamento">
+    <div>Departamento</div>
+    <div>[select DepartamentoSelect id:select-departamento class:select-depar]</div>
+   </div>
+  
+   <div class="provincia">
+    <div>Provincia</div>
+    <div>[select ProvinciaSelect id:select-provincia class:select-prov]</div>
+   </div>
+  
+   <div class="distrito">
+    <div>Distrito</div>
+    <div>[select DistritoSelect id:select-distrito class:select-dist]</div>
+   </div>
+  
+   <div class="direccion"> 
+    <div>Ingrese Dirección</div>
+    <div>[text* Direccion class:input-dir placeholder "Direccion del domicilio"]</div> 
+   </div>
+  
+   <div class="tele"> 
+    <div>Ingrese Telefono</div>
+    <div>[tel* Telefono class:input-tele placeholder "Numero de Teléfono"]</div> 
+   </div>
+  
+   <div class="mail"> 
+    <div>Ingrese Email</div>
+    <div>[email* Email class:input-email placeholder "Email"]</div> 
+   </div>
+  </div>
+  
+  
+  <div class="second-contact"> 
+  <div class="field-menor-edad">
+    <div>Menor de Edad</div>
+    <div>[radio MenordeEdad class:edad label_first default:2 "Si" "No"]</div> 
+  </div>
+  [group Apoderado]
+  <div class="apoderado">
+   <div class="select-doc"> 
+    <div>Tipo Documento</div>
+    <div>[select ApoderadoTipoDocumento class:select-doc "DNI" "Pasaporte" "Carnet de Extranjeria"]</div> 
+   </div>
+  
+   <div class="doc"> 
+    <div>Nro Documento</div>
+    <div>[text* ApoderadoDocumento class:input-document placeholder "Escribe tu número de documento"]</div> 
+   </div>
+  <div class="name"> 
+       <div>Nombres</div>
+       <div>[text* ApoderadoNombres class:input-name  placeholder "Nombres Completos"]</div> 
+      </div>
+     
+      <div class="paterno"> 
+       <div>Apellido Paterno</div>
+       <div>[text* ApoderadoApellidoPaterno class:input-paterno  placeholder "Apellido Paterno"]</div> 
+      </div>
+     
+      <div class="materno"> 
+       <div>Apellido Materno</div>
+       <div>[text* ApoderadoApellidoMaterno class:input-materno  placeholder "Apellido Materno"]</div> 
+      </div>
+  
+  </div>
+  [/group]
+  </div>
+  
+  <div class="third-contact"> 
+    <div class="title-third" >Informacion general del caso</div>
+      <div class="name-product">
+        <div>Nombre del Producto</div>
+        <div>[text NombreProducto class:input-nom-prod placeholder "Nombre del producto"]</div> 
+      </div>
+  
+      <div class="incidente">
+        <div>Fecha de Indicente</div>  
+        <div>[date FechaIncidente class:date-incidente placeholder "dd/mm/aaaa"]</div>
+      </div>
+  
+      <div class="lugar">
+        <div>Lugar</div>  
+        <div>[text Lugar class:input-lugar placeholder "Lugar"]</div>
+      </div>
+  
+      <div class="monto">
+        <div>Monto Reclamo S/:</div>  
+        <div>[text Monto class:input-monto placeholder "S/."]</div>
+      </div>
+  
+      <div class="lugar-producto">
+        <div>Lugar donde adquirió el producto</div>  
+        <div>[text LugarDondeAdquirioProducto class:input-ad-prod placeholder "Lugar donde adquirió el producto"]</div>
+      </div>
+  
+      
+  </div>
+  
+  
+  <div class="fourth-contact"> 
+      <div class="option-incidente">
+        <div>Cuéntenos su Incidente</div>
+        <div>[radio QuejaReclamo class:input-incidente use_label_element default:1 "Reclamo" "Queja"]</div>
+      </div>
+  
+      <div class="detalles">
+        <div>Detalle su incidente</div>  
+        <div>[textarea IncidenteDetalles class:input-detalles placeholder "Detalle su incidente"]</div>
+      </div>
+  
+      <div class="solicitud">
+        <div>Solicitud del Cliente (Ejem: Cambio de producto):</div>  
+        <div>[textarea SolicitudDelCliente class:input-solcitud placeholder "Solicitud del Cliente (Ejem: Cambio de producto):"]</div>
+      </div>
+  
+      <div class="file"> 
+        <div>Adjuntar documentos adicionales:[file LinkArchivo limit:5 class:input-doc-adicional]</div>
+        <div>*Peso máximo 5MB</div>
+      </div>
+  
+       <div class="aceptacion-1">[acceptance Aceptar class:fw-300 class:fs-16 class:lh-16] Declaro ser el titular del servicio y acepto el contenido del presente formulario manifestando bajo declaración jurada la veracidad de los hechos descritos. [/acceptance]</div>
+  
+       <div class="aceptacion-2">[acceptance Aceptar2 class:fw-300 class:fs-16 class:lh-16] He leído y acepto la política de <a href="">protección de datos personales.</a> [/acceptance]</div>
+  
+  <div class="btn-enviar"> [submit "Enviar"] </div>
+  
+      
+  </div>
