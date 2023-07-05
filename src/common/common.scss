@@ -395,3 +395,22 @@ select {
         background-color: transparent;
     }
 }
+.cky-consent-bar{
+    font-family: 'FuturaStd' !important;
+}
+.cky-notice-des{
+    color: var(--color-white) !important;
+}
+.cky-btn-accept{
+    border-radius: calc(100vw * 515 / var(--width_base)) !important;
+    font-weight: 600 !important;
+    font-size: calc(100vw * 15 / var(--width_base)) !important;
+    line-height: calc(100vw * 33 / var(--width_base)) !important;
+}
+.cky-notice-des *, .cky-preference-content-wrapper *, .cky-accordion-header-des *, .cky-gpc-wrapper .cky-gpc-desc *{
+    font-size: calc(100vw * 17 / var(--width_base)) !important;
+    line-height: calc(100vw * 33 / var(--width_base)) !important;
+}
+.cky-revisit-bottom-left, .cky-btn-revisit-wrapper{
+    display: none !important;
+}

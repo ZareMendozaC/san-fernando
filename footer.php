@@ -445,3 +445,127 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 
 	})
 </script>
+<script src="https://apps.mypurecloud.com/widgets/9.0/cxbus.min.js" onload="javascript:CXBus.configure({debug:true,pluginsPath:'https://apps.mypurecloud.com/widgets/9.0/plugins/'}); CXBus.loadPlugin('widgets-core');"></script>
+		<script type="text/javascript">
+			function validateMandatoryInput(input) {
+				if (typeof input === 'undefined') {
+					return true;
+				}
+				return input.val().trim() != '';
+			}			
+			window._genesys = {
+				widgets: {
+					main: {
+						theme: 'light', 
+						lang : 'es',
+						i18n: 'https://apps.mypurecloud.com/widgets/9.0/i18n/widgets-es.i18n.json'
+										
+					},
+					webchat: {
+						transport: {
+							type: 'purecloud-v2-sockets',
+							dataURL: 'https://api.mypurecloud.com',
+							deploymentKey: '4f89c018-4615-45c1-909c-8a967bdba07d',
+							orgGuid: '675ad46f-f9c3-4dca-9835-127cf457991d',
+							interactionData: {
+								routing: {
+									targetType: 'QUEUE',
+									targetAddress: 'Prueba',
+									priority: 2
+								}
+							}	
+						}
+						}
+					}	
+			};
+		
+		</script>
+<script type="text/javascript">
+   		function getAdvancedConfig() {
+   			return {
+   				form: {
+   					autoSubmit: false,
+   					firstname: '',
+   					lastname: '',
+   					email: '',
+   					subject: 'Motivo de consulta'
+   				},
+   				formJSON: {
+   					wrapper: '<table></table>',
+   					inputs: [
+   						// Default fields
+   						{
+   							id: 'cx_webchat_form_firstname',
+   							name: 'firstname',
+   							maxlength: '100',
+   							placeholder: 'Requerido',
+   							label: 'Nombre',
+							validate: function (event, form, input, label, $, CXBus, Common) {
+										return validateMandatoryInput(input);
+									}
+   						},
+   						{
+   							id: 'cx_webchat_form_lastname',
+   							name: 'lastname',
+   							maxlength: '100',
+   							placeholder: 'Requerido',
+   							label: 'Apellido',
+							validate: function (event, form, input, label, $, CXBus, Common) {
+										return validateMandatoryInput(input);
+									}
+   						},
+   						{
+   							id: 'cx_webchat_form_email',
+   							name: 'email',
+   							maxlength: '100',
+   							placeholder: 'Requerido',
+   							label: 'Email',
+							validate: function (event, form, input, label, $, CXBus, Common) {
+										return validateMandatoryInput(input);
+									}
+   						},
+   						{
+								id: 'custom_field_1',
+								name: 'customField1',
+								placeholder: 'Requerido',
+								label: 'Motivo de consulta',
+								type: 'select',
+								options: [
+							{
+									disabled : 'disabled',
+									selected : 'selected',
+									text : '- Seleccione -',
+									value : '',
+									hidden: 'hidden'
+									},
+									{
+									text : '1. Canjea tus vales.',
+									value : 'PuntoCanje'
+									},
+									{
+										text : '2. Todo sobre tu Compra de Vales por nuestra web.',
+										value : 'CompraVales'
+									},
+									{
+										text : '3. Todo sobre tu Delivery de siempre.',
+										value : 'Delivery'
+									},
+									{
+										text : '4. Compra tus favoritos por delivery.',
+										value : 'CompraProductoSF'
+									},
+									{
+										text : '5. Inconvenientes con nuestros Productos o Servicios.',
+										value : 'Inconvenientes'
+									},
+									{
+										text : '6. Preguntas frecuentes.',
+										value : 'Preguntasfrecuentes'
+									}
+									]
+								},
+   					]
+   				}
+   			};
+   		}
+   	</script>
