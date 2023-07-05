@@ -332,14 +332,14 @@
           }
   
           .second-contact{
-            display: flex;
+            // display: flex;
             width: calculate(375);
             margin-top: calculate(50);
             margin-bottom: calculate(50);
             padding: 0 calculate(10);
               div{
-                height: calculate(50);
-                input{
+                min-height: calculate(50);
+                input[type=radio]{
                   appearance: none;
                   cursor: pointer;
                   background-color: #fff;
@@ -359,8 +359,25 @@
                   
                 }
               }
+
+              input:not([type=radio]),
+              select{
+                height: calculate(62);
+                border: 2px solid red;
+              }
           }
   
+          .apoderado{
+            // grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column;
+          }
+
+          // .container-reclamaciones .formulario-recla .wpcf7 form .apoderado .doc{
+          //   grid-column-start: initial;
+          //   grid-column-end: 4;
+          // }
+
           .third-contact{
             display: flex;
             flex-direction: column;
