@@ -65,7 +65,7 @@ $(".btn-lista-cat").on("click", function () {
   let url_hija = hija.toLowerCase().replace(' ', '-')
 
   console.log(bn_pathname,url_hija);
-  var en_pathname = bn_pathname + '/sanfer/categoria/'+padre+'/'+ url_hija
+  var en_pathname = bn_pathname + '/categoria/'+padre+'/'+ url_hija
   history.pushState(null, "", en_pathname)
 
   jQuery.ajax({
