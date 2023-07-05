@@ -1,3 +1,11 @@
+.hidden{
+  display: none;
+}
+
+.formulario-recla p{
+  margin-bottom: 0;
+}
+
 .container-reclamaciones{
   font-family: 'FuturaStd';
   .subtitle-date{
@@ -28,6 +36,7 @@
 
   .formulario-recla{
     margin-bottom: calculate(100);
+    overflow: hidden;
     
     .wpcf7{
       form{
@@ -349,13 +358,14 @@
         }
 
         .second-contact{
-          display: flex;
+          // display: flex;
           margin-top: calculate(50);
           margin-bottom: calculate(50);
           padding: 0 calculate(300);
+
             div{
-              height: calculate(50);
-              input{
+              min-height: calculate(50);
+              input[type="radio"]{
                 appearance: none;
                 cursor: pointer;
                 background-color: #fff;
@@ -375,6 +385,30 @@
                 
               }
             }
+
+            .wpcf7-form-control:not([type="radio"]):not(.wpcf7-radio){
+              border: 1px solid var(--gray-300, #D0D5DD);
+              width: calculate(355);
+              border-radius: calculate(8);
+            }
+
+        }
+
+        .field-menor-edad{
+          display: flex;
+        }
+
+        .apoderado{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: calc(100vw * 50 / var(--width_base));
+
+          .doc{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            display: flex;
+            flex-direction: column;
+          }
         }
 
         .third-contact{

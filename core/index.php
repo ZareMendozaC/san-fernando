@@ -166,5 +166,6 @@ class WpDevKit
   public function get_reusable_functions()
   {
     include __DIR__ . '/utils.php';
+    include __DIR__ . '/contact-form.php';
   }
 }
