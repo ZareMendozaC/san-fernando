@@ -285,6 +285,14 @@
   width: calculate(50);
   height: calculate(50);
 }
+ul li .icono_valor {
+  width: calculate(25);
+  height: calculate(25);
+}
+.div_btn_politicas a svg{
+  width: calculate(25);
+  height: calculate(25);
+}
 
 .section_time_line {
   position: relative;
@@ -341,7 +349,7 @@
 }
 
 .timeline-line {
-  background: rgb(228, 228, 228);
+  background: #BFD2E5;
   width: 4px;
   border-radius: 12px;
   //  position: relative;
@@ -354,7 +362,7 @@
   position: absolute;
 
   border-radius: 50%;
-  background: rgb(228, 228, 228);
+  background: #BFD2E5;
   width: 8px;
   height: 8px;
 
@@ -365,7 +373,7 @@
 
 .timeline-innerline {
   position: absolute;
-  background: blue;
+  background: var(--color-blue);
   width: 4px;
   height: 0%;
 
@@ -458,19 +466,19 @@
   }
 
   .li-time:nth-child(odd) .timeline-point {
-    width: 15px;
-    height: 15px;
+    width:  calculate(15);
+    height:  calculate(15);
 
-    top: calculate(-55);
+    top: calculate(-52);
     left: calculate(200);
     transition: 1.5s ease;
   }
 
   .li-time:nth-child(even) .timeline-point {
-    width: 15px;
-    height: 15px;
+    width:  calculate(15);
+    height:  calculate(15);
 
-    top: calculate(-145);
+    top: calculate(-142);
     left: calculate(200);
     transition: 1.5s ease;
   }
@@ -482,7 +490,7 @@
 
   .timeline-innerline {
     position: absolute;
-    background: blue;
+    background: var(--color-blue);
     width: 0%;
     height: 4px;
 

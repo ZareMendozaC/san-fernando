@@ -6,11 +6,13 @@
   wp_head();
   ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </head>
 
 <body>
+<div onclick="window._genesys.widgets.bus.command('WebChat.open',getAdvancedConfig());" class="btn_consulta">
+		<img src="https://storage.googleapis.com/devecommerce/website/icons/icono-mensaje.png" alt="Icono chat">
+		<p>Chat de consultas</p>
+</div>
   <header class="navbar">
     <div class="div_logo">
       <a href="<?php echo home_url(); ?>">
@@ -136,13 +138,13 @@
   <div class="menu_blog">
     <ul class="list-group">
       <li class="list-group-item">
-        <a href="https://apros-qa.net.pe/sanfer/blog/categoria/recetas/" target="_blank">Recetas</a>
+        <a href="https://san-fernando.com.pe/blog/categoria/recetas/" target="_blank">Recetas</a>
       </li>
       <li class="list-group-item">
-        <a href="https://apros-qa.net.pe/sanfer/blog/categoria/nutricion/" target="_blank">Nutrición</a>
+        <a href="https://san-fernando.com.pe/blog/categoria/nutricion/" target="_blank">Nutrición</a>
       </li>
       <li class="list-group-item">
-        <a href="https://apros-qa.net.pe/sanfer/blog/categoria/soluciones/" target="_blank">Soluciones</a>
+        <a href="https://san-fernando.com.pe/blog/categoria/soluciones/" target="_blank">Soluciones</a>
       </li>
     </ul>
   </div>
@@ -154,9 +156,9 @@
       <li class="list-group-item li-mov-menu"><a href="#" class="btn-blog-mov" onclick="return false;">Blog Bien Servido <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
             <path d="M0.986328 1.93591L9.0002 9.94979L17.0141 1.93591L15.1285 0.0502939L9.00021 6.17855L2.87195 0.050293L0.986328 1.93591Z" fill="#004C97" />
           </svg></a></li>
-      <li class="list-group-item li-blog_mov"><a href="https://apros-qa.net.pe/sanfer/blog/categoria/recetas/">Recetas</a></li>
-      <li class="list-group-item li-blog_mov"><a href="https://apros-qa.net.pe/sanfer/blog/categoria/nutricion/">Nutrición</a></li>
-      <li class="list-group-item li-blog_mov"><a href="https://apros-qa.net.pe/sanfer/blog/categoria/soluciones/">Soluciones</a></li>
+      <li class="list-group-item li-blog_mov"><a href="https://san-fernando.com.pe/blog/categoria/recetas/">Recetas</a></li>
+      <li class="list-group-item li-blog_mov"><a href="https://san-fernando.com.pe/blog/categoria/nutricion/">Nutrición</a></li>
+      <li class="list-group-item li-blog_mov"><a href="https://san-fernando.com.pe/blog/categoria/soluciones/">Soluciones</a></li>
       <li class="list-group-item li-mov-menu"><a href="<?php echo home_url(); ?>/contacto">Contacto</a></li>
       <li class="menu-item">
         <div class="div-btn-vales"><a href="#" onclick="return false;">

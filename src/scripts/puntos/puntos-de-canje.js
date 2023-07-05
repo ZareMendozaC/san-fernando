@@ -211,27 +211,27 @@
             
             
             if(elemento.producto==='1'){
-                iconos ='<span><img src="'+origin+'/sanfer/wp-content/uploads/2023/06/pavo-1-1.png" width="18px" height="16px" alt=""><span>Pavo</span></span>'; 
+                iconos ='<span><img src="'+origin+'/wp-content/uploads/2023/06/pavo-1-1.png" width="18px" height="16px" alt=""><span>Pavo</span></span>'; 
               
             }
             else if(elemento.producto=='1,2'){
-                iconos ='<span><img src="'+origin+'/sanfer/wp-content/uploads/2023/06/pavo-1-1.png" width="18px" height="16px" alt=""><span>Pavo</span></span> <span><img src="images/puntoscanje/image110.png" width="18px" height="16px" alt=""> <span>Cerdo</span></span>'; 
+                iconos ='<span><img src="'+origin+'/wp-content/uploads/2023/06/pavo-1-1.png" width="18px" height="16px" alt=""><span>Pavo</span></span> <span><img src="images/puntoscanje/image110.png" width="18px" height="16px" alt=""> <span>Cerdo</span></span>'; 
                
             }
             else if(elemento.producto=='1,3'){
-                iconos ='<span><img src="'+origin+'/sanfer/wp-content/uploads/2023/06/pavo-1-1.png" width="18px" height="16px" alt=""><span>Pavo</span></span> <span><img src="'+origin+'/sanfer/wp-content/uploads/2023/06/carne-1-1.png" width="18px" height="16px" alt=""> <span>Pavo trozado</span></span>'; 
+                iconos ='<span><img src="'+origin+'/wp-content/uploads/2023/06/pavo-1-1.png" width="18px" height="16px" alt=""><span>Pavo</span></span> <span><img src="'+origin+'/wp-content/uploads/2023/06/carne-1-1.png" width="18px" height="16px" alt=""> <span>Pavo trozado</span></span>'; 
                
             }
             else if(elemento.producto=='2,3'){
-                iconos ='<span><img src="images/puntoscanje/image110.png" width="18px" height="16px" alt=""></span> <span>Cerdo</span> <span><img src="'+origin+'/sanfer/wp-content/uploads/2023/06/carne-1-1.png" width="18px" height="16px" alt=""> <span>Pavo trozado</span></span>'; 
+                iconos ='<span><img src="images/puntoscanje/image110.png" width="18px" height="16px" alt=""></span> <span>Cerdo</span> <span><img src="'+origin+'/wp-content/uploads/2023/06/carne-1-1.png" width="18px" height="16px" alt=""> <span>Pavo trozado</span></span>'; 
                
             }
             else if(elemento.producto=='1,2,3'){
-                iconos ='<span><img src="'+origin+'/sanfer/wp-content/uploads/2023/06/pavo-1-1.png" width="18px" height="16px" alt=""><span>Pavo</span></span><span><img src="images/puntoscanje/image110.png" width="18px" height="16px" alt=""></span> <span>Cerdo</span> <span><img src="'+origin+'/sanfer/wp-content/uploads/2023/06/carne-1-1.png" width="18px" height="16px" alt=""> <span>Pavo trozado</span></span>'; 
+                iconos ='<span><img src="'+origin+'/wp-content/uploads/2023/06/pavo-1-1.png" width="18px" height="16px" alt=""><span>Pavo</span></span><span><img src="images/puntoscanje/image110.png" width="18px" height="16px" alt=""></span> <span>Cerdo</span> <span><img src="'+origin+'/wp-content/uploads/2023/06/carne-1-1.png" width="18px" height="16px" alt=""> <span>Pavo trozado</span></span>'; 
                
             }
             else if(elemento.producto==='3'){
-                iconos ='<span><img src="'+origin+'/sanfer/wp-content/uploads/2023/06/carne-1-1.png" width="18px" height="16px" alt=""> <span>Pavo trozado</span></span>'; 
+                iconos ='<span><img src="'+origin+'/wp-content/uploads/2023/06/carne-1-1.png" width="18px" height="16px" alt=""> <span>Pavo trozado</span></span>'; 
             }
             /*
             else if(elemento.producto==='1' && elemento.producto==='2'){
@@ -249,12 +249,12 @@
             */
             
             if(elemento.tipovale_dos=='digital'){
-                vale= '<span><img src="'+origin+'/sanfer/wp-content/uploads/2023/06/interactivo-1.png" width="15px" height="15px" alt="">    Vale digital</span>';
+                vale= '<span><img src="'+origin+'/wp-content/uploads/2023/06/interactivo-1.png" width="15px" height="15px" alt="">    Vale digital</span>';
             }else{
                 vale='';
             }
             
-            let figure = '<div class="card" data-id='+elemento.id+'><div class="data-layer-up" id="'+elemento.id_seguimiento+'"> </div> <div class="data-layer"><p class="txt-info">Más info</p><p class="title-card">'+elemento.ubicacion+' - '+elemento.tipo+'</p><p>'+elemento.direccion+'</p><span class="content-horario"><p>'+elemento.horario+'</p></span><div class="row-icons"><div class="icon-product">'+iconos+'</div><div class="icon-vale">'+vale+'<span><img src="'+origin+'/sanfer/wp-content/uploads/2023/06/tarjeta-de-regalo-1.png" width="15px" height="15px" alt="">    Vale físico</span></div></div></div></div>';
+            let figure = '<div class="card" data-id='+elemento.id+'><div class="data-layer-up" id="'+elemento.id_seguimiento+'"> </div> <div class="data-layer"><p class="txt-info">Más info</p><p class="title-card">'+elemento.ubicacion+' - '+elemento.tipo+'</p><p>'+elemento.direccion+'</p><span class="content-horario"><p>'+elemento.horario+'</p></span><div class="row-icons"><div class="icon-product">'+iconos+'</div><div class="icon-vale">'+vale+'<span><img src="'+origin+'/wp-content/uploads/2023/06/tarjeta-de-regalo-1.png" width="15px" height="15px" alt="">    Vale físico</span></div></div></div></div>';
             $('.list-results').append(figure);
             $('.card').fadeIn();
             

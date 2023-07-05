@@ -63,5 +63,37 @@
             display: none;
         }
     }
+    .btn_consulta {
+        padding: 10px 20px;
+        background-color: #024384;
+        color: #fff;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        color: #f2f2f2;
+        font-family: "FuturaStd";
+        font-size: calculate(15);
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: normal;
+        width: 50%;
+    }
+    .btn_consulta p, .btn_consulta p:hover {
+        font-family: "FuturaStd" !important;
+        font-size: calculate(14);
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #fff;
+        margin-bottom: 0px !important;
+    }
+    .cx-webchat.cx-mobile {
+        top: inherit!important;
+        right: inherit!important;
+        bottom: 0!important;
+        left: 0!important;
+        height: 100%!important;
+        width: 100%!important;
+    }
 
 }
