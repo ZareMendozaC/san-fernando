@@ -6,6 +6,9 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    .btn-ver-articulos{
+        margin-top: calculate(15) !important;
+    }
     p{
         margin-bottom: 0px !important;
     }

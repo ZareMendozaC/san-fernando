@@ -414,3 +414,43 @@ select {
 .cky-revisit-bottom-left, .cky-btn-revisit-wrapper{
     display: none !important;
 }
+.btn_consulta {
+    cursor: pointer;
+    z-index: 99999;
+    display: flex;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -ms-align-content: center;
+    align-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    box-sizing: border-box;
+    padding: calculate(10) calculate(20);
+    background-color: #024384;
+    border-radius: 25px;
+    color: #fff;
+    position: fixed;
+    right: calculate(20);
+    bottom: calculate(70);
+    color: #f2f2f2;
+    font-family: 'FuturaStd';
+    font-size: calculate(18);
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.btn_consulta p, .btn_consulta p:hover {
+    font-family: 'FuturaStd' !important;
+    font-size: calculate(16);
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+    margin-bottom: 0px!important;
+}
+.btn_consulta img {
+    margin-right: 10px;
+}

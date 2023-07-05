@@ -12,7 +12,7 @@ const btn_mas = $(".btn-mas")
 const btn_menos = $(".btn-menos")
 function showTime(e) {
   $(e).attr("done", "true")
-  $(e).find(".timeline-point").css("background", "blue")
+  $(e).find(".timeline-point").css("background", "#004C97")
   $(e).find(".date").css("opacity", "100%")
   $(e).find(".legend").css("opacity", "100%")
   $(e).find(".legend").css("transform", "translateY(0px)")
@@ -23,7 +23,7 @@ function showTime(e) {
 
 function hideTime(e) {
   $(e).removeAttr("done")
-  $(e).find(".timeline-point").css("background", "rgb(228, 228, 228)")
+  $(e).find(".timeline-point").css("background", "#BFD2E5")
   $(e).find(".date").css("opacity", "0%")
   $(e).find(".legend").css("opacity", "0%")
   $(e).find(".legend").css("transform", "translateY(-10px)")
