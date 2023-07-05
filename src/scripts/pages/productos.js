@@ -64,7 +64,7 @@ $(".btn-lista-cat").on("click", function () {
 
   let url_hija = hija.toLowerCase().replace(' ', '-')
 
-  console.log(bn_pathname,url_hija);
+  //console.log(bn_pathname,url_hija);
   var en_pathname = bn_pathname + '/categoria/'+padre+'/'+ url_hija
   history.pushState(null, "", en_pathname)
 
@@ -78,7 +78,7 @@ $(".btn-lista-cat").on("click", function () {
         //console.log(response);
         for (var i = 0; i < response['data'].length; i++) {
           let $imgid = response['data'][i].ID
-          console.log(response['data'])
+          //console.log(response['data'])
           producto_html = producto_html +
             //<a href="${response['data'][i].guid}">
             `<div data-id="${response['data'][i].id}" class="card-p select-producto-final">
