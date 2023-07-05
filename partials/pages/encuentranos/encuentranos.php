@@ -11,7 +11,7 @@
                 <div class="select-tipo">
                     <input id="tipoEncuentranos" type="hidden" name="" value="canje">
                     <div class="btn-tipo active">Puntos de canje</div>
-                    <a href="<?php echo home_url(); ?>/puntos-de-venta">
+                    <a href="<?php echo home_url(); ?>/puntosdeventa">
                         <div class="btn-tipo">Puntos de venta</div>
                     </a>
                 </div>
