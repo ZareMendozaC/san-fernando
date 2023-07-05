@@ -14,7 +14,7 @@ add_shortcode('CF7_counter_libro', 'get_counter_libro');
 
 function increment_counter_libro($contact_form){
     $form_id = $contact_form->id();
-    $form_libro_id = 435;
+    $form_libro_id = 805;
     if($form_id == $form_libro_id){
         $val = get_option( CF7_COUNTER_LIBRO, 0) + 1;
         update_option(CF7_COUNTER_LIBRO, $val);

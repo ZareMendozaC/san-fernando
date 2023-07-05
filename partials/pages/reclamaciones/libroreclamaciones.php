@@ -21,8 +21,8 @@ $fechaActual = date("d/m/Y");
   </div>
 
   <div class="formulario-recla">
-    <?php //echo do_shortcode('[contact-form-7 id="435" title="Libro de Reclamaciones"]'); ?>
-    <?php echo do_shortcode('[contact-form-7 id="435" title="Libro de Reclamaciones"]'); ?>
+    <?php //echo do_shortcode('[contact-form-7 id="5" title="Libro de Reclamaciones"]'); ?>
+    <?php echo do_shortcode('[contact-form-7 id="805" title="Libro de Reclamaciones"]'); ?>
   </div>
 
   <script>
