@@ -123,7 +123,7 @@
   <div class="menu_vales">
     <ul class="list-group alter">
       <!-- <li class="list-group-item"><a href="#">Cotiza tu vale</a></li> -->
-      <li class="list-group-item"><a href="<?php echo home_url(); ?>/puntosdeventa/" target="_blank">Compra tu vale</a></li>
+      <li class="list-group-item"><a href="<?php echo home_url(); ?>https://delivery.redsanfernando.pe/vales/paso-1/pavo" target="_blank">Compra tu vale</a></li>
       <li class="list-group-item"><a href="<?php echo home_url(); ?>/opciones-de-canje/" target="_blank">Canjea tu vale</a></li>
     </ul>
   </div>
@@ -168,7 +168,7 @@
           </a>
           <ul class="list-group">
             <!-- <li class="list-group-item li-vales_mov"><a href="#">Cotiza tu vale</a></li> -->
-            <li class="list-group-item li-vales_mov"><a href="<?php echo home_url(); ?>/puntosdeventa/">Compra tu vale</a></li>
+            <li class="list-group-item li-vales_mov"><a href="https://delivery.redsanfernando.pe/vales/paso-1/pavo">Compra tu vale</a></li>
             <li class="list-group-item li-vales_mov"><a href="<?php echo home_url(); ?>/opciones-de-canje/">Canjea tu vale</a></li>
           </ul>
         </div>
