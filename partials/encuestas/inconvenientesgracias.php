@@ -45,19 +45,6 @@
 	</script>
 
 <style>
-	html, body {
-		font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
-	}
-	* {
-		background-color: #004c97;
-		color: white;
-	}
-
-	#caso h2 {
-		text-align: left;
-		padding-left: 270px;
-		line-height: 45px;
-	}
 
 	#consulta {
 		padding-left: 250px;
@@ -65,21 +52,32 @@
 		font-size: 20px;
 		padding-right: 70px;
 	}
+    .h2-text {
+		color: #024384;
+		font-size: 23px;
+	}
+	.respuestas{
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    flex-direction: column;
+		height: 80vh;
+	}
+    
 </style>
-<center>
-	<img src="images/creantis/header.jpg" alt="">
-	<br>
+<section class="respuestas">
+<!--
+	<img src="https://san-fernando.com.pe/images/creantis/header.jpg" alt="">-->
 	<div id="caso" style="display:none">
-		<h2>Gracias por escribirnos. <br> Se ha generado el número de solicitud <span id="ticket"></span>.<br> En breve te contactaremos.</h2>
+		<h2 class="h2-text">Gracias por escribirnos. <br> Se ha generado el número de solicitud <span id="ticket"></span>.<br> En breve te contactaremos.</h2>
 	</div>
 	<div id="consulta" style="display:none">
-		<h2 id="question"></h2>
-		<br><br><br>
-		<span id="answer"></span>
+		<h2 class="h2-text" id="question"></h2>
+		<span class="h2-text" id="answer"></span>
 	</div>
 	<br>
-	<img src="images/creantis/footer.jpg" alt="" style="padding-top: 230px;">
-</center>
-
+	<!--<img src="https://san-fernando.com.pe/images/creantis/footer.jpg" alt="" style="padding-top: 230px;">
+</center>-->
+</section>
 </body>
 </html>

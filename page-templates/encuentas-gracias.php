@@ -3,6 +3,6 @@
 
 get_header();
 
-get_template_part("partials/encuestas/encuentasgracias");
+get_template_part("partials/encuestas/encuestasgracias");
 
 get_footer();

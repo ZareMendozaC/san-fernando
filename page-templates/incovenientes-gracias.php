@@ -1,8 +1,8 @@
 <?php
-/* Template Name: Gracias */
+/* Template Name: Inconvenientes Gracias */
 
 get_header();
 
-get_template_part("partials/encuestas/invonvenientesgracias");
+get_template_part("partials/encuestas/inconvenientesgracias");
 
 get_footer();

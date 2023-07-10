@@ -6,17 +6,23 @@
 </head>
 <body>
 <style>
-	* {
-		font-family: "Arial";
-		background-color: #002878;
-		color: white;
+	.h2-text {
+		color: #024384;
+		font-size: 23px;
+	}
+	.respuestas{
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    flex-direction: column;
+		height: 80vh;
 	}
 </style>
-<img src="images/creantis/header.jpg" alt="">
-<h2>Gracias por tu respuesta. <br><br><br><br><br>
-
-
-San Fernando,<br>La Buena Familia </h2>
-<img src="images/creantis/footer.jpg" alt="">
+<section class="respuestas">
+<!--	<img src="https://san-fernando.com.pe/images/creantis/header.jpg" alt="">-->
+		<h2 class="h2-text">Gracias por tu respuesta.
+		San Fernando,<br>La Buena Familia </h2>
+<!--	<img src="https://san-fernando.com.pe/images/creantis/footer.jpg" alt="">-->
+</section>
 </body>
 </html>
