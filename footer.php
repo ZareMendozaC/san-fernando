@@ -316,7 +316,7 @@ $politicas_inocuidad = get_field("politicas_de_inocuidad", 17);
 			<div class="products-buy">
 				<ul>
 					<li>
-						<a href="https://delivery.redsanfernando.pe/" target="_blank">
+						<a href="https://www.san-fernando.pe/" target="_blank">
 							Compra aquí
 						</a>
 					</li>

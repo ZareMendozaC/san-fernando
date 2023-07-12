@@ -26,7 +26,8 @@
     "jquery-ui-dist": "^1.13.2",
     "php": "^1.0.2",
     "sass": "^1.57.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.7.16"
   },
   "files": [
     "core/**/*",

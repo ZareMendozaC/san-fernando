@@ -1,0 +1,30 @@
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl{
+    border-bottom-left-radius: 0px !important;
+}
+.ui-widget-content{
+    border: 0px !important;
+}
+.input[type=text].text-escudo, .text-escudo{
+    background-color: var(--color-white) !important;
+}
+#escudoImagenFondo, #response img{
+    width: calculate(570);
+}
+.escudo-image-content{
+    display: flex;
+    justify-content: center;
+}
+.escudo-image-content {
+    padding-top: calculate(50);
+}
+
+#response{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: calc(100vw * 50 / var(--width_base));
+}
+.generar-escudo #tabs-2{
+    margin-top: 0px !important;
+}

@@ -6,6 +6,7 @@
   wp_head();
   ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -123,14 +124,14 @@
   <div class="menu_vales">
     <ul class="list-group alter">
       <!-- <li class="list-group-item"><a href="#">Cotiza tu vale</a></li> -->
-      <li class="list-group-item"><a href="<?php echo home_url(); ?>/puntosdeventa/" target="_blank">Compra tu vale</a></li>
+      <li class="list-group-item"><a href="https://www.san-fernando.pe/vales/paso-1/pavo" target="_blank">Compra tu vale</a></li>
       <li class="list-group-item"><a href="<?php echo home_url(); ?>/opciones-de-canje/" target="_blank">Canjea tu vale</a></li>
     </ul>
   </div>
 
   <div class="menu_compras">
     <ul class="list-group">
-      <li class="list-group-item"><a href="https://delivery.redsanfernando.pe/" target="_blank">Ecommerce solo Lima</a></li>
+      <li class="list-group-item"><a href="https://www.san-fernando.pe/" target="_blank">Ecommerce solo Lima</a></li>
       <li class="list-group-item"><a href="<?php echo home_url(); ?>/puntosdeventa" target="_blank">Tiendas afiliadas</a></li>
     </ul>
   </div>
@@ -168,7 +169,7 @@
           </a>
           <ul class="list-group">
             <!-- <li class="list-group-item li-vales_mov"><a href="#">Cotiza tu vale</a></li> -->
-            <li class="list-group-item li-vales_mov"><a href="<?php echo home_url(); ?>/puntosdeventa/">Compra tu vale</a></li>
+            <li class="list-group-item li-vales_mov"><a href="https://www.san-fernando.pe/vales/paso-1/pavo">Compra tu vale</a></li>
             <li class="list-group-item li-vales_mov"><a href="<?php echo home_url(); ?>/opciones-de-canje/">Canjea tu vale</a></li>
           </ul>
         </div>
@@ -196,7 +197,7 @@
           </a>
           <ul class="list-group">
             <li class="list-group-item li-compras_mov">
-              <a href="https://delivery.redsanfernando.pe/" target="_blank">Ecommerce sólo Lima</a>
+              <a href="https://www.san-fernando.pe/" target="_blank">Ecommerce sólo Lima</a>
             </li>
             <li class="list-group-item li-compras_mov">
               <a href="#">Tiendas afiliadas</a>
