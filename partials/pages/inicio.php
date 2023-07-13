@@ -1,11 +1,13 @@
 <?php
 $slider_banner = get_field("lista_de_imagenes");
 ?>
-<section class="main-banner">
+<section class="main-banner show-desktop">
     <?php foreach ($slider_banner as $item) : ?>
         <?php
         $item_image = $item["imagen"];
         $item_image_url = $item_image ? $item_image["url"] : null;
+        $item_image_mobile = $item["imagen_mobile"];
+        $item_image_mobile_url = $item_image_mobile ? $item_image_mobile["url"] : null;
         $item_url = $item["link_y_utms"];
         $item_estado = $item["estado"];
         ?>
@@ -13,6 +15,26 @@ $slider_banner = get_field("lista_de_imagenes");
             <a href="<?= $item_url; ?>" target="_blank">
             <?php endif; ?>
             <div class="container-main bg-main-banner" style="background-image: url(<?= $item_image_url; ?>)">
+            </div>
+            <?php if ($item_url) : ?>
+            </a>
+        <?php endif; ?>
+    <?php endforeach; ?>
+</section>
+<section class="main-banner show-mobile">
+    <?php foreach ($slider_banner as $item) : ?>
+        <?php
+        $item_image = $item["imagen"];
+        $item_image_url = $item_image ? $item_image["url"] : null;
+        $item_image_mobile = $item["imagen_mobile"];
+        $item_image_mobile_url = $item_image_mobile ? $item_image_mobile["url"] : null;
+        $item_url = $item["link_y_utms"];
+        $item_estado = $item["estado"];
+        ?>
+        <?php if ($item_url) : ?>
+            <a href="<?= $item_url; ?>" target="_blank">
+            <?php endif; ?>
+            <div class="container-main bg-main-banner" style="background-image: url(<?= $item_image_mobile_url; ?>)">
             </div>
             <?php if ($item_url) : ?>
             </a>

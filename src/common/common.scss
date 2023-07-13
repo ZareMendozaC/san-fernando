@@ -342,7 +342,7 @@ h2 p {
 }
 
 .show-mobile {
-    display: none;
+    display: none !important;
 }
 
 .show-desktop {
